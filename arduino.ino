@@ -1,20 +1,13 @@
-// https://github.com/Seeed-Studio/Grove_I2C_Motor_Driver_v1_3/archive/master.zip
-
-
-#include <Grove_I2C_Motor_Driver.h>
-
-// default I2C address is 0x0f
-#define I2C_ADDRESS 0x0f
- 
-void setup()
-{
-    Motor.begin(I2C_ADDRESS);
+// the setup function runs once when you press reset or power the board
+void setup() {
+  // initialize digital pin LED_BUILTIN as an output.
+  pinMode(LED_BUILTIN, OUTPUT);
 }
 
-// Set the speed of a motor, speed is equal to duty cycle here
-void speed(unsigned char motor_id, int _speed);
-
-delay(1000);
-
-// Stop one motor
-void stop(unsigned char motor_id);
+// the loop function runs over and over again forever
+void loop() {
+  digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
+  delay(1000);                       // wait for a second
+  digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
+  delay(1000);                       // wait for a second
+}
