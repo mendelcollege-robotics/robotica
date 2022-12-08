@@ -1,4 +1,3 @@
-
 int fullspeed() {
   digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
   delay(80);                       // wait for a second
@@ -134,11 +133,29 @@ int nospeed() {
   delay(80);                       // wait for a second
 }
 
+int forward(){
+  digitalWrite(12, HIGH);
+  digitalWrite(11, HIGH);
+}
+int left(){
+  digitalWrite(12, LOW);
+  digitalWrite(11, HIGH);
+}
+int left(){
+  digitalWrite(12, HIGH);
+  digitalWrite(11, LOW);
+}
+int back(){
+  digitalWrite(12, LOW);
+  digitalWrite(11, LOW);
+}
 
 
 void setup() {
   // initialize digital pin LED_BUILTIN as an output.
   pinMode(LED_BUILTIN, OUTPUT);
+  pinMode(12, OUTPUT); //left
+  pinMode(11, OUTPUT); //richt
 }
 
 // the loop function runs over and over again forever
