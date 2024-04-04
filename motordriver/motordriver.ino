@@ -8,8 +8,10 @@ int in3 = 4;
 int in4 = 5;
 // motor three
 int enC = 37;
-int in5 = 8;
-int in6 = 9;
+int in5 = 7;
+int in6 = 6;
+
+int sp = 50;
 
 void setup()
 {
@@ -95,35 +97,22 @@ void demoTwo()
  digitalWrite(in5, LOW);
  digitalWrite(in6, LOW);
 }
-void forward(speed, direction)
+
+void forward()
 {
- // this function will run the motors across the range of possible speeds
- // note that maximum speed is determined by the motor itself and theoperating voltage
- // the PWM values sent by analogWrite() are fractions of the maximumspeed possible
- // by your hardware
- // turn on motors
+ sp = 160;
+ analogWrite(enA, sp);
+ analogWrite(enB, sp);
+ analogWrite(enC, sp);
+
  digitalWrite(in1, LOW);
- digitalWrite(in2, LOW);
+ digitalWrite(in2, HIGH);
  digitalWrite(in3, LOW);
- digitalWrite(in4, LOW);
+ digitalWrite(in4, HIGH);
  digitalWrite(in5, LOW);
- digitalWrite(in6, LOW);
- // accelerate from zero to maximum speed
- for (int i = 0; i < 256; i++)
- {
- analogWrite(enA, i);
- analogWrite(enB, i);
- analogWrite(enC, i); 
- delay(20);
- }
- // decelerate from maximum speed to zero
- for (int i = 255; i >= 0; --i)
- {
-  analogWrite(enA, i);
-  analogWrite(enB, i);
-  analogWrite(enC, i);
-  delay(20);
- }
+ digitalWrite(in6, HIGH);
+ delay(2000);
+
  // now turn off motors
  digitalWrite(in1, LOW);
  digitalWrite(in2, LOW);
@@ -134,8 +123,9 @@ void forward(speed, direction)
 }
 void loop()
 {
- demoOne();
+ //demoOne();
+ //delay(1000);
+ //demoTwo();
  delay(1000);
- demoTwo();
- delay(1000);
+ forward();
 }
