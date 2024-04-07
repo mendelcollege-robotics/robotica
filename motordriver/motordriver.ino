@@ -1,3 +1,4 @@
+//moveohmi = https://robotics.stackexchange.com/questions/7829/how-to-program-a-three-wheel-omni
 // motor one
 int enA = 33;
 int in1 = 2;
@@ -11,7 +12,15 @@ int enC = 37;
 int in5 = 7;
 int in6 = 6;
 
-int sp = 50;
+int sp = 160;
+
+double dirA = 0.00;
+double dirB = 0.00;
+double dirC = 0.00;
+double spdA = 0.00;
+double spdB = 0.00;
+double spdC = 0.00;
+double dirrad = 0.00;
 
 void setup()
 {
@@ -30,102 +39,171 @@ void setup()
 void demoOne()
 {
 // this function will run the motors in both directions at a fixed speed
- // turn on motor A
- digitalWrite(in1, HIGH);
- digitalWrite(in2, LOW);
- // set speed to 200 out of possible range 0~255
- analogWrite(enA, 200);
- // turn on motor B
- digitalWrite(in3, HIGH);
- digitalWrite(in4, LOW);
- // set speed to 200 out of possible range 0~255
- analogWrite(enB, 200);
+  // turn on motor A
+  digitalWrite(in1, HIGH);
+  digitalWrite(in2, LOW);
+  // set speed to 200 out of possible range 0~255
+  analogWrite(enA, sp);
+  // turn on motor B
+  digitalWrite(in3, HIGH);
+  digitalWrite(in4, LOW);
+  // set speed to 200 out of possible range 0~255
+  analogWrite(enB, sp);
   // turn on motor c
- digitalWrite(in5, HIGH);
- digitalWrite(in6, LOW);
- // set speed to 200 out of possible range 0~255
- analogWrite(enC, 200);
- delay(2000);
- // now change motor directions
- digitalWrite(in1, LOW);
- digitalWrite(in2, HIGH);
- digitalWrite(in3, LOW);
- digitalWrite(in4, HIGH);
- digitalWrite(in5, LOW);
- digitalWrite(in6, HIGH);
- delay(2000);
- // now turn off motors
- digitalWrite(in1, LOW);
- digitalWrite(in2, LOW);
- digitalWrite(in3, LOW);
- digitalWrite(in4, LOW);
+  digitalWrite(in5, HIGH);
+  digitalWrite(in6, LOW);
+  // set speed to 200 out of possible range 0~255
+  analogWrite(enC, sp);
+  delay(2000);
+  // now change motor directions
+  digitalWrite(in1, LOW);
+  digitalWrite(in2, HIGH);
+  digitalWrite(in3, LOW);
+  digitalWrite(in4, HIGH);
+  digitalWrite(in5, LOW);
+  digitalWrite(in6, HIGH);
+  delay(2000);
+  // now turn off motors
+  digitalWrite(in1, LOW);
+  digitalWrite(in2, LOW);
+  digitalWrite(in3, LOW);
+  digitalWrite(in4, LOW);
 }
 void demoTwo()
 {
- // this function will run the motors across the range of possible speeds
- // note that maximum speed is determined by the motor itself and theoperating voltage
- // the PWM values sent by analogWrite() are fractions of the maximumspeed possible
- // by your hardware
- // turn on motors
- digitalWrite(in1, LOW);
- digitalWrite(in2, HIGH);
- digitalWrite(in3, LOW);
- digitalWrite(in4, HIGH);
- digitalWrite(in5, LOW);
- digitalWrite(in6, HIGH);
- // accelerate from zero to maximum speed
- for (int i = 0; i < 256; i++)
- {
- analogWrite(enA, i);
- analogWrite(enB, i);
- analogWrite(enC, i); 
- delay(20);
- }
- // decelerate from maximum speed to zero
- for (int i = 255; i >= 0; --i)
- {
-  analogWrite(enA, i);
-  analogWrite(enB, i);
-  analogWrite(enC, i);
-  delay(20);
- }
- // now turn off motors
- digitalWrite(in1, LOW);
- digitalWrite(in2, LOW);
- digitalWrite(in3, LOW);
- digitalWrite(in4, LOW);
- digitalWrite(in5, LOW);
- digitalWrite(in6, LOW);
+  // this function will run the motors across the range of possible speeds
+  // note that maximum speed is determined by the motor itself and theoperating voltage
+  // the PWM values sent by analogWrite() are fractions of the maximumspeed possible
+  // by your hardware
+  // turn on motors
+  digitalWrite(in1, LOW);
+  digitalWrite(in2, HIGH);
+  digitalWrite(in3, LOW);
+  digitalWrite(in4, HIGH);
+  digitalWrite(in5, LOW);
+  digitalWrite(in6, HIGH);
+  // accelerate from zero to maximum speed
+  for (int i = 0; i < 256; i++)
+  {
+    analogWrite(enA, i);
+    analogWrite(enB, i);
+    analogWrite(enC, i); 
+    delay(20);
+  }
+  // decelerate from maximum speed to zero
+  for (int i = 255; i >= 0; --i)
+  {
+    analogWrite(enA, i);
+    analogWrite(enB, i);
+    analogWrite(enC, i);
+    delay(20);
+  }
+  // now turn off motors
+  digitalWrite(in1, LOW);
+  digitalWrite(in2, LOW);
+  digitalWrite(in3, LOW);
+  digitalWrite(in4, LOW);
+  digitalWrite(in5, LOW);
+  digitalWrite(in6, LOW);
 }
 
-void forward()
+void Amove(int sped){
+  if (sped < 0) {
+    digitalWrite(in1, LOW);
+    digitalWrite(in2, HIGH);
+  }
+  else{
+    digitalWrite(in1, HIGH);
+    digitalWrite(in2, LOW);
+  } 
+  sp = abs(sped); 
+  analogWrite(enA, sp);
+}
+void Bmove(int sped) {
+  if (sped < 0) {
+    digitalWrite(in3, LOW);
+    digitalWrite(in4, HIGH);
+  } else {
+    digitalWrite(in3, HIGH);
+    digitalWrite(in4, LOW);
+  } 
+  int sp = abs(sped);
+  analogWrite(enB, sp);
+}
+void Cmove(int sped) {
+  if (sped < 0) {
+    digitalWrite(5, LOW);
+    digitalWrite(6, HIGH);
+  } else {
+    digitalWrite(5, HIGH);
+    digitalWrite(6, LOW);
+  } 
+  int sp = abs(sped);
+  analogWrite(enC, sp);
+}
+
+
+void turnoff(){
+  analogWrite(enA, 0);
+  analogWrite(enB, 0);
+  analogWrite(enC, 0);
+  digitalWrite(in1, LOW);
+  digitalWrite(in2, LOW);
+  digitalWrite(in3, LOW);
+  digitalWrite(in4, LOW);
+  digitalWrite(in5, LOW);
+  digitalWrite(in6, LOW); 
+}
+void forward(int speed){
+  analogWrite(enA, speed);
+  analogWrite(enB, speed);
+  analogWrite(enC, speed);
+  digitalWrite(in1, LOW);
+  digitalWrite(in2, LOW);
+  digitalWrite(in3, HIGH);
+  digitalWrite(in4, LOW);
+  digitalWrite(in5, HIGH);
+  digitalWrite(in6, LOW);
+}
+
+void moveohmi(int speed, int direction)
 {
- sp = 160;
- analogWrite(enA, sp);
- analogWrite(enB, sp);
- analogWrite(enC, sp);
+  turnoff();
+  double dirrad = (direction*71) / 4068;
+  dirA = 1.047198-dirrad; 
+  dirB = 3.141593-dirrad;
+  dirC = 5.235988-dirrad;
+  spdA = speed*sin(dirA);
+  spdB = speed*sin(dirB);
+  spdC = speed*sin(dirC);
+  Amove(spdA);
+  Bmove(spdB);
+  Cmove(spdC);
+}
+void beddermoveohmi(int speed, int direction)
+{
+  turnoff();
 
- digitalWrite(in1, LOW);
- digitalWrite(in2, HIGH);
- digitalWrite(in3, LOW);
- digitalWrite(in4, HIGH);
- digitalWrite(in5, LOW);
- digitalWrite(in6, HIGH);
- delay(2000);
-
- // now turn off motors
- digitalWrite(in1, LOW);
- digitalWrite(in2, LOW);
- digitalWrite(in3, LOW);
- digitalWrite(in4, LOW);
- digitalWrite(in5, LOW);
- digitalWrite(in6, LOW);
+  double dirrad = (direction*71) / 4068;  
+  Serial.println(dirrad);
+  //vector ontb in x en y
+  double x = sin(dirrad)*speed;
+  double y = cos(dirrad)*speed;
+  Serial.println((String)"x:"+x+" y:"+y);
+  spdA = -0.5*x - sqrt(3)/2*y;
+  spdB = x;
+  spdC = -0.5*x + sqrt(3)/2*y;
+  Serial.println(spdA);
+  Serial.println(spdB);
+  Serial.println(spdC);
+  Serial.println();
+  Serial.println();
 }
 void loop()
 {
- //demoOne();
- //delay(1000);
- //demoTwo();
- delay(1000);
- forward();
+  //demoOne();
+  //delay(1000);
+  //demoTwo();
+  delay(1000);
+  beddermoveohmi(1, 20);
 }
