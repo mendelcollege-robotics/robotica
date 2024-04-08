@@ -143,12 +143,12 @@ void Bmove(int sped) {
 void Cmove(int sped) {
   Serial.print("moving C ");
   if (sped < 0) {
-    digitalWrite(5, LOW);
-    digitalWrite(6, HIGH);
+    digitalWrite(in5, LOW);
+    digitalWrite(in6, HIGH);
     Serial.print("back");
   } else {
-    digitalWrite(5, HIGH);
-    digitalWrite(6, LOW);
+    digitalWrite(in5, HIGH);
+    digitalWrite(in6, LOW);
     Serial.print("forward");
   } 
   Serial.print("with speed: ");
