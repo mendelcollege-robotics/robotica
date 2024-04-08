@@ -108,42 +108,58 @@ void demoTwo()
 }
 
 void Amove(int sped){
+  Serial.print("moving A ");
   if (sped < 0) {
     digitalWrite(in1, LOW);
     digitalWrite(in2, HIGH);
+    Serial.print("back");
   }
   else{
     digitalWrite(in1, HIGH);
     digitalWrite(in2, LOW);
+    Serial.print("forward");
   } 
+  Serial.print("with speed: ");
   sp = abs(sped); 
   analogWrite(enA, sp);
+  Serial.println(sp);
 }
 void Bmove(int sped) {
+  Serial.print("moving B ");
   if (sped < 0) {
     digitalWrite(in3, LOW);
     digitalWrite(in4, HIGH);
+    Serial.print("back");
   } else {
     digitalWrite(in3, HIGH);
     digitalWrite(in4, LOW);
+    Serial.print("forward");
   } 
+  Serial.print("with speed: ");
   int sp = abs(sped);
   analogWrite(enB, sp);
+  Serial.println(sp);
 }
 void Cmove(int sped) {
+  Serial.print("moving C ");
   if (sped < 0) {
     digitalWrite(5, LOW);
     digitalWrite(6, HIGH);
+    Serial.print("back");
   } else {
     digitalWrite(5, HIGH);
     digitalWrite(6, LOW);
+    Serial.print("forward");
   } 
+  Serial.print("with speed: ");
   int sp = abs(sped);
   analogWrite(enC, sp);
+  Serial.println(sp);
 }
 
 
 void turnoff(){
+  Serial.println("stop");
   analogWrite(enA, 0);
   analogWrite(enB, 0);
   analogWrite(enC, 0);
@@ -155,10 +171,23 @@ void turnoff(){
   digitalWrite(in6, LOW); 
 }
 void forward(int speed){
+  Serial.println("forward");
   analogWrite(enA, speed);
   analogWrite(enB, speed);
   analogWrite(enC, speed);
   digitalWrite(in1, LOW);
+  digitalWrite(in2, LOW);
+  digitalWrite(in3, HIGH);
+  digitalWrite(in4, LOW);
+  digitalWrite(in5, HIGH);
+  digitalWrite(in6, LOW);
+}
+void turn(int speed){
+  Serial.println("turn");
+  analogWrite(enA, speed);
+  analogWrite(enB, speed);
+  analogWrite(enC, speed);
+  digitalWrite(in1, HIGH);
   digitalWrite(in2, LOW);
   digitalWrite(in3, HIGH);
   digitalWrite(in4, LOW);
@@ -193,6 +222,10 @@ void beddermoveohmi(int speed, int direction)
   spdA = -0.5*x - sqrt(3)/2*y;
   spdB = x;
   spdC = -0.5*x + sqrt(3)/2*y;
+  Amove(spdA);
+  Bmove(spdB);
+  Cmove(spdC);
+
   Serial.println(spdA);
   Serial.println(spdB);
   Serial.println(spdC);
@@ -205,5 +238,19 @@ void loop()
   //delay(1000);
   //demoTwo();
   delay(1000);
-  beddermoveohmi(1, 20);
+  turnoff();
+  beddermoveohmi(255, 0);
+  delay(1000);
+  turnoff();
+  Amove(255);
+  delay(1000);
+  turnoff();
+  Bmove(255);
+  delay(1000);
+  turnoff();
+  Cmove(255);
+  delay(1000);
+  turnoff();
+  turn(254);
+  delay(1000);
 }
