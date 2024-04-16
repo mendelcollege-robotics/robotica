@@ -17,8 +17,6 @@ SX1509 io;                        // Create an SX1509 object to be used througho
 const byte SX1509_IR_SENS1 = 15; // ir sens 1 to SX1509's pin 15
 
 int ir1 = 1;
-int port2 = 1;
-
 void pcaselect(uint8_t i) {
   if (i > 7) return;
  
@@ -29,44 +27,42 @@ void pcaselect(uint8_t i) {
 
 
 // standard Arduino setup()
-void setup(){
-    delay(1000);
-    pinMode(2, INPUT);
-    Wire.begin();
+void setup()
+{
+  delay(1000);
+
+  Wire.begin();
     
-    Serial.begin(115200);
-    Serial.println("\nPCAScanner ready!");
+  Serial.begin(115200);
+  Serial.println("\nPCAScanner ready!");
 
 
 
-    for (uint8_t t=0; t<8; t++) {
-      pcaselect(t);
-      Serial.print("PCA Port #"); Serial.println(t);
+  for (uint8_t t=0; t<8; t++) {
+    pcaselect(t);
+    Serial.print("PCA Port #"); Serial.println(t);
 
-      for (uint8_t addr = 0; addr<=127; addr++) {
-        if (addr == PCAADDR) continue;
+    for (uint8_t addr = 0; addr<=127; addr++) {
+      if (addr == PCAADDR) continue;
 
-        Wire.beginTransmission(addr);
-        if (!Wire.endTransmission()) {
-          Serial.print("Found I2C 0x");  Serial.println(addr,HEX);
-        }
+      Wire.beginTransmission(addr);
+      if (!Wire.endTransmission()) {
+        Serial.print("Found I2C 0x");  Serial.println(addr,HEX);
       }
     }
-    Serial.println("\ndone");
-    io.pinMode(SX1509_IR_SENS1, INPUT);
+  }
+  Serial.println("\ndone");
+  io.pinMode(SX1509_IR_SENS1, INPUT);
 }
 
-void loop(){
+void loop() 
+{
   delay(1000);
 
   Wire.begin();
   Serial.begin(115200);
   Serial.println("\nPCAScanner ready!");
 
-  //port 2
-  port2 = digitalRead(2);
-  Serial.println(port2);
-  
   //port expander
   pcaselect(0);
   Serial.println("PCA Port #0   port multiplier");
