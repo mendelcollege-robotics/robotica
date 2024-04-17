@@ -228,7 +228,6 @@ void findball(int irs1, int irs2, int irs3, int irs4, int irs5, int irs6, int sp
     //60deg
     Amove(-spedo);
     Cmove(spedo);
-  }
   }else if (irs3 == 0){
     //120deg
     Amove(-spedo);
@@ -247,8 +246,9 @@ void findball(int irs1, int irs2, int irs3, int irs4, int irs5, int irs6, int sp
     Bmove(-spedo);
     Amove(spedo);
   }
-  else(){
-    forward(speed);
+  else{
+    //turn to search ball
+    turn(spedo);
   }
 }
 
@@ -316,7 +316,7 @@ void setup() {
 void loop() {
 
 
-  delay(1);
+  delay(100);
   Wire.begin();
   Serial.println("\nPCAScanner ready!");
   //port expander
@@ -422,6 +422,7 @@ void loop() {
     stil need to check what color it uses
 **/
 
+  findball(ir1, ir2, ir3, ir4, ir5, ir6, sp);
 
 
 
