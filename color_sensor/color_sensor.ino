@@ -21,7 +21,7 @@ color sensor based on±
 Adafruit_TCS34725 tcs = Adafruit_TCS34725();
 //Adafruit_TCS34725 tcs = Adafruit_TCS34725(TCS34725_INTEGRATIONTIME_614MS, TCS34725_GAIN_1X);
 
-const int buzzer = 9; //buzzer to arduino pin 9
+const int buzzer = 6; //buzzer to arduino pin 9
 
 
 int colsensdata[6] = {99, 99, 99, 99, 99, 99};
@@ -30,7 +30,7 @@ int colsensdata[6] = {99, 99, 99, 99, 99, 99};
 
 void setup() {
   Serial.begin(115200);
-  while (!Serial); // Leonardo: wait for Serial Monitor
+  //while (!Serial); // Leonardo: wait for Serial Monitor
   Serial.println("\nI2C Scanner");
   pinMode(buzzer, OUTPUT);
 
@@ -127,18 +127,22 @@ void loop() {
           Serial.print("RGB: "); Serial.print(r, DEC); Serial.print(", "); Serial.print(g, DEC); Serial.print(", "); Serial.print(b, DEC); Serial.println(" ");
           if ((colorTemp) == 5201){
             Serial.println("sensor in air");
+            tone(buzzer, 100);
             colsensdata[t] = 0;
           }
           else if ((g)>=(2*(r)) && (g)>=12){
             Serial.println("green");  
+            tone(buzzer, 200);
             colsensdata[t] = 1; 
           }
           else if ((colorTemp)>= 6750){
             Serial.println("black"); 
+            tone(buzzer, 300);
             colsensdata[t] = 2; 
           }
           else if ((colorTemp) < 6750){
             Serial.println("white");  
+            tone(buzzer, 400);
             colsensdata[t] = 3;
           }
           else{
@@ -153,6 +157,7 @@ void loop() {
           Serial.println("No TCS34725 found ... check your connections");
           colsensdata[t] = 97;
         }
+        delay(500);
       }
     }
   }
@@ -174,7 +179,5 @@ void loop() {
   Serial.println("");
   Serial.println("DONE");
   tone(buzzer, 1000);
-  delay(500);
-  noTone(buzzer);
-  delay(5500);
+  delay(2500);
 }
