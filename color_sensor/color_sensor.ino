@@ -21,6 +21,8 @@ color sensor based on±
 Adafruit_TCS34725 tcs = Adafruit_TCS34725();
 //Adafruit_TCS34725 tcs = Adafruit_TCS34725(TCS34725_INTEGRATIONTIME_614MS, TCS34725_GAIN_1X);
 
+const int buzzer = 9; //buzzer to arduino pin 9
+
 
 int colsensdata[6] = {99, 99, 99, 99, 99, 99};
 
@@ -30,6 +32,7 @@ void setup() {
   Serial.begin(115200);
   while (!Serial); // Leonardo: wait for Serial Monitor
   Serial.println("\nI2C Scanner");
+  pinMode(buzzer, OUTPUT);
 
 }
 
@@ -170,5 +173,8 @@ void loop() {
    */
   Serial.println("");
   Serial.println("DONE");
+  tone(buzzer, 1000);
+  delay(500);
+  noTone(buzzer);
   delay(5500);
 }
