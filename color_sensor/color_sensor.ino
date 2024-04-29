@@ -5,6 +5,10 @@ i2c port scanner based on:
 
 color sensor based on±
   adafruit TCS34725 librarys
+
+ type var:
+  https://arduino.stackexchange.com/questions/3079/how-to-retrieve-the-data-type-of-a-variable
+  
  *
  */
 
@@ -13,27 +17,13 @@ color sensor based on±
 
 #define PCAADDR 0x70    //i2c address of the i2c multiplexer
 
+/* Initialise with default values (int time = 2.4ms, gain = 1x) */
 Adafruit_TCS34725 tcs = Adafruit_TCS34725();
+//Adafruit_TCS34725 tcs = Adafruit_TCS34725(TCS34725_INTEGRATIONTIME_614MS, TCS34725_GAIN_1X);
 
-//color sensors vars
-int r1 = 1;
-int g1 = 1;
-int b1 = 1;
-int r2 = 1;
-int g2 = 1;
-int b2 = 1;
-int r3 = 1;
-int g3 = 1;
-int b3 = 1;
-int r4 = 1;
-int g4 = 1;
-int b4 = 1;
-int r5 = 1;
-int g5 = 1;
-int b5 = 1;
-int r6 = 1;
-int g6 = 1;
-int b6 = 1;
+
+int colsensdata[6] = {99, 99, 99, 99, 99, 99};
+
 
 
 void setup() {
@@ -87,6 +77,20 @@ void scandirectports(){
 }
 
 
+// Generic catch-all implementation.
+template <typename T_ty> struct TypeInfo { static const char * name; };
+template <typename T_ty> const char * TypeInfo<T_ty>::name = "unknown";
+
+// Handy macro to make querying stuff easier.
+#define TYPE_NAME(var) TypeInfo< typeof(var) >::name
+
+// Handy macro to make defining stuff easier.
+#define MAKE_TYPE_INFO(type)  template <> const char * TypeInfo<type>::name = #type;
+
+// Type-specific implementations.
+MAKE_TYPE_INFO( int )
+MAKE_TYPE_INFO( float )
+MAKE_TYPE_INFO( short )
 
 void loop() {
   Wire.begin();
@@ -100,7 +104,7 @@ void loop() {
   Serial.println();
   Serial.println();
   
-  for (uint8_t t=0; t<8; t++) {
+  for (uint8_t t=0; t<6; t++) {
     pcaselect(t);
     Serial.print("PCA Port #"); Serial.println(t);
     for (uint8_t addr = 0; addr<=127; addr++) {
@@ -116,17 +120,55 @@ void loop() {
           tcs.getRawData(&r, &g, &b, &c);
           colorTemp = tcs.calculateColorTemperature_dn40(r, g, b, c);
           lux = tcs.calculateLux(r, g, b);
+          Serial.print("Color Temp: "); Serial.print(colorTemp, DEC); Serial.print(" K - ");
           Serial.print("RGB: "); Serial.print(r, DEC); Serial.print(", "); Serial.print(g, DEC); Serial.print(", "); Serial.print(b, DEC); Serial.println(" ");
+          if ((colorTemp) == 5201){
+            Serial.println("sensor in air");
+            colsensdata[t] = 0;
+          }
+          else if ((g)>=(2*(r)) && (g)>=12){
+            Serial.println("green");  
+            colsensdata[t] = 1; 
+          }
+          else if ((colorTemp)>= 6750){
+            Serial.println("black"); 
+            colsensdata[t] = 2; 
+          }
+          else if ((colorTemp) < 6750){
+            Serial.println("white");  
+            colsensdata[t] = 3;
+          }
+          else{
+            Serial.println(colorTemp);
+            Serial.println(TYPE_NAME((colorTemp, DEC)));
+            colsensdata[t] = 98;
+          }
           Serial.println();
 
           
         } else {
           Serial.println("No TCS34725 found ... check your connections");
+          colsensdata[t] = 97;
         }
       }
     }
   }
   Serial.println();
+  Serial.print("sensor data = ");
+  for(int i = 0; i < 6; i++){
+  Serial.print(colsensdata[i]);
+  Serial.print(", ");
+  }
+  /**
+0 = air
+1 = green
+2 = black
+3 = white
+90 = error
+   
+   * 
+   */
+  Serial.println("");
   Serial.println("DONE");
   delay(5500);
 }
