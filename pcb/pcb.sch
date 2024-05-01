@@ -125,10 +125,10 @@ Wire Wire Line
 Wire Wire Line
 	4350 6500 4350 6250
 $Comp
-L Interface_Expansion:PCA9548ADB i2converter
+L Interface_Expansion:PCA9548ADB i2converter1
 U 1 1 663863AE
 P 5000 2800
-F 0 "i2converter" H 5000 3881 50  0000 C CNN
+F 0 "i2converter1" H 5000 3881 50  0000 C CNN
 F 1 "PCA9548ADB" H 5000 3790 50  0000 C CNN
 F 2 "Package_SO:SSOP-24_5.3x8.2mm_P0.65mm" H 5000 1800 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/pca9548a.pdf" H 5050 3050 50  0001 C CNN
@@ -449,8 +449,6 @@ Wire Wire Line
 	5650 9250 5650 3500
 Wire Wire Line
 	5650 3500 5400 3500
-Wire Wire Line
-	6650 11050 4100 11050
 Wire Wire Line
 	4100 11050 4100 8450
 Connection ~ 4100 6700
@@ -1323,4 +1321,375 @@ Wire Wire Line
 	12125 12875 16725 12875
 Wire Wire Line
 	16725 12875 16725 11850
+Wire Wire Line
+	10850 1900 10250 1900
+Wire Wire Line
+	10250 1900 10250 1425
+Wire Wire Line
+	11500 2875 11500 3000
+Wire Wire Line
+	10225 3000 10225 1450
+Wire Wire Line
+	10225 1450 9200 1450
+Wire Wire Line
+	9200 1450 9200 750 
+Wire Wire Line
+	9200 750  4575 750 
+Wire Wire Line
+	4575 750  4575 1500
+Wire Wire Line
+	4575 1500 3500 1500
+Wire Wire Line
+	3500 1400 4550 1400
+Wire Wire Line
+	4550 1400 4550 725 
+Wire Wire Line
+	4550 725  9250 725 
+Wire Wire Line
+	9250 725  9250 1425
+Wire Wire Line
+	9250 1425 10250 1425
+$Comp
+L Switch:SW_DIP_x06 settings
+U 1 1 670F1323
+P 11150 2200
+F 0 "settings" H 11150 2767 50  0000 C CNN
+F 1 "SW_DIP_x06" H 11150 2676 50  0000 C CNN
+F 2 "" H 11150 2200 50  0001 C CNN
+F 3 "~" H 11150 2200 50  0001 C CNN
+	1    11150 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10850 2300 10850 2400
+Wire Wire Line
+	10850 1900 10850 2000
+Connection ~ 10850 1900
+Wire Wire Line
+	10850 2000 10850 2100
+Connection ~ 10850 2000
+Wire Wire Line
+	10850 2100 10850 2200
+Connection ~ 10850 2100
+Wire Wire Line
+	10850 2200 10850 2300
+Connection ~ 10850 2200
+Connection ~ 10850 2300
+$Comp
+L Device:R R?
+U 1 1 675AF867
+P 11500 2725
+F 0 "R?" H 11570 2771 50  0000 L CNN
+F 1 "R" H 11570 2680 50  0000 L CNN
+F 2 "" V 11430 2725 50  0001 C CNN
+F 3 "~" H 11500 2725 50  0001 C CNN
+	1    11500 2725
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 675B0045
+P 11725 2725
+F 0 "R?" H 11795 2771 50  0000 L CNN
+F 1 "R" H 11795 2680 50  0000 L CNN
+F 2 "" V 11655 2725 50  0001 C CNN
+F 3 "~" H 11725 2725 50  0001 C CNN
+	1    11725 2725
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 675E18E7
+P 11950 2725
+F 0 "R?" H 12020 2771 50  0000 L CNN
+F 1 "R" H 12020 2680 50  0000 L CNN
+F 2 "" V 11880 2725 50  0001 C CNN
+F 3 "~" H 11950 2725 50  0001 C CNN
+	1    11950 2725
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 67613260
+P 12175 2725
+F 0 "R?" H 12245 2771 50  0000 L CNN
+F 1 "R" H 12245 2680 50  0000 L CNN
+F 2 "" V 12105 2725 50  0001 C CNN
+F 3 "~" H 12175 2725 50  0001 C CNN
+	1    12175 2725
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 67644AE6
+P 12400 2725
+F 0 "R?" H 12470 2771 50  0000 L CNN
+F 1 "R" H 12470 2680 50  0000 L CNN
+F 2 "" V 12330 2725 50  0001 C CNN
+F 3 "~" H 12400 2725 50  0001 C CNN
+	1    12400 2725
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 676761F6
+P 12625 2725
+F 0 "R?" H 12695 2771 50  0000 L CNN
+F 1 "R" H 12695 2680 50  0000 L CNN
+F 2 "" V 12555 2725 50  0001 C CNN
+F 3 "~" H 12625 2725 50  0001 C CNN
+	1    12625 2725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11500 3000 11725 3000
+Wire Wire Line
+	11725 3000 11725 2875
+Connection ~ 11500 3000
+Wire Wire Line
+	11725 3000 11950 3000
+Wire Wire Line
+	11950 3000 11950 2875
+Connection ~ 11725 3000
+Wire Wire Line
+	11950 3000 12175 3000
+Wire Wire Line
+	12175 3000 12175 2875
+Connection ~ 11950 3000
+Wire Wire Line
+	12175 3000 12400 3000
+Wire Wire Line
+	12400 3000 12400 2875
+Connection ~ 12175 3000
+Wire Wire Line
+	12400 3000 12625 3000
+Wire Wire Line
+	12625 3000 12625 2875
+Connection ~ 12400 3000
+Wire Wire Line
+	11450 2400 11500 2400
+Wire Wire Line
+	11500 2400 11500 2575
+Wire Wire Line
+	11450 2300 11725 2300
+Wire Wire Line
+	11725 2300 11725 2575
+Wire Wire Line
+	11450 2200 11950 2200
+Wire Wire Line
+	11950 2200 11950 2575
+Wire Wire Line
+	12175 2575 12175 2100
+Wire Wire Line
+	12175 2100 11450 2100
+Wire Wire Line
+	11450 2000 12400 2000
+Wire Wire Line
+	12400 2000 12400 2575
+Wire Wire Line
+	12625 2575 12625 1900
+Wire Wire Line
+	12625 1900 11450 1900
+Wire Wire Line
+	11500 2400 11500 1400
+Wire Wire Line
+	11500 1400 9275 1400
+Wire Wire Line
+	9275 1400 9275 700 
+Wire Wire Line
+	1150 700  1150 1700
+Wire Wire Line
+	1150 1700 1300 1700
+Wire Wire Line
+	1150 700  9275 700 
+Connection ~ 11500 2400
+Wire Wire Line
+	1300 1800 1125 1800
+Wire Wire Line
+	1125 1800 1125 675 
+Wire Wire Line
+	1125 675  9300 675 
+Wire Wire Line
+	9300 675  9300 1375
+Wire Wire Line
+	9300 1375 11725 1375
+Wire Wire Line
+	11725 1375 11725 2300
+Connection ~ 11725 2300
+Wire Wire Line
+	11950 2200 11950 1350
+Wire Wire Line
+	11950 1350 9325 1350
+Wire Wire Line
+	9325 1350 9325 650 
+Wire Wire Line
+	9325 650  1100 650 
+Wire Wire Line
+	1100 650  1100 1900
+Wire Wire Line
+	1100 1900 1300 1900
+Connection ~ 11950 2200
+Wire Wire Line
+	1300 2000 1075 2000
+Wire Wire Line
+	1075 2000 1075 625 
+Wire Wire Line
+	1075 625  9350 625 
+Wire Wire Line
+	9350 625  9350 1325
+Wire Wire Line
+	9350 1325 12175 1325
+Wire Wire Line
+	12175 1325 12175 2100
+Connection ~ 12175 2100
+Wire Wire Line
+	12400 2000 12400 1300
+Wire Wire Line
+	12400 1300 9375 1300
+Wire Wire Line
+	9375 1300 9375 600 
+Wire Wire Line
+	9375 600  1050 600 
+Wire Wire Line
+	1050 600  1050 2100
+Wire Wire Line
+	1050 2100 1300 2100
+Connection ~ 12400 2000
+Wire Wire Line
+	1300 2200 1025 2200
+Wire Wire Line
+	1025 2200 1025 575 
+Wire Wire Line
+	1025 575  9400 575 
+Wire Wire Line
+	9400 575  9400 1275
+Wire Wire Line
+	9400 1275 12625 1275
+Wire Wire Line
+	12625 1275 12625 1900
+Connection ~ 12625 1900
+$Comp
+L Device:Buzzer BZ?
+U 1 1 67A68A9E
+P 13050 2100
+F 0 "BZ?" H 13202 2129 50  0000 L CNN
+F 1 "Buzzer" H 13202 2038 50  0000 L CNN
+F 2 "" V 13025 2200 50  0001 C CNN
+F 3 "~" V 13025 2200 50  0001 C CNN
+	1    13050 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10225 3000 11500 3000
+Wire Wire Line
+	12625 3000 12950 3000
+Wire Wire Line
+	12950 3000 12950 2200
+Connection ~ 12625 3000
+Wire Wire Line
+	12950 2000 12950 1250
+Wire Wire Line
+	12950 1250 9425 1250
+Wire Wire Line
+	9425 1250 9425 550 
+Wire Wire Line
+	9425 550  1000 550 
+Wire Wire Line
+	1000 550  1000 2300
+Wire Wire Line
+	1000 2300 1300 2300
+$Comp
+L openmv_m7_r2:openMV_M7_R2 U?
+U 1 1 67CD24B8
+P 2350 14050
+F 0 "U?" H 2350 15215 50  0000 C CNN
+F 1 "openMV_M7_R2" H 2350 15124 50  0000 C CNN
+F 2 "" H 2350 15400 50  0001 C CNN
+F 3 "" H 2350 15400 50  0001 C CNN
+	1    2350 14050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 11050 6650 11050
+Wire Wire Line
+	4350 8850 925  8850
+Connection ~ 4350 8850
+Wire Wire Line
+	925  8850 925  14550
+Wire Wire Line
+	925  14550 1375 14550
+Wire Wire Line
+	4100 11050 4100 12650
+Wire Wire Line
+	2950 14550 4100 14550
+Connection ~ 4100 11050
+Wire Wire Line
+	1750 14350 1050 14350
+Wire Wire Line
+	1050 14350 1050 9025
+Wire Wire Line
+	1050 9025 4500 9025
+Wire Wire Line
+	4500 9025 4500 4150
+Wire Wire Line
+	4500 4150 3775 4150
+Wire Wire Line
+	3775 4150 3775 2300
+Wire Wire Line
+	3775 2300 3500 2300
+Wire Wire Line
+	3500 2400 3750 2400
+Wire Wire Line
+	3750 2400 3750 4175
+Wire Wire Line
+	3750 4175 4475 4175
+Wire Wire Line
+	4475 4175 4475 9000
+Wire Wire Line
+	4475 9000 1025 9000
+Wire Wire Line
+	1025 9000 1025 14250
+Wire Wire Line
+	1025 14250 1750 14250
+$Comp
+L Switch:SW_DIP_x01 set_goal_color
+U 1 1 68069763
+P 2275 12350
+F 0 "set_goal_color" H 2275 12617 50  0000 C CNN
+F 1 "SW_DIP_x01" H 2275 12526 50  0000 C CNN
+F 2 "" H 2275 12350 50  0001 C CNN
+F 3 "~" H 2275 12350 50  0001 C CNN
+	1    2275 12350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6806A728
+P 2575 12500
+F 0 "R?" H 2645 12546 50  0000 L CNN
+F 1 "R" H 2645 12455 50  0000 L CNN
+F 2 "" V 2505 12500 50  0001 C CNN
+F 3 "~" H 2575 12500 50  0001 C CNN
+	1    2575 12500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2575 12650 4100 12650
+Connection ~ 4100 12650
+Wire Wire Line
+	4100 12650 4100 14550
+Wire Wire Line
+	2575 12350 3275 12350
+Wire Wire Line
+	3275 12350 3275 14350
+Wire Wire Line
+	3275 14350 2950 14350
+Connection ~ 2575 12350
+Wire Wire Line
+	1975 12350 1375 12350
+Wire Wire Line
+	1375 12350 1375 14550
+Connection ~ 1375 14550
+Wire Wire Line
+	1375 14550 1750 14550
 $EndSCHEMATC
