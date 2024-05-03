@@ -1687,26 +1687,26 @@ Wire Wire Line
 Wire Wire Line
 	12750 6250 11900 6250
 $Comp
-L Device:Battery BT?
+L Device:Battery BT1
 U 1 1 66E12617
 P 850 7600
-F 0 "BT?" H 958 7646 50  0000 L CNN
-F 1 "Battery" H 958 7555 50  0000 L CNN
+F 0 "BT1" H 742 7554 50  0000 R CNN
+F 1 "Battery" H 742 7645 50  0000 R CNN
 F 2 "Connector_AMASS:AMASS_XT60-F_1x02_P7.20mm_Vertical" V 850 7660 50  0001 C CNN
 F 3 "~" V 850 7660 50  0001 C CNN
 	1    850  7600
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
-L Device:Battery BT?
+L Device:Battery BT2
 U 1 1 66E135A0
 P 1275 7600
-F 0 "BT?" H 1383 7646 50  0000 L CNN
-F 1 "Battery" H 1383 7555 50  0000 L CNN
+F 0 "BT2" H 1167 7554 50  0000 R CNN
+F 1 "Battery" H 1167 7645 50  0000 R CNN
 F 2 "Connector_AMASS:AMASS_XT30U-F_1x02_P5.0mm_Vertical" V 1275 7660 50  0001 C CNN
 F 3 "~" V 1275 7660 50  0001 C CNN
 	1    1275 7600
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	850  7400 1275 7400

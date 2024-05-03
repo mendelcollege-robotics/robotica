@@ -75,8 +75,6 @@ tijdelijke plaatsing tot goede gevonden
 Text Notes 2350 5100 0    50   ~ 0
 tijdelijke plaatsing tot goede gevonden
 Wire Wire Line
-	3450 5600 3575 5600
-Wire Wire Line
 	3450 5400 3700 5400
 Wire Wire Line
 	2450 6500 1800 6500
@@ -124,9 +122,9 @@ F 3 "http://www.ti.com/lit/ds/symlink/pca9548a.pdf" H 5050 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3500 2100 4600 2100
+	3500 2100 3900 2100
 Wire Wire Line
-	3500 2200 4600 2200
+	3500 2200 3875 2200
 Wire Wire Line
 	4350 1900 5000 1900
 Wire Wire Line
@@ -814,7 +812,7 @@ Connection ~ 18275 12325
 Wire Wire Line
 	3700 5400 3700 12325
 Wire Wire Line
-	3700 12325 16575 12325
+	3700 12325 6375 12325
 Connection ~ 3700 5400
 Wire Wire Line
 	3700 5400 4050 5400
@@ -1091,7 +1089,7 @@ Wire Wire Line
 Wire Wire Line
 	16875 11850 16875 12900
 Wire Wire Line
-	3575 12425 17025 12425
+	3575 12425 6400 12425
 Wire Wire Line
 	12100 12900 12100 10650
 Wire Wire Line
@@ -1725,4 +1723,53 @@ Wire Wire Line
 Wire Wire Line
 	600  6900 850  6900
 Connection ~ 850  7800
+$Comp
+L miniimu-9_v6:miniIMU-9_v6 U?
+U 1 1 6641AB3C
+P 5075 13425
+F 0 "U?" H 5553 13313 50  0000 L CNN
+F 1 "miniIMU-9_v6" H 5553 13222 50  0000 L CNN
+F 2 "" H 5075 13875 50  0001 C CNN
+F 3 "" H 5075 13875 50  0001 C CNN
+	1    5075 13425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4975 14025 4975 14200
+Wire Wire Line
+	5075 14025 5075 14225
+Wire Wire Line
+	3900 14200 3900 2100
+Wire Wire Line
+	3900 14200 4975 14200
+Connection ~ 3900 2100
+Wire Wire Line
+	3900 2100 4600 2100
+Wire Wire Line
+	3875 2200 3875 14225
+Wire Wire Line
+	3875 14225 5075 14225
+Connection ~ 3875 2200
+Wire Wire Line
+	3875 2200 4600 2200
+Wire Wire Line
+	3450 5600 3575 5600
+Wire Wire Line
+	5175 14025 5175 14325
+Wire Wire Line
+	5175 14325 6400 14325
+Wire Wire Line
+	6400 14325 6400 12425
+Connection ~ 6400 12425
+Wire Wire Line
+	6400 12425 17025 12425
+Wire Wire Line
+	5275 14025 5275 14300
+Wire Wire Line
+	5275 14300 6375 14300
+Wire Wire Line
+	6375 14300 6375 12325
+Connection ~ 6375 12325
+Wire Wire Line
+	6375 12325 16575 12325
 $EndSCHEMATC

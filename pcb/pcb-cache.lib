@@ -292,6 +292,23 @@ X in4 9 350 -500 100 U 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
+# miniimu-9_v6_miniIMU-9_v6
+#
+DEF miniimu-9_v6_miniIMU-9_v6 U 0 40 Y Y 1 F N
+F0 "U" 0 450 50 H V C CNN
+F1 "miniimu-9_v6_miniIMU-9_v6" 0 450 50 H V C CNN
+F2 "" 0 450 50 H I C CNN
+F3 "" 0 450 50 H I C CNN
+DRAW
+S 450 -600 -250 300 0 1 0 N
+X scl 0 -100 -600 100 U 50 50 1 1 B
+X sda 1 0 -600 100 U 50 50 1 1 B
+X gnd 2 100 -600 100 U 50 50 1 1 W
+X vin(2.5-5v) 3 200 -600 100 U 50 50 1 1 W
+X sa0 4 300 -600 100 U 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
 # openmv_m7_r2_openMV_M7_R2
 #
 DEF openmv_m7_r2_openMV_M7_R2 U 0 40 Y Y 1 F N
