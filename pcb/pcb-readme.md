@@ -1,4 +1,3 @@
-created in kicad
  
 teensy data from https://github.com/XenGi/teensy_library
 
