@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP CC6-1203SR-E
+D DC-DC Converters, On-board type, Output: 3.96W, 3.3V, Isolated type, Option: SMD type
+F https://product.tdk.com/system/files/dam/doc/product/power/switching-power/dc-dc-converter/catalog/cc-e_e.pdf
+$ENDCMP
+#
+#End Doc Library

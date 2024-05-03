@@ -61,42 +61,20 @@ F 3 "" H 2000 3950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 850  6900
-Connection ~ 1800 6500
-Wire Wire Line
-	1800 6500 1800 7350
-Wire Wire Line
-	1800 5400 1800 6500
 Wire Wire Line
 	850  6900 850  7150
 Wire Wire Line
-	850  5800 850  6900
+	850  5800 850  6700
 Text Notes 2200 6200 0    50   ~ 0
 tijdelijke plaatsing tot goede gevonden
 Text Notes 2350 5100 0    50   ~ 0
 tijdelijke plaatsing tot goede gevonden
 Wire Wire Line
-	3450 5600 3575 5600
-Wire Wire Line
 	3450 5400 3700 5400
-Wire Wire Line
-	2450 6500 1800 6500
-Wire Wire Line
-	2450 6900 1950 6900
 Wire Wire Line
 	850  5800 2450 5800
 Wire Wire Line
 	1800 5400 2450 5400
-$Comp
-L Converter_DCDC:ATA00F18S-L 3.3vconverter1
-U 1 1 6631FEBC
-P 2950 6700
-F 0 "3.3vconverter1" H 2950 7167 50  0000 C CNN
-F 1 "ATA00F18S-L" H 2950 7076 50  0000 C CNN
-F 2 "Converter_DCDC:Converter_DCDC_Artesyn_ATA_SMD" H 2950 6350 50  0001 C CIN
-F 3 "https://www.artesyn.com/power/assets/ata_series_ds_01apr2015_79c25814fd.pdf" H 2950 6250 50  0001 C CNN
-	1    2950 6700
-	1    0    0    -1  
-$EndComp
 $Comp
 L Converter_DCDC:ATA00A18S-L 5Vconverter1
 U 1 1 6631ECD9
@@ -108,8 +86,6 @@ F 3 "https://www.artesyn.com/power/assets/ata_series_ds_01apr2015_79c25814fd.pdf
 	1    2950 5600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3450 6500 4350 6500
 Wire Wire Line
 	4350 6500 4350 6250
 $Comp
@@ -124,9 +100,9 @@ F 3 "http://www.ti.com/lit/ds/symlink/pca9548a.pdf" H 5050 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3500 2100 4600 2100
+	3500 2100 3900 2100
 Wire Wire Line
-	3500 2200 4600 2200
+	3500 2200 3875 2200
 Wire Wire Line
 	4350 1900 5000 1900
 Wire Wire Line
@@ -304,8 +280,6 @@ Wire Wire Line
 Wire Wire Line
 	4100 11050 4100 8450
 Connection ~ 4100 6700
-Wire Wire Line
-	4100 6700 3450 6700
 Wire Wire Line
 	6600 8450 4100 8450
 Connection ~ 4100 8450
@@ -814,7 +788,7 @@ Connection ~ 18275 12325
 Wire Wire Line
 	3700 5400 3700 12325
 Wire Wire Line
-	3700 12325 16575 12325
+	3700 12325 6375 12325
 Connection ~ 3700 5400
 Wire Wire Line
 	3700 5400 4050 5400
@@ -884,7 +858,6 @@ Wire Wire Line
 	15350 8325 16700 8325
 Wire Wire Line
 	16700 8325 16700 8175
-Connection ~ 1950 6900
 Wire Wire Line
 	1950 6900 850  6900
 Wire Wire Line
@@ -1091,7 +1064,7 @@ Wire Wire Line
 Wire Wire Line
 	16875 11850 16875 12900
 Wire Wire Line
-	3575 12425 17025 12425
+	3575 12425 6400 12425
 Wire Wire Line
 	12100 12900 12100 10650
 Wire Wire Line
@@ -1725,4 +1698,90 @@ Wire Wire Line
 Wire Wire Line
 	600  6900 850  6900
 Connection ~ 850  7800
+$Comp
+L miniimu-9_v6:miniIMU-9_v6 U?
+U 1 1 6641AB3C
+P 5075 13425
+F 0 "U?" H 5553 13313 50  0000 L CNN
+F 1 "miniIMU-9_v6" H 5553 13222 50  0000 L CNN
+F 2 "" H 5075 13875 50  0001 C CNN
+F 3 "" H 5075 13875 50  0001 C CNN
+	1    5075 13425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4975 14025 4975 14200
+Wire Wire Line
+	5075 14025 5075 14225
+Wire Wire Line
+	3900 14200 3900 2100
+Wire Wire Line
+	3900 14200 4975 14200
+Connection ~ 3900 2100
+Wire Wire Line
+	3900 2100 4600 2100
+Wire Wire Line
+	3875 2200 3875 14225
+Wire Wire Line
+	3875 14225 5075 14225
+Connection ~ 3875 2200
+Wire Wire Line
+	3875 2200 4600 2200
+Wire Wire Line
+	3450 5600 3575 5600
+Wire Wire Line
+	5175 14025 5175 14325
+Wire Wire Line
+	5175 14325 6400 14325
+Wire Wire Line
+	6400 14325 6400 12425
+Connection ~ 6400 12425
+Wire Wire Line
+	6400 12425 17025 12425
+Wire Wire Line
+	5275 14025 5275 14300
+Wire Wire Line
+	5275 14300 6375 14300
+Wire Wire Line
+	6375 14300 6375 12325
+Connection ~ 6375 12325
+Wire Wire Line
+	6375 12325 16575 12325
+Text Notes 675  7900 0    50   ~ 0
+xt60 en xt30 connector
+$Comp
+L CC6-1203SR-E:CC6-1203SR-E 3.3vconverter
+U 1 1 66758C94
+P 2025 6500
+F 0 "3.3vconverter" H 2725 6765 50  0000 C CNN
+F 1 "CC6-1203SR-E" H 2725 6674 50  0000 C CNN
+F 2 "custom:CC60512SRE" H 3275 6600 50  0001 L CNN
+F 3 "https://product.tdk.com/system/files/dam/doc/product/power/switching-power/dc-dc-converter/catalog/cc-e_e.pdf" H 3275 6500 50  0001 L CNN
+F 4 "DC-DC Converters, On-board type, Output: 3.96W, 3.3V, Isolated type, Option: SMD type" H 3275 6400 50  0001 L CNN "Description"
+F 5 "8.8" H 3275 6300 50  0001 L CNN "Height"
+F 6 "TDK" H 3275 6200 50  0001 L CNN "Manufacturer_Name"
+F 7 "CC6-1203SR-E" H 3275 6100 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "967-CC6-1203SR-E" H 3275 6000 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/TDK-Lambda/CC6-1203SR-E?qs=Vwh6e7toGLi4J%2FzloL2n3g%3D%3D" H 3275 5900 50  0001 L CNN "Mouser Price/Stock"
+F 10 "CC6-1203SR-E" H 3275 5800 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/cc6-1203sr-e/tdk-lambda-americas?region=nac" H 3275 5700 50  0001 L CNN "Arrow Price/Stock"
+	1    2025 6500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 5400 1800 6500
+Wire Wire Line
+	3425 6500 4350 6500
+Wire Wire Line
+	3425 6700 4100 6700
+Wire Wire Line
+	1800 6500 2025 6500
+Connection ~ 1800 6500
+Wire Wire Line
+	1800 6500 1800 7350
+Wire Wire Line
+	2025 6700 850  6700
+Connection ~ 850  6700
+Wire Wire Line
+	850  6700 850  6900
 $EndSCHEMATC

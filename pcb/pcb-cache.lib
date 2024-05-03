@@ -1,60 +1,30 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Converter_DCDC_ATA00A18S-L
+# CC6-1203SR-E_CC6-1203SR-E
 #
-DEF Converter_DCDC_ATA00A18S-L U 0 20 Y Y 1 F N
-F0 "U" 0 450 50 H V C CNN
-F1 "Converter_DCDC_ATA00A18S-L" 0 350 50 H V C CNN
-F2 "Converter_DCDC:Converter_DCDC_Artesyn_ATA_SMD" 0 -350 50 H I C CIN
-F3 "" 0 -450 50 H I C CNN
-ALIAS ATA00A18S-L ATA00B18S-L ATA00C18S-L ATA00H18S-L ATA00F36S-L ATA00A36S-L ATA00B36S-L ATA00C36S-L ATA00H36S-L
-$FPLIST
- *Artesyn*ATA*SMD*
-$ENDFPLIST
+DEF CC6-1203SR-E_CC6-1203SR-E PS 0 30 Y Y 1 F N
+F0 "PS" 1250 300 50 H V L CNN
+F1 "CC6-1203SR-E_CC6-1203SR-E" 1250 200 50 H V L CNN
+F2 "custom:CC60512SRE" 1250 100 50 H I L CNN
+F3 "" 1250 0 50 H I L CNN
+F4 "DC-DC Converters, On-board type, Output: 3.96W, 3.3V, Isolated type, Option: SMD type" 1250 -100 50 H I L CNN "Description"
+F5 "8.8" 1250 -200 50 H I L CNN "Height"
+F6 "TDK" 1250 -300 50 H I L CNN "Manufacturer_Name"
+F7 "CC6-1203SR-E" 1250 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "967-CC6-1203SR-E" 1250 -500 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/TDK-Lambda/CC6-1203SR-E?qs=Vwh6e7toGLi4J%2FzloL2n3g%3D%3D" 1250 -600 50 H I L CNN "Mouser Price/Stock"
+F10 "CC6-1203SR-E" 1250 -700 50 H I L CNN "Arrow Part Number"
+F11 "https://www.arrow.com/en/products/cc6-1203sr-e/tdk-lambda-americas?region=nac" 1250 -800 50 H I L CNN "Arrow Price/Stock"
 DRAW
-S -400 300 400 -300 0 1 10 f
-P 2 0 1 0 0 -200 0 -250 N
-P 2 0 1 0 0 -100 0 -150 N
-P 2 0 1 0 0 0 0 -50 N
-P 2 0 1 0 0 100 0 50 N
-P 2 0 1 0 0 200 0 150 N
-P 2 0 1 0 0 300 0 250 N
-X -VIN 1 -500 -200 100 R 50 50 1 1 W
-X -VOUT 10 500 0 100 L 50 50 1 1 w
-X +VIN 16 -500 200 100 R 50 50 1 1 W
-X ON/~OFF 2 -500 0 100 R 50 50 1 1 I
-X NC 7 400 -100 100 L 50 50 1 1 N N
-X NC 8 400 -200 100 L 50 50 1 1 N N
-X +VOUT 9 500 200 100 L 50 50 1 1 w
-ENDDRAW
-ENDDEF
-#
-# Converter_DCDC_ATA00F18S-L
-#
-DEF Converter_DCDC_ATA00F18S-L U 0 20 Y Y 1 F N
-F0 "U" 0 450 50 H V C CNN
-F1 "Converter_DCDC_ATA00F18S-L" 0 350 50 H V C CNN
-F2 "Converter_DCDC:Converter_DCDC_Artesyn_ATA_SMD" 0 -350 50 H I C CIN
-F3 "" 0 -450 50 H I C CNN
-$FPLIST
- *Artesyn*ATA*SMD*
-$ENDFPLIST
-DRAW
-S -400 300 400 -300 0 1 10 f
-P 2 0 1 0 0 -200 0 -250 N
-P 2 0 1 0 0 -100 0 -150 N
-P 2 0 1 0 0 0 0 -50 N
-P 2 0 1 0 0 100 0 50 N
-P 2 0 1 0 0 200 0 150 N
-P 2 0 1 0 0 300 0 250 N
-X -VIN 1 -500 -200 100 R 50 50 1 1 W
-X -VOUT 10 500 0 100 L 50 50 1 1 w
-X +VIN 16 -500 200 100 R 50 50 1 1 W
-X ON/~OFF 2 -500 0 100 R 50 50 1 1 I
-X NC 7 400 -100 100 L 50 50 1 1 N N
-X NC 8 400 -200 100 L 50 50 1 1 N N
-X +VOUT 9 500 200 100 L 50 50 1 1 w
+P 5 0 1 6 200 100 1200 100 1200 -400 200 -400 200 100 N
+X +VIN 1 0 0 200 R 50 50 0 0 P
+X RC 2 0 -100 200 R 50 50 0 0 P
+X -VIN 3 0 -200 200 R 50 50 0 0 P
+X NC 4 1400 -300 200 L 50 50 0 0 N
+X -VOUT 5 1400 -200 200 L 50 50 0 0 P
+X TRM 6 1400 -100 200 L 50 50 0 0 P
+X +VOUT 7 1400 0 200 L 50 50 0 0 P
 ENDDRAW
 ENDDEF
 #
@@ -264,6 +234,32 @@ X ~ 6 -300 -200 200 R 50 50 1 1 P
 X ~ 7 300 -200 200 L 50 50 1 1 P
 X ~ 8 300 -100 200 L 50 50 1 1 P
 X ~ 9 300 0 200 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# cc6-1205sf-e_CC6-1205SF-E
+#
+DEF cc6-1205sf-e_CC6-1205SF-E U 0 30 Y Y 1 F N
+F0 "U" 1050 300 50 H V L CNN
+F1 "cc6-1205sf-e_CC6-1205SF-E" 1050 200 50 H V L CNN
+F2 "CC6_SF" 1050 100 50 H I L CNN
+F3 "https://product.tdk.com/system/files/dam/doc/product/power/switching-power/dc-dc-converter/catalog/cc-e_e.pdf" 1050 0 50 H I L CNN
+F4 "dcdc,convertor TDK-Lambda Through Hole Isolated DC-DC Converter, I/O isolation 500V ac, Vout 5V dc" 1050 -100 50 H I L CNN "Description"
+F5 "TDK" 1050 -300 50 H I L CNN "Manufacturer_Name"
+F6 "CC6-1205SF-E" 1050 -400 50 H I L CNN "Manufacturer_Part_Number"
+F7 "967-CC6-1205SF-E" 1050 -500 50 H I L CNN "Mouser Part Number"
+F8 "https://www.mouser.co.uk/ProductDetail/TDK-Lambda/CC6-1205SF-E?qs=Vwh6e7toGLhaPHzXVKmH%252BA%3D%3D" 1050 -600 50 H I L CNN "Mouser Price/Stock"
+F9 "CC6-1205SF-E" 1050 -700 50 H I L CNN "Arrow Part Number"
+F10 "https://www.arrow.com/en/products/cc6-1205sf-e/tdk-lambda-americas?region=nac" 1050 -800 50 H I L CNN "Arrow Price/Stock"
+DRAW
+P 5 0 1 6 200 100 1000 100 1000 -400 200 -400 200 100 N
+X +VIN 1 0 0 200 R 50 50 0 0 P
+X RC 2 0 -100 200 R 50 50 0 0 P
+X -VIN 3 0 -200 200 R 50 50 0 0 P
+X NC 4 0 -300 200 R 50 50 0 0 N
+X -VOUT 5 1200 0 200 L 50 50 0 0 P
+X TRM 6 1200 -100 200 L 50 50 0 0 P
+X +VOUT 7 1200 -200 200 L 50 50 0 0 P
 ENDDRAW
 ENDDEF
 #

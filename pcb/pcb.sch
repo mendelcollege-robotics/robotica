@@ -45,10 +45,6 @@ Text GLabel 1800 6150 0    50   Input ~ 0
 vcc
 Text GLabel 1800 6250 0    50   Input ~ 0
 12v
-Wire Wire Line
-	4050 4950 4050 5400
-Wire Wire Line
-	4150 5600 4150 4900
 $Comp
 L pcb-rescue:Teensy4.1-teensy controllboard1
 U 1 1 66315BAB
@@ -61,53 +57,8 @@ F 3 "" H 2000 3950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 850  6900
-Connection ~ 1800 6500
-Wire Wire Line
-	1800 6500 1800 7350
-Wire Wire Line
-	1800 5400 1800 6500
 Wire Wire Line
 	850  6900 850  7150
-Wire Wire Line
-	850  5800 850  6900
-Text Notes 2200 6200 0    50   ~ 0
-tijdelijke plaatsing tot goede gevonden
-Text Notes 2350 5100 0    50   ~ 0
-tijdelijke plaatsing tot goede gevonden
-Wire Wire Line
-	3450 5400 3700 5400
-Wire Wire Line
-	2450 6500 1800 6500
-Wire Wire Line
-	2450 6900 1950 6900
-Wire Wire Line
-	850  5800 2450 5800
-Wire Wire Line
-	1800 5400 2450 5400
-$Comp
-L Converter_DCDC:ATA00F18S-L 3.3vconverter1
-U 1 1 6631FEBC
-P 2950 6700
-F 0 "3.3vconverter1" H 2950 7167 50  0000 C CNN
-F 1 "ATA00F18S-L" H 2950 7076 50  0000 C CNN
-F 2 "Converter_DCDC:Converter_DCDC_Artesyn_ATA_SMD" H 2950 6350 50  0001 C CIN
-F 3 "https://www.artesyn.com/power/assets/ata_series_ds_01apr2015_79c25814fd.pdf" H 2950 6250 50  0001 C CNN
-	1    2950 6700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Converter_DCDC:ATA00A18S-L 5Vconverter1
-U 1 1 6631ECD9
-P 2950 5600
-F 0 "5Vconverter1" H 2950 6067 50  0000 C CNN
-F 1 "ATA00A18S-L" H 2950 5976 50  0000 C CNN
-F 2 "Converter_DCDC:Converter_DCDC_Artesyn_ATA_SMD" H 2950 5250 50  0001 C CIN
-F 3 "https://www.artesyn.com/power/assets/ata_series_ds_01apr2015_79c25814fd.pdf" H 2950 5150 50  0001 C CNN
-	1    2950 5600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3450 6500 4350 6500
 Wire Wire Line
 	4350 6500 4350 6250
 $Comp
@@ -302,8 +253,6 @@ Wire Wire Line
 Wire Wire Line
 	4100 11050 4100 8450
 Connection ~ 4100 6700
-Wire Wire Line
-	4100 6700 3450 6700
 Wire Wire Line
 	6600 8450 4100 8450
 Connection ~ 4100 8450
@@ -810,18 +759,8 @@ Wire Wire Line
 	16575 12325 16575 11850
 Connection ~ 18275 12325
 Wire Wire Line
-	3700 5400 3700 12325
-Wire Wire Line
 	3700 12325 6375 12325
-Connection ~ 3700 5400
-Wire Wire Line
-	3700 5400 4050 5400
 Connection ~ 16575 12325
-Wire Wire Line
-	3575 5600 3575 12425
-Connection ~ 3575 5600
-Wire Wire Line
-	3575 5600 4150 5600
 Connection ~ 18725 12425
 Wire Wire Line
 	18725 12425 20475 12425
@@ -882,7 +821,6 @@ Wire Wire Line
 	15350 8325 16700 8325
 Wire Wire Line
 	16700 8325 16700 8175
-Connection ~ 1950 6900
 Wire Wire Line
 	1950 6900 850  6900
 Wire Wire Line
@@ -1753,8 +1691,6 @@ Connection ~ 3875 2200
 Wire Wire Line
 	3875 2200 4600 2200
 Wire Wire Line
-	3450 5600 3575 5600
-Wire Wire Line
 	5175 14025 5175 14325
 Wire Wire Line
 	5175 14325 6400 14325
@@ -1772,4 +1708,83 @@ Wire Wire Line
 Connection ~ 6375 12325
 Wire Wire Line
 	6375 12325 16575 12325
+Text Notes 675  7900 0    50   ~ 0
+xt60 en xt30 connector
+$Comp
+L CC6-1203SR-E:CC6-1203SR-E 3.3vconverter
+U 1 1 66758C94
+P 2025 6500
+F 0 "3.3vconverter" H 2725 6765 50  0000 C CNN
+F 1 "CC6-1203SR-E" H 2725 6674 50  0000 C CNN
+F 2 "custom:CC60512SRE" H 3275 6600 50  0001 L CNN
+F 3 "https://product.tdk.com/system/files/dam/doc/product/power/switching-power/dc-dc-converter/catalog/cc-e_e.pdf" H 3275 6500 50  0001 L CNN
+F 4 "DC-DC Converters, On-board type, Output: 3.96W, 3.3V, Isolated type, Option: SMD type" H 3275 6400 50  0001 L CNN "Description"
+F 5 "8.8" H 3275 6300 50  0001 L CNN "Height"
+F 6 "TDK" H 3275 6200 50  0001 L CNN "Manufacturer_Name"
+F 7 "CC6-1203SR-E" H 3275 6100 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "967-CC6-1203SR-E" H 3275 6000 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/TDK-Lambda/CC6-1203SR-E?qs=Vwh6e7toGLi4J%2FzloL2n3g%3D%3D" H 3275 5900 50  0001 L CNN "Mouser Price/Stock"
+F 10 "CC6-1203SR-E" H 3275 5800 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/cc6-1203sr-e/tdk-lambda-americas?region=nac" H 3275 5700 50  0001 L CNN "Arrow Price/Stock"
+	1    2025 6500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 5400 1800 6500
+Wire Wire Line
+	3425 6500 4350 6500
+Wire Wire Line
+	3425 6700 4100 6700
+Wire Wire Line
+	1800 6500 2025 6500
+Connection ~ 1800 6500
+Wire Wire Line
+	1800 6500 1800 7350
+Wire Wire Line
+	2025 6700 850  6700
+Connection ~ 850  6700
+Wire Wire Line
+	850  6700 850  6900
+$Comp
+L cc6-1205sf-e:CC6-1205SF-E 5vconverter
+U 1 1 66A897F1
+P 2250 5400
+F 0 "5vconverter" H 2850 5665 50  0000 C CNN
+F 1 "CC6-1205SF-E" H 2850 5574 50  0000 C CNN
+F 2 "CC6_SF" H 3300 5500 50  0001 L CNN
+F 3 "https://product.tdk.com/system/files/dam/doc/product/power/switching-power/dc-dc-converter/catalog/cc-e_e.pdf" H 3300 5400 50  0001 L CNN
+F 4 "dcdc,convertor TDK-Lambda Through Hole Isolated DC-DC Converter, I/O isolation 500V ac, Vout 5V dc" H 3300 5300 50  0001 L CNN "Description"
+F 5 "TDK" H 3300 5100 50  0001 L CNN "Manufacturer_Name"
+F 6 "CC6-1205SF-E" H 3300 5000 50  0001 L CNN "Manufacturer_Part_Number"
+F 7 "967-CC6-1205SF-E" H 3300 4900 50  0001 L CNN "Mouser Part Number"
+F 8 "https://www.mouser.co.uk/ProductDetail/TDK-Lambda/CC6-1205SF-E?qs=Vwh6e7toGLhaPHzXVKmH%252BA%3D%3D" H 3300 4800 50  0001 L CNN "Mouser Price/Stock"
+F 9 "CC6-1205SF-E" H 3300 4700 50  0001 L CNN "Arrow Part Number"
+F 10 "https://www.arrow.com/en/products/cc6-1205sf-e/tdk-lambda-americas?region=nac" H 3300 4600 50  0001 L CNN "Arrow Price/Stock"
+	1    2250 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 5400 1800 5400
+Wire Wire Line
+	2250 5600 850  5600
+Wire Wire Line
+	850  5600 850  6700
+Wire Wire Line
+	3450 5400 3575 5400
+Wire Wire Line
+	4150 5400 4150 4900
+Wire Wire Line
+	3575 5400 3575 12425
+Connection ~ 3575 5400
+Wire Wire Line
+	3575 5400 4150 5400
+Wire Wire Line
+	3450 5600 3700 5600
+Wire Wire Line
+	4050 5600 4050 4950
+Wire Wire Line
+	3700 12325 3700 5600
+Connection ~ 3700 5600
+Wire Wire Line
+	3700 5600 4050 5600
 $EndSCHEMATC
