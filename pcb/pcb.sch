@@ -1711,7 +1711,7 @@ Wire Wire Line
 Text Notes 675  7900 0    50   ~ 0
 xt60 en xt30 connector
 $Comp
-L CC6-1203SR-E:CC6-1203SR-E 3.3vconverter
+L pcb-rescue:CC6-1203SR-E-CC6-1203SR-E 3.3vconverter
 U 1 1 66758C94
 P 2025 6500
 F 0 "3.3vconverter" H 2725 6765 50  0000 C CNN
