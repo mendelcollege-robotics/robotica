@@ -71,13 +71,13 @@ $EndComp
 $Comp
 L Switch:SW_DIP_x01 goal_kleur
 U 1 1 66365885
-P 3225 8450
-F 0 "goal_kleur" H 3225 8717 50  0000 C CNN
-F 1 "SW_DIP_x01" H 3225 8626 50  0000 C CNN
-F 2 "" H 3225 8450 50  0001 C CNN
-F 3 "~" H 3225 8450 50  0001 C CNN
-	1    3225 8450
-	1    0    0    -1  
+P 10775 5125
+F 0 "goal_kleur" H 10775 4858 50  0000 C CNN
+F 1 "SW_DIP_x01" H 10775 4949 50  0000 C CNN
+F 2 "" H 10775 5125 50  0001 C CNN
+F 3 "~" H 10775 5125 50  0001 C CNN
+	1    10775 5125
+	-1   0    0    1   
 $EndComp
 $Comp
 L tssp4038:tssp4038 ir_sensor_2
@@ -245,7 +245,7 @@ F 3 "" H 8350 1575 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7225 7300 8100 7300
+	7225 7300 7350 7300
 Wire Wire Line
 	8100 7300 8100 10775
 Wire Wire Line
@@ -253,7 +253,7 @@ Wire Wire Line
 Text GLabel 1300 10775 0    50   Input ~ 0
 scl
 Wire Wire Line
-	7225 7400 8075 7400
+	7225 7400 7425 7400
 Wire Wire Line
 	8075 7400 8075 10675
 Wire Wire Line
@@ -269,7 +269,7 @@ Wire Wire Line
 Text GLabel 1300 10875 0    50   Input ~ 0
 gnd
 Wire Wire Line
-	7225 6600 8150 6600
+	7225 6600 7675 6600
 Wire Wire Line
 	8150 6600 8150 10975
 Wire Wire Line
@@ -683,13 +683,13 @@ $EndComp
 $Comp
 L Device:R R1
 U 1 1 665A1C89
-P 2200 8400
-F 0 "R1" V 1993 8400 50  0000 C CNN
-F 1 "R" V 2084 8400 50  0000 C CNN
-F 2 "custom:resistor" V 2130 8400 50  0001 C CNN
-F 3 "~" H 2200 8400 50  0001 C CNN
-	1    2200 8400
-	0    1    1    0   
+P 10225 4600
+F 0 "R1" V 10018 4600 50  0000 C CNN
+F 1 "R" V 10109 4600 50  0000 C CNN
+F 2 "custom:resistor" V 10155 4600 50  0001 C CNN
+F 3 "~" H 10225 4600 50  0001 C CNN
+	1    10225 4600
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	5025 6900 4050 6900
@@ -771,11 +771,121 @@ Wire Wire Line
 Connection ~ 4350 6025
 Connection ~ 4200 6025
 Wire Wire Line
-	4800 6025 7550 6025
+	4800 6025 7275 6025
 Wire Wire Line
 	7550 6025 7550 6700
 Connection ~ 4800 6025
 Connection ~ 7550 6700
 Wire Wire Line
 	7550 6700 8125 6700
+Wire Wire Line
+	9950 5625 10225 5625
+Wire Wire Line
+	10225 5625 10225 5125
+Wire Wire Line
+	10475 5125 10225 5125
+Connection ~ 10225 5125
+Wire Wire Line
+	10225 5125 10225 4750
+Wire Wire Line
+	11075 5125 11075 6800
+Wire Wire Line
+	11075 6800 11025 6800
+Connection ~ 11025 6800
+Wire Wire Line
+	10225 4450 10025 4450
+Wire Wire Line
+	10025 4450 10025 5825
+Connection ~ 10025 5825
+$Comp
+L Device:Buzzer BZ?
+U 1 1 663737AA
+P 3950 8225
+F 0 "BZ?" H 3955 8515 50  0000 C CNN
+F 1 "Buzzer" H 3955 8424 50  0000 C CNN
+F 2 "" V 3925 8325 50  0001 C CNN
+F 3 "~" V 3925 8325 50  0001 C CNN
+	1    3950 8225
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 8125 4500 8125
+Wire Wire Line
+	4500 8125 4500 7500
+Wire Wire Line
+	4500 7500 5025 7500
+Wire Wire Line
+	2900 6025 4050 6025
+Wire Wire Line
+	4050 8325 4300 8325
+Connection ~ 4050 6025
+Wire Wire Line
+	2900 8475 4300 8475
+Wire Wire Line
+	4300 8475 4300 8325
+Wire Wire Line
+	2900 6025 2900 8475
+$Comp
+L miniimu-9_v6:miniIMU-9_v6 U?
+U 1 1 663B967A
+P 7050 4650
+F 0 "U?" H 7528 4538 50  0000 L CNN
+F 1 "miniIMU-9_v6" H 7528 4447 50  0000 L CNN
+F 2 "custom:miniIMU-9_v6" H 7050 5100 50  0001 C CNN
+F 3 "" H 7050 5100 50  0001 C CNN
+	1    7050 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 5250 7150 5550
+Wire Wire Line
+	7150 5550 7275 5550
+Wire Wire Line
+	7275 5550 7275 6025
+Connection ~ 7275 6025
+Wire Wire Line
+	7275 6025 7550 6025
+Wire Wire Line
+	7675 6600 7675 5500
+Wire Wire Line
+	7675 5500 7250 5500
+Wire Wire Line
+	7250 5500 7250 5250
+Connection ~ 7675 6600
+Wire Wire Line
+	7675 6600 8150 6600
+Wire Wire Line
+	7050 5250 7050 6175
+Wire Wire Line
+	7050 6175 7425 6175
+Wire Wire Line
+	7425 6175 7425 7400
+Connection ~ 7425 7400
+Wire Wire Line
+	7425 7400 8075 7400
+Wire Wire Line
+	7350 7300 7350 6250
+Wire Wire Line
+	7350 6250 6950 6250
+Wire Wire Line
+	6950 6250 6950 5250
+Connection ~ 7350 7300
+Wire Wire Line
+	7350 7300 8100 7300
+Text GLabel 1300 10175 0    50   Input ~ 0
+A
+Text GLabel 1300 10075 0    50   Input ~ 0
+B
+Wire Wire Line
+	4800 7700 5025 7700
+Wire Wire Line
+	950  10175 4800 10175
+Wire Wire Line
+	4800 10175 4800 7700
+Wire Wire Line
+	5025 7600 4775 7600
+Wire Wire Line
+	4775 7600 4775 10075
+Wire Wire Line
+	4775 10075 950  10075
 $EndSCHEMATC

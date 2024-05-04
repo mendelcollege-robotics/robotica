@@ -1,6 +1,26 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
+# Device_Buzzer
+#
+DEF Device_Buzzer BZ 0 1 Y N 1 F N
+F0 "BZ" 150 50 50 H V L CNN
+F1 "Device_Buzzer" 150 -50 50 H V L CNN
+F2 "" -25 100 50 V I C CNN
+F3 "" -25 100 50 V I C CNN
+$FPLIST
+ *Buzzer*
+$ENDFPLIST
+DRAW
+A 0 0 125 -899 899 0 1 0 N 0 -125 0 125
+P 2 0 1 0 -65 75 -45 75 N
+P 2 0 1 0 -55 85 -55 65 N
+P 2 0 1 0 0 125 0 -125 N
+X - 1 -100 100 100 R 50 50 1 1 P
+X + 2 -100 -100 100 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Device_R
 #
 DEF Device_R R 0 0 N Y 1 F N
@@ -123,6 +143,23 @@ X ~ 6 -300 -200 200 R 50 50 1 1 P
 X ~ 7 300 -200 200 L 50 50 1 1 P
 X ~ 8 300 -100 200 L 50 50 1 1 P
 X ~ 9 300 0 200 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# miniimu-9_v6_miniIMU-9_v6
+#
+DEF miniimu-9_v6_miniIMU-9_v6 U 0 40 Y Y 1 F N
+F0 "U" 0 450 50 H V C CNN
+F1 "miniimu-9_v6_miniIMU-9_v6" 0 450 50 H V C CNN
+F2 "" 0 450 50 H I C CNN
+F3 "" 0 450 50 H I C CNN
+DRAW
+S 450 -600 -250 300 0 1 0 N
+X scl 0 -100 -600 100 U 50 50 1 1 B
+X sda 1 0 -600 100 U 50 50 1 1 B
+X gnd 2 100 -600 100 U 50 50 1 1 W
+X vin(2.5-5v) 3 200 -600 100 U 50 50 1 1 W
+X sa0 4 300 -600 100 U 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #

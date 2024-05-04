@@ -963,17 +963,6 @@ Wire Wire Line
 Connection ~ 10850 2200
 Connection ~ 10850 2300
 $Comp
-L Device:R R2
-U 1 1 675AF867
-P 11500 2725
-F 0 "R2" H 11570 2771 50  0000 L CNN
-F 1 "R" H 11570 2680 50  0000 L CNN
-F 2 "custom:resistor" V 11430 2725 50  0001 C CNN
-F 3 "~" H 11500 2725 50  0001 C CNN
-	1    11500 2725
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R3
 U 1 1 675B0045
 P 11725 2725
@@ -1907,4 +1896,15 @@ Wire Wire Line
 Connection ~ 3575 5975
 Wire Wire Line
 	3575 5975 3575 12425
+$Comp
+L Device:R R2
+U 1 1 675AF867
+P 11500 2725
+F 0 "R2" H 11570 2771 50  0000 L CNN
+F 1 "R" H 11570 2680 50  0000 L CNN
+F 2 "custom:resistor" V 11430 2725 50  0001 C CNN
+F 3 "~" H 11500 2725 50  0001 C CNN
+	1    11500 2725
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
