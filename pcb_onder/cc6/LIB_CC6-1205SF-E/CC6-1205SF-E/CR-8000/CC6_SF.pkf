@@ -1,0 +1,10 @@
+(unit MM)
+
+(package "CC6_SF"
+    (type UNDEF)
+    (uver 2)
+    (mountForm default
+        (footprintRef "CC6_SF")
+        (spec "default")
+    )
+)

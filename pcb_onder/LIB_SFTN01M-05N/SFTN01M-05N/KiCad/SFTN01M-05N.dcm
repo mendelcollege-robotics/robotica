@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP SFTN01M-05N
+D Isolated DC/DC Converters - SMD 1W 12Vin 5Vout 20-200mA SMT Unregulated
+K
+F https://www.meanwell.com/webapp/product/search.aspx?prod=SFTN01-N
+$ENDCMP
+#
+#End Doc Library

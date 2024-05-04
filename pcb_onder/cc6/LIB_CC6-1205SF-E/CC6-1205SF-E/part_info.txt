@@ -1,0 +1,9 @@
+Manufacturer=TDK
+PartNumber=CC6-1205SF-E
+PartCategory=Undefined or Miscellaneous
+PackageCategory=Other
+PinCount=7
+Version=4.1
+Released=2017-10-17 09:26:56
+Downloaded=2024-05-03 11:30:32
+3D=Y
