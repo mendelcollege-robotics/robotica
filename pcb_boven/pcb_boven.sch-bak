@@ -14,10 +14,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L openmv_m7_r2:openMV_M7_R2 U?
+L openmv_m7_r2:openMV_M7_R2 U2
 U 1 1 66360711
 P 9350 5325
-F 0 "U?" H 9350 6490 50  0000 C CNN
+F 0 "U2" H 9350 6490 50  0000 C CNN
 F 1 "openMV_M7_R2" H 9350 6399 50  0000 C CNN
 F 2 "custom:openmv_m7_r2" H 9350 6675 50  0001 C CNN
 F 3 "" H 9350 6675 50  0001 C CNN
@@ -47,10 +47,10 @@ F 3 "" H 825 425 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L teensy:Teensy4.1 control_board
+L teensy:Teensy4.1 control_board1
 U 1 1 66362D60
 P 6125 8750
-F 0 "control_board" H 6125 11315 50  0000 C CNN
+F 0 "control_board1" H 6125 11315 50  0000 C CNN
 F 1 "Teensy4.1" H 6125 11224 50  0000 C CNN
 F 2 "" H 5725 9150 50  0001 C CNN
 F 3 "" H 5725 9150 50  0001 C CNN
@@ -58,10 +58,10 @@ F 3 "" H 5725 9150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_DIP_x06 dip_swith_instellinen
+L Switch:SW_DIP_x06 dip_swith_instellinen1
 U 1 1 66364D70
 P 3575 7200
-F 0 "dip_swith_instellinen" H 3575 7767 50  0000 C CNN
+F 0 "dip_swith_instellinen1" H 3575 7767 50  0000 C CNN
 F 1 "SW_DIP_x06" H 3575 7676 50  0000 C CNN
 F 2 "" H 3575 7200 50  0001 C CNN
 F 3 "~" H 3575 7200 50  0001 C CNN
@@ -69,10 +69,10 @@ F 3 "~" H 3575 7200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_DIP_x01 goal_kleur
+L Switch:SW_DIP_x01 goal_kleur1
 U 1 1 66365885
 P 10775 5125
-F 0 "goal_kleur" H 10775 4858 50  0000 C CNN
+F 0 "goal_kleur1" H 10775 4858 50  0000 C CNN
 F 1 "SW_DIP_x01" H 10775 4949 50  0000 C CNN
 F 2 "" H 10775 5125 50  0001 C CNN
 F 3 "~" H 10775 5125 50  0001 C CNN
@@ -798,10 +798,10 @@ Wire Wire Line
 	10025 4450 10025 5825
 Connection ~ 10025 5825
 $Comp
-L Device:Buzzer BZ?
+L Device:Buzzer BZ1
 U 1 1 663737AA
 P 3950 8225
-F 0 "BZ?" H 3955 8515 50  0000 C CNN
+F 0 "BZ1" H 3955 8515 50  0000 C CNN
 F 1 "Buzzer" H 3955 8424 50  0000 C CNN
 F 2 "" V 3925 8325 50  0001 C CNN
 F 3 "~" V 3925 8325 50  0001 C CNN
@@ -826,10 +826,10 @@ Wire Wire Line
 Wire Wire Line
 	2900 6025 2900 8475
 $Comp
-L miniimu-9_v6:miniIMU-9_v6 U?
+L miniimu-9_v6:miniIMU-9_v6 U1
 U 1 1 663B967A
 P 7050 4650
-F 0 "U?" H 7528 4538 50  0000 L CNN
+F 0 "U1" H 7528 4538 50  0000 L CNN
 F 1 "miniIMU-9_v6" H 7528 4447 50  0000 L CNN
 F 2 "custom:miniIMU-9_v6" H 7050 5100 50  0001 C CNN
 F 3 "" H 7050 5100 50  0001 C CNN
