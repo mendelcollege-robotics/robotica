@@ -71,13 +71,13 @@ $EndComp
 $Comp
 L Switch:SW_DIP_x01 goal_kleur
 U 1 1 66365885
-P 10775 5125
-F 0 "goal_kleur" H 10775 4858 50  0000 C CNN
-F 1 "SW_DIP_x01" H 10775 4949 50  0000 C CNN
-F 2 "" H 10775 5125 50  0001 C CNN
-F 3 "~" H 10775 5125 50  0001 C CNN
-	1    10775 5125
-	-1   0    0    1   
+P 3225 8450
+F 0 "goal_kleur" H 3225 8717 50  0000 C CNN
+F 1 "SW_DIP_x01" H 3225 8626 50  0000 C CNN
+F 2 "" H 3225 8450 50  0001 C CNN
+F 3 "~" H 3225 8450 50  0001 C CNN
+	1    3225 8450
+	1    0    0    -1  
 $EndComp
 $Comp
 L tssp4038:tssp4038 ir_sensor_2
@@ -683,13 +683,13 @@ $EndComp
 $Comp
 L Device:R R1
 U 1 1 665A1C89
-P 10225 4600
-F 0 "R1" V 10018 4600 50  0000 C CNN
-F 1 "R" V 10109 4600 50  0000 C CNN
-F 2 "custom:resistor" V 10155 4600 50  0001 C CNN
-F 3 "~" H 10225 4600 50  0001 C CNN
-	1    10225 4600
-	1    0    0    -1  
+P 2200 8400
+F 0 "R1" V 1993 8400 50  0000 C CNN
+F 1 "R" V 2084 8400 50  0000 C CNN
+F 2 "custom:resistor" V 2130 8400 50  0001 C CNN
+F 3 "~" H 2200 8400 50  0001 C CNN
+	1    2200 8400
+	0    1    1    0   
 $EndComp
 Wire Wire Line
 	5025 6900 4050 6900
@@ -778,23 +778,4 @@ Connection ~ 4800 6025
 Connection ~ 7550 6700
 Wire Wire Line
 	7550 6700 8125 6700
-Wire Wire Line
-	9950 5625 10225 5625
-Wire Wire Line
-	10225 5625 10225 5125
-Wire Wire Line
-	10475 5125 10225 5125
-Connection ~ 10225 5125
-Wire Wire Line
-	10225 5125 10225 4750
-Wire Wire Line
-	11075 5125 11075 6800
-Wire Wire Line
-	11075 6800 11025 6800
-Connection ~ 11025 6800
-Wire Wire Line
-	10225 4450 10025 4450
-Wire Wire Line
-	10025 4450 10025 5825
-Connection ~ 10025 5825
 $EndSCHEMATC
