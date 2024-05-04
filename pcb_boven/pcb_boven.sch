@@ -299,12 +299,6 @@ Wire Wire Line
 Wire Wire Line
 	10025 5825 10025 6975
 Wire Wire Line
-	10025 6975 9100 6975
-Wire Wire Line
-	9100 6975 9100 10375
-Wire Wire Line
-	9100 10375 950  10375
-Wire Wire Line
 	9075 10275 9075 6800
 Wire Wire Line
 	8700 5825 8750 5825
@@ -312,8 +306,6 @@ Wire Wire Line
 	950  10275 9075 10275
 Text GLabel 1300 10275 0    50   Input ~ 0
 3.3v
-Text GLabel 1300 10375 0    50   Input ~ 0
-gnd
 Wire Wire Line
 	11025 6800 9075 6800
 Connection ~ 9075 6800
@@ -888,4 +880,23 @@ Wire Wire Line
 	4775 7600 4775 10075
 Wire Wire Line
 	4775 10075 950  10075
+Wire Wire Line
+	8125 6700 8350 6700
+Wire Wire Line
+	8625 6700 8625 6975
+Wire Wire Line
+	8625 6975 10025 6975
+Connection ~ 8125 6700
+Wire Wire Line
+	8350 2350 8350 6700
+Connection ~ 8350 2350
+Connection ~ 8350 6700
+Wire Wire Line
+	8350 6700 8625 6700
+Wire Wire Line
+	8200 2375 8200 5825
+Wire Wire Line
+	8200 5825 8700 5825
+Connection ~ 8200 2375
+Connection ~ 8700 5825
 $EndSCHEMATC
