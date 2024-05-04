@@ -1588,14 +1588,11 @@ F 11 "https://www.arrow.com/en/products/cc6-1203sr-e/tdk-lambda-americas?region=
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1800 5400 1800 6500
-Wire Wire Line
 	3425 6500 4350 6500
 Wire Wire Line
 	3425 6700 4100 6700
 Wire Wire Line
 	1800 6500 2025 6500
-Connection ~ 1800 6500
 Wire Wire Line
 	1800 6500 1800 7350
 Wire Wire Line
@@ -1603,48 +1600,12 @@ Wire Wire Line
 Connection ~ 850  6700
 Wire Wire Line
 	850  6700 850  6900
-$Comp
-L cc6-1205sf-e:CC6-1205SF-E 5vconverter1
-U 1 1 66A897F1
-P 2250 5400
-F 0 "5vconverter1" H 2850 5665 50  0000 C CNN
-F 1 "CC6-1205SF-E" H 2850 5574 50  0000 C CNN
-F 2 "CC6_SF" H 3300 5500 50  0001 L CNN
-F 3 "https://product.tdk.com/system/files/dam/doc/product/power/switching-power/dc-dc-converter/catalog/cc-e_e.pdf" H 3300 5400 50  0001 L CNN
-F 4 "dcdc,convertor TDK-Lambda Through Hole Isolated DC-DC Converter, I/O isolation 500V ac, Vout 5V dc" H 3300 5300 50  0001 L CNN "Description"
-F 5 "TDK" H 3300 5100 50  0001 L CNN "Manufacturer_Name"
-F 6 "CC6-1205SF-E" H 3300 5000 50  0001 L CNN "Manufacturer_Part_Number"
-F 7 "967-CC6-1205SF-E" H 3300 4900 50  0001 L CNN "Mouser Part Number"
-F 8 "https://www.mouser.co.uk/ProductDetail/TDK-Lambda/CC6-1205SF-E?qs=Vwh6e7toGLhaPHzXVKmH%252BA%3D%3D" H 3300 4800 50  0001 L CNN "Mouser Price/Stock"
-F 9 "CC6-1205SF-E" H 3300 4700 50  0001 L CNN "Arrow Part Number"
-F 10 "https://www.arrow.com/en/products/cc6-1205sf-e/tdk-lambda-americas?region=nac" H 3300 4600 50  0001 L CNN "Arrow Price/Stock"
-	1    2250 5400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2250 5400 1800 5400
-Wire Wire Line
-	2250 5600 850  5600
-Wire Wire Line
-	850  5600 850  6700
-Wire Wire Line
-	3450 5400 3575 5400
 Wire Wire Line
 	4150 5400 4150 4900
 Wire Wire Line
-	3575 5400 3575 12425
-Connection ~ 3575 5400
-Wire Wire Line
 	3575 5400 4150 5400
 Wire Wire Line
-	3450 5600 3700 5600
-Wire Wire Line
-	4050 5600 4050 4950
-Wire Wire Line
-	3700 12325 3700 5600
-Connection ~ 3700 5600
-Wire Wire Line
-	3700 5600 4050 5600
+	3700 12325 3700 5700
 $Comp
 L tb9051ftg:TB9051FTG motor_driver1
 U 1 1 6641C80E
@@ -1902,4 +1863,48 @@ Wire Wire Line
 	21550 12425 20475 12425
 Connection ~ 19100 7900
 Connection ~ 20475 12425
+$Comp
+L sftn01m-05n:SFTN01M-05N PS1
+U 1 1 66490BE8
+P 1975 5400
+F 0 "PS1" H 2625 5665 50  0000 C CNN
+F 1 "SFTN01M-05N" H 2625 5574 50  0000 C CNN
+F 2 "custom:SFTN01M05N" H 3125 5500 50  0001 L CNN
+F 3 "https://www.meanwell.com/webapp/product/search.aspx?prod=SFTN01-N" H 3125 5400 50  0001 L CNN
+F 4 "Isolated DC/DC Converters - SMD 1W 12Vin 5Vout 20-200mA SMT Unregulated" H 3125 5300 50  0001 L CNN "Description"
+F 5 "7.6" H 3125 5200 50  0001 L CNN "Height"
+F 6 "Mean Well" H 3125 5100 50  0001 L CNN "Manufacturer_Name"
+F 7 "SFTN01M-05N" H 3125 5000 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "709-SFTN01M-05N" H 3125 4900 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/MEAN-WELL/SFTN01M-05N?qs=A6eO%252BMLsxmQLvWwJN5Fn%252BQ%3D%3D" H 3125 4800 50  0001 L CNN "Mouser Price/Stock"
+	1    1975 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 6500 1800 5500
+Wire Wire Line
+	1800 5500 1975 5500
+Connection ~ 1800 6500
+Wire Wire Line
+	1975 5400 850  5400
+Wire Wire Line
+	850  5400 850  6700
+Wire Wire Line
+	1975 5700 1900 5700
+Wire Wire Line
+	1900 5700 1900 5975
+Wire Wire Line
+	3275 5700 3700 5700
+Connection ~ 3700 5700
+Wire Wire Line
+	4050 5700 3700 5700
+Wire Wire Line
+	4050 4950 4050 5700
+Wire Wire Line
+	1900 5975 3575 5975
+Wire Wire Line
+	3575 5400 3575 5975
+Connection ~ 3575 5975
+Wire Wire Line
+	3575 5975 3575 12425
 $EndSCHEMATC

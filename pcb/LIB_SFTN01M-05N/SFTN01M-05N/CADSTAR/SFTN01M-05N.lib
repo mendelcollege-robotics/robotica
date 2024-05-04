@@ -1,0 +1,18 @@
+.SFTN01M-05N :1 ;Isolated DC/DC Converters - SMD 1W 12Vin 5Vout 20-200mA SMT Unregulated
+SFTN01M05N
+*STM PS
+*NGS
+*PLB 1="-VIN" 2="+VIN" 3="N.C._1" 5="-VOUT" 6="N.C._2" 7="N.C._3" 8="+VOUT" 10="N.C._4" 11="N.C._5" 12="N.C._6"
+*MXP 10
+*DFN SFTN01M-05N
+~!Manufacturer_Name (Mean Well)
+~!Manufacturer_Part_Number (SFTN01M-05N)
+~!Mouser Part Number (709-SFTN01M-05N)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/MEAN-WELL/SFTN01M-05N?qs=A6eO%252BMLsxmQLvWwJN5Fn%252BQ%3D%3D)
+~!Arrow Part Number (-)
+~!Arrow Price/Stock (-)
+~!Link Datasheet (https://www.meanwell.com/webapp/product/search.aspx?prod=SFTN01-N)
+~!Height (7.6mm)
+~!3D_Model (SFTN01M-05N)
+SFTN01M-05N
+1.1!U 2.1!U 3.1!U 5.1!U 6.1!U 7.1!U 8.1!U 10.1!U 11.1!U 12.1!U 

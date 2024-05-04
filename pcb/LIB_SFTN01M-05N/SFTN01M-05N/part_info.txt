@@ -1,0 +1,9 @@
+Manufacturer=Mean Well
+PartNumber=SFTN01M-05N
+PartCategory=Power Supply
+PackageCategory=Other
+PinCount=10
+Version=1.2
+Released=2024-05-04 03:42:22
+Downloaded=2024-05-04 09:32:35
+3D=Y
