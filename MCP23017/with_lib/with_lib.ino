@@ -10,8 +10,7 @@
 
 MCP23017 mcp(MCP_ADDR);
 
-void setup(void)
-{
+void setup(void){
     Serial.begin(9600);
     pinMode(LED_BUILTIN, OUTPUT);
 
@@ -19,8 +18,7 @@ void setup(void)
     mcp.pinMode(GPB7, INPUT_PULLUP);
 }
 
-void loop(void)
-{
+void loop(void){
     byte mcp_input = mcp.digitalRead(GPB7);
     digitalWrite(LED_BUILTIN, mcp_input);
     Serial.println(mcp_input);
