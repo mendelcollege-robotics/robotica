@@ -869,11 +869,9 @@ A
 Text GLabel 1300 10075 0    50   Input ~ 0
 B
 Wire Wire Line
-	4800 7700 5025 7700
-Wire Wire Line
 	950  10175 4800 10175
 Wire Wire Line
-	4800 10175 4800 7700
+	4800 10175 4800 8100
 Wire Wire Line
 	5025 7600 4775 7600
 Wire Wire Line
@@ -899,4 +897,38 @@ Wire Wire Line
 	8200 5825 8700 5825
 Connection ~ 8200 2375
 Connection ~ 8700 5825
+Wire Wire Line
+	8750 5425 4975 5425
+Wire Wire Line
+	4975 5425 4975 7700
+Wire Wire Line
+	4975 7700 5025 7700
+Wire Wire Line
+	5025 8100 4800 8100
+Wire Wire Line
+	5025 7800 4950 7800
+Wire Wire Line
+	4950 7800 4950 5300
+Wire Wire Line
+	4950 5300 8275 5300
+Wire Wire Line
+	8275 5300 8275 5125
+Wire Wire Line
+	8275 5125 8750 5125
+Wire Wire Line
+	8750 5225 8325 5225
+Wire Wire Line
+	8325 5225 8325 5350
+Wire Wire Line
+	8325 5350 4925 5350
+Wire Wire Line
+	4925 5350 4925 7900
+Wire Wire Line
+	4925 7900 5025 7900
+Wire Wire Line
+	7225 8600 8475 8600
+Wire Wire Line
+	8475 8600 8475 5325
+Wire Wire Line
+	8475 5325 8750 5325
 $EndSCHEMATC
