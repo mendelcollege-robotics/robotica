@@ -1069,4 +1069,20 @@ F 3 "" H 5725 9150 50  0001 C CNN
 	1    6125 8750
 	1    0    0    -1  
 $EndComp
+$Comp
+L custom:screw_hole screwhoel1
+U 1 1 667CF5AB
+P 5150 4475
+F 0 "screwhoel1" H 5208 4809 50  0000 L CNN
+F 1 "screw_hole" H 5208 4718 50  0000 L CNN
+F 2 "custom:screwhole" H 5150 4625 50  0001 C CNN
+F 3 "" H 5150 4625 50  0001 C CNN
+	1    5150 4475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4125 4500 5150 4500
+Wire Wire Line
+	5150 4500 5150 4475
+Connection ~ 4125 4500
 $EndSCHEMATC
