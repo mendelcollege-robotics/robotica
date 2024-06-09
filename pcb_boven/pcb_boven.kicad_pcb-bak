@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 17)
+    (drawings 19)
     (tracks 572)
     (zones 0)
     (modules 35)
@@ -1668,6 +1668,8 @@
       (net 2 "Net-(BZ1-Pad1)"))
   )
 
+  (gr_line (start 100.33 100.33) (end 177.8 177.8) (layer Dwgs.User) (width 0.15))
+  (gr_line (start 100.33 100.33) (end 12.7 187.96) (layer Dwgs.User) (width 0.15))
   (gr_line (start 100.33 100.33) (end 143.51 -3.81) (layer Dwgs.User) (width 0.15))
   (gr_line (start 100.33 100.33) (end 210.82 54.61) (layer Dwgs.User) (width 0.15))
   (gr_line (start 100.33 100.33) (end 167.64 33.02) (layer Dwgs.User) (width 0.15))
