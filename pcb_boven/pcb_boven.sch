@@ -47,17 +47,6 @@ F 3 "" H 825 425 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L teensy:Teensy4.1 control_board1
-U 1 1 66362D60
-P 6125 8750
-F 0 "control_board1" H 6125 11315 50  0000 C CNN
-F 1 "Teensy4.1" H 6125 11224 50  0000 C CNN
-F 2 "custom:teensy4.1" H 5725 9150 50  0001 C CNN
-F 3 "" H 5725 9150 50  0001 C CNN
-	1    6125 8750
-	1    0    0    -1  
-$EndComp
-$Comp
 L Switch:SW_DIP_x06 dip_swith_instellinen1
 U 1 1 66364D70
 P 3575 7200
@@ -912,36 +901,8 @@ Wire Wire Line
 	8475 5325 8750 5325
 Wire Wire Line
 	7350 7300 8100 7300
-Connection ~ 8100 7300
-Wire Wire Line
-	8100 7300 8625 7300
-Wire Wire Line
-	8650 5625 8650 7400
 Wire Wire Line
 	7425 7400 8075 7400
-Connection ~ 8075 7400
-Wire Wire Line
-	8075 7400 8650 7400
-Wire Wire Line
-	8750 5525 8625 5525
-Wire Wire Line
-	8625 5525 5000 5525
-Wire Wire Line
-	5000 5525 5000 6700
-Wire Wire Line
-	5000 6700 5025 6700
-Connection ~ 8625 5525
-Wire Wire Line
-	5025 6800 5025 6750
-Wire Wire Line
-	5025 6750 5050 6750
-Wire Wire Line
-	5050 6750 5050 5625
-Wire Wire Line
-	5050 5625 8650 5625
-Connection ~ 8650 5625
-Wire Wire Line
-	8650 5625 8750 5625
 $Comp
 L Device:Battery xt60
 U 1 1 6666BA64
@@ -1034,10 +995,6 @@ Wire Wire Line
 	8200 3875 8200 5825
 Connection ~ 10025 5825
 Wire Wire Line
-	8625 5525 8625 7300
-Wire Wire Line
-	10025 5825 10025 6700
-Wire Wire Line
 	8350 6700 10025 6700
 Connection ~ 8350 6700
 Connection ~ 10025 6700
@@ -1083,4 +1040,33 @@ Connection ~ 10325 8700
 Connection ~ 10325 9000
 Wire Wire Line
 	10325 9000 11025 9000
+$Comp
+L Connector:Conn_01x10_Female pcb_conn1
+U 1 1 6667319C
+P 750 10575
+F 0 "pcb_conn1" H 642 9850 50  0000 C CNN
+F 1 "Conn_01x10_Female" H 642 9941 50  0000 C CNN
+F 2 "custom:10connect" H 750 10575 50  0001 C CNN
+F 3 "~" H 750 10575 50  0001 C CNN
+	1    750  10575
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9600 6275 10025 6275
+Wire Wire Line
+	10025 5825 10025 6275
+Connection ~ 10025 6275
+Wire Wire Line
+	10025 6275 10025 6700
+$Comp
+L teensy:Teensy4.1 control_board1
+U 1 1 66362D60
+P 6125 8750
+F 0 "control_board1" H 6125 11315 50  0000 C CNN
+F 1 "Teensy4.1" H 6125 11224 50  0000 C CNN
+F 2 "teensy:Teensy41" H 5725 9150 50  0001 C CNN
+F 3 "" H 5725 9150 50  0001 C CNN
+	1    6125 8750
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
