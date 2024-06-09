@@ -297,8 +297,6 @@ sc6
 Wire Wire Line
 	9950 5825 10025 5825
 Wire Wire Line
-	10025 5825 10025 6975
-Wire Wire Line
 	9075 10275 9075 6800
 Wire Wire Line
 	8700 5825 8750 5825
@@ -313,11 +311,6 @@ Wire Wire Line
 	9075 6800 8700 6800
 Wire Wire Line
 	8700 5825 8700 6800
-Wire Wire Line
-	11025 9000 10025 9000
-Wire Wire Line
-	10025 9000 10025 6975
-Connection ~ 10025 6975
 Wire Wire Line
 	825  2275 825  2350
 Wire Wire Line
@@ -788,7 +781,6 @@ Wire Wire Line
 	10225 4450 10025 4450
 Wire Wire Line
 	10025 4450 10025 5825
-Connection ~ 10025 5825
 $Comp
 L Device:Buzzer BZ1
 U 1 1 663737AA
@@ -806,8 +798,6 @@ Wire Wire Line
 	4500 8125 4500 7500
 Wire Wire Line
 	4500 7500 5025 7500
-Wire Wire Line
-	2900 6025 4050 6025
 Wire Wire Line
 	4050 8325 4300 8325
 Connection ~ 4050 6025
@@ -876,17 +866,12 @@ Wire Wire Line
 	4775 10075 950  10075
 Wire Wire Line
 	8125 6700 8350 6700
-Wire Wire Line
-	8625 6975 10025 6975
 Connection ~ 8125 6700
 Wire Wire Line
 	8350 2350 8350 6700
 Connection ~ 8350 2350
-Connection ~ 8350 6700
 Wire Wire Line
-	8350 6700 8625 6700
-Wire Wire Line
-	8200 2375 8200 5825
+	8200 2375 8200 3875
 Wire Wire Line
 	8200 5825 8700 5825
 Connection ~ 8200 2375
@@ -927,14 +912,6 @@ Wire Wire Line
 	8475 5325 8750 5325
 Wire Wire Line
 	7350 7300 8100 7300
-Wire Wire Line
-	8625 5525 8625 6700
-Connection ~ 8625 6700
-Wire Wire Line
-	8625 6700 8625 6975
-Connection ~ 8625 6975
-Wire Wire Line
-	8625 6975 8625 7300
 Connection ~ 8100 7300
 Wire Wire Line
 	8100 7300 8625 7300
@@ -965,4 +942,145 @@ Wire Wire Line
 Connection ~ 8650 5625
 Wire Wire Line
 	8650 5625 8750 5625
+$Comp
+L Device:Battery xt60
+U 1 1 6666BA64
+P 1975 5125
+F 0 "xt60" H 2083 5171 50  0000 L CNN
+F 1 "Battery" H 2083 5080 50  0000 L CNN
+F 2 "Connector_AMASS:AMASS_XT60-F_1x02_P7.20mm_Vertical" V 1975 5185 50  0001 C CNN
+F 3 "https://eu.mouser.com/datasheet/2/813/xt60-2490175.pdf" V 1975 5185 50  0001 C CNN
+	1    1975 5125
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Battery xt30
+U 1 1 6666CC1A
+P 1600 5125
+F 0 "xt30" H 1708 5171 50  0000 L CNN
+F 1 "Battery" H 1708 5080 50  0000 L CNN
+F 2 "Connector_AMASS:AMASS_XT30U-F_1x02_P5.0mm_Vertical" V 1600 5185 50  0001 C CNN
+F 3 "https://eu.mouser.com/ProductDetail/DFRobot/FIT0586?qs=w%2Fv1CP2dgqouWR8IxqIK1w%3D%3D" V 1600 5185 50  0001 C CNN
+	1    1600 5125
+	1    0    0    -1  
+$EndComp
+$Comp
+L cc6-1203sr-e:CC6-1203SR-E 3V3_converter1
+U 1 1 66680960
+P 2600 4300
+F 0 "3V3_converter1" H 3300 4565 50  0000 C CNN
+F 1 "CC6-1203SR-E" H 3300 4474 50  0000 C CNN
+F 2 "custom:CC60512SRE" H 3850 4400 50  0001 L CNN
+F 3 "https://product.tdk.com/system/files/dam/doc/product/power/switching-power/dc-dc-converter/catalog/cc-e_e.pdf" H 3850 4300 50  0001 L CNN
+F 4 "DC-DC Converters, On-board type, Output: 3.96W, 3.3V, Isolated type, Option: SMD type" H 3850 4200 50  0001 L CNN "Description"
+F 5 "8.8" H 3850 4100 50  0001 L CNN "Height"
+F 6 "TDK" H 3850 4000 50  0001 L CNN "Manufacturer_Name"
+F 7 "CC6-1203SR-E" H 3850 3900 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "967-CC6-1203SR-E" H 3850 3800 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/TDK-Lambda/CC6-1203SR-E?qs=Vwh6e7toGLi4J%2FzloL2n3g%3D%3D" H 3850 3700 50  0001 L CNN "Mouser Price/Stock"
+F 10 "CC6-1203SR-E" H 3850 3600 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/cc6-1203sr-e/tdk-lambda-americas?region=nac" H 3850 3500 50  0001 L CNN "Arrow Price/Stock"
+	1    2600 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L sftn01m-05n:SFTN01M-05N 5V_converter1
+U 1 1 66681E5D
+P 2625 4825
+F 0 "5V_converter1" H 3275 5090 50  0000 C CNN
+F 1 "SFTN01M-05N" H 3275 4999 50  0000 C CNN
+F 2 "custom:SFTN01M05N" H 3775 4925 50  0001 L CNN
+F 3 "https://www.meanwell.com/webapp/product/search.aspx?prod=SFTN01-N" H 3775 4825 50  0001 L CNN
+F 4 "Isolated DC/DC Converters - SMD 1W 12Vin 5Vout 20-200mA SMT Unregulated" H 3775 4725 50  0001 L CNN "Description"
+F 5 "7.6" H 3775 4625 50  0001 L CNN "Height"
+F 6 "Mean Well" H 3775 4525 50  0001 L CNN "Manufacturer_Name"
+F 7 "SFTN01M-05N" H 3775 4425 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "709-SFTN01M-05N" H 3775 4325 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/MEAN-WELL/SFTN01M-05N?qs=A6eO%252BMLsxmQLvWwJN5Fn%252BQ%3D%3D" H 3775 4225 50  0001 L CNN "Mouser Price/Stock"
+	1    2625 4825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 4925 1975 4925
+Wire Wire Line
+	1975 5325 1600 5325
+Wire Wire Line
+	1975 5325 2300 5325
+Wire Wire Line
+	2300 5325 2300 4825
+Wire Wire Line
+	2300 4825 2625 4825
+Connection ~ 1975 5325
+Wire Wire Line
+	1975 4925 2625 4925
+Connection ~ 1975 4925
+Wire Wire Line
+	2300 4825 2300 4500
+Wire Wire Line
+	2300 4500 2600 4500
+Connection ~ 2300 4825
+Wire Wire Line
+	1975 4925 1975 4300
+Wire Wire Line
+	1975 4300 2600 4300
+Wire Wire Line
+	4000 4300 4550 4300
+Wire Wire Line
+	4550 4300 4550 3875
+Wire Wire Line
+	4550 3875 8200 3875
+Connection ~ 8200 3875
+Wire Wire Line
+	8200 3875 8200 5825
+Connection ~ 10025 5825
+Wire Wire Line
+	8625 5525 8625 7300
+Wire Wire Line
+	10025 5825 10025 6700
+Wire Wire Line
+	8350 6700 10025 6700
+Connection ~ 8350 6700
+Connection ~ 10025 6700
+Wire Wire Line
+	10025 6700 10025 9000
+Wire Wire Line
+	7250 5500 4225 5500
+Wire Wire Line
+	4225 5500 4225 5125
+Wire Wire Line
+	4225 5125 3925 5125
+Connection ~ 7250 5500
+Wire Wire Line
+	2625 5125 2525 5125
+Wire Wire Line
+	2525 5125 2525 5625
+Wire Wire Line
+	2525 5625 3750 5625
+Wire Wire Line
+	4125 5625 4125 4500
+Wire Wire Line
+	4125 4500 4000 4500
+Wire Wire Line
+	3750 5625 3750 6025
+Wire Wire Line
+	2900 6025 3750 6025
+Connection ~ 3750 5625
+Wire Wire Line
+	3750 5625 4125 5625
+Connection ~ 3750 6025
+Wire Wire Line
+	3750 6025 4050 6025
+Wire Wire Line
+	10325 8700 10325 8600
+Wire Wire Line
+	10325 8600 10325 8500
+Connection ~ 10325 8600
+Wire Wire Line
+	10325 8700 10325 9000
+Wire Wire Line
+	10025 9000 10325 9000
+Connection ~ 10325 8700
+Connection ~ 10325 9000
+Wire Wire Line
+	10325 9000 11025 9000
 $EndSCHEMATC

@@ -1,4 +1,4 @@
-(module teensy4.1 (layer F.Cu) (tedit 663362B9)
+(module teensy4.1 (layer F.Cu) (tedit 6665722A)
   (fp_text reference REF** (at 0 -12.7) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
@@ -58,4 +58,9 @@
   (pad 46 thru_hole circle (at 7.62 -2.54) (size 1.524 1.524) (drill 0.762) (layers *.Cu *.Mask))
   (pad 47 thru_hole circle (at 7.62 -5.08) (size 1.524 1.524) (drill 0.762) (layers *.Cu *.Mask))
   (pad 48 thru_hole circle (at 7.62 -7.62) (size 1.524 1.524) (drill 0.762) (layers *.Cu *.Mask))
+  (model "${KIPRJMOD}/3d/teensy-4-1-development-board-1.snapshot.5/Teensy 4.1 (With Headers).iges"
+    (offset (xyz -0.1016 -21.5646 3.556))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 90))
+  )
 )
