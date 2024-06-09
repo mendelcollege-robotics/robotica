@@ -1,28 +1,47 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Device_Battery
+# Connector_Conn_01x10_Female
 #
-DEF Device_Battery BT 0 0 N N 1 F N
-F0 "BT" 100 100 50 H V L CNN
-F1 "Device_Battery" 100 0 50 H V L CNN
-F2 "" 0 60 50 V I C CNN
-F3 "" 0 60 50 V I C CNN
+DEF Connector_Conn_01x10_Female J 0 40 Y N 1 F N
+F0 "J" 0 500 50 H V C CNN
+F1 "Connector_Conn_01x10_Female" 0 -600 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
 DRAW
-S -80 -55 80 -65 0 1 0 F
-S -80 70 80 60 0 1 0 F
-S -52 -78 50 -98 0 1 0 F
-S -52 47 50 27 0 1 0 F
-P 2 0 1 0 0 -60 0 -50 N
-P 2 0 1 0 0 -40 0 -30 N
-P 2 0 1 0 0 -20 0 -10 N
-P 2 0 1 0 0 0 0 10 N
-P 2 0 1 0 0 20 0 30 N
-P 2 0 1 0 0 70 0 100 N
-P 2 0 1 10 10 105 50 105 N
-P 2 0 1 10 30 125 30 85 N
-X + 1 0 200 100 D 50 50 1 1 P
-X - 2 0 -200 100 U 50 50 1 1 P
+A 0 -500 20 901 -901 1 1 6 N 0 -480 0 -520
+A 0 -400 20 901 -901 1 1 6 N 0 -380 0 -420
+A 0 -300 20 901 -901 1 1 6 N 0 -280 0 -320
+A 0 -200 20 901 -901 1 1 6 N 0 -180 0 -220
+A 0 -100 20 901 -901 1 1 6 N 0 -80 0 -120
+A 0 0 20 901 -901 1 1 6 N 0 20 0 -20
+A 0 100 20 901 -901 1 1 6 N 0 120 0 80
+A 0 200 20 901 -901 1 1 6 N 0 220 0 180
+A 0 300 20 901 -901 1 1 6 N 0 320 0 280
+A 0 400 20 901 -901 1 1 6 N 0 420 0 380
+P 2 1 1 6 -50 -500 -20 -500 N
+P 2 1 1 6 -50 -400 -20 -400 N
+P 2 1 1 6 -50 -300 -20 -300 N
+P 2 1 1 6 -50 -200 -20 -200 N
+P 2 1 1 6 -50 -100 -20 -100 N
+P 2 1 1 6 -50 0 -20 0 N
+P 2 1 1 6 -50 100 -20 100 N
+P 2 1 1 6 -50 200 -20 200 N
+P 2 1 1 6 -50 300 -20 300 N
+P 2 1 1 6 -50 400 -20 400 N
+X Pin_1 1 -200 400 150 R 50 50 1 1 P
+X Pin_10 10 -200 -500 150 R 50 50 1 1 P
+X Pin_2 2 -200 300 150 R 50 50 1 1 P
+X Pin_3 3 -200 200 150 R 50 50 1 1 P
+X Pin_4 4 -200 100 150 R 50 50 1 1 P
+X Pin_5 5 -200 0 150 R 50 50 1 1 P
+X Pin_6 6 -200 -100 150 R 50 50 1 1 P
+X Pin_7 7 -200 -200 150 R 50 50 1 1 P
+X Pin_8 8 -200 -300 150 R 50 50 1 1 P
+X Pin_9 9 -200 -400 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -108,33 +127,6 @@ X SC2 9 400 300 100 L 50 50 1 1 O
 ENDDRAW
 ENDDEF
 #
-# cc6-1203sr-e_CC6-1203SR-E
-#
-DEF cc6-1203sr-e_CC6-1203SR-E PS 0 30 Y Y 1 F N
-F0 "PS" 1250 300 50 H V L CNN
-F1 "cc6-1203sr-e_CC6-1203SR-E" 1250 200 50 H V L CNN
-F2 "custom:CC60512SRE" 1250 100 50 H I L CNN
-F3 "" 1250 0 50 H I L CNN
-F4 "DC-DC Converters, On-board type, Output: 3.96W, 3.3V, Isolated type, Option: SMD type" 1250 -100 50 H I L CNN "Description"
-F5 "8.8" 1250 -200 50 H I L CNN "Height"
-F6 "TDK" 1250 -300 50 H I L CNN "Manufacturer_Name"
-F7 "CC6-1203SR-E" 1250 -400 50 H I L CNN "Manufacturer_Part_Number"
-F8 "967-CC6-1203SR-E" 1250 -500 50 H I L CNN "Mouser Part Number"
-F9 "https://www.mouser.co.uk/ProductDetail/TDK-Lambda/CC6-1203SR-E?qs=Vwh6e7toGLi4J%2FzloL2n3g%3D%3D" 1250 -600 50 H I L CNN "Mouser Price/Stock"
-F10 "CC6-1203SR-E" 1250 -700 50 H I L CNN "Arrow Part Number"
-F11 "https://www.arrow.com/en/products/cc6-1203sr-e/tdk-lambda-americas?region=nac" 1250 -800 50 H I L CNN "Arrow Price/Stock"
-DRAW
-P 5 0 1 6 200 100 1200 100 1200 -400 200 -400 200 100 N
-X +VIN 1 0 0 200 R 50 50 0 0 P
-X RC 2 0 -100 200 R 50 50 0 0 P
-X -VIN 3 0 -200 200 R 50 50 0 0 P
-X NC 4 1400 -300 200 L 50 50 0 0 N
-X -VOUT 5 1400 -200 200 L 50 50 0 0 P
-X TRM 6 1400 -100 200 L 50 50 0 0 P
-X +VOUT 7 1400 0 200 L 50 50 0 0 P
-ENDDRAW
-ENDDEF
-#
 # pololu_motor_pololu_motor
 #
 DEF pololu_motor_pololu_motor U 0 40 Y Y 1 F N
@@ -151,34 +143,6 @@ X B 3 50 -1050 100 U 50 50 1 1 O
 X gnd 4 200 -1050 100 U 50 50 1 1 W
 X + ~ -600 0 100 L 50 50 1 1 W
 X - ~ 600 0 100 R 50 50 1 1 W
-ENDDRAW
-ENDDEF
-#
-# sftn01m-05n_SFTN01M-05N
-#
-DEF sftn01m-05n_SFTN01M-05N PS 0 30 Y Y 1 F N
-F0 "PS" 1150 300 50 H V L CNN
-F1 "sftn01m-05n_SFTN01M-05N" 1150 200 50 H V L CNN
-F2 "custom:SFTN01M05N" 1150 100 50 H I L CNN
-F3 "" 1150 0 50 H I L CNN
-F4 "Isolated DC/DC Converters - SMD 1W 12Vin 5Vout 20-200mA SMT Unregulated" 1150 -100 50 H I L CNN "Description"
-F5 "7.6" 1150 -200 50 H I L CNN "Height"
-F6 "Mean Well" 1150 -300 50 H I L CNN "Manufacturer_Name"
-F7 "SFTN01M-05N" 1150 -400 50 H I L CNN "Manufacturer_Part_Number"
-F8 "709-SFTN01M-05N" 1150 -500 50 H I L CNN "Mouser Part Number"
-F9 "https://www.mouser.co.uk/ProductDetail/MEAN-WELL/SFTN01M-05N?qs=A6eO%252BMLsxmQLvWwJN5Fn%252BQ%3D%3D" 1150 -600 50 H I L CNN "Mouser Price/Stock"
-DRAW
-P 5 0 1 6 200 100 1100 100 1100 -500 200 -500 200 100 N
-X -VIN 1 0 0 200 R 50 50 0 0 P
-X N.C._4 10 1300 -200 200 L 50 50 0 0 P
-X N.C._5 11 1300 -100 200 L 50 50 0 0 P
-X N.C._6 12 1300 0 200 L 50 50 0 0 P
-X +VIN 2 0 -100 200 R 50 50 0 0 P
-X N.C._1 3 0 -200 200 R 50 50 0 0 P
-X -VOUT 5 0 -300 200 R 50 50 0 0 P
-X N.C._2 6 0 -400 200 R 50 50 0 0 P
-X N.C._3 7 1300 -400 200 L 50 50 0 0 P
-X +VOUT 8 1300 -300 200 L 50 50 0 0 P
 ENDDRAW
 ENDDEF
 #

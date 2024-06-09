@@ -137,46 +137,6 @@ Wire Wire Line
 Wire Wire Line
 	5750 4050 5750 4150
 Connection ~ 4075 4050
-$Comp
-L Device:Battery xt30
-U 1 1 6636FCC1
-P 1175 6300
-F 0 "xt30" H 1283 6346 50  0000 L CNN
-F 1 "Battery" H 1283 6255 50  0000 L CNN
-F 2 "Connector_AMASS:AMASS_XT30U-F_1x02_P5.0mm_Vertical" V 1175 6360 50  0001 C CNN
-F 3 "~" V 1175 6360 50  0001 C CNN
-	1    1175 6300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Battery xt60
-U 1 1 66371272
-P 1650 6300
-F 0 "xt60" H 1758 6346 50  0000 L CNN
-F 1 "Battery" H 1758 6255 50  0000 L CNN
-F 2 "Connector_AMASS:AMASS_XT60-F_1x02_P7.20mm_Vertical" V 1650 6360 50  0001 C CNN
-F 3 "~" V 1650 6360 50  0001 C CNN
-	1    1650 6300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1175 6100 1400 6100
-Wire Wire Line
-	1650 6500 1400 6500
-Connection ~ 1400 6100
-Wire Wire Line
-	1400 6100 1650 6100
-Wire Wire Line
-	1400 6500 1400 6850
-Connection ~ 1400 6500
-Wire Wire Line
-	1400 6500 1175 6500
-Text GLabel 1400 6725 0    50   Input ~ 0
-+12v
-Text GLabel 1400 5950 0    50   Input ~ 0
-gnd
-Text Notes 1500 6650 0    50   ~ 0
-omgedraaid omdat xt connectors \nvekeerd zitten in pcb ondwerp
 Wire Wire Line
 	1400 4125 2325 4125
 Wire Wire Line
@@ -189,66 +149,8 @@ Wire Wire Line
 Wire Wire Line
 	975  6850 1400 6850
 Connection ~ 2425 4050
-$Comp
-L cc6-1203sr-e:CC6-1203SR-E 3.3v_converter1
-U 1 1 66378F04
-P 3225 6850
-F 0 "3.3v_converter1" H 3925 7115 50  0000 C CNN
-F 1 "CC6-1203SR-E" H 3925 7024 50  0000 C CNN
-F 2 "custom:CC60512SRE" H 4475 6950 50  0001 L CNN
-F 3 "https://product.tdk.com/system/files/dam/doc/product/power/switching-power/dc-dc-converter/catalog/cc-e_e.pdf" H 4475 6850 50  0001 L CNN
-F 4 "DC-DC Converters, On-board type, Output: 3.96W, 3.3V, Isolated type, Option: SMD type" H 4475 6750 50  0001 L CNN "Description"
-F 5 "8.8" H 4475 6650 50  0001 L CNN "Height"
-F 6 "TDK" H 4475 6550 50  0001 L CNN "Manufacturer_Name"
-F 7 "CC6-1203SR-E" H 4475 6450 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "967-CC6-1203SR-E" H 4475 6350 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.co.uk/ProductDetail/TDK-Lambda/CC6-1203SR-E?qs=Vwh6e7toGLi4J%2FzloL2n3g%3D%3D" H 4475 6250 50  0001 L CNN "Mouser Price/Stock"
-F 10 "CC6-1203SR-E" H 4475 6150 50  0001 L CNN "Arrow Part Number"
-F 11 "https://www.arrow.com/en/products/cc6-1203sr-e/tdk-lambda-americas?region=nac" H 4475 6050 50  0001 L CNN "Arrow Price/Stock"
-	1    3225 6850
-	1    0    0    -1  
-$EndComp
-$Comp
-L sftn01m-05n:SFTN01M-05N 5v_converter1
-U 1 1 66379F5D
-P 3275 7600
-F 0 "5v_converter1" H 3925 7865 50  0000 C CNN
-F 1 "SFTN01M-05N" H 3925 7774 50  0000 C CNN
-F 2 "custom:SFTN01M05N" H 4425 7700 50  0001 L CNN
-F 3 "https://www.meanwell.com/webapp/product/search.aspx?prod=SFTN01-N" H 4425 7600 50  0001 L CNN
-F 4 "Isolated DC/DC Converters - SMD 1W 12Vin 5Vout 20-200mA SMT Unregulated" H 4425 7500 50  0001 L CNN "Description"
-F 5 "7.6" H 4425 7400 50  0001 L CNN "Height"
-F 6 "Mean Well" H 4425 7300 50  0001 L CNN "Manufacturer_Name"
-F 7 "SFTN01M-05N" H 4425 7200 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "709-SFTN01M-05N" H 4425 7100 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.co.uk/ProductDetail/MEAN-WELL/SFTN01M-05N?qs=A6eO%252BMLsxmQLvWwJN5Fn%252BQ%3D%3D" H 4425 7000 50  0001 L CNN "Mouser Price/Stock"
-	1    3275 7600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1400 6850 3000 6850
-Wire Wire Line
-	3000 6850 3000 7700
-Wire Wire Line
-	3000 7700 3275 7700
-Connection ~ 1400 6850
-Wire Wire Line
-	3000 6850 3225 6850
-Connection ~ 3000 6850
-Wire Wire Line
-	3275 7600 3075 7600
-Wire Wire Line
-	3075 7600 3075 7050
-Wire Wire Line
-	3075 7050 3225 7050
-Wire Wire Line
-	3075 7050 3075 5950
 Wire Wire Line
 	3075 5950 1400 5950
-Connection ~ 3075 7050
-Connection ~ 1400 5950
-Wire Wire Line
-	1400 5950 1400 6100
 $Comp
 L tcs3472_color_sensor:tcs3472_color_sensor kleur_sensor_1
 U 1 1 66382B7A
@@ -492,8 +394,6 @@ sda
 Text GLabel 1250 10875 0    50   Input ~ 0
 scl
 Wire Wire Line
-	3275 7900 2975 7900
-Wire Wire Line
 	2975 7900 2975 10975
 Wire Wire Line
 	2975 10975 950  10975
@@ -505,8 +405,6 @@ Text GLabel 1250 11075 0    50   Input ~ 0
 5v
 Wire Wire Line
 	4675 11075 4675 8350
-Wire Wire Line
-	4675 7900 4575 7900
 Wire Wire Line
 	950  11075 4675 11075
 Text GLabel 1250 10375 0    50   Input ~ 0
@@ -530,7 +428,6 @@ Wire Wire Line
 	4625 6850 4775 6850
 Wire Wire Line
 	4775 6850 4775 8100
-Connection ~ 4625 6850
 Wire Wire Line
 	1975 5150 1975 5550
 Wire Wire Line
@@ -743,7 +640,34 @@ Wire Wire Line
 Wire Wire Line
 	900  8350 4675 8350
 Connection ~ 1975 3025
-Connection ~ 4675 8350
+Text GLabel 1250 10475 0    50   Input ~ 0
+12v
+$Comp
+L Connector:Conn_01x10_Female J?
+U 1 1 66673A65
+P 750 10675
+F 0 "J?" H 642 9950 50  0000 C CNN
+F 1 "Conn_01x10_Female" H 642 10041 50  0000 C CNN
+F 2 "" H 750 10675 50  0001 C CNN
+F 3 "~" H 750 10675 50  0001 C CNN
+	1    750  10675
+	-1   0    0    1   
+$EndComp
 Wire Wire Line
-	4675 8350 4675 7900
+	1400 10475 1400 6850
+Wire Wire Line
+	950  10475 1400 10475
+Wire Wire Line
+	3725 7900 3725 7600
+Wire Wire Line
+	3075 7600 3725 7600
+Wire Wire Line
+	2975 7900 3725 7900
+Wire Wire Line
+	3725 7600 4625 7600
+Wire Wire Line
+	4625 7600 4625 7050
+Connection ~ 3725 7600
+Wire Wire Line
+	3075 5950 3075 7600
 $EndSCHEMATC
