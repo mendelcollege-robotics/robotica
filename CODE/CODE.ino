@@ -9,10 +9,6 @@
 #define mcp1ADDR  0x20  //first portmultiplexer for ir sensors
 #define mcp2ADDR  0x22  //first portmultiplexer for motors
 
-
-
-
-
 //miltiplex1
 #define ir1  0   // GPA0
 #define ir2  1   // GPA1
@@ -84,9 +80,16 @@ int colsensdata[6] = {99, 99, 99, 99, 99, 99}; //data colorsensors
 Adafruit_MCP23X17 mcp1; // Instance for the first MCP23017 at address 0x20
 Adafruit_MCP23X17 mcp2; // Instance for the second MCP23017 at address 0x22
 
-Adafruit_TCS34725 tcs = Adafruit_TCS34725();  /* Initialise color sensorwith default values (int time = 2.4ms, gain = 1x) */
+Adafruit_TCS34725 tcs = Adafruit_TCS34725();  // Initialise color sensorwith default values (int time = 2.4ms, gain = 1x) 
 
 
+template <typename T_ty> struct TypeInfo { static const char * name; };
+template <typename T_ty> const char * TypeInfo<T_ty>::name = "unknown";
+#define TYPE_NAME(var) TypeInfo< typeof(var) >::name
+#define MAKE_TYPE_INFO(type)  template <> const char * TypeInfo<type>::name = #type;
+MAKE_TYPE_INFO( int )
+MAKE_TYPE_INFO( float )
+MAKE_TYPE_INFO( short )
 
 void setup() {
   Serial.begin(9600);
@@ -135,6 +138,7 @@ void pcaselect(uint8_t i) {
 
 
 void loop() {
+  Wire.begin();
   // Read IR sensors
   dir1 = mcp1.digitalRead(ir1);
   dir2 = mcp1.digitalRead(ir2);
@@ -153,8 +157,53 @@ void loop() {
   dir15 = mcp1.digitalRead(ir15);
   dir16 = mcp1.digitalRead(ir16);
   //Read color sensors
+  for (uint8_t t=0; t<6; t++) {
+    pcaselect(t);
+    Serial.print("PCA Port #"); Serial.println(t);
+    for (uint8_t addr = 0; addr<=127; addr++) {
+      if (addr == PCAADDR) continue;
+      Wire.beginTransmission(addr);
+      if (!Wire.endTransmission()) {
+        Serial.print("Found I2C 0x");  Serial.println(addr,HEX);
+        if (tcs.begin()) {
+          Serial.println("Found sensor");
+          Serial.println("collecting data");
+          uint16_t r, g, b, c, colorTemp, lux;
+          tcs.getRawData(&r, &g, &b, &c);
+          colorTemp = tcs.calculateColorTemperature_dn40(r, g, b, c);
+          lux = tcs.calculateLux(r, g, b);
+          Serial.print("Color Temp: "); Serial.print(colorTemp, DEC); Serial.print(" K - ");
+          Serial.print("RGB: "); Serial.print(r, DEC); Serial.print(", "); Serial.print(g, DEC); Serial.print(", "); Serial.print(b, DEC); Serial.println(" ");
+          if ((colorTemp) == 5201){
+            colsensdata[t] = 0;
+          }
+          else if ((g)>=(2*(r)) && (g)>=12){
+            colsensdata[t] = 1; 
+          }
+          else if ((colorTemp)>= 6750){
+            colsensdata[t] = 2; 
+          }
+          else if ((colorTemp) < 6750){
+            colsensdata[t] = 3;
+          }
+          else{
+            Serial.println(colorTemp);
+            Serial.println(TYPE_NAME((colorTemp, DEC)));
+            colsensdata[t] = 98;
+          }
+        } else {
+          Serial.println("No TCS34725 found ... check your connections");
+          colsensdata[t] = 97;
+        }
+      }
+    }
+  }
+  //read camera
+  //read compas
 
-  
+
+  //printing sensor data
+  //IR
   Serial.print("IR data: ");
   Serial.print(dir1); Serial.print(", "); Serial.print(dir2);
   Serial.print(", "); Serial.print(dir3); Serial.print(", "); Serial.print(dir4);
@@ -166,4 +215,27 @@ void loop() {
   Serial.print(", "); Serial.print(dir15); Serial.print(", "); Serial.print(dir16);
   Serial.println();
   delay(250);
+  //color
+  Serial.print("sensor data = "); // 0=air, 1=green, 2=black, 3=white, 90=error
+  for(int i = 0; i < 6; i++){
+    Serial.print(colsensdata[i]);
+    Serial.print(", ");
+  }
+  //camera
+  //compas
+  //dip settings
+
+
+
+  //do stuf with data
+  /**
+  first move if line is detected with color sens
+  is ball in posesion:
+    yes: go to goal using camera location
+    no: move to ball using IR data
+     * 
+   */
+
+
+   delay(20);
 }
