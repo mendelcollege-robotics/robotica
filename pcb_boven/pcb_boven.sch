@@ -238,7 +238,7 @@ Wire Wire Line
 Wire Wire Line
 	8100 7300 8100 10775
 Wire Wire Line
-	8100 10775 950  10775
+	8100 10775 3450 10775
 Text GLabel 1300 10775 0    50   Input ~ 0
 scl
 Wire Wire Line
@@ -246,15 +246,13 @@ Wire Wire Line
 Wire Wire Line
 	8075 7400 8075 10675
 Wire Wire Line
-	8075 10675 950  10675
+	8075 10675 3400 10675
 Text GLabel 1300 10675 0    50   Input ~ 0
 sda
 Wire Wire Line
 	7225 6700 7550 6700
 Wire Wire Line
 	8125 6700 8125 10875
-Wire Wire Line
-	8125 10875 950  10875
 Text GLabel 1300 10875 0    50   Input ~ 0
 gnd
 Wire Wire Line
@@ -262,23 +260,11 @@ Wire Wire Line
 Wire Wire Line
 	8150 6600 8150 10975
 Wire Wire Line
-	8150 10975 950  10975
+	8150 10975 2600 10975
 Text GLabel 1300 10975 0    50   Input ~ 0
 5v
 Text Notes 975  11100 0    50   ~ 0
 naar pcb onder
-Wire Wire Line
-	9150 7200 9150 10575
-Wire Wire Line
-	9150 10575 950  10575
-Wire Wire Line
-	9150 7200 10325 7200
-Wire Wire Line
-	10325 7100 9125 7100
-Wire Wire Line
-	9125 7100 9125 10475
-Wire Wire Line
-	9125 10475 950  10475
 Text GLabel 1300 10475 0    50   Input ~ 0
 sd6
 Text GLabel 1300 10575 0    50   Input ~ 0
@@ -290,7 +276,7 @@ Wire Wire Line
 Wire Wire Line
 	8700 5825 8750 5825
 Wire Wire Line
-	950  10275 9075 10275
+	950  10275 2775 10275
 Text GLabel 1300 10275 0    50   Input ~ 0
 3.3v
 Wire Wire Line
@@ -962,8 +948,6 @@ F 9 "https://www.mouser.co.uk/ProductDetail/MEAN-WELL/SFTN01M-05N?qs=A6eO%252BML
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1600 4925 1975 4925
-Wire Wire Line
 	1975 5325 1600 5325
 Wire Wire Line
 	1975 5325 2300 5325
@@ -1009,8 +993,6 @@ Wire Wire Line
 Connection ~ 7250 5500
 Wire Wire Line
 	2625 5125 2525 5125
-Wire Wire Line
-	2525 5125 2525 5625
 Wire Wire Line
 	2525 5625 3750 5625
 Wire Wire Line
@@ -1085,4 +1067,186 @@ Wire Wire Line
 Wire Wire Line
 	5150 4500 5150 4475
 Connection ~ 4125 4500
+$Comp
+L Connector:Conn_01x10_Female extrapins1
+U 1 1 66687DFB
+P 1950 8950
+F 0 "extrapins1" H 1842 8225 50  0000 C CNN
+F 1 "Conn_01x10_Female" H 1842 8316 50  0000 C CNN
+F 2 "custom:10connect" H 1950 8950 50  0001 C CNN
+F 3 "~" H 1950 8950 50  0001 C CNN
+	1    1950 8950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3450 10775 3450 8700
+Wire Wire Line
+	3450 8700 2725 8700
+Wire Wire Line
+	2725 8700 2725 8450
+Wire Wire Line
+	2725 8450 2150 8450
+Connection ~ 3450 10775
+Wire Wire Line
+	3450 10775 950  10775
+Wire Wire Line
+	3400 10675 3400 8725
+Wire Wire Line
+	3400 8725 2700 8725
+Wire Wire Line
+	2700 8725 2700 8550
+Wire Wire Line
+	2700 8550 2150 8550
+Connection ~ 3400 10675
+Wire Wire Line
+	3400 10675 950  10675
+Wire Wire Line
+	5025 8200 4600 8200
+Wire Wire Line
+	4600 8200 4600 8750
+Wire Wire Line
+	4600 8750 2675 8750
+Wire Wire Line
+	2675 8750 2675 8650
+Wire Wire Line
+	2675 8650 2150 8650
+Wire Wire Line
+	5025 8300 4625 8300
+Wire Wire Line
+	2150 8775 2150 8750
+Wire Wire Line
+	4625 8300 4625 8775
+Wire Wire Line
+	2150 8775 4625 8775
+Wire Wire Line
+	2150 8850 2775 8850
+Wire Wire Line
+	2775 8850 2775 10275
+Connection ~ 2775 10275
+Wire Wire Line
+	2775 10275 9075 10275
+Wire Wire Line
+	2150 8950 2675 8950
+Wire Wire Line
+	2675 8950 2675 10875
+Wire Wire Line
+	950  10875 2675 10875
+Connection ~ 2675 10875
+Wire Wire Line
+	2675 10875 8125 10875
+Wire Wire Line
+	2150 9050 2600 9050
+Wire Wire Line
+	2600 9050 2600 10975
+Connection ~ 2600 10975
+Wire Wire Line
+	2600 10975 950  10975
+Wire Wire Line
+	950  10375 2525 10375
+Wire Wire Line
+	3800 10375 3800 8600
+Wire Wire Line
+	3800 8600 2825 8600
+Wire Wire Line
+	2825 8600 2825 5725
+Wire Wire Line
+	2825 5725 1325 5725
+Wire Wire Line
+	1325 5725 1325 4925
+Wire Wire Line
+	1325 4925 1600 4925
+Connection ~ 1600 4925
+Wire Wire Line
+	1600 4925 1975 4925
+Wire Wire Line
+	2300 5325 2525 5325
+Wire Wire Line
+	2525 5125 2525 5325
+Connection ~ 2300 5325
+Connection ~ 2525 5325
+Wire Wire Line
+	2525 5325 2525 5625
+Text GLabel 1300 10375 0    50   Input ~ 0
+12V
+Wire Wire Line
+	2525 10375 2525 9150
+Wire Wire Line
+	2525 9150 2150 9150
+Connection ~ 2525 10375
+Wire Wire Line
+	2525 10375 3800 10375
+Text GLabel 2325 8450 0    50   Input ~ 0
+scl
+Text GLabel 2350 8550 0    50   Input ~ 0
+sda
+Text GLabel 2325 8650 0    50   Input ~ 0
+25
+Text GLabel 2325 8775 0    50   Input ~ 0
+26
+Text GLabel 2350 8850 0    50   Input ~ 0
+3v3
+Text GLabel 2350 8950 0    50   Input ~ 0
+gnd
+Text GLabel 2350 9050 0    50   Input ~ 0
+5v
+Text GLabel 2350 9150 0    50   Input ~ 0
+12v
+Wire Wire Line
+	2150 9250 4650 9250
+Wire Wire Line
+	4650 9250 4650 8400
+Wire Wire Line
+	4650 8400 5025 8400
+Wire Wire Line
+	5025 8500 4675 8500
+Wire Wire Line
+	4675 8500 4675 9275
+Wire Wire Line
+	4675 9275 2450 9275
+Wire Wire Line
+	2450 9275 2450 9350
+Wire Wire Line
+	2450 9350 2150 9350
+Text GLabel 2350 9250 0    50   Input ~ 0
+27
+Text GLabel 2350 9350 0    50   Input ~ 0
+28
+$Comp
+L Switch:SW_DIP_x01 pwr_sw1
+U 1 1 66829A54
+P 2400 3850
+F 0 "pwr_sw1" H 2400 3583 50  0000 C CNN
+F 1 "SW_DIP_x01" H 2400 3674 50  0000 C CNN
+F 2 "custom:dipswitch1" H 2400 3850 50  0001 C CNN
+F 3 "~" H 2400 3850 50  0001 C CNN
+	1    2400 3850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2300 4500 2100 4500
+Wire Wire Line
+	2100 4500 2100 3850
+Connection ~ 2300 4500
+Wire Wire Line
+	2600 4400 2525 4400
+Wire Wire Line
+	2525 4400 2525 4050
+Wire Wire Line
+	2525 4050 2700 4050
+Wire Wire Line
+	2700 4050 2700 3850
+Wire Wire Line
+	8075 7400 8825 7400
+Wire Wire Line
+	8825 7400 8825 7100
+Connection ~ 8075 7400
+Wire Wire Line
+	8275 7200 8275 7300
+Wire Wire Line
+	8275 7300 8100 7300
+Connection ~ 8100 7300
+Wire Wire Line
+	8275 7200 10325 7200
+Wire Wire Line
+	8825 7100 10325 7100
 $EndSCHEMATC

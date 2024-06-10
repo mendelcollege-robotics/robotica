@@ -363,20 +363,8 @@ Wire Wire Line
 	9025 9725 9025 7925
 Wire Wire Line
 	9025 7925 9675 7925
-Wire Wire Line
-	9675 8025 9050 8025
-Wire Wire Line
-	9050 8025 9050 10575
-Wire Wire Line
-	9050 10575 950  10575
 Text GLabel 1250 10575 0    50   Input ~ 0
 sc6
-Wire Wire Line
-	950  10675 9075 10675
-Wire Wire Line
-	9075 10675 9075 8125
-Wire Wire Line
-	9075 8125 9675 8125
 Text GLabel 1250 10675 0    50   Input ~ 0
 sd6
 Wire Wire Line
@@ -385,10 +373,6 @@ Wire Wire Line
 	10475 6825 11025 6825
 Wire Wire Line
 	11025 6825 11025 10875
-Wire Wire Line
-	11025 10875 950  10875
-Wire Wire Line
-	950  10775 10875 10775
 Text GLabel 1250 10775 0    50   Input ~ 0
 sda
 Text GLabel 1250 10875 0    50   Input ~ 0
@@ -420,7 +404,7 @@ Wire Wire Line
 Wire Wire Line
 	6825 6250 6825 7200
 Wire Wire Line
-	6825 7200 5025 7200
+	6825 7200 6525 7200
 Connection ~ 5025 7200
 Wire Wire Line
 	5025 7200 5025 8150
@@ -533,7 +517,7 @@ Connection ~ 7075 5175
 Wire Wire Line
 	7075 5175 7075 5325
 Wire Wire Line
-	4775 8100 7075 8100
+	4775 8100 6400 8100
 Connection ~ 4775 8100
 Wire Wire Line
 	4775 8100 4775 10375
@@ -670,4 +654,61 @@ Wire Wire Line
 Connection ~ 3725 7600
 Wire Wire Line
 	3075 5950 3075 7600
+Wire Wire Line
+	6325 6950 6325 7200
+Connection ~ 6325 7200
+Wire Wire Line
+	6325 7200 5025 7200
+Wire Wire Line
+	6525 6950 6525 7200
+Connection ~ 6525 7200
+Wire Wire Line
+	6525 7200 6325 7200
+$Comp
+L Device:R i2c_res
+U 1 1 666C9452
+P 6400 7475
+F 0 "i2c_res" H 6470 7521 50  0000 L CNN
+F 1 "R" H 6470 7430 50  0000 L CNN
+F 2 "custom:resistor" V 6330 7475 50  0001 C CNN
+F 3 "~" H 6400 7475 50  0001 C CNN
+	1    6400 7475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 8100 6400 7625
+Connection ~ 6400 8100
+Wire Wire Line
+	6400 8100 7075 8100
+Wire Wire Line
+	6400 7325 6400 6950
+Wire Wire Line
+	6400 6950 6425 6950
+Wire Wire Line
+	4925 6950 4925 10775
+Wire Wire Line
+	950  10775 4925 10775
+Connection ~ 4925 10775
+Wire Wire Line
+	4925 10775 10875 10775
+Wire Wire Line
+	5025 6950 4975 6950
+Wire Wire Line
+	4975 6950 4975 10875
+Wire Wire Line
+	950  10875 4975 10875
+Connection ~ 4975 10875
+Wire Wire Line
+	4975 10875 11025 10875
+Wire Wire Line
+	10475 7825 10475 7925
+Wire Wire Line
+	10475 7925 10475 8025
+Connection ~ 10475 7925
+Wire Wire Line
+	10475 8025 10475 10550
+Wire Wire Line
+	10475 10550 10075 10550
+Connection ~ 10475 8025
+Connection ~ 10075 10550
 $EndSCHEMATC
