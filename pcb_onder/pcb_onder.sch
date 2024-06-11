@@ -46,47 +46,10 @@ F 3 "" H 5750 2475 50  0001 C CNN
 	1    5750 1725
 	1    0    0    -1  
 $EndComp
-$Comp
-L tb9051ftg:TB9051FTG motor_driver1
-U 1 1 66362316
-P 2475 4650
-F 0 "motor_driver1" V 2429 4978 50  0000 L CNN
-F 1 "TB9051FTG" V 2520 4978 50  0000 L CNN
-F 2 "custom:TB9051FTG" H 2475 5100 50  0001 C CNN
-F 3 "" H 2475 5100 50  0001 C CNN
-	1    2475 4650
-	0    1    1    0   
-$EndComp
-$Comp
-L tb9051ftg:TB9051FTG motor_driver2
-U 1 1 6636526D
-P 4125 4650
-F 0 "motor_driver2" V 4079 4978 50  0000 L CNN
-F 1 "TB9051FTG" V 4170 4978 50  0000 L CNN
-F 2 "custom:TB9051FTG" H 4125 5100 50  0001 C CNN
-F 3 "" H 4125 5100 50  0001 C CNN
-	1    4125 4650
-	0    1    1    0   
-$EndComp
-$Comp
-L tb9051ftg:TB9051FTG motor_driver3
-U 1 1 66365747
-P 5800 4650
-F 0 "motor_driver3" V 5754 4978 50  0000 L CNN
-F 1 "TB9051FTG" V 5845 4978 50  0000 L CNN
-F 2 "custom:TB9051FTG" H 5800 5100 50  0001 C CNN
-F 3 "" H 5800 5100 50  0001 C CNN
-	1    5800 4650
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2125 4150 2125 3975
 Wire Wire Line
 	2125 3975 1625 3975
 Wire Wire Line
 	1625 3975 1625 1725
-Wire Wire Line
-	2225 4150 2225 3975
 Wire Wire Line
 	2225 3975 2825 3975
 Wire Wire Line
@@ -106,8 +69,6 @@ Wire Wire Line
 Wire Wire Line
 	5450 4150 5450 3975
 Wire Wire Line
-	5450 3975 5150 3975
-Wire Wire Line
 	5150 3975 5150 1725
 Wire Wire Line
 	5550 4150 5550 3975
@@ -118,37 +79,17 @@ Wire Wire Line
 Wire Wire Line
 	3975 4150 3975 4125
 Wire Wire Line
-	3975 4125 5650 4125
-Wire Wire Line
 	5650 4125 5650 4150
-Wire Wire Line
-	3975 4125 2325 4125
-Wire Wire Line
-	2325 4125 2325 4150
-Connection ~ 3975 4125
-Wire Wire Line
-	2425 4150 2425 4050
-Wire Wire Line
-	2425 4050 4075 4050
 Wire Wire Line
 	4075 4050 4075 4150
 Wire Wire Line
-	4075 4050 5750 4050
-Wire Wire Line
 	5750 4050 5750 4150
-Connection ~ 4075 4050
 Wire Wire Line
-	1400 4125 2325 4125
-Wire Wire Line
-	1400 4125 1400 5950
-Connection ~ 2325 4125
-Wire Wire Line
-	2425 4050 975  4050
+	1400 4125 1400 4650
 Wire Wire Line
 	975  4050 975  6850
 Wire Wire Line
 	975  6850 1400 6850
-Connection ~ 2425 4050
 Wire Wire Line
 	3075 5950 1400 5950
 $Comp
@@ -534,8 +475,6 @@ Wire Wire Line
 Wire Wire Line
 	10075 8525 10075 10550
 Wire Wire Line
-	10075 10550 7100 10550
-Wire Wire Line
 	7100 10550 7100 9725
 Connection ~ 7100 9725
 Wire Wire Line
@@ -665,10 +604,10 @@ Connection ~ 6525 7200
 Wire Wire Line
 	6525 7200 6325 7200
 $Comp
-L Device:R i2c_res
+L Device:R i2c_res1
 U 1 1 666C9452
 P 6400 7475
-F 0 "i2c_res" H 6470 7521 50  0000 L CNN
+F 0 "i2c_res1" H 6470 7521 50  0000 L CNN
 F 1 "R" H 6470 7430 50  0000 L CNN
 F 2 "custom:resistor" V 6330 7475 50  0001 C CNN
 F 3 "~" H 6400 7475 50  0001 C CNN
@@ -711,4 +650,111 @@ Wire Wire Line
 	10475 10550 10075 10550
 Connection ~ 10475 8025
 Connection ~ 10075 10550
+Wire Wire Line
+	5450 3975 5150 3975
+Connection ~ 4075 4050
+Wire Wire Line
+	4075 4050 5750 4050
+Connection ~ 3975 4125
+$Comp
+L tb9051ftg:TB9051FTG motor_driver3
+U 1 1 66365747
+P 5800 4650
+F 0 "motor_driver3" V 5754 4978 50  0000 L CNN
+F 1 "TB9051FTG" V 5845 4978 50  0000 L CNN
+F 2 "custom:TB9051FTG" H 5800 5100 50  0001 C CNN
+F 3 "" H 5800 5100 50  0001 C CNN
+	1    5800 4650
+	0    1    1    0   
+$EndComp
+$Comp
+L tb9051ftg:TB9051FTG motor_driver2
+U 1 1 6636526D
+P 4125 4650
+F 0 "motor_driver2" V 4079 4978 50  0000 L CNN
+F 1 "TB9051FTG" V 4170 4978 50  0000 L CNN
+F 2 "custom:TB9051FTG" H 4125 5100 50  0001 C CNN
+F 3 "" H 4125 5100 50  0001 C CNN
+	1    4125 4650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1400 4125 2325 4125
+Wire Wire Line
+	3975 4125 3225 4125
+Connection ~ 2325 4125
+Wire Wire Line
+	2325 4125 2325 4150
+Connection ~ 2425 4050
+Wire Wire Line
+	2425 4150 2425 4050
+Wire Wire Line
+	2225 4150 2225 3975
+Wire Wire Line
+	2125 4150 2125 3975
+Wire Wire Line
+	2425 4050 4075 4050
+Wire Wire Line
+	2425 4050 975  4050
+$Comp
+L tb9051ftg:TB9051FTG motor_driver1
+U 1 1 66362316
+P 2475 4650
+F 0 "motor_driver1" V 2429 4978 50  0000 L CNN
+F 1 "TB9051FTG" V 2520 4978 50  0000 L CNN
+F 2 "custom:TB9051FTG" H 2475 5100 50  0001 C CNN
+F 3 "" H 2475 5100 50  0001 C CNN
+	1    2475 4650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10075 10550 8100 10550
+Wire Wire Line
+	8100 10175 7950 10175
+Wire Wire Line
+	8100 10175 8100 10550
+Connection ~ 8100 10550
+Wire Wire Line
+	8100 10550 7100 10550
+Wire Wire Line
+	8100 10175 8100 9100
+Wire Wire Line
+	8100 9100 7950 9100
+Connection ~ 8100 10175
+Wire Wire Line
+	8100 9100 8100 8025
+Wire Wire Line
+	8100 8025 7950 8025
+Connection ~ 8100 9100
+Wire Wire Line
+	8100 8025 8100 6950
+Wire Wire Line
+	8100 6950 7950 6950
+Connection ~ 8100 8025
+Wire Wire Line
+	8100 6950 8100 5875
+Wire Wire Line
+	8100 5875 7950 5875
+Connection ~ 8100 6950
+Wire Wire Line
+	8100 5850 8100 4800
+Wire Wire Line
+	8100 4800 7950 4800
+Wire Wire Line
+	1575 4650 1400 4650
+Connection ~ 1400 4650
+Wire Wire Line
+	1400 4650 1400 5950
+Wire Wire Line
+	3225 4650 3225 4125
+Connection ~ 3225 4125
+Wire Wire Line
+	3225 4125 2325 4125
+Wire Wire Line
+	4900 4650 4900 4125
+Wire Wire Line
+	3975 4125 4900 4125
+Connection ~ 4900 4125
+Wire Wire Line
+	4900 4125 5650 4125
 $EndSCHEMATC
