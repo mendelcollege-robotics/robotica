@@ -469,7 +469,7 @@
     (descr "28-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils)")
     (tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil")
     (path /663613E1)
-    (fp_text reference Portmultiplexer1 (at 3.81 -2.33) (layer F.SilkS)
+    (fp_text reference mcpmc (at 3.81 -2.33) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value MCP23017_SP (at 3.81 35.35) (layer F.Fab)
@@ -1070,11 +1070,6 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model ${KIPRJMOD}/3d/xt/149333987-659-xb-pm3516-atx60c-m-0330/xb-pm3516-atx60c-m-0330.stp
-      (offset (xyz 3.5 0.5 -6))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 -180 90))
-    )
   )
 
   (module Connector_AMASS:AMASS_XT30U-F_1x02_P5.0mm_Vertical (layer F.Cu) (tedit 5C8E9CDA) (tstamp 66656544)
@@ -1123,11 +1118,6 @@
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
-    )
-    (model ${KIPRJMOD}/3d/xt/149333716-659-xb-pm2156-atx30u-m/xb-pm2156-atx30u-m.stp
-      (offset (xyz -167 -44.5 -3))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 -180 90))
     )
   )
 
