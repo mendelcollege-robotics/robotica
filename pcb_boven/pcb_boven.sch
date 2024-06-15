@@ -47,17 +47,6 @@ F 3 "" H 825 425 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_DIP_x06 dip_swith_instellinen1
-U 1 1 66364D70
-P 3575 7200
-F 0 "dip_swith_instellinen1" H 3575 7767 50  0000 C CNN
-F 1 "SW_DIP_x06" H 3575 7676 50  0000 C CNN
-F 2 "custom:dipswitch6" H 3575 7200 50  0001 C CNN
-F 3 "~" H 3575 7200 50  0001 C CNN
-	1    3575 7200
-	1    0    0    -1  
-$EndComp
-$Comp
 L Switch:SW_DIP_x01 goal_kleur1
 U 1 1 66365885
 P 10775 5125
@@ -619,28 +608,6 @@ F 3 "~" H 4500 6175 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R6
-U 1 1 66553C02
-P 4650 6175
-F 0 "R6" V 4443 6175 50  0000 C CNN
-F 1 "R" V 4534 6175 50  0000 C CNN
-F 2 "custom:resistor" V 4580 6175 50  0001 C CNN
-F 3 "~" H 4650 6175 50  0001 C CNN
-	1    4650 6175
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R7
-U 1 1 6655A960
-P 4800 6175
-F 0 "R7" V 4593 6175 50  0000 C CNN
-F 1 "R" V 4684 6175 50  0000 C CNN
-F 2 "custom:resistor" V 4730 6175 50  0001 C CNN
-F 3 "~" H 4800 6175 50  0001 C CNN
-	1    4800 6175
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R1
 U 1 1 665A1C89
 P 10225 4600
@@ -659,8 +626,6 @@ Wire Wire Line
 	3875 7100 4350 7100
 Wire Wire Line
 	5025 7200 4500 7200
-Wire Wire Line
-	3875 7300 4650 7300
 Wire Wire Line
 	4050 6325 4050 6900
 Connection ~ 4050 6900
@@ -682,25 +647,7 @@ Connection ~ 4500 7200
 Wire Wire Line
 	4500 7200 3875 7200
 Wire Wire Line
-	4650 6325 4650 7300
-Connection ~ 4650 7300
-Wire Wire Line
-	4650 7300 5025 7300
-Wire Wire Line
-	4800 6325 4800 7400
-Wire Wire Line
-	3875 7400 4800 7400
-Connection ~ 4800 7400
-Wire Wire Line
-	4800 7400 5025 7400
-Wire Wire Line
-	3275 7400 3275 7300
-Wire Wire Line
-	3275 7300 3275 7200
-Connection ~ 3275 7300
-Wire Wire Line
 	3275 7200 3275 7100
-Connection ~ 3275 7200
 Wire Wire Line
 	3275 7000 3275 6900
 Wire Wire Line
@@ -720,21 +667,13 @@ Wire Wire Line
 	4050 6025 4200 6025
 Wire Wire Line
 	4350 6025 4500 6025
-Wire Wire Line
-	4650 6025 4800 6025
-Wire Wire Line
-	4650 6025 4500 6025
-Connection ~ 4650 6025
 Connection ~ 4500 6025
 Wire Wire Line
 	4350 6025 4200 6025
 Connection ~ 4350 6025
 Connection ~ 4200 6025
 Wire Wire Line
-	4800 6025 7275 6025
-Wire Wire Line
 	7550 6025 7550 6700
-Connection ~ 4800 6025
 Connection ~ 7550 6700
 Wire Wire Line
 	7550 6700 8125 6700
@@ -1249,4 +1188,17 @@ Wire Wire Line
 	8275 7200 10325 7200
 Wire Wire Line
 	8825 7100 10325 7100
+$Comp
+L Switch:SW_DIP_x04 SW1
+U 1 1 666FC3F3
+P 3575 7100
+F 0 "SW1" H 3575 7567 50  0000 C CNN
+F 1 "SW_DIP_x04" H 3575 7476 50  0000 C CNN
+F 2 "custom:dipswitch4" H 3575 7100 50  0001 C CNN
+F 3 "~" H 3575 7100 50  0001 C CNN
+	1    3575 7100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 6025 7275 6025
 $EndSCHEMATC

@@ -265,18 +265,6 @@ Text GLabel 1300 10975 0    50   Input ~ 0
 5v
 Text Notes 975  11100 0    50   ~ 0
 naar pcb onder
-Wire Wire Line
-	9150 7200 9150 10575
-Wire Wire Line
-	9150 10575 950  10575
-Wire Wire Line
-	9150 7200 10325 7200
-Wire Wire Line
-	10325 7100 9125 7100
-Wire Wire Line
-	9125 7100 9125 10475
-Wire Wire Line
-	9125 10475 950  10475
 Text GLabel 1300 10475 0    50   Input ~ 0
 sd6
 Text GLabel 1300 10575 0    50   Input ~ 0
@@ -1247,4 +1235,18 @@ Wire Wire Line
 	2525 4050 2700 4050
 Wire Wire Line
 	2700 4050 2700 3850
+Wire Wire Line
+	8075 7400 8825 7400
+Wire Wire Line
+	8825 7400 8825 7100
+Connection ~ 8075 7400
+Wire Wire Line
+	8275 7200 8275 7300
+Wire Wire Line
+	8275 7300 8100 7300
+Connection ~ 8100 7300
+Wire Wire Line
+	8275 7200 10325 7200
+Wire Wire Line
+	8825 7100 10325 7100
 $EndSCHEMATC
