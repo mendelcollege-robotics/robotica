@@ -82,6 +82,10 @@ Adafruit_MCP23X17 mcp2; // Instance for the second MCP23017 at address 0x22
 
 Adafruit_TCS34725 tcs = Adafruit_TCS34725();  // Initialise color sensorwith default values (int time = 2.4ms, gain = 1x) 
 
+String tlocd = ""; //temp data for goal location
+String locd = ""; //goal location in deg
+bool readloc = false;
+unsigned long datatime = 0;
 
 template <typename T_ty> struct TypeInfo { static const char * name; };
 template <typename T_ty> const char * TypeInfo<T_ty>::name = "unknown";
@@ -93,6 +97,7 @@ MAKE_TYPE_INFO( short )
 
 void setup() {
   Serial.begin(9600);
+  Serial1.begin(19200);
 
   // Initialize first MCP23017 with I2C address 0x20
   if (!mcp1.begin_I2C(mcp1ADDR)) {
@@ -159,21 +164,15 @@ void loop() {
   //Read color sensors
   for (uint8_t t=0; t<6; t++) {
     pcaselect(t);
-    Serial.print("PCA Port #"); Serial.println(t);
     for (uint8_t addr = 0; addr<=127; addr++) {
       if (addr == PCAADDR) continue;
       Wire.beginTransmission(addr);
       if (!Wire.endTransmission()) {
-        Serial.print("Found I2C 0x");  Serial.println(addr,HEX);
         if (tcs.begin()) {
-          Serial.println("Found sensor");
-          Serial.println("collecting data");
           uint16_t r, g, b, c, colorTemp, lux;
           tcs.getRawData(&r, &g, &b, &c);
           colorTemp = tcs.calculateColorTemperature_dn40(r, g, b, c);
           lux = tcs.calculateLux(r, g, b);
-          Serial.print("Color Temp: "); Serial.print(colorTemp, DEC); Serial.print(" K - ");
-          Serial.print("RGB: "); Serial.print(r, DEC); Serial.print(", "); Serial.print(g, DEC); Serial.print(", "); Serial.print(b, DEC); Serial.println(" ");
           if ((colorTemp) == 5201){
             colsensdata[t] = 0;
           }
@@ -199,6 +198,28 @@ void loop() {
     }
   }
   //read camera
+  if (Serial1.available()){
+    datatime = millis(); 
+
+    byte byteRead = Serial1.read();
+    
+    if (byteRead == 's'){
+      tlocd = ""; 
+      readloc = true;
+    }
+    else if (byteRead == 'e'){
+      readloc = false;
+      locd = tlocd;
+    }
+    else if (readloc == true){
+      tlocd += (char)byteRead;
+    }
+  }
+  else{
+    if (millis() - datatime > 5000){
+      locd = "999";
+    }
+  }
   //read compas
 
 
@@ -221,7 +242,15 @@ void loop() {
     Serial.print(colsensdata[i]);
     Serial.print(", ");
   }
+  Serial.println();
   //camera
+  Serial.print("location of the goal is: ");
+  if(locd == 999){
+    Serial.println("unknown, there is no working connection with the camera");
+  }
+  else{
+    Serial.println(locd);
+  }
   //compas
   //dip settings
 
@@ -236,6 +265,8 @@ void loop() {
      * 
    */
 
-
-   delay(20);
+  Serial.println();
+  Serial.println();
+  Serial.println();
+  delay(1);
 }
