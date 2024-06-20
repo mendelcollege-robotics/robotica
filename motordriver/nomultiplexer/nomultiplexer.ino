@@ -1,20 +1,24 @@
 //moveohmi = https://robotics.stackexchange.com/questions/7829/how-to-program-a-three-wheel-omni
-
-
-#include <Adafruit_MCP23X17.h>
-
+//https://www.pololu.com/product/2997
+//https://www.pololu.com/product/4861
+//
 // motor one
-int enA = 33;
-int in1 = 2;
-int in2 = 3;
+int m1penA = 1;
+int m1enB = 2;
+int m1pwm1 = 3;
+int m1pwm2 = 4;
+int m1encA = 13;
+int m1encB = 14;
 // motor two
-int enB = 36;
-int in3 = 4;
-int in4 = 5;
+int m2enA = 5;
+int m2enB = 6;
+int m2pwm1 = 7;
+int m2pwm2 = 8;
 // motor three
-int enC = 37;
-int in5 = 7;
-int in6 = 6;
+int m3enA = 9;
+int m3enB = 10;
+int m3pwm1 = 11;
+int m3pwm2 = 12;
 
 int sp = 160;
 
@@ -29,103 +33,37 @@ double dirrad = 0.00;
 void setup()
 {
  // set all the motor control pins to outputs
- pinMode(enA, OUTPUT);
- pinMode(enB, OUTPUT);
- pinMode(enC, OUTPUT);
+ pinMode(m1enA, OUTPUT);
+ pinMode(m1enB, OUTPUT);
+ pinMode(m2enA, OUTPUT);
+ pinMode(m2enB, OUTPUT);
+ pinMode(m3enA, OUTPUT);
+ pinMode(m3enB, OUTPUT);
 
- pinMode(in1, OUTPUT);
- pinMode(in2, OUTPUT);
- pinMode(in3, OUTPUT);
- pinMode(in4, OUTPUT);
- pinMode(in5, OUTPUT);
- pinMode(in6, OUTPUT);
-}
-void demoOne()
-{
-// this function will run the motors in both directions at a fixed speed
-  // turn on motor A
-  digitalWrite(in1, HIGH);
-  digitalWrite(in2, LOW);
-  // set speed to 200 out of possible range 0~255
-  analogWrite(enA, sp);
-  // turn on motor B
-  digitalWrite(in3, HIGH);
-  digitalWrite(in4, LOW);
-  // set speed to 200 out of possible range 0~255
-  analogWrite(enB, sp);
-  // turn on motor c
-  digitalWrite(in5, HIGH);
-  digitalWrite(in6, LOW);
-  // set speed to 200 out of possible range 0~255
-  analogWrite(enC, sp);
-  delay(2000);
-  // now change motor directions
-  digitalWrite(in1, LOW);
-  digitalWrite(in2, HIGH);
-  digitalWrite(in3, LOW);
-  digitalWrite(in4, HIGH);
-  digitalWrite(in5, LOW);
-  digitalWrite(in6, HIGH);
-  delay(2000);
-  // now turn off motors
-  digitalWrite(in1, LOW);
-  digitalWrite(in2, LOW);
-  digitalWrite(in3, LOW);
-  digitalWrite(in4, LOW);
-}
-void demoTwo()
-{
-  // this function will run the motors across the range of possible speeds
-  // note that maximum speed is determined by the motor itself and theoperating voltage
-  // the PWM values sent by analogWrite() are fractions of the maximumspeed possible
-  // by your hardware
-  // turn on motors
-  digitalWrite(in1, LOW);
-  digitalWrite(in2, HIGH);
-  digitalWrite(in3, LOW);
-  digitalWrite(in4, HIGH);
-  digitalWrite(in5, LOW);
-  digitalWrite(in6, HIGH);
-  // accelerate from zero to maximum speed
-  for (int i = 0; i < 256; i++)
-  {
-    analogWrite(enA, i);
-    analogWrite(enB, i);
-    analogWrite(enC, i); 
-    delay(20);
-  }
-  // decelerate from maximum speed to zero
-  for (int i = 255; i >= 0; --i)
-  {
-    analogWrite(enA, i);
-    analogWrite(enB, i);
-    analogWrite(enC, i);
-    delay(20);
-  }
-  // now turn off motors
-  digitalWrite(in1, LOW);
-  digitalWrite(in2, LOW);
-  digitalWrite(in3, LOW);
-  digitalWrite(in4, LOW);
-  digitalWrite(in5, LOW);
-  digitalWrite(in6, LOW);
+ pinMode(m1pwm1, OUTPUT);
+ pinMode(m1pwm2, OUTPUT);
+ pinMode(m2pwm1, OUTPUT);
+ pinMode(m2pwm2, OUTPUT);
+ pinMode(m3pwm1, OUTPUT);
+ pinMode(m3pwm2, OUTPUT);
+
+ pinMode(m1encA, INPUT);
+ pinMode(m1encB, INPUT);
 }
 
 void Amove(int sped){
-  Serial.print("moving A ");
+  digitalWrite(m1enA, HIGH);
+  digitalWrite(m1enA, LOW);
+  sp = abs(sped);
   if (sped < 0) {
-    digitalWrite(in1, LOW);
-    digitalWrite(in2, HIGH);
     Serial.print("back");
-  }
-  else{
-    digitalWrite(in1, HIGH);
-    digitalWrite(in2, LOW);
+    analogWrite(m1pwm1, sp);
+    digitalWrite(m1pwm2, LOW);
+  } else {
     Serial.print("forward");
+    digitalWrite(m1pwm1, LOW);
+    analogWrite(m1pwm2, sp);
   } 
-  Serial.print("with speed: ");
-  sp = abs(sped); 
-  analogWrite(enA, sp);
   Serial.println(sp);
 }
 void Bmove(int sped) {
@@ -160,7 +98,6 @@ void Cmove(int sped) {
   analogWrite(enC, sp);
   Serial.println(sp);
 }
-
 
 void turnoff(){
   Serial.println("stop");
@@ -236,9 +173,6 @@ void beddermoveohmi(int speed, int direction){
 }
 void loop()
 {
-  //demoOne();
-  //delay(1000);
-  //demoTwo();
   delay(1000);
   turnoff();
   beddermoveohmi(255, 0);

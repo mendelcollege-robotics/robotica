@@ -98,6 +98,10 @@ MAKE_TYPE_INFO( short )
 void setup() {
   Serial.begin(9600);
   Serial1.begin(19200);
+  
+  //connect unconected pins to GND
+  pinMode(40, INPUT_PULLUP);
+  pinMode(41, INPUT_PULLUP);
 
   // Initialize first MCP23017 with I2C address 0x20
   if (!mcp1.begin_I2C(mcp1ADDR)) {

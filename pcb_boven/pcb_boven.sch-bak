@@ -791,39 +791,7 @@ Wire Wire Line
 Connection ~ 8200 2375
 Connection ~ 8700 5825
 Wire Wire Line
-	8750 5425 4975 5425
-Wire Wire Line
-	4975 5425 4975 7700
-Wire Wire Line
-	4975 7700 5025 7700
-Wire Wire Line
 	5025 8100 4800 8100
-Wire Wire Line
-	5025 7800 4950 7800
-Wire Wire Line
-	4950 7800 4950 5300
-Wire Wire Line
-	4950 5300 8275 5300
-Wire Wire Line
-	8275 5300 8275 5125
-Wire Wire Line
-	8275 5125 8750 5125
-Wire Wire Line
-	8750 5225 8325 5225
-Wire Wire Line
-	8325 5225 8325 5350
-Wire Wire Line
-	8325 5350 4925 5350
-Wire Wire Line
-	4925 5350 4925 7900
-Wire Wire Line
-	4925 7900 5025 7900
-Wire Wire Line
-	7225 8600 8475 8600
-Wire Wire Line
-	8475 8600 8475 5325
-Wire Wire Line
-	8475 5325 8750 5325
 Wire Wire Line
 	7350 7300 8100 7300
 Wire Wire Line
@@ -1201,4 +1169,24 @@ F 3 "~" H 3575 7100 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4500 6025 7275 6025
+Wire Wire Line
+	4925 6700 4925 5350
+Wire Wire Line
+	4925 5350 8550 5350
+Wire Wire Line
+	8550 5350 8550 5525
+Wire Wire Line
+	8550 5525 8750 5525
+Wire Wire Line
+	4925 6700 5025 6700
+Wire Wire Line
+	8750 5625 8525 5625
+Wire Wire Line
+	8525 5625 8525 5375
+Wire Wire Line
+	8525 5375 4950 5375
+Wire Wire Line
+	4950 5375 4950 6800
+Wire Wire Line
+	4950 6800 5025 6800
 $EndSCHEMATC

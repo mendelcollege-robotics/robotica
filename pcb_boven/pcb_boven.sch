@@ -4,13 +4,13 @@ EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
-Title ""
+Title "Upper_pcb"
 Date ""
 Rev ""
-Comp ""
-Comment1 ""
-Comment2 ""
-Comment3 ""
+Comp "Mendelcollege"
+Comment1 "For more info email 10810@mendelcollege.nl"
+Comment2 "https://github.com/ableTI/robotica/"
+Comment3 "https://mendelcollege.nl/ontdek-je-talenten/robotica-en-beta/"
 Comment4 ""
 $EndDescr
 $Comp
