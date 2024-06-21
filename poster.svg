@@ -90,8 +90,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.70710678"
-     inkscape:cx="858.18289"
-     inkscape:cy="499.90489"
+     inkscape:cx="843.3428"
+     inkscape:cy="232.3041"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -109,7 +109,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -842,18 +842,18 @@
        id="rect1815-2"
        width="116.222"
        height="42.638527"
-       x="151.88918"
-       y="2.8450727" />
+       x="158.37491"
+       y="3.7035949" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:7.42307px;line-height:1.25;font-family:sans-serif;fill:#fffff5;fill-opacity:1;stroke:none;stroke-width:0.197717"
-       x="194.92693"
-       y="11.970266"
+       x="201.41266"
+       y="12.828789"
        id="text1845-9"><tspan
          sodipodi:role="line"
          id="tspan1843-1"
-         x="194.92693"
-         y="11.970266"
+         x="201.41266"
+         y="12.828789"
          style="font-size:7.42307px;fill:#fffff5;fill-opacity:1;stroke-width:0.197717">abstract</tspan></text>
     <text
        xml:space="preserve"
@@ -861,7 +861,7 @@
        x="25.996389"
        y="107.72469"
        id="text1849-2"
-       transform="matrix(1.5029828,0,0,1.5029828,115.77735,-145.75404)"><tspan
+       transform="matrix(1.5029828,0,0,1.5029828,122.98727,-144.11947)"><tspan
          x="25.996389"
          y="107.72469"><tspan
            style="font-size:2.82222px;fill:#ffffff;fill-opacity:1;stroke-width:0.264583">We are a team of three members for a school in the </tspan></tspan><tspan
