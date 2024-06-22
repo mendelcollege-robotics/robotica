@@ -1,9 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP CC6-1205SF-E
-D dcdc,convertor TDK-Lambda Through Hole Isolated DC-DC Converter, I/O isolation 500V ac, Vout 5V dc
-K
-F https://product.tdk.com/system/files/dam/doc/product/power/switching-power/dc-dc-converter/catalog/cc-e_e.pdf
-$ENDCMP
-#
-#End Doc Library
