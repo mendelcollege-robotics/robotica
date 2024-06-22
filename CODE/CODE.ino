@@ -97,6 +97,7 @@ MAKE_TYPE_INFO( short )
 
 void setup() {
   Serial.begin(9600);
+  -
   Serial1.begin(19200);
   
   //connect unconected pins to GND
