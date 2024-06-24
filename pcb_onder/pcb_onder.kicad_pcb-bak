@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 1)
+    (drawings 6)
     (tracks 843)
     (zones 0)
     (modules 22)
@@ -1036,6 +1036,11 @@
     )
   )
 
+  (gr_circle (center 114.3 101.6) (end 180.34 68.58) (layer Edge.Cuts) (width 0.05))
+  (gr_curve (pts (xy 64.239824 109.703623) (xy 64.260324 109.637774) (xy 64.31238 109.574363) (xy 64.38936 109.516875)) (layer Edge.Cuts) (width 0.00032))
+  (gr_curve (pts (xy 64.270808 109.900976) (xy 64.229812 109.837075) (xy 64.219044 109.769388) (xy 64.239824 109.703623)) (layer Edge.Cuts) (width 0.00032))
+  (gr_curve (pts (xy 64.38936 109.516875) (xy 64.4661 109.459173) (xy 64.567492 109.407339) (xy 64.680084 109.358424)) (layer Edge.Cuts) (width 0.00032))
+  (gr_curve (pts (xy 64.474296 110.078965) (xy 64.382444 110.0248) (xy 64.31152 109.965029) (xy 64.270808 109.900976)) (layer Edge.Cuts) (width 0.00032))
   (gr_circle (center 114.3 101.6) (end 114.935 101.6) (layer Dwgs.User) (width 0.15))
 
   (segment (start 127.144999 76.979999) (end 135.89 85.725) (width 0.25) (layer F.Cu) (net 1))
