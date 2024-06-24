@@ -144,6 +144,18 @@ X SC2 9 400 300 100 L 50 50 1 1 O
 ENDDRAW
 ENDDEF
 #
+# custom_screw_hole
+#
+DEF custom_screw_hole U 0 40 Y Y 1 F N
+F0 "U" 0 150 50 H V C CNN
+F1 "custom_screw_hole" 0 150 50 H V C CNN
+F2 "custom:screwhole" 0 150 50 H I C CNN
+F3 "" 0 150 50 H I C CNN
+DRAW
+X screwhole 1 0 0 100 U 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
 # pololu_motor_pololu_motor
 #
 DEF pololu_motor_pololu_motor U 0 40 Y Y 1 F N

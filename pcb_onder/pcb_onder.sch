@@ -737,10 +737,6 @@ Wire Wire Line
 	8100 5875 7950 5875
 Connection ~ 8100 6950
 Wire Wire Line
-	8100 5850 8100 4800
-Wire Wire Line
-	8100 4800 7950 4800
-Wire Wire Line
 	1575 4650 1400 4650
 Connection ~ 1400 4650
 Wire Wire Line
@@ -757,4 +753,97 @@ Wire Wire Line
 Connection ~ 4900 4125
 Wire Wire Line
 	4900 4125 5650 4125
+$Comp
+L custom:screw_hole U1
+U 1 1 667E94F1
+P 7900 3150
+F 0 "U1" H 7958 3484 50  0000 L CNN
+F 1 "screw_hole" H 7958 3393 50  0000 L CNN
+F 2 "custom:screwhole" H 7900 3300 50  0001 C CNN
+F 3 "" H 7900 3300 50  0001 C CNN
+	1    7900 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L custom:screw_hole U2
+U 1 1 667E9FE6
+P 7950 3150
+F 0 "U2" H 8008 3484 50  0000 L CNN
+F 1 "screw_hole" H 8008 3393 50  0000 L CNN
+F 2 "custom:screwhole" H 7950 3300 50  0001 C CNN
+F 3 "" H 7950 3300 50  0001 C CNN
+	1    7950 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L custom:screw_hole U3
+U 1 1 667FC086
+P 8000 3150
+F 0 "U3" H 8058 3484 50  0000 L CNN
+F 1 "screw_hole" H 8058 3393 50  0000 L CNN
+F 2 "custom:screwhole" H 8000 3300 50  0001 C CNN
+F 3 "" H 8000 3300 50  0001 C CNN
+	1    8000 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L custom:screw_hole U4
+U 1 1 6680E6AB
+P 8050 3150
+F 0 "U4" H 8108 3484 50  0000 L CNN
+F 1 "screw_hole" H 8108 3393 50  0000 L CNN
+F 2 "custom:screwhole" H 8050 3300 50  0001 C CNN
+F 3 "" H 8050 3300 50  0001 C CNN
+	1    8050 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L custom:screw_hole U5
+U 1 1 6680E6B1
+P 8100 3150
+F 0 "U5" H 8158 3484 50  0000 L CNN
+F 1 "screw_hole" H 8158 3393 50  0000 L CNN
+F 2 "custom:screwhole" H 8100 3300 50  0001 C CNN
+F 3 "" H 8100 3300 50  0001 C CNN
+	1    8100 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L custom:screw_hole U6
+U 1 1 6680E6B7
+P 8150 3150
+F 0 "U6" H 8208 3484 50  0000 L CNN
+F 1 "screw_hole" H 8208 3393 50  0000 L CNN
+F 2 "custom:screwhole" H 8150 3300 50  0001 C CNN
+F 3 "" H 8150 3300 50  0001 C CNN
+	1    8150 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 3150 8100 3150
+Wire Wire Line
+	8100 3150 8050 3150
+Connection ~ 8100 3150
+Wire Wire Line
+	8050 3150 8000 3150
+Connection ~ 8050 3150
+Wire Wire Line
+	8000 3150 7950 3150
+Connection ~ 8000 3150
+Wire Wire Line
+	7950 3150 7900 3150
+Connection ~ 7950 3150
+Wire Wire Line
+	5950 2975 7600 2975
+Wire Wire Line
+	7600 2975 7600 3150
+Wire Wire Line
+	7600 3150 7900 3150
+Connection ~ 5950 2975
+Connection ~ 7900 3150
+Wire Wire Line
+	7950 4800 8100 4800
+Wire Wire Line
+	8100 4800 8100 5875
+Connection ~ 8100 5875
 $EndSCHEMATC

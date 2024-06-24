@@ -4,13 +4,13 @@ EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
-Title ""
+Title "Lower pcb"
 Date ""
 Rev ""
-Comp ""
-Comment1 ""
-Comment2 ""
-Comment3 ""
+Comp "Mendelcollege"
+Comment1 "For more info: 10810@mendelcollege.nl"
+Comment2 "https://mendelcollege.nl/ontdek-je-talenten/robotica-en-beta/"
+Comment3 "https://github.com/ableTI/robotica/"
 Comment4 ""
 $EndDescr
 $Comp
@@ -757,4 +757,92 @@ Wire Wire Line
 Connection ~ 4900 4125
 Wire Wire Line
 	4900 4125 5650 4125
+$Comp
+L custom:screw_hole U?
+U 1 1 667E94F1
+P 7900 3150
+F 0 "U?" H 7958 3484 50  0000 L CNN
+F 1 "screw_hole" H 7958 3393 50  0000 L CNN
+F 2 "custom:screwhole" H 7900 3300 50  0001 C CNN
+F 3 "" H 7900 3300 50  0001 C CNN
+	1    7900 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L custom:screw_hole U?
+U 1 1 667E9FE6
+P 7950 3150
+F 0 "U?" H 8008 3484 50  0000 L CNN
+F 1 "screw_hole" H 8008 3393 50  0000 L CNN
+F 2 "custom:screwhole" H 7950 3300 50  0001 C CNN
+F 3 "" H 7950 3300 50  0001 C CNN
+	1    7950 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L custom:screw_hole U?
+U 1 1 667FC086
+P 8000 3150
+F 0 "U?" H 8058 3484 50  0000 L CNN
+F 1 "screw_hole" H 8058 3393 50  0000 L CNN
+F 2 "custom:screwhole" H 8000 3300 50  0001 C CNN
+F 3 "" H 8000 3300 50  0001 C CNN
+	1    8000 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L custom:screw_hole U?
+U 1 1 6680E6AB
+P 8050 3150
+F 0 "U?" H 8108 3484 50  0000 L CNN
+F 1 "screw_hole" H 8108 3393 50  0000 L CNN
+F 2 "custom:screwhole" H 8050 3300 50  0001 C CNN
+F 3 "" H 8050 3300 50  0001 C CNN
+	1    8050 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L custom:screw_hole U?
+U 1 1 6680E6B1
+P 8100 3150
+F 0 "U?" H 8158 3484 50  0000 L CNN
+F 1 "screw_hole" H 8158 3393 50  0000 L CNN
+F 2 "custom:screwhole" H 8100 3300 50  0001 C CNN
+F 3 "" H 8100 3300 50  0001 C CNN
+	1    8100 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L custom:screw_hole U?
+U 1 1 6680E6B7
+P 8150 3150
+F 0 "U?" H 8208 3484 50  0000 L CNN
+F 1 "screw_hole" H 8208 3393 50  0000 L CNN
+F 2 "custom:screwhole" H 8150 3300 50  0001 C CNN
+F 3 "" H 8150 3300 50  0001 C CNN
+	1    8150 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 3150 8100 3150
+Wire Wire Line
+	8100 3150 8050 3150
+Connection ~ 8100 3150
+Wire Wire Line
+	8050 3150 8000 3150
+Connection ~ 8050 3150
+Wire Wire Line
+	8000 3150 7950 3150
+Connection ~ 8000 3150
+Wire Wire Line
+	7950 3150 7900 3150
+Connection ~ 7950 3150
+Wire Wire Line
+	5950 2975 7600 2975
+Wire Wire Line
+	7600 2975 7600 3150
+Wire Wire Line
+	7600 3150 7900 3150
+Connection ~ 5950 2975
+Connection ~ 7900 3150
 $EndSCHEMATC
