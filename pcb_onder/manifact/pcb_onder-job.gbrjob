@@ -7,7 +7,7 @@
       "Application": "Pcbnew",
       "Version":     "5.1.9+dfsg1-1+deb11u1"
     },
-    "CreationDate":  "2024-06-24T23:38:04+02:00"
+    "CreationDate":  "2024-06-25T08:23:57+02:00"
   },
   "GeneralSpecs":
   {
@@ -19,8 +19,8 @@
     },
     "Size":
     {
-      "X": 147.720,
-      "Y": 147.720
+      "X": 132.509,
+      "Y": 151.177
     },
     "LayerNumber": 2,
     "BoardThickness":  1.600
