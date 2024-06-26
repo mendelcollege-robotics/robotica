@@ -1,5 +1,5 @@
 # About
-The soccer robot for wk [Robocupl](https://www.robocup.org/leagues/18 2024)
+The soccer robot for wk [Robocupl](https://www.robocup.org/leagues/18)
 
 
 
