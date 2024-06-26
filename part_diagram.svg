@@ -202,7 +202,7 @@
        gradientUnits="userSpaceOnUse"
        x="127.30518"
        y="116.33867"
-       gradientTransform="matrix(-0.01564364,-0.15061294,0.13970449,-0.0164951,85.718401,182.92891)">
+       gradientTransform="matrix(-0.0396841,-0.23954654,0.35439626,-0.02623509,63.990798,199.67045)">
       <meshrow
          id="meshrow4494-3-9-4">
         <meshpatch
@@ -679,12 +679,12 @@
        rx="28.006786"
        ry="6.7664099" />
     <path
-       style="fill:url(#meshgradient964-5-7-5);fill-opacity:1;stroke:#000000;stroke-width:0.145943px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 103.04675,161.45808 -1.60557,0.20547 -0.83178,-7.83586 -1.437382,0.23013 2.175072,-2.76178 2.44686,2.19731 -1.48308,0.23002 z"
+       style="fill:url(#meshgradient964-5-7-5);fill-opacity:1;stroke:#000000;stroke-width:0.293148px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 107.9486,165.52157 -4.07294,0.3268 -2.11003,-12.46277 -3.646289,0.36602 5.517629,-4.39255 6.20709,3.49477 -3.76221,0.36585 z"
        id="path962-2-9-4"
        sodipodi:nodetypes="cccccccc"
-       inkscape:transform-center-x="9.8359412"
-       inkscape:transform-center-y="1.2595101" />
+       inkscape:transform-center-x="24.951387"
+       inkscape:transform-center-y="2.0032239" />
     <script
        id="mesh_polyfill-52"
        type="text/javascript">
