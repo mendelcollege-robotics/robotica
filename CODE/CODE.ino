@@ -27,11 +27,11 @@
 #define ir15 14  // GPB6
 #define ir16 15  // GPB7
 
-//miltiplex1
-#define pwm5 12  // GPA0  Motor driver 3 pwm1
-#define pwm6 13  // GPA1  Motor driver 3 pwm2
-#define enB3 14  // GPA2  Motor driver 3 enB
-#define enA3 15  // GPA3  Motor driver 3 enA
+//miltiplex2
+#define pwm5 0  // GPA0  Motor driver 3 pwm1
+#define pwm6 1  // GPA1  Motor driver 3 pwm2
+#define enB3 2  // GPA2  Motor driver 3 enB
+#define enA3 3  // GPA3  Motor driver 3 enA
 #define M1A  4   // GPA4  Motor 1 A
 #define M1B  5   // GPA5  Morot 1 B
 #define M2A  6   // GPA6  Motor 2 A
@@ -52,8 +52,6 @@
 #define dip2 3  //settings dip switch port 2
 #define dip3 4  //settings dip switch port 3
 #define dip4 5  //settings dip switch port 4
-#define dip5 6  //settings dip switch port 5
-#define dip6 27 //settings dip switch port 6
 #define buz 8   //buzzer
 
 
@@ -97,12 +95,43 @@ MAKE_TYPE_INFO( short )
 
 void setup() {
   Serial.begin(9600);
-  -
+
   Serial1.begin(19200);
   
   //connect unconected pins to GND
+  pinMode(6, INPUT_PULLUP);
+  pinMode(7, INPUT_PULLUP);
+  pinMode(10, INPUT_PULLUP);
+  pinMode(11, INPUT_PULLUP);
+  pinMode(12, INPUT_PULLUP);
+  pinMode(29, INPUT_PULLUP);
+  pinMode(30, INPUT_PULLUP);
+  pinMode(31, INPUT_PULLUP);
+  pinMode(32, INPUT_PULLUP);
+  pinMode(33, INPUT_PULLUP);
+  pinMode(34, INPUT_PULLUP);
+  pinMode(35, INPUT_PULLUP);
+  pinMode(36, INPUT_PULLUP);
+  pinMode(37, INPUT_PULLUP);
+  pinMode(38, INPUT_PULLUP);
+  pinMode(39, INPUT_PULLUP);
   pinMode(40, INPUT_PULLUP);
   pinMode(41, INPUT_PULLUP);
+  pinMode(13, INPUT_PULLUP);
+  pinMode(14, INPUT_PULLUP);
+  pinMode(15, INPUT_PULLUP);
+  pinMode(16, INPUT_PULLUP);
+  pinMode(17, INPUT_PULLUP);
+  pinMode(20, INPUT_PULLUP);
+  pinMode(21, INPUT_PULLUP);
+  pinMode(22, INPUT_PULLUP);
+  pinMode(23, INPUT_PULLUP);
+
+  //extrapins
+  pinMode(25, INPUT_PULLUP);
+  pinMode(26, INPUT_PULLUP);
+  pinMode(27, INPUT_PULLUP);
+  pinMode(28, INPUT_PULLUP);
 
   // Initialize first MCP23017 with I2C address 0x20
   if (!mcp1.begin_I2C(mcp1ADDR)) {
