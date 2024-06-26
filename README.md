@@ -1,9 +1,16 @@
-The soccer robot for wk https://www.robocup.org/leagues/18 2024 
+# About
+The soccer robot for wk [Robocup](https://www.robocup.org/leagues/18)
 
-https://mendelcollege.nl/ontdek-je-talenten/robotica-en-beta/
+
 
 ![poster](https://github.com/ableTI/robotica/blob/main/poster.svg)
 
-Sponsors:
-  Opencircuit
-  Tinytronics
+# Sponsors:
+
+  -Opencircuit
+  
+  -Tinytronics
+  
+# info:
+
+  [Mendelcollege.nl](https://mendelcollege.nl/ontdek-je-talenten/robotica-en-beta/)
