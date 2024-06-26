@@ -5,8 +5,12 @@ https://mendelcollege.nl/ontdek-je-talenten/robotica-en-beta/
 
 ![poster](https://github.com/ableTI/robotica/blob/main/poster.svg)
 
-#Sponsors:
+# Sponsors:
+
   Opencircuit
+  
   Tinytronics
-#info:
+  
+# info:
+
   Mendelcollege.nl
