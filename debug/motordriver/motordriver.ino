@@ -1,22 +1,32 @@
-//moveohmi = https://robotics.stackexchange.com/questions/7829/how-to-program-a-three-wheel-omni
-
 
 #include <Adafruit_MCP23X17.h>
+//moveohmi = https://robotics.stackexchange.com/questions/7829/how-to-program-a-three-wheel-omni
+//https://www.pololu.com/product/2997
+//https://www.pololu.com/product/4861
+//
+// motor one/A  front
+#define  m1enA 3   // GPA3
+#define  m1enB 2   // GPA2
+#define  m1pwm1 0  // GPA0
+#define  m1pwm2 1  // GPA1
+#define  m1encA 12 // GPB4
+#define  m1encB 13 // GPB5
+// motor two/B  left
+#define  m2enA 7   // GPA7
+#define  m2enB 6   // GPA6
+#define  m2pwm1 4  // GPA4
+#define  m2pwm2 5  // GPA5
+#define  m2encA 14 // GPB6
+#define  m2encB 15 // GPB7
+// motor three/C    right
+#define  m3enA 11  // GPB3
+#define  m3enB 10  // GPB2
+#define  m3pwm1 8  // GPB0
+#define  m3pwm2 9  // GPB1
+#define  m3encA 24   // teensy port 24
+#define  m3encB 9   // teensy port 9
 
-// motor one
-int enA = 33;
-int in1 = 2;
-int in2 = 3;
-// motor two
-int enB = 36;
-int in3 = 4;
-int in4 = 5;
-// motor three
-int enC = 37;
-int in5 = 7;
-int in6 = 6;
-
-int sp = 160;
+double sp = 1.000; //speed in 0-1
 
 double dirA = 0.00;
 double dirB = 0.00;
@@ -25,234 +35,230 @@ double spdA = 0.00;
 double spdB = 0.00;
 double spdC = 0.00;
 double dirrad = 0.00;
+double pi = 3.1415926535897;
+
+double Arpm = 0.00;
+volatile long Aencount = 0;
+unsigned long ALtime = 0;
+unsigned long ACtime = 0;
+unsigned long APtime = 0;
+double Brpm = 0.00;
+volatile long Bencount = 0;
+unsigned long BLtime = 0;
+unsigned long BCtime = 0;
+unsigned long BPtime = 0;
+double Crpm = 0.00;
+volatile long Cencount = 0;
+unsigned long CLtime = 0;
+unsigned long CCtime = 0;
+unsigned long CPtime = 0;
+
+Adafruit_MCP23X17 mcp2;
 
 void setup()
 {
+ if (!mcp2.begin_I2C(0x22)) {
+  Serial.println("Error initializing MCP23017 at 0x22.");
+  while (1);
+ }
  // set all the motor control pins to outputs
- pinMode(enA, OUTPUT);
- pinMode(enB, OUTPUT);
- pinMode(enC, OUTPUT);
+ mcp2.pinMode(m1enA, OUTPUT);
+ mcp2.pinMode(m1enB, OUTPUT);
+ mcp2.pinMode(m2enA, OUTPUT);
+ mcp2.pinMode(m2enB, OUTPUT);
+ mcp2.pinMode(m3enA, OUTPUT);
+ mcp2.pinMode(m3enB, OUTPUT);
 
- pinMode(in1, OUTPUT);
- pinMode(in2, OUTPUT);
- pinMode(in3, OUTPUT);
- pinMode(in4, OUTPUT);
- pinMode(in5, OUTPUT);
- pinMode(in6, OUTPUT);
+ mcp2.pinMode(m1pwm1, OUTPUT);
+ mcp2.pinMode(m1pwm2, OUTPUT);
+ mcp2.pinMode(m2pwm1, OUTPUT);
+ mcp2.pinMode(m2pwm2, OUTPUT);
+ mcp2.pinMode(m3pwm1, OUTPUT);
+ mcp2.pinMode(m3pwm2, OUTPUT);
+
+ //set encoder pins to input
+ mcp2.pinMode(m1encA, INPUT);
+ mcp2.pinMode(m1encB, INPUT);
+ mcp2.pinMode(m2encA, INPUT);
+ mcp2.pinMode(m2encB, INPUT);
+ pinMode(m3encA, INPUT);
+ pinMode(m3encB, INPUT);
+ attachInterrupt(digitalPinToInterrupt(m1encA), AencoderISR, CHANGE);
+ attachInterrupt(digitalPinToInterrupt(m1encB), AencoderISR, CHANGE);
+ attachInterrupt(digitalPinToInterrupt(m2encA), BencoderISR, CHANGE);
+ attachInterrupt(digitalPinToInterrupt(m2encB), BencoderISR, CHANGE);
+ attachInterrupt(digitalPinToInterrupt(m3encA), CencoderISR, CHANGE);
+ attachInterrupt(digitalPinToInterrupt(m3encB), CencoderISR, CHANGE);
 }
-void demoOne()
-{
-// this function will run the motors in both directions at a fixed speed
-  // turn on motor A
-  digitalWrite(in1, HIGH);
-  digitalWrite(in2, LOW);
-  // set speed to 200 out of possible range 0~255
-  analogWrite(enA, sp);
-  // turn on motor B
-  digitalWrite(in3, HIGH);
-  digitalWrite(in4, LOW);
-  // set speed to 200 out of possible range 0~255
-  analogWrite(enB, sp);
-  // turn on motor c
-  digitalWrite(in5, HIGH);
-  digitalWrite(in6, LOW);
-  // set speed to 200 out of possible range 0~255
-  analogWrite(enC, sp);
-  delay(2000);
-  // now change motor directions
-  digitalWrite(in1, LOW);
-  digitalWrite(in2, HIGH);
-  digitalWrite(in3, LOW);
-  digitalWrite(in4, HIGH);
-  digitalWrite(in5, LOW);
-  digitalWrite(in6, HIGH);
-  delay(2000);
-  // now turn off motors
-  digitalWrite(in1, LOW);
-  digitalWrite(in2, LOW);
-  digitalWrite(in3, LOW);
-  digitalWrite(in4, LOW);
+void softpwm(int pin, int value){
+
+
 }
-void demoTwo()
-{
-  // this function will run the motors across the range of possible speeds
-  // note that maximum speed is determined by the motor itself and theoperating voltage
-  // the PWM values sent by analogWrite() are fractions of the maximumspeed possible
-  // by your hardware
-  // turn on motors
-  digitalWrite(in1, LOW);
-  digitalWrite(in2, HIGH);
-  digitalWrite(in3, LOW);
-  digitalWrite(in4, HIGH);
-  digitalWrite(in5, LOW);
-  digitalWrite(in6, HIGH);
-  // accelerate from zero to maximum speed
-  for (int i = 0; i < 256; i++)
-  {
-    analogWrite(enA, i);
-    analogWrite(enB, i);
-    analogWrite(enC, i); 
-    delay(20);
-  }
-  // decelerate from maximum speed to zero
-  for (int i = 255; i >= 0; --i)
-  {
-    analogWrite(enA, i);
-    analogWrite(enB, i);
-    analogWrite(enC, i);
-    delay(20);
-  }
-  // now turn off motors
-  digitalWrite(in1, LOW);
-  digitalWrite(in2, LOW);
-  digitalWrite(in3, LOW);
-  digitalWrite(in4, LOW);
-  digitalWrite(in5, LOW);
-  digitalWrite(in6, LOW);
+void AencoderISR() {
+  Aencount++;
+}
+void BencoderISR() {
+  Bencount++;
+}
+void CencoderISR() {
+  Cencount++;
+}
+void Areadenc() {
+  ACtime = micros();
+  APtime = ACtime - ALtime;
+  ALtime = ACtime;
+  Arpm = (Aencount / 211.2) * (60000000.0 / APtime);
+  Serial.print("Motor A RPM: ");
+  Serial.print(Arpm);
+  Serial.print("    Sample period:");
+  Serial.print(APtime);
+  Serial.print("ms, encoder count:");
+  Serial.println(Aencount);
+  Aencount = 0;
+}
+void Breadenc() {
+  BCtime = micros();
+  BPtime = BCtime - BLtime;
+  BLtime = BCtime;
+  Brpm = (Bencount / 211.2) * (60000000.0 / BPtime);
+  Serial.print("Motor B RPM: ");
+  Serial.print(Brpm);
+  Serial.print("    Sample period: ");
+  Serial.print(BPtime);
+  Serial.print(" ms, encoder count: ");
+  Serial.println(Bencount);
+  Bencount = 0;
+}
+void Creadenc() {
+  CCtime = micros();
+  CPtime = CCtime - CLtime;
+  CLtime = CCtime;
+  Crpm = (Cencount / 211.2) * (60000000.0 / CPtime);
+  Serial.print("Motor C RPM: ");
+  Serial.print(Crpm);
+  Serial.print("    Sample period: ");
+  Serial.print(CPtime);
+  Serial.print(" ms, encoder count: ");
+  Serial.println(Cencount);
+  Cencount = 0;
 }
 
-void Amove(int sped){
-  Serial.print("moving A ");
+void Amove(double sped) {
+  spdA = abs(sped)*255;
+  mcp2.digitalWrite(m1enA, HIGH);
+  mcp2.digitalWrite(m1enB, LOW);
   if (sped < 0) {
-    digitalWrite(in1, LOW);
-    digitalWrite(in2, HIGH);
-    Serial.print("back");
-  }
-  else{
-    digitalWrite(in1, HIGH);
-    digitalWrite(in2, LOW);
-    Serial.print("forward");
-  } 
-  Serial.print("with speed: ");
-  sp = abs(sped); 
-  analogWrite(enA, sp);
-  Serial.println(sp);
-}
-void Bmove(int sped) {
-  Serial.print("moving B ");
-  if (sped < 0) {
-    digitalWrite(in3, LOW);
-    digitalWrite(in4, HIGH);
-    Serial.print("back");
+    Serial.print("Motor A back ");
+    mcp2.analogWrite(m1pwm1, spdA);
+    mcp2.analogWrite(m1pwm2, 0);
   } else {
-    digitalWrite(in3, HIGH);
-    digitalWrite(in4, LOW);
-    Serial.print("forward");
+    Serial.print("Motor A forward ");
+    mcp2.analogWrite(m1pwm1, 0);
+    mcp2.analogWrite(m1pwm2, spdA);
   } 
-  Serial.print("with speed: ");
-  int sp = abs(sped);
-  analogWrite(enB, sp);
-  Serial.println(sp);
+  Serial.println(spdA);
 }
-void Cmove(int sped) {
-  Serial.print("moving C ");
+void Bmove(double sped) {
+  spdB = abs(sped)*255;
+  mcp2.digitalWrite(m2enA, HIGH);
+  mcp2.digitalWrite(m2enB, LOW);
   if (sped < 0) {
-    digitalWrite(in5, LOW);
-    digitalWrite(in6, HIGH);
-    Serial.print("back");
+    Serial.print("Motor B back ");
+    mcp2.analogWrite(m2pwm1, spdB);
+    mcp2.analogWrite(m2pwm2, 0);
   } else {
-    digitalWrite(in5, HIGH);
-    digitalWrite(in6, LOW);
-    Serial.print("forward");
+    Serial.print("Motor B forward ");
+    mcp2.analogWrite(m2pwm1, 0);
+    mcp2.analogWrite(m2pwm2, spdB);
   } 
-  Serial.print("with speed: ");
-  int sp = abs(sped);
-  analogWrite(enC, sp);
-  Serial.println(sp);
+  Serial.println(spdB);
 }
-
-
-void turnoff(){
-  Serial.println("stop");
-  analogWrite(enA, 0);
-  analogWrite(enB, 0);
-  analogWrite(enC, 0);
-  digitalWrite(in1, LOW);
-  digitalWrite(in2, LOW);
-  digitalWrite(in3, LOW);
-  digitalWrite(in4, LOW);
-  digitalWrite(in5, LOW);
-  digitalWrite(in6, LOW); 
-}
-void forward(int speed){
-  Serial.println("forward");
-  analogWrite(enA, speed);
-  analogWrite(enB, speed);
-  analogWrite(enC, speed);
-  digitalWrite(in1, LOW);
-  digitalWrite(in2, LOW);
-  digitalWrite(in3, HIGH);
-  digitalWrite(in4, LOW);
-  digitalWrite(in5, HIGH);
-  digitalWrite(in6, LOW);
-}
-void turn(int speed){
-  Serial.println("turn");
-  analogWrite(enA, speed);
-  analogWrite(enB, speed);
-  analogWrite(enC, speed);
-  digitalWrite(in1, HIGH);
-  digitalWrite(in2, LOW);
-  digitalWrite(in3, HIGH);
-  digitalWrite(in4, LOW);
-  digitalWrite(in5, HIGH);
-  digitalWrite(in6, LOW);
+void Cmove(double sped) {
+  spdC = abs(sped) * 255;
+  mcp2.digitalWrite(m3enA, HIGH);
+  mcp2.digitalWrite(m3enB, LOW);
+  if (sped < 0) {
+    Serial.print("Motor C back ");
+    mcp2.analogWrite(m3pwm1, spdC);
+    mcp2.analogWrite(m3pwm2, 0);
+  } else {
+    Serial.print("Motor C forward ");
+    mcp2.analogWrite(m3pwm1, 0);
+    mcp2.analogWrite(m3pwm2, spdC);
+  } 
+  Serial.println(spdC);
 }
 
 void moveohmi(int speed, int direction){
-  turnoff();
-  double dirrad = (direction*71) / 4068;
-  dirA = 1.047198-dirrad; 
-  dirB = 3.141593-dirrad;
-  dirC = 5.235988-dirrad;
-  spdA = speed*sin(dirA);
-  spdB = speed*sin(dirB);
-  spdC = speed*sin(dirC);
-  Amove(spdA);
-  Bmove(spdB);
-  Cmove(spdC);
-}
-void beddermoveohmi(int speed, int direction){
-  turnoff();
+  Amove(0);
+  Bmove(0);
+  Cmove(0);
 
-  double dirrad = (direction*71) / 4068;  
+  double dirrad = (direction*71.0000) / 4068.0000;  
   Serial.println(dirrad);
   //vector ontb in x en y
-  double x = sin(dirrad)*speed;
-  double y = cos(dirrad)*speed;
+  double y = sin(dirrad);
+  double x = cos(dirrad);
   Serial.println((String)"x:"+x+" y:"+y);
-  spdA = -0.5*x - sqrt(3)/2*y;
-  spdB = x;
-  spdC = -0.5*x + sqrt(3)/2*y;
-  Amove(spdA);
-  Bmove(spdB);
-  Cmove(spdC);
-
-  Serial.println(spdA);
-  Serial.println(spdB);
-  Serial.println(spdC);
+  double spdeA = y*speed;
+  double spdeB = (-0.500*x - 0.8660054*y)*speed;
+  double spdeC = (-0.500*x + 0.8660054*y)*speed;
+  Amove(spdeA);
+  Bmove(spdeB);
+  Cmove(spdeC);
   Serial.println();
   Serial.println();
 }
-void loop()
-{
-  //demoOne();
-  //delay(1000);
-  //demoTwo();
+void rotate(int rodeg, int speed){
+//use compas heading
+}
+void demo(){
+  Amove(sp);
+  Bmove(sp);
+  Cmove(sp); 
+  Serial.println("seperate A B C rotation");
   delay(1000);
-  turnoff();
-  beddermoveohmi(255, 0);
+  
+  Amove(0);
+  Bmove(0);
+  Cmove(0);
+  Serial.println("seperate A B C stop");
   delay(1000);
-  turnoff();
-  Amove(255);
+
+  Amove(-sp);
+  Bmove(-sp);
+  Cmove(-sp);
+  Serial.println("seperate A B C -rotation");
   delay(1000);
-  turnoff();
-  Bmove(255);
+
+  moveohmi(0, 0);
+  Serial.println("ohmi stop");
   delay(1000);
-  turnoff();
-  Cmove(255);
+
+  rotate(90, sp);
+  Serial.println("rotation function 90deg");
+  rotate(90, sp);
+  Serial.println("rotation function -90deg");
   delay(1000);
-  turnoff();
-  turn(254);
+
+  moveohmi(sp, 35);
+  Serial.println("ohmi move 35deg");
   delay(1000);
+
+  moveohmi(sp, 240);
+  Serial.println("ohmi move 215deg");
+  delay(1000);
+
+  for(int i = 0; i<360; i++){
+    moveohmi(sp, i);
+    Serial.println(i);
+    delay(50);
+  }
+  Serial.println("ohmi move circle");
+  delay(1000);
+}
+void loop(){
+  demo();
+  delay(100);
+
 }

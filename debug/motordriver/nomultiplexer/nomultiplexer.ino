@@ -190,9 +190,8 @@ void moveohmi(int speed, int direction){
   double x = cos(dirrad);
   Serial.println((String)"x:"+x+" y:"+y);
   double spdeA = y*speed;
-  double spdeB = (-0.500*x - sqrt(3.000)/2.000*y)*speed;
-  double spdeC = (-0.500*x + sqrt(3.000)/2.000*y)*speed;
-  Serial.println(spdeA);
+  double spdeB = (-0.500*x - 0.8660054*y)*speed;
+  double spdeC = (-0.500*x + 0.8660054*y)*speed;
   Amove(spdeA);
   Bmove(spdeB);
   Cmove(spdeC);
@@ -203,7 +202,6 @@ void rotate(int rodeg, int speed){
 //use compas heading
 }
 void demo(){
-  
   Amove(sp);
   Bmove(sp);
   Cmove(sp); 
@@ -235,8 +233,8 @@ void demo(){
   moveohmi(sp, 35);
   Serial.println("ohmi move 35deg");
   delay(1000);
-  
-  moveohmi(sp, 215);
+
+  moveohmi(sp, 240);
   Serial.println("ohmi move 215deg");
   delay(1000);
 
@@ -247,7 +245,6 @@ void demo(){
   }
   Serial.println("ohmi move circle");
   delay(1000);
- 
 }
 void loop(){
   demo();
