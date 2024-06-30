@@ -1,10 +1,8 @@
-//https://www.pololu.com/product/2862
 #include <Wire.h>
 #include <LIS3MDL.h>
+#include <math.h>
 
 LIS3MDL mag;
-
-char report[80];
 
 void setup()
 {
@@ -24,9 +22,24 @@ void loop()
 {
   mag.read();
 
-  snprintf(report, sizeof(report), "M: %6d %6d %6d",
-    mag.m.x, mag.m.y, mag.m.z);
-  Serial.println(report);
+  // Calculate heading
+  float heading = atan2(mag.m.y, mag.m.x);
+  if (heading < 0)
+    heading += 2 * PI; // Normalize heading to positive angles
+
+  // Convert from radians to degrees
+  float headingDegrees = heading * 180.0 / PI;
+
+  // Adjust for magnetic declination if needed
+  // headingDegrees += magneticDeclination;
+
+  // Normalize headingDegrees to [0, 360) range
+  if (headingDegrees >= 360.0)
+    headingDegrees -= 360.0;
+
+  // Print heading
+  Serial.print("Heading: ");
+  Serial.println(headingDegrees);
 
   delay(100);
 }
