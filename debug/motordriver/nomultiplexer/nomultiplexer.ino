@@ -133,50 +133,51 @@ void Creadenc() {
 }
 
 void Amove(double sped) {
-  spdA = abs(sped)*255;
-  digitalWrite(m1enA, HIGH);
+  spdA = abs(sped) * 255.000;
+  analogWrite(m1enA, spdA);
   digitalWrite(m1enB, LOW);
   if (sped < 0) {
     Serial.print("Motor A back ");
-    analogWrite(m1pwm1, spdA);
-    analogWrite(m1pwm2, 0);
+    digitalWrite(m1pwm1, LOW);
+    digitalWrite(m1pwm2, HIGH);
   } else {
     Serial.print("Motor A forward ");
-    analogWrite(m1pwm1, 0);
-    analogWrite(m1pwm2, spdA);
+    digitalWrite(m1pwm1, HIGH);
+    digitalWrite(m1pwm2, LOW);
   } 
   Serial.println(spdA);
 }
 void Bmove(double sped) {
-  spdB = abs(sped)*255;
-  digitalWrite(m2enA, HIGH);
+  spdB = abs(sped) * 255.000;
+  analogWrite(m2enA, spdB);
   digitalWrite(m2enB, LOW);
   if (sped < 0) {
     Serial.print("Motor B back ");
-    analogWrite(m2pwm1, spdB);
-    analogWrite(m2pwm2, 0);
+    digitalWrite(m2pwm1, LOW);
+    digitalWrite(m2pwm2, HIGH);
   } else {
     Serial.print("Motor B forward ");
-    analogWrite(m2pwm1, 0);
-    analogWrite(m2pwm2, spdB);
+    digitalWrite(m2pwm1, HIGH);
+    digitalWrite(m2pwm2, LOW);
   } 
   Serial.println(spdB);
 }
 void Cmove(double sped) {
-  spdC = abs(sped) * 255;
-  digitalWrite(m3enA, HIGH);
+  spdC = abs(sped) * 255.000;
+  analogWrite(m3enA, spdC);
   digitalWrite(m3enB, LOW);
   if (sped < 0) {
     Serial.print("Motor C back ");
-    analogWrite(m3pwm1, spdC);
-    analogWrite(m3pwm2, 0);
+    digitalWrite(m3pwm1, LOW);
+    digitalWrite(m3pwm2, HIGH);
   } else {
     Serial.print("Motor C forward ");
-    analogWrite(m3pwm1, 0);
-    analogWrite(m3pwm2, spdC);
+    digitalWrite(m3pwm1, HIGH);
+    digitalWrite(m3pwm2, LOW);
   } 
   Serial.println(spdC);
 }
+
 
 void moveohmi(int speed, int direction){
   Amove(0);

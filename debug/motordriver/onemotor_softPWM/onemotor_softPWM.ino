@@ -1,6 +1,8 @@
-int enA = 1;
-int enB = 2;
-int pwm1 = 3;
+#include <TimerThree.h>
+
+int enA = 1;  //PWM pin
+int enB = 2;  //GND
+int pwm1 = 3; //
 int pwm2 = 4;
 int encoA = 5;
 int encoB = 6;
@@ -14,6 +16,9 @@ unsigned long Ltime = 0;
 unsigned long Ctime = 0;
 unsigned long Ptime = 0;
 
+volatile int PWMval = 0;   // PWM value 0-100
+
+
 void setup() {
   pinMode(enA, OUTPUT);
   pinMode(enB, OUTPUT);
@@ -26,7 +31,33 @@ void setup() {
   attachInterrupt(digitalPinToInterrupt(encoA), encoderISR, CHANGE);
   attachInterrupt(digitalPinToInterrupt(encoB), encoderISR, CHANGE);
 
+  Timer3.initialize(800); // 800 microseconds or 1.25kHz
+  Timer3.attachInterrupt(updatePWM); 
+
   Serial.begin(9600);
+}
+
+void updatePWM() {
+  static int counter = 0;
+
+  if (counter < PWMval) {
+    digitalWrite(enA, HIGH);
+  } else {
+    digitalWrite(enA, LOW);
+  }
+
+  counter++;
+  if (counter >= 100) {
+    counter = 0;
+  }
+}
+void mcpsoftpwm(int value) {
+  if (value < 0) value = 0;
+  if (value > 100) value = 100;
+
+  Serial.print("softPWM pin: enA, value: ");
+  Serial.println(value); 
+  PWMval = value; 
 }
 
 void encoderISR() {
@@ -54,8 +85,8 @@ void resetenc(){
 }
 
 void move(int sped) {
-  sp = abs(sped)*255;
-  analogWrite(enA, sp);
+  sp = abs(sped)*100;
+  mcpsoftpwm(sp);
   digitalWrite(enB, LOW);
   if (sped < 0) {
     Serial.print("back ");
