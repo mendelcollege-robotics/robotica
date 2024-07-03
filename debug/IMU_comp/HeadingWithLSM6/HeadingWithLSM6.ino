@@ -19,15 +19,14 @@ boards should be as close to parallel as possible).
 
 LIS3MDL mag;
 LSM6 imu;
-int front = 0;
 
 /*
 Calibration values; the default values of +/-32767 for each axis
 lead to an assumed magnetometer bias of 0. Use the Calibrate example
 program to determine appropriate values for your particular unit.
 */
-LIS3MDL::vector<int16_t> m_min = {+942, +3436, -3323};
-LIS3MDL::vector<int16_t> m_max = {+1053, +3559, -3142};
+LIS3MDL::vector<int16_t> m_min = {+5862, +2474, -6186};
+LIS3MDL::vector<int16_t> m_max = {+6610, +2849, -5547};
 
 void setup()
 {
@@ -47,14 +46,6 @@ void setup()
     while (1);
   }
   imu.enableDefault();
-
-  //get start heading
-  mag.read();
-  imu.read();
-  float heading = computeHeading();
-  front = heading;
-  Serial.println(heading);
-
 }
 
 void loop()
@@ -62,21 +53,37 @@ void loop()
   mag.read();
   imu.read();
 
-
+  /*
+  When given no arguments, the heading() function returns the angular
+  difference in the horizontal plane between a default vector (the
+  +X axis) and north, in degrees.
+  */
   float heading = computeHeading();
-  int offset = front - heading;
-  
-  Serial.print("heading: ");
-  Serial.print(heading);
-  Serial.print(", goal location: ");
-  Serial.print(front);
-  Serial.print(", offset: ");
-  
-  Serial.println(offset);
 
+  /*
+  To use a different vector as a reference, use the version of
+  computeHeading() that takes a vector argument; for example, call it like this
+  to use the -Z axis as a reference:
+  */
+  //float heading = computeHeading((LIS3MDL::vector<int>){0, 0, -1});
+
+  Serial.println(heading);
   delay(100);
 }
 
+/*
+Returns the angular difference in the horizontal plane between the
+"from" vector and north, in degrees.
+
+Description of heading algorithm:
+Shift and scale the magnetic reading based on calibration data to find
+the North vector. Use the acceleration readings to determine the Up
+vector (gravity is measured as an upward acceleration). The cross
+product of North and Up vectors is East. The vectors East and North
+form a basis for the horizontal plane. The From vector is projected
+into the horizontal plane and the angle between the projected vector
+and horizontal north is returned.
+*/
 template <typename T> float computeHeading(LIS3MDL::vector<T> from)
 {
   LIS3MDL::vector<int32_t> temp_m = {mag.m.x, mag.m.y, mag.m.z};
