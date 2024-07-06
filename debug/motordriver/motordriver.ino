@@ -5,7 +5,8 @@
 //moveohmi = https://robotics.stackexchange.com/questions/7829/how-to-program-a-three-wheel-omni
 //https://www.pololu.com/product/2997
 //https://www.pololu.com/product/4861
-//
+//https://ww1.microchip.com/downloads/en/devicedoc/20001952c.pdf
+
 // motor one/A  front
 #define  m1enA 3   // GPA3  PWM1
 #define  m1enB 2   // GPA2

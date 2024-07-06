@@ -1,6 +1,10 @@
 #include <TimerThree.h>
 #include <Adafruit_MCP23X17.h>
 
+//https://www.pololu.com/product/2997
+//https://www.pololu.com/product/4861
+//https://ww1.microchip.com/downloads/en/devicedoc/20001952c.pdf
+
 Adafruit_MCP23X17 mcp;
 
 int enA = 0;    // GPA0 -PWM
@@ -10,7 +14,7 @@ int pwm2 = 3;   // GPA3 -HIGH/LOW
 int encoA = 4;  // GPA4 -read
 int encoB = 5;  // GPA5 -read
 
-int speed = 1; // speed 0-1
+int speed = 100; // speed 0-1
 
 double sp = 0.00;
 double rpm = 0.00;
@@ -92,7 +96,7 @@ void resetenc(){
 }
 
 void move(int sped) {
-  sp = abs(sped)*100;
+  sp = abs(sped)*1;
   mcpsoftpwm(sp);
   mcp.digitalWrite(enB, LOW);
   if (sped < 0) {

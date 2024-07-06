@@ -1,13 +1,21 @@
 #include <TimerThree.h>
+#include "ArduPID.h"
 
-int enA = 1;  //PWM pin
-int enB = 2;  //GND
-int pwm1 = 3; //
-int pwm2 = 4;
-int encoA = 5;
-int encoB = 6;
+ArduPID myController;
 
-int speed = 1000; // speed 0-1
+double input;
+double output;
+double setpoint = 950; // Desired RPM
+double p = 40; // PID P-term
+double i = 2;  // PID I-term
+double d = 0; // PID D-term
+
+int enA = 1;  // PWM pin
+int enB = 2;  // GND
+int pwm1 = 3; // Motor control pin 1
+int pwm2 = 4; // Motor control pin 2
+int encoA = 5; // Encoder pin A
+int encoB = 6; // Encoder pin B
 
 double sp = 0.00;
 double rpm = 0.00;
@@ -16,8 +24,7 @@ unsigned long Ltime = 0;
 unsigned long Ctime = 0;
 unsigned long Ptime = 0;
 
-volatile int PWMval = 0;   // PWM value 0-100
-
+volatile int PWMval = 0;   // PWM value 0-1000
 
 void setup() {
   pinMode(enA, OUTPUT);
@@ -35,6 +42,14 @@ void setup() {
   Timer3.attachInterrupt(updatePWM); 
 
   Serial.begin(9600);
+
+  // PID settings
+  myController.begin(&input, &output, &setpoint, p, i, d);
+  myController.setOutputLimits(0, 1000); // Output limits for PWM control
+  myController.setBias(500); // Starting bias for PWM
+  myController.setWindUpLimits(-50, 50);
+
+  myController.start();
 }
 
 void updatePWM() {
@@ -47,16 +62,15 @@ void updatePWM() {
   }
 
   counter++;
-  if (counter >= 100) {
+  if (counter >= 1000) {
     counter = 0;
   }
 }
+
 void mcpsoftpwm(int value) {
   if (value < 0) value = 0;
-  if (value > 100) value = 100;
+  if (value > 1000) value = 1000;
 
-  Serial.print("softPWM pin: enA, value: ");
-  Serial.println(value); 
   PWMval = value; 
 }
 
@@ -68,59 +82,35 @@ void readenc() {
   Ctime = micros();
   Ptime = Ctime - Ltime;
   Ltime = Ctime;
-  rpm = (encount / 211.2) * (60000000.0 / Ptime);
-  Serial.print("RPM: ");
-  Serial.print(rpm);
-  Serial.print("    Sample period:");
-  Serial.print(Ptime);
-  Serial.print("ms, encoder count:");
-  Serial.println(encount);
-
+  rpm = (encount / 211.2) * (60000000.0 / Ptime); // Adjust the encoder counts per revolution here if necessary
   encount = 0;
 }
-void resetenc(){
+
+void resetenc() {
   Ctime = micros();
   Ltime = Ctime;
   encount = 0;
 }
 
 void move(int sped) {
-  sp = abs(sped)*0.1;
+  sp = abs(sped) * 0.1;
   mcpsoftpwm(sp);
   digitalWrite(enB, LOW);
   if (sped < 0) {
-    Serial.print("back ");
     digitalWrite(pwm1, LOW);
     digitalWrite(pwm2, HIGH);
   } else {
-    Serial.print("forward ");
     digitalWrite(pwm1, HIGH);
     digitalWrite(pwm2, LOW);
-  } 
-  Serial.println(sp);
+  }
 }
 
 void loop() {
-  move(speed);
-  delay(1000);
   readenc();
-  delay(1000);
-
-  Serial.println();
-
-  move(0);
-  delay(1000);
-  resetenc();
-  delay(1000);
-  readenc();
-  delay(1000);
-
-  Serial.println();
-
-  move(500);
-  delay(1000);
-  readenc();
-  delay(1000);
-
-  Serial.println();
+  input = rpm;
+  myController.compute();
+  myController.debug(&Serial, "myController", PRINT_INPUT);
+  
+  move(output); // Replace with plant control signal
+  delay(100);
 }

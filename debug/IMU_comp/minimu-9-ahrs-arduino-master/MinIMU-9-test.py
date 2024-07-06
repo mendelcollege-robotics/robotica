@@ -36,7 +36,7 @@
 # Install pyserial from http://sourceforge.net/projects/pyserial/files/
 # Install VPython from http://vpython.org/contents/download_windows.html
 
-from vpython import *
+from visual import *
 import serial
 import string
 import math
