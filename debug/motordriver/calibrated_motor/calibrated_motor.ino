@@ -1,6 +1,4 @@
 #include <TimerThree.h>
-#include <SD.h>
-#include <SPI.h>
 
 #define ArrayElementCount(needRPM) (sizeof(needRPM) / sizeof(needRPM[0]))
 
@@ -107,6 +105,10 @@ void move(int sped) {
     digitalWrite(pwm2, LOW);
   } 
   //Serial.println(sp);
+}
+void RPMmove(int Rsped) {
+  int idx = nearest(Rsped, motordata, ArrayElementCount(motordata));
+  move(idx);
 }
 
 
