@@ -65,6 +65,9 @@ void loop()
 
   float heading = computeHeading();
   int offset = front - heading;
+  if(offset<0){
+    offset=360+offset;
+  }
   
   Serial.print("heading: ");
   Serial.print(heading);

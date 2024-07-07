@@ -1,0 +1,8 @@
+compas inaccurate
+dip settings
+buzzer
+calibrate color sensors
+
+do stuf with data
+    other versions
+        2, 3, 4
