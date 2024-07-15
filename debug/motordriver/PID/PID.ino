@@ -1,14 +1,15 @@
 #include <TimerThree.h>
-#include "ArduPID.h"
+#include <QuickPID.h>
 
-ArduPID myController;
 
-double input;
-double output;
-double setpoint = 950; // Desired RPM
-double p = 40; // PID P-term
-double i = 2;  // PID I-term
-double d = 0; // PID D-term
+//https://www.pololu.com/product/2997
+//https://www.pololu.com/product/4861
+
+
+float Setpoint, Input, Output;
+float Kp = 2, Ki = 5, Kd = 1;
+QuickPID myPID(&Input, &Output, &Setpoint);
+
 
 int enA = 1;  // PWM pin
 int enB = 2;  // GND
@@ -44,12 +45,10 @@ void setup() {
   Serial.begin(9600);
 
   // PID settings
-  myController.begin(&input, &output, &setpoint, p, i, d);
-  myController.setOutputLimits(0, 1000); // Output limits for PWM control
-  myController.setBias(500); // Starting bias for PWM
-  myController.setWindUpLimits(-50, 50);
-
-  myController.start();
+  Input = rpm;
+  Setpoint = 500;
+  myPID.SetTunings(Kp, Ki, Kd);
+  myPID.SetMode(myPID.Control::automatic);
 }
 
 void updatePWM() {
@@ -106,11 +105,8 @@ void move(int sped) {
 }
 
 void loop() {
-  readenc();
-  input = rpm;
-  myController.compute();
-  myController.debug(&Serial, "myController", PRINT_INPUT);
+  Input = rpm;
+  myPID.Compute();
+  move(Output);
   
-  move(output); // Replace with plant control signal
-  delay(100);
 }
