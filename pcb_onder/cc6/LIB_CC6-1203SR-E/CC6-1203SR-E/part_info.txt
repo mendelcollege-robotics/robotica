@@ -1,9 +1,0 @@
-Manufacturer=TDK
-PartNumber=CC6-1203SR-E
-PartCategory=Power Supply
-PackageCategory=Other
-PinCount=7
-Version=8.3
-Released=2021-10-10 15:36:21
-Downloaded=2024-05-03 11:20:58
-3D=Y

@@ -1,5 +1,5 @@
 # About
-The soccer robot for wk [Robocup](https://www.robocup.org/leagues/18)
+A soccer robot made by student at Mendelcollege for participation at [Robocup](https://www.robocup.org/leagues/18)
 
 
 
