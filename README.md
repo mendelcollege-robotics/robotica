@@ -1,5 +1,6 @@
 # About
 A soccer robot made by student at Mendelcollege for participation at [Robocup](https://www.robocup.org/leagues/18)
+The radius of the robot is 10cm
 
 
 
