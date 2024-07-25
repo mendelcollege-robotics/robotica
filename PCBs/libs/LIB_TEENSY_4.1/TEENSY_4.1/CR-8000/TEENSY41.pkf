@@ -1,0 +1,10 @@
+(unit MM)
+
+(package "TEENSY41"
+    (type UNDEF)
+    (uver 2)
+    (mountForm default
+        (footprintRef "TEENSY41")
+        (spec "default")
+    )
+)

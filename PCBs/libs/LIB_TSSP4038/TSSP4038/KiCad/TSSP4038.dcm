@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TSSP4038
+D IR Receiver Module 38KHz 25m EMI 3-Pin Vishay TSSP4038, 38kHz IR Receiver, 950nm +/-45 , 25m Range, 2.5V - 5V, Through Hole, 6 x 3.9 x 6.95mm
+K
+F https://componentsearchengine.com/Datasheets/2/TSSP4038.pdf
+$ENDCMP
+#
+#End Doc Library

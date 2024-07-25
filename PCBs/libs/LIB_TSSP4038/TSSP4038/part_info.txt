@@ -1,0 +1,9 @@
+Manufacturer=Vishay
+PartNumber=TSSP4038
+PartCategory=Integrated Circuit
+PackageCategory=Other
+PinCount=3
+Version=1.3
+Released=2017-11-03 12:38:08
+Downloaded=2024-07-22 14:29:05
+3D=Y

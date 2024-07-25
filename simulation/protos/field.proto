@@ -1,0 +1,13 @@
+#VRML_SIM R2023b utf8
+# Describe the functionality of your PROTO here.
+
+
+PROTO field [
+  field SFBool castShadows TRUE
+]
+{
+  CadShape {
+    castShadows IS castShadows
+    url "/home/atim/Documenten/robotica/3dfiles/soccerfield.obj"
+  }
+}

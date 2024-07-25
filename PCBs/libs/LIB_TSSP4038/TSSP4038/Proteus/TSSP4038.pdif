@@ -1,0 +1,133 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "TSSP4038"
+   (description "IR Receiver Module 38KHz 25m EMI 3-Pin Vishay TSSP4038, 38kHz IR Receiver, 950nm +/-45 , 25m Range, 2.5V - 5V, Through Hole, 6 x 3.9 x 6.95mm")
+   (family "ANA")
+   (package "TSSP4038")
+   (attribute "Datasheet Link" "https://componentsearchengine.com/Datasheets/2/TSSP4038.pdf")
+   (attribute "Manufacturer_Name" "Vishay")
+   (attribute "Manufacturer_Part_Number" "TSSP4038")
+   (attribute "Mouser Part Number" "782-TSSP4038")
+   (attribute "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/TSSP4038?qs=lgjwDzixuo3Ja5hn%252BEmOdw%3D%3D")
+   (attribute "Arrow Part Number" "TSSP4038")
+   (attribute "Arrow Price/Stock" "https://www.arrow.com/en/products/tssp4038/vishay?region=nac")
+   (gate
+    (symbol "TSSP4038")
+    (pin "OUT" 1 PS)
+    (pin "GND" 2 PS)
+    (pin "VS" 3 PS)
+   )
+  )
+  (symbol "TSSP4038"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 200 100) (pt 700 100) (pt 700 -300) (pt 200 -300) (pt 200 100) (closed))
+   )
+   (terminal
+    (body (symbol "PIN") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -100) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -200) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "TSSP4038"
+   (units MM)
+   (layer TASM
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed true)
+      (pt -3 0)
+      (pt 3 0)
+      (pt 3 -3.9)
+      (pt -3 -3.9)
+      (pt -3 0))))
+   (layer TASM
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (arc (pt -2.5 -3.9) (pt -2.68652 -5.60296) (pt 2.68652 -0.22991) (start 137.0) (sweep 201.5))
+      (pt 2.5 -3.9))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt -3 0)
+      (pt 3 0))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt -3 -3.9)
+      (pt -2.5 -3.9))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt 3 -3.9)
+      (pt 2.5 -3.9))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (arc (pt 2.5 -3.9) (pt -2.6865 -5.603) (pt 2.6865 -0.23001) (start -137.1) (sweep 338.5))
+      (pt -2.5 -3.9))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt -3 -3.9)
+      (pt -3 -2.495))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt 3 -3.9)
+      (pt 3 -2.495))))
+   (leg 1 (pt -2.54 -1.55) (padstack 0))
+   (leg 2 (pt 0 -1.55) (padstack 0))
+   (leg 3 (pt 2.54 -1.55) (padstack 0))
+   (padstack 0
+    (hole 1.06)
+    (plated true)
+    (pad (layer TCOP) (round 1.6))
+    (pad (layer INNER) (round 1.6))
+    (pad (layer BCOP) (round 1.6))
+   )
+   (model "TSSP4038.stp"
+    (euler 90 0 0)
+    (offset 0 -0.029999999329447746 5.650000095367432)
+   )
+  )
+ )
+)
