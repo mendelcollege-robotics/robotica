@@ -1,31 +1,33 @@
-#VRML_SIM R2023b utf8
+#VRML_SIM R2024a utf8
 
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
 EXTERNPROTO "../protos/three_omniwheel.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/samples/contests/robocup/protos/RobocupSoccerField.proto"
-EXTERNPROTO "../protos/Ball.proto"
 
 WorldInfo {
 }
 Viewpoint {
-  orientation -0.03595733212996323 0.5262633829020815 0.8495610172804262 6.193238178192842
-  position -2.037531963006127 0.0964241547726655 0.3894014354770412
+  orientation 0.2328975714773309 -0.7440385747903977 -0.6262310439636758 5.334957372457696
+  position -0.6838588961447356 -0.458946565376689 0.9090251685961268
 }
 TexturedBackground {
+  texture "stadium_dry"
 }
 TexturedBackgroundLight {
+  texture "stadium"
 }
 DEF Robot three_omniwheel {
   translation 0.273203 -0.0732043 0.169476
   rotation 0 0 -1 -0.7854153071795862
   controller "OMHI_test"
 }
+PointLight {
+  attenuation 0 0 1
+  intensity 20
+  location 0 0.3 20
+}
 RobocupSoccerField {
   translation -0.031783 -0.00794585 -1.82077e-14
   rotation 0 0 -1 0.0850848
-}
-Ball {
-  translation -0.51 0 0.1625
-  color 0.533333 0.541176 0.521569
 }

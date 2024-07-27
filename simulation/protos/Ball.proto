@@ -18,11 +18,9 @@ PROTO Ball [
   field SFFloat    angularDamping  0.33           # Defines the angular damping of the ball.
   field SFString   contactMaterial "default"      # Is `Solid.contactMaterial`.
 ]
-{
-  Solid {
+Robot {
     translation IS translation
     rotation IS rotation
-    children [
       DEF BALL_SHAPE Shape {
         appearance PBRAppearance {
             baseColor IS color

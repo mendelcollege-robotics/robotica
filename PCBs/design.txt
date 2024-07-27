@@ -1,0 +1,16 @@
+boven
+    openmv
+    16x IR sensor(tssp4038)
+    2x seeed xiao(ir sensor controllers)
+    Dips(instellen)
+    software Power sw
+    teensy?
+midden
+    teensy
+    motordrivers
+    solenoid connector ()
+    Snap-Action Switch
+    power converters (https://www.pololu.com/product/4892 https://www.pololu.com/product/4891)
+onder
+    photo resistors
+    RGB leds

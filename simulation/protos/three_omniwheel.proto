@@ -731,12 +731,12 @@ DEF OMNI_WHEELS Robot {
       }
     }
     Camera {
-      translation 0 0 5
-      rotation 0 1 0 1.5708
-      fieldOfView 3.14
+      translation 0 0 2
+      fieldOfView 0.5
       width 640
-      height 640
-      projection "spherical"
+      height 480
+      exposure 1.0
+      projection "planar"
     }
     DEF BODY_TRANS Pose {
       translation 0 0 0.03
