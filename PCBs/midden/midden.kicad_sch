@@ -1288,6 +1288,139 @@
 				)
 			)
 		)
+		(symbol "Device:Fuse"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "F"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Fuse"
+				(at -1.905 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Fuse"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "fuse"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*Fuse*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Fuse_0_1"
+				(rectangle
+					(start -0.762 -2.54)
+					(end 0.762 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Fuse_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "PCM_Elektuur:Re"
 			(pin_numbers hide)
 			(pin_names
@@ -4018,12 +4151,6 @@
 		(uuid "c248b502-e0f3-4609-bdac-a98231e709cb")
 	)
 	(junction
-		(at 33.02 82.55)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c3814358-6e98-469b-9cc1-563f7de09ad0")
-	)
-	(junction
 		(at 102.87 127)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4040,6 +4167,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d1d8df52-e5ad-4fc3-ab85-f5903b8c1d5c")
+	)
+	(junction
+		(at 33.02 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d712ae21-9ee7-45cf-a8cf-26020989cf9f")
 	)
 	(junction
 		(at 121.92 149.86)
@@ -4693,7 +4826,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 82.55) (xy 50.8 105.41)
+			(xy 50.8 71.12) (xy 50.8 105.41)
 		)
 		(stroke
 			(width 0)
@@ -5863,7 +5996,7 @@
 	)
 	(wire
 		(pts
-			(xy 33.02 82.55) (xy 50.8 82.55)
+			(xy 33.02 71.12) (xy 50.8 71.12)
 		)
 		(stroke
 			(width 0)
@@ -5973,7 +6106,7 @@
 	)
 	(wire
 		(pts
-			(xy 33.02 45.72) (xy 33.02 82.55)
+			(xy 33.02 45.72) (xy 33.02 71.12)
 		)
 		(stroke
 			(width 0)
@@ -6050,6 +6183,16 @@
 			(type default)
 		)
 		(uuid "f8c31445-a473-493b-b20d-8156c992b857")
+	)
+	(wire
+		(pts
+			(xy 33.02 71.12) (xy 33.02 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb72996c-d8ea-4c1c-b386-dad93796e2d8")
 	)
 	(wire
 		(pts
@@ -7020,6 +7163,76 @@
 			(project "midden"
 				(path "/1db6a830-bef0-4b5d-9df3-c3637fd891d4"
 					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Fuse")
+		(at 33.02 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7ccf56c3-4481-47de-82bc-2b9f2c30dd11")
+		(property "Reference" "F1"
+			(at 35.56 77.4699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Fuse"
+			(at 35.56 80.0099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 31.242 78.74 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 33.02 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Fuse"
+			(at 33.02 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "db105d10-5bf5-42aa-8347-83108d53eeeb")
+		)
+		(pin "2"
+			(uuid "ae248673-6825-40aa-affc-50294034ad40")
+		)
+		(instances
+			(project ""
+				(path "/1db6a830-bef0-4b5d-9df3-c3637fd891d4"
+					(reference "F1")
 					(unit 1)
 				)
 			)
