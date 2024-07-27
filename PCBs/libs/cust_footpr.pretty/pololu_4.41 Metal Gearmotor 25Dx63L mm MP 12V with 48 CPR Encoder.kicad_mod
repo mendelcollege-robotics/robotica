@@ -1,0 +1,167 @@
+(footprint "pololu_4.41 Metal Gearmotor 25Dx63L mm MP 12V with 48 CPR Encoder"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -12.7 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "1705d855-d0b0-4eee-9583-cb11d74a6141")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "pololu_4.41 Metal Gearmotor 25Dx63L mm MP 12V with 48 CPR Encoder"
+		(at 0 -11.2 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "f3ba28cd-65e2-49a1-a10f-a99b53698c55")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 -12.2 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "871fc459-6d15-4d04-aebd-aa2f1f7152b5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 -12.2 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "10accbce-97da-4011-8699-08f5f19d6a18")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 -12.2 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "974ad11f-c91f-4772-a579-e0e77671be07")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_rect
+		(start -7.62 -2.54)
+		(end 7.62 1.27)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "74e169f5-f846-4551-9c7a-0c267afffad2")
+	)
+	(fp_text user "WIT"
+		(at 3.81 -1.27 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "2b8e9bd8-89cf-4d70-98bc-0448fe896f86")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "ROOD"
+		(at -7.62 -1.27 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "3826d38d-c096-498b-ab7e-3360c1e28d0d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 -9.7 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "fe223ac2-7dca-46f8-b97d-016eb9470a98")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at -6.35 0)
+		(size 1.665 1.665)
+		(drill 1.11)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "66f22f06-e4a1-4fc7-aa93-d84bc2c9bdd5")
+	)
+	(pad "2" thru_hole circle
+		(at -3.81 0)
+		(size 1.665 1.665)
+		(drill 1.11)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "e1de9f59-9081-4fe9-bf05-f9906cbfaba8")
+	)
+	(pad "3" thru_hole circle
+		(at -1.27 0)
+		(size 1.665 1.665)
+		(drill 1.11)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "d80f9d8d-4df2-466b-bc68-3d952eb924c9")
+	)
+	(pad "4" thru_hole circle
+		(at 1.27 0)
+		(size 1.665 1.665)
+		(drill 1.11)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "4e52ca4b-b40f-47a9-9707-b95135b9718a")
+	)
+	(pad "5" thru_hole circle
+		(at 3.81 0)
+		(size 1.665 1.665)
+		(drill 1.11)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "5337a417-7bd0-4f42-b9e2-4f3fb2736522")
+	)
+	(pad "6" thru_hole circle
+		(at 6.35 0)
+		(size 1.665 1.665)
+		(drill 1.11)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "e17f6c64-3751-41a5-897e-1a2c12785e63")
+	)
+)

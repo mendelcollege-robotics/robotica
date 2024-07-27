@@ -22,7 +22,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "cust_footpr:TB9051FTG"
 			(at 0 0 0)
 			(effects
 				(font
@@ -31,7 +31,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.pololu.com/product/2997/resources"
 			(at 0 0 0)
 			(effects
 				(font
@@ -72,6 +72,24 @@
 			)
 		)
 		(symbol "TB9051FTG_1_1"
+			(pin input line
+				(at -11.43 0 0)
+				(length 2.54)
+				(name "screw"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin power_in line
 				(at -3.81 8.89 270)
 				(length 2.54)
@@ -369,7 +387,7 @@
 			)
 		)
 		(property "Description" "IR Receiver Module 38KHz 25m EMI 3-Pin Vishay TSSP4038, 38kHz IR Receiver, 950nm +/-45 , 25m Range, 2.5V - 5V, Through Hole, 6 x 3.9 x 6.95mm"
-			(at 0 0 0)
+			(at 0 12.192 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -535,7 +553,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "cust_footpr:pololu_power_converter"
 			(at 0 0 0)
 			(effects
 				(font
