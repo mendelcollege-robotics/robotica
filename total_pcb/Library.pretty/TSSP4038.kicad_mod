@@ -1,0 +1,317 @@
+(footprint "TSSP4038"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "TSSP4038")
+	(tags "Integrated Circuit")
+	(property "Reference" "REF**"
+		(at -0.266 -0.887 0)
+		(layer "F.SilkS")
+		(uuid "8a804359-8a18-4718-9b37-82e525d29227")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Value" "TSSP4038"
+		(at -0.266 -0.887 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "6575fec2-bfdb-45d1-ba30-78940012ca29")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Footprint" "irsens:TSSP4038"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "11faaff6-d822-41c0-a96e-db579e505ad7")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://componentsearchengine.com/Datasheets/2/TSSP4038.pdf"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3c6a113b-db64-4c5b-b4ec-f994f2257494")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "IR Receiver Module 38KHz 25m EMI 3-Pin Vishay TSSP4038, 38kHz IR Receiver, 950nm +/-45 , 25m Range, 2.5V - 5V, Through Hole, 6 x 3.9 x 6.95mm"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "717b734e-2377-4ddc-9633-ea1a1faa13c3")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Height" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d1038048-98b6-4d4c-b09a-f6b3e1372fce")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Manufacturer_Name" "Vishay"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0b31ed2f-5d25-403a-9b62-4c03b1539033")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Manufacturer_Part_Number" "TSSP4038"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "680bb632-1216-495a-a859-4181b9f09740")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Mouser Part Number" "782-TSSP4038"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ed020c8c-028b-416f-afa8-924e0126e53a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/TSSP4038?qs=lgjwDzixuo3Ja5hn%252BEmOdw%3D%3D"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "059cdd58-895b-4bd9-b6af-f695cfb34323")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Arrow Part Number" "TSSP4038"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9b2a4b2d-8123-442d-bb97-ff20045a5c4d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Arrow Price/Stock" "https://www.arrow.com/en/products/tssp4038/vishay?region=nac"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "75daf91a-3312-43c2-8584-a580c43efefd")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -3 0)
+		(end 3 0)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c3ef583c-46eb-4a23-a9cd-87088b3bd382")
+	)
+	(fp_line
+		(start -3 3.9)
+		(end -3 2.495)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "2fa6f64e-f493-4f59-991d-e47d82ff0cc0")
+	)
+	(fp_line
+		(start -3 3.9)
+		(end -2.5 3.9)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "046caaa5-0949-4a0c-b3b1-f6acfd394e9c")
+	)
+	(fp_line
+		(start 3 3.9)
+		(end 2.5 3.9)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "2c7f7631-4033-4cae-975d-a3888f5eeaed")
+	)
+	(fp_line
+		(start 3 3.9)
+		(end 3 2.495)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "4d592822-890b-4c5e-9388-78fcaf763abe")
+	)
+	(fp_arc
+		(start 2.5 3.9)
+		(mid -0.001152 5.603001)
+		(end -2.500843 3.897855)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "bd761de8-2e04-4613-ac7c-b7f4facc3850")
+	)
+	(fp_line
+		(start -3 0)
+		(end 3 0)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "44618c47-e729-48d1-a9a3-a4bcb3392928")
+	)
+	(fp_line
+		(start -3 3.9)
+		(end -3 0)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "ec829652-1378-433f-b1a1-785aa57eede6")
+	)
+	(fp_line
+		(start 3 0)
+		(end 3 3.9)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "900adbf1-e76f-40cb-9c56-317779ef9413")
+	)
+	(fp_line
+		(start 3 3.9)
+		(end -3 3.9)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "33cdbcb5-1627-487b-ba7d-3b74d53fae63")
+	)
+	(fp_arc
+		(start 2.499174 3.902097)
+		(mid -0.001127 5.602957)
+		(end -2.5 3.9)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "bd7aec49-4812-418a-99c5-6615229797e9")
+	)
+	(fp_text user "${REFERENCE}"
+		(at -0.266 -0.887 0)
+		(layer "F.Fab")
+		(uuid "abac5551-7e75-4a53-b811-1a935a659e54")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at -2.54 1.55)
+		(size 1.6 1.6)
+		(drill 1.06)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "725df319-5758-4bbb-b5ca-f5f3dc6c5080")
+	)
+	(pad "2" thru_hole circle
+		(at 0 1.55)
+		(size 1.6 1.6)
+		(drill 1.06)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "c9f7111c-1026-418d-b015-73471aaebec1")
+	)
+	(pad "3" thru_hole circle
+		(at 2.54 1.55)
+		(size 1.6 1.6)
+		(drill 1.06)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "de28391e-ada7-42a2-9a96-75dcb0fa62a8")
+	)
+	(model "TSSP4038.stp"
+		(offset
+			(xyz 0 -0.02999999888 5.650000011)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 0)
+		)
+	)
+)

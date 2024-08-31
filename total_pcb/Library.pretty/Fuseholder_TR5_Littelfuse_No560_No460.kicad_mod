@@ -1,0 +1,370 @@
+(footprint "Fuseholder_TR5_Littelfuse_No560_No460"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "Fuse, Fuseholder, TR5, Littelfuse/Wickmann, No. 460, No560, https://www.littelfuse.com/~/media/electronics/datasheets/fuse_holders/littelfuse_fuse_holder_559_560_datasheet.pdf.pdf")
+	(tags "Fuse Fuseholder TR5 Littelfuse/Wickmann No. 460 No560 ")
+	(property "Reference" "REF**"
+		(at 2.39 -6.89 0)
+		(layer "F.SilkS")
+		(uuid "98355459-45b0-4307-90e7-a2650b6c1f8b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Fuse"
+		(at 2.39 7.43 0)
+		(layer "F.Fab")
+		(uuid "e90bc22a-0095-47ae-90dd-5b2f7244f959")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" "Fuse:Fuseholder_TR5_Littelfuse_No560_No460"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7e1b1537-ee60-41b4-9c8b-9889eb1a8983")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7242b5f9-1fc4-47db-9d61-488c45b57916")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Fuse"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4cbdf5c5-5e17-44b9-9327-c2616fe00cca")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start 5.49 3.99)
+		(end 5.36 3.84)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "0c3c503a-8054-463e-8cfa-480785848876")
+	)
+	(fp_line
+		(start 5.67 4.07)
+		(end 5.49 3.99)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "bd7d391d-111d-4ec9-8ad5-ad06b2ac62d7")
+	)
+	(fp_line
+		(start 5.96 4.11)
+		(end 5.67 4.07)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "7807ea64-c254-478a-8e21-39045b813f7e")
+	)
+	(fp_line
+		(start 6.25 4.03)
+		(end 5.96 4.11)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9d959cb7-7808-4637-9783-50624c8c15d4")
+	)
+	(fp_line
+		(start 6.39 2.79)
+		(end 6.51 2.93)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "faa05d56-1330-41fa-a3c1-bfe45577343d")
+	)
+	(fp_line
+		(start 6.47 3.86)
+		(end 6.25 4.03)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "4199a4be-777b-47a8-aa7d-c6e9537e11f6")
+	)
+	(fp_line
+		(start 6.51 2.93)
+		(end 6.6 3.09)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "6e30a5f2-1b4f-4827-ba92-13fd76b548b2")
+	)
+	(fp_line
+		(start 6.6 3.09)
+		(end 6.65 3.34)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "92d2e87c-31cb-4a4d-b4ee-cb345357ff66")
+	)
+	(fp_line
+		(start 6.62 3.6)
+		(end 6.47 3.86)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "f69dd076-90ab-4f45-8f39-e86d3b7a6cc3")
+	)
+	(fp_line
+		(start 6.65 3.34)
+		(end 6.62 3.6)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e08cac76-24d7-4e1b-9144-a308e4ceaacd")
+	)
+	(fp_circle
+		(center 2.54 0.01)
+		(end 7.29 0.01)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "84dbf97c-a032-40d3-8595-608bfc5ea8bc")
+	)
+	(fp_line
+		(start -2.46 -4.99)
+		(end -2.46 5.01)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "c8eef478-9197-4561-98d8-ed727ad1f3de")
+	)
+	(fp_line
+		(start -2.46 -4.99)
+		(end 7.54 -4.99)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "87105ee1-cbf2-4ba0-9fde-f37f1d8e9242")
+	)
+	(fp_line
+		(start 7.54 5.01)
+		(end -2.46 5.01)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "b803ad7e-5110-4ba7-9eed-91dce0982330")
+	)
+	(fp_line
+		(start 7.54 5.01)
+		(end 7.54 -4.99)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "2a5cecdd-54da-4614-97a9-128a3dd76e0a")
+	)
+	(fp_line
+		(start 5.44 3.94)
+		(end 5.31 3.79)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "ed97afc9-0051-4280-b328-fdcd90f64446")
+	)
+	(fp_line
+		(start 5.62 4.02)
+		(end 5.44 3.94)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "d7060bdd-438b-49c4-be9e-9d9a3be23a04")
+	)
+	(fp_line
+		(start 5.91 4.06)
+		(end 5.62 4.02)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "b932e463-e4b5-4031-b084-c55a86ee5874")
+	)
+	(fp_line
+		(start 6.2 3.98)
+		(end 5.91 4.06)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "ab9480bc-b01e-4e8a-ba5f-fb5bc06c9092")
+	)
+	(fp_line
+		(start 6.34 2.74)
+		(end 6.46 2.88)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "31cc75d8-6b32-4422-be47-56f87e31f7c7")
+	)
+	(fp_line
+		(start 6.42 3.81)
+		(end 6.2 3.98)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "bebec07d-f935-4174-a31f-b9c3a517a105")
+	)
+	(fp_line
+		(start 6.46 2.88)
+		(end 6.55 3.04)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "814ab3a9-06a7-4f73-9753-54c3d69141f7")
+	)
+	(fp_line
+		(start 6.55 3.04)
+		(end 6.6 3.29)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "2e30647a-c74e-482d-92d2-4e32c07b3dcb")
+	)
+	(fp_line
+		(start 6.57 3.55)
+		(end 6.42 3.81)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "dd113acd-8802-40f6-88ac-208a45b0ab91")
+	)
+	(fp_line
+		(start 6.6 3.29)
+		(end 6.57 3.55)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "ef7408e4-6a1a-42a0-8a0e-5d8406c77603")
+	)
+	(fp_circle
+		(center 2.55 0)
+		(end 7.25 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.Fab")
+		(uuid "2c1e5105-10cf-4bbc-9120-026480a4214d")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 2.75 -2.75 0)
+		(layer "F.Fab")
+		(uuid "ea4a4eb6-100a-4b3c-b8c5-fa462dd84bc2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 0 0)
+		(size 2 2)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "d23d903a-47e4-401e-8fb5-756f2dc3d8d9")
+	)
+	(pad "2" thru_hole circle
+		(at 5.08 0.01)
+		(size 2 2)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "9d25268b-9b58-4d23-953d-deb69cecf90e")
+	)
+	(model "${KICAD8_3DMODEL_DIR}/Fuse.3dshapes/Fuseholder_TR5_Littelfuse_No560_No460.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
