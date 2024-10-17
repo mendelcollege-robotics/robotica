@@ -431,7 +431,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "onder.kicad_pro",
+    "filename": "boven.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -458,7 +458,22 @@
       "version": 3
     },
     "net_colors": null,
-    "netclass_assignments": null,
+    "netclass_assignments": {
+      "Net-(D1-A)": "POWER",
+      "Net-(D1-K)": "POWER",
+      "Net-(D11-A)": "POWER",
+      "Net-(D2-A)": "POWER",
+      "Net-(D4-A)": "POWER",
+      "Net-(D7-K)": "POWER",
+      "Net-(D8-A)": "POWER",
+      "rx1": "SIGNAL",
+      "rx2": "SIGNAL",
+      "rx3": "SIGNAL",
+      "soft_power_sw": "SIGNAL",
+      "tx1": "SIGNAL",
+      "tx2": "SIGNAL",
+      "tx3": "SIGNAL"
+    },
     "netclass_patterns": []
   },
   "pcbnew": {
@@ -527,43 +542,13 @@
           "label": "DNP",
           "name": "${DNP}",
           "show": true
-        },
-        {
-          "group_by": false,
-          "label": "#",
-          "name": "${ITEM_NUMBER}",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Sim.Device",
-          "name": "Sim.Device",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Sim.Pins",
-          "name": "Sim.Pins",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Sim.Type",
-          "name": "Sim.Type",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Beschrijving",
-          "name": "Description",
-          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
-      "name": "",
+      "name": "Grouped By Value",
       "sort_asc": true,
-      "sort_field": "Reference"
+      "sort_field": "Referentie"
     },
     "connection_grid_size": 50.0,
     "drawing": {
@@ -606,7 +591,7 @@
   },
   "sheets": [
     [
-      "ad4887b8-c911-42f3-ba06-5ec84621d2a6",
+      "9e41cf64-9ee8-413c-ad53-0190c7714871",
       "Hoofdblad"
     ]
   ],

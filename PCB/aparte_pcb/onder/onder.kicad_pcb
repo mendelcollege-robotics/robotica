@@ -5722,7 +5722,7 @@
 			)
 		)
 		(property "Footprint" "Library:FOTORES"
-			(at 0 -7.500001 -173.75)
+			(at 0 -7.500002 -173.75)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -5735,7 +5735,7 @@
 			)
 		)
 		(property "Datasheet" "http://cdn-reichelt.de/documents/datenblatt/A500/A106012.pdf"
-			(at 0 -7.500001 -173.75)
+			(at 0 -7.500002 -173.75)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -5748,7 +5748,7 @@
 			)
 		)
 		(property "Description" "light dependent resistor"
-			(at 0 -7.500001 -173.75)
+			(at 0 -7.500002 -173.75)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -12330,7 +12330,7 @@
 			)
 		)
 		(property "Footprint" "Library:FOTORES"
-			(at 0 -7.500001 6.25)
+			(at 0 -7.500002 6.25)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -12343,7 +12343,7 @@
 			)
 		)
 		(property "Datasheet" "http://cdn-reichelt.de/documents/datenblatt/A500/A106012.pdf"
-			(at 0 -7.500001 6.25)
+			(at 0 -7.500002 6.25)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -12356,7 +12356,7 @@
 			)
 		)
 		(property "Description" "light dependent resistor"
-			(at 0 -7.500001 6.25)
+			(at 0 -7.500002 6.25)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -13753,7 +13753,7 @@
 			)
 		)
 		(property "Footprint" "Library:FOTORES"
-			(at 0 -7.500001 96.25)
+			(at 0 -7.500002 96.25)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -13766,7 +13766,7 @@
 			)
 		)
 		(property "Datasheet" "http://cdn-reichelt.de/documents/datenblatt/A500/A106012.pdf"
-			(at 0 -7.500001 96.25)
+			(at 0 -7.500002 96.25)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -13779,7 +13779,7 @@
 			)
 		)
 		(property "Description" "light dependent resistor"
-			(at 0 -7.500001 96.25)
+			(at 0 -7.500002 96.25)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -15407,7 +15407,7 @@
 			)
 		)
 		(property "Footprint" "Library:FOTORES"
-			(at 0 -7.500001 -83.75)
+			(at 0 -7.500002 -83.75)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -15420,7 +15420,7 @@
 			)
 		)
 		(property "Datasheet" "http://cdn-reichelt.de/documents/datenblatt/A500/A106012.pdf"
-			(at 0 -7.500001 -83.75)
+			(at 0 -7.500002 -83.75)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -15433,7 +15433,7 @@
 			)
 		)
 		(property "Description" "light dependent resistor"
-			(at 0 -7.500001 -83.75)
+			(at 0 -7.500002 -83.75)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
