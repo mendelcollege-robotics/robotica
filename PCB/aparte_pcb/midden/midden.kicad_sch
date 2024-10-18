@@ -7141,6 +7141,28 @@
 			)
 		)
 	)
+	(global_label "groundd"
+		(shape input)
+		(at 90.17 113.03 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "76ac1d65-a28b-463b-a106-a85dfdd221e3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 90.17 123.6954 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "soft_power_sw"
 		(shape input)
 		(at 179.07 21.59 270)
@@ -7247,28 +7269,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "GND"
-		(shape input)
-		(at 66.04 154.94 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "a5b5d523-4d43-4b1f-ad7c-ecf3f8e7b6b3")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 72.8957 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)
@@ -7423,50 +7423,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "S"
-		(shape input)
-		(at 73.66 154.94 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "ed2b6ac1-1b9a-445f-bfd7-a0d92cce31cf")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 77.8547 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "12V"
-		(shape input)
-		(at 58.42 154.94 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "f665fb79-93ba-428d-9805-6c5610d8f294")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 64.9128 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)
@@ -9945,7 +9901,7 @@
 				)
 			)
 		)
-		(property "Footprint" "teensy.pretty-master:Teensy41"
+		(property "Footprint" "Library:Teensy41"
 			(at 199.39 111.76 0)
 			(effects
 				(font
