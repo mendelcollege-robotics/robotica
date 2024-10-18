@@ -5024,7 +5024,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_RGB_5050-6"
 			(at 62.23 66.04 0)
 			(effects
 				(font
@@ -5244,7 +5244,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_RGB_5050-6"
 			(at 43.18 66.04 0)
 			(effects
 				(font
@@ -5602,7 +5602,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_RGB_5050-6"
 			(at 119.38 66.04 0)
 			(effects
 				(font
@@ -5684,7 +5684,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_RGB_5050-6"
 			(at 138.43 66.04 0)
 			(effects
 				(font
@@ -5766,7 +5766,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_RGB_5050-6"
 			(at 81.28 66.04 0)
 			(effects
 				(font
@@ -5848,7 +5848,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_RGB_5050-6"
 			(at 176.53 66.04 0)
 			(effects
 				(font
@@ -6548,7 +6548,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_RGB_5050-6"
 			(at 157.48 66.04 0)
 			(effects
 				(font
@@ -6920,7 +6920,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_RGB_5050-6"
 			(at 24.13 66.04 0)
 			(effects
 				(font
@@ -7646,7 +7646,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_RGB_5050-6"
 			(at 214.63 66.04 0)
 			(effects
 				(font
@@ -8186,7 +8186,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_RGB_5050-6"
 			(at 100.33 66.04 0)
 			(effects
 				(font
@@ -8540,7 +8540,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_RGB_5050-6"
 			(at 233.68 66.04 0)
 			(effects
 				(font
@@ -9645,7 +9645,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_RGB_5050-6"
 			(at 195.58 66.04 0)
 			(effects
 				(font
