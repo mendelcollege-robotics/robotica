@@ -749,6 +749,142 @@
 				)
 			)
 		)
+		(symbol "Device:C"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Library:Battery"
 			(pin_numbers hide)
 			(pin_names
@@ -3869,6 +4005,307 @@
 				)
 			)
 		)
+		(symbol "Relay:G5Q-1A"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "K"
+				(at 8.89 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "G5Q-1A"
+				(at 8.89 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Relay_THT:Relay_SPST_Omron-G5Q-1A"
+				(at 8.89 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.omron.com/ecb/products/pdf/en-g5q.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Omron G5Q relay, Miniature Single Pole, SPST-NO, 10A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "Miniature Single Pole Relay"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Relay*SPST*Omron*G5Q*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "G5Q-1A_0_0"
+				(polyline
+					(pts
+						(xy 5.08 5.08) (xy 5.08 2.54) (xy 4.445 3.175) (xy 5.08 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "G5Q-1A_0_1"
+				(rectangle
+					(start -10.16 5.08)
+					(end 7.62 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -8.255 1.905)
+					(end -1.905 -1.905)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -7.62 -1.905) (xy -2.54 1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 -5.08) (xy -5.08 -1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 5.08) (xy -5.08 1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.905 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.635 0) (xy 0 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.905 0) (xy 2.54 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.175 0) (xy 3.81 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 -2.54) (xy 3.175 3.81)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 -2.54) (xy 5.08 -5.08)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "G5Q-1A_1_1"
+				(pin passive line
+					(at -5.08 -7.62 90)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -7.62 90)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 7.62 270)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 7.62 270)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Switch:SW_DIP_x01"
 			(pin_names
 				(offset 0) hide)
@@ -5082,12 +5519,6 @@
 		(uuid "6b9725e5-06bc-4b8a-b85c-0d3669d01036")
 	)
 	(junction
-		(at 162.56 149.86)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6d9a698e-4bb4-4be6-ac78-eb4ee0a3d623")
-	)
-	(junction
 		(at 307.34 110.49)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5519,6 +5950,16 @@
 	)
 	(wire
 		(pts
+			(xy 161.29 170.18) (xy 161.29 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13958a6c-2cc4-46bd-accb-5ed2359f318a")
+	)
+	(wire
+		(pts
 			(xy 245.11 168.91) (xy 245.11 90.17)
 		)
 		(stroke
@@ -5539,6 +5980,16 @@
 	)
 	(wire
 		(pts
+			(xy 48.26 162.56) (xy 41.91 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "16deee08-8806-434c-9d36-832713465af5")
+	)
+	(wire
+		(pts
 			(xy 189.23 20.32) (xy 189.23 54.61)
 		)
 		(stroke
@@ -5556,6 +6007,16 @@
 			(type default)
 		)
 		(uuid "180f5509-b69b-4361-90eb-f017deb3e295")
+	)
+	(wire
+		(pts
+			(xy 41.91 184.15) (xy 73.66 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "18b59655-9327-44f2-8861-ad03281d6d06")
 	)
 	(wire
 		(pts
@@ -5616,6 +6077,16 @@
 			(type default)
 		)
 		(uuid "1b705dd5-339c-42fe-ad77-e3de2eda8981")
+	)
+	(wire
+		(pts
+			(xy 100.33 151.13) (xy 161.29 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1b730482-27b0-4bf8-bbc4-b84c8aeae543")
 	)
 	(wire
 		(pts
@@ -5749,6 +6220,16 @@
 	)
 	(wire
 		(pts
+			(xy 100.33 182.88) (xy 100.33 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24226789-52ef-4a66-afd7-2cac3abd6032")
+	)
+	(wire
+		(pts
 			(xy 125.73 46.99) (xy 125.73 45.72)
 		)
 		(stroke
@@ -5796,16 +6277,6 @@
 			(type default)
 		)
 		(uuid "2777e4e5-706f-485d-b345-b1b7c011a410")
-	)
-	(wire
-		(pts
-			(xy 162.56 149.86) (xy 165.1 149.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "28a79725-57d7-472c-ad53-951c389e5911")
 	)
 	(wire
 		(pts
@@ -6299,6 +6770,16 @@
 	)
 	(wire
 		(pts
+			(xy 246.38 170.18) (xy 161.29 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "474f1c2a-8d36-46ea-871b-61ab7f59e576")
+	)
+	(wire
+		(pts
 			(xy 129.54 87.63) (xy 129.54 76.2)
 		)
 		(stroke
@@ -6326,6 +6807,16 @@
 			(type default)
 		)
 		(uuid "4cc44de3-c418-4e77-97da-f07036230e13")
+	)
+	(wire
+		(pts
+			(xy 48.26 182.88) (xy 100.33 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4cf63cd5-c73d-4bfe-99ce-e2b9139ae7a7")
 	)
 	(wire
 		(pts
@@ -6466,6 +6957,16 @@
 			(type default)
 		)
 		(uuid "56bb0b00-ddfb-4335-990c-4c07ce8a5c29")
+	)
+	(wire
+		(pts
+			(xy 68.58 154.94) (xy 66.04 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "571f8eb9-6d86-4fb6-a960-c716bdbbebff")
 	)
 	(wire
 		(pts
@@ -7049,6 +7550,16 @@
 	)
 	(wire
 		(pts
+			(xy 237.49 82.55) (xy 246.38 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83fb0345-0273-40e1-8266-480c46956b24")
+	)
+	(wire
+		(pts
 			(xy 313.69 125.73) (xy 313.69 130.81)
 		)
 		(stroke
@@ -7126,6 +7637,16 @@
 			(type default)
 		)
 		(uuid "88b6b726-4115-4397-8283-0c7d5ce15f8c")
+	)
+	(wire
+		(pts
+			(xy 48.26 177.8) (xy 48.26 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88f10ce1-8d06-4283-aaf1-a775d1102bf8")
 	)
 	(wire
 		(pts
@@ -7399,7 +7920,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 154.94) (xy 73.66 149.86)
+			(xy 73.66 149.86) (xy 73.66 184.15)
 		)
 		(stroke
 			(width 0)
@@ -8189,6 +8710,16 @@
 	)
 	(wire
 		(pts
+			(xy 246.38 82.55) (xy 246.38 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de4dccae-c5a1-45f3-9faf-eff1d18c70d5")
+	)
+	(wire
+		(pts
 			(xy 273.05 123.19) (xy 307.34 123.19)
 		)
 		(stroke
@@ -8229,6 +8760,16 @@
 	)
 	(wire
 		(pts
+			(xy 68.58 154.94) (xy 68.58 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e1c83f02-9856-48f3-9daf-16ac3ded0186")
+	)
+	(wire
+		(pts
 			(xy 64.77 45.72) (xy 64.77 46.99)
 		)
 		(stroke
@@ -8236,6 +8777,16 @@
 			(type default)
 		)
 		(uuid "e24e8506-c28e-4a5d-a183-245faa656ca6")
+	)
+	(wire
+		(pts
+			(xy 41.91 162.56) (xy 41.91 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e2bfdb64-64cf-4a03-8a10-fdf53b92cb1d")
 	)
 	(wire
 		(pts
@@ -8558,8 +9109,8 @@
 		(uuid "ff5ff450-99e2-4c0d-a5d1-3cefc28e6d01")
 	)
 	(rectangle
-		(start 45.72 151.13)
-		(end 91.44 181.61)
+		(start 39.37 151.13)
+		(end 85.09 181.61)
 		(stroke
 			(width 0)
 			(type default)
@@ -11736,6 +12287,83 @@
 		)
 	)
 	(symbol
+		(lib_id "Relay:G5Q-1A")
+		(at 53.34 170.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d186e5c1-285e-4a26-bbe4-28921d13db9c")
+		(property "Reference" "K1"
+			(at 62.23 168.9099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "G5Q-1A"
+			(at 62.23 171.4499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Relay_THT:Relay_SPST_Omron-G5Q-1A"
+			(at 62.23 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.omron.com/ecb/products/pdf/en-g5q.pdf"
+			(at 53.34 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Omron G5Q relay, Miniature Single Pole, SPST-NO, 10A"
+			(at 53.34 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "e53b4827-b7ab-4132-b13a-b18fc95924e2")
+		)
+		(pin "3"
+			(uuid "ea3c5940-cf1a-4dd7-9dec-2e79104bf152")
+		)
+		(pin "2"
+			(uuid "c2e0d28b-4504-4081-87eb-02b76ded3e27")
+		)
+		(pin "1"
+			(uuid "dfc890ba-1962-49f0-8b1c-aea6c3956c52")
+		)
+		(instances
+			(project ""
+				(path "/e189b955-7e7c-46c1-a031-b30377455d70"
+					(reference "K1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Library:D")
 		(at 241.3 67.31 0)
 		(unit 1)
@@ -11823,7 +12451,7 @@
 	)
 	(symbol
 		(lib_id "Library:Re")
-		(at 67.31 175.26 90)
+		(at 63.5 177.8 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11831,7 +12459,7 @@
 		(dnp no)
 		(uuid "dd1f391d-8eb5-4b0e-83bb-66d23344c29d")
 		(property "Reference" "solenoid1"
-			(at 71.374 170.434 90)
+			(at 67.564 172.974 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11840,7 +12468,7 @@
 			)
 		)
 		(property "Value" "Re"
-			(at 68.5799 170.18 0)
+			(at 64.7699 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11849,8 +12477,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
-			(at 67.31 175.26 0)
+		(property "Footprint" "TerminalBlock_Altech:Altech_AK100_1x02_P5.00mm"
+			(at 63.5 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11859,7 +12487,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 67.31 175.26 0)
+			(at 63.5 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11868,7 +12496,7 @@
 			)
 		)
 		(property "Description" "operating/relay device/coil; electromagnetic actuator (solenoid)"
-			(at 67.31 175.26 0)
+			(at 63.5 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11877,7 +12505,7 @@
 			)
 		)
 		(property "Field-1" "X"
-			(at 64.135 177.8 0)
+			(at 60.325 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11887,7 +12515,7 @@
 			)
 		)
 		(property "Indicator" "+"
-			(at 64.135 176.53 0)
+			(at 60.325 179.07 0)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -11897,7 +12525,7 @@
 			)
 		)
 		(property "Rating" "V/Ω"
-			(at 70.485 175.895 0)
+			(at 66.675 178.435 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12469,6 +13097,76 @@
 			(project "midden"
 				(path "/e189b955-7e7c-46c1-a031-b30377455d70"
 					(reference "teensy1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 58.42 158.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f1fb4496-9912-4ba9-afc6-62f2dc51c649")
+		(property "Reference" "C1"
+			(at 62.23 157.4799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "C"
+			(at 62.23 160.0199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm"
+			(at 59.3852 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 58.42 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 58.42 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "7cb2d75f-bb3e-4e77-9f38-3eac4f9e7988")
+		)
+		(pin "1"
+			(uuid "1edb0edf-3748-438d-b5ae-fe299ffbf88b")
+		)
+		(instances
+			(project ""
+				(path "/e189b955-7e7c-46c1-a031-b30377455d70"
+					(reference "C1")
 					(unit 1)
 				)
 			)

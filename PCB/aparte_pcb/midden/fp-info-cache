@@ -1,4 +1,4 @@
-23765970187971745
+23769428897597908
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -64736,6 +64736,13 @@ XIAO-SAMD21-RP2040-14P-2.54-21X17.8MM (Seeeduino XIAO)
 20
 20
 Library
+miniIMU
+
+
+0
+5
+5
+Library
 openmv_m7_r2
 
 
@@ -96722,6 +96729,13 @@ Varistor
 Varistor_Panasonic_VF
 Panasonic VF series varistor, 6x8mm body, 3.2mm height, https://mediap.industry.panasonic.eu/assets/imported/industrial.panasonic.com/cdbs/www-data/pdf/AWA0000/AWA0000C4.pdf
 Varistor VF
+0
+2
+2
+dpdsd
+R1966ABLKBLKEF
+R1966ABLKBLKEF-2
+Connector
 0
 2
 2
