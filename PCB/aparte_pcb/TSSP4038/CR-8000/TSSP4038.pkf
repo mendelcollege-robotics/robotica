@@ -1,0 +1,10 @@
+(unit MM)
+
+(package "TSSP4038"
+    (type UNDEF)
+    (uver 2)
+    (mountForm default
+        (footprintRef "TSSP4038")
+        (spec "default")
+    )
+)

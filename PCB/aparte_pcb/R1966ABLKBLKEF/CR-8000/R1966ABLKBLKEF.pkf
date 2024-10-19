@@ -1,0 +1,10 @@
+(unit MM)
+
+(package "R1966ABLKBLKEF"
+    (type UNDEF)
+    (uver 2)
+    (mountForm default
+        (footprintRef "R1966ABLKBLKEF")
+        (spec "default")
+    )
+)
