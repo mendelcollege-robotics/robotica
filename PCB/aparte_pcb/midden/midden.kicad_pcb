@@ -199,7 +199,7 @@
 		(descr "JST EH series connector, S10B-EH (http://www.jst-mfg.com/product/pdf/eng/eEH.pdf), generated with kicad-footprint-generator")
 		(tags "connector JST EH top entry")
 		(property "Reference" "J1"
-			(at 11.25 -7.9 360)
+			(at 11.25 -7.9 0)
 			(layer "F.SilkS")
 			(uuid "6ef224f2-24bd-40be-8106-908fc5382f6d")
 			(effects
@@ -210,7 +210,7 @@
 			)
 		)
 		(property "Value" "Conn_01x10_Socket"
-			(at 11.25 2.7 360)
+			(at 11.25 2.7 0)
 			(layer "F.Fab")
 			(uuid "9708c863-257a-48f2-99f8-a5e64045964e")
 			(effects
@@ -1265,7 +1265,7 @@
 			(uuid "f8a30462-1e03-472c-a8cb-d0982f9f10fd")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 11.25 -2.6 360)
+			(at 11.25 -2.6 0)
 			(layer "F.Fab")
 			(uuid "c3341c18-b34c-40a6-98c2-17f1e7e217b5")
 			(effects
@@ -3964,7 +3964,7 @@
 		(descr "JST EH series connector, S10B-EH (http://www.jst-mfg.com/product/pdf/eng/eEH.pdf), generated with kicad-footprint-generator")
 		(tags "connector JST EH top entry")
 		(property "Reference" "J4"
-			(at 11.25 -7.9 360)
+			(at 11.25 -7.9 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "13f876aa-f026-4765-8fa4-705be338a519")
@@ -3976,7 +3976,7 @@
 			)
 		)
 		(property "Value" "Conn_01x10_Socket"
-			(at 11.25 2.7 360)
+			(at 11.25 2.7 0)
 			(layer "F.Fab")
 			(uuid "fe3e234f-a57d-4948-82c5-a04af22b4dfc")
 			(effects
@@ -5031,7 +5031,7 @@
 			(uuid "9b139166-3ec8-4901-8af3-a6ace7a815da")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 11.25 -2.6 360)
+			(at 11.25 -2.6 0)
 			(layer "F.Fab")
 			(uuid "01104bc8-ef8f-4364-917a-f463b6ef702d")
 			(effects
@@ -7949,7 +7949,7 @@
 		(descr "Diode, Universal, MELF, RM10, Handsoldering, SMD, Thruhole,")
 		(tags "Diode Universal MELF RM10 Handsoldering SMD Thruhole ")
 		(property "Reference" "D16"
-			(at 0 -2.5 360)
+			(at 0 -2.5 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "afa48f32-589f-44aa-ad24-9e1734d8ee2f")
@@ -7961,7 +7961,7 @@
 			)
 		)
 		(property "Value" "D"
-			(at 0 2.5 360)
+			(at 0 2.5 0)
 			(layer "F.Fab")
 			(uuid "0e532477-2277-4f21-9f2e-214d828f38b7")
 			(effects
@@ -8212,7 +8212,7 @@
 			(uuid "221bcb23-20b9-481b-993d-632efc98a5c7")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -2.5 360)
+			(at 0 -2.5 0)
 			(layer "F.Fab")
 			(uuid "23afba1f-5570-4339-b5c4-5ed38c3f884e")
 			(effects
@@ -10067,7 +10067,7 @@
 		(descr "Altech AK100 serie terminal block (Script generated with StandardBox.py) (https://www.altechcorp.com/PDFS/PCBMETRC.PDF)")
 		(tags "Altech AK100 serie connector")
 		(property "Reference" "solenoid1"
-			(at -0.35 -6.09 360)
+			(at -0.35 -6.09 0)
 			(layer "F.SilkS")
 			(uuid "7b0ff014-b41d-4c23-84e5-11b8a15c1711")
 			(effects
@@ -10078,7 +10078,7 @@
 			)
 		)
 		(property "Value" "Re"
-			(at 2.5 5.25 360)
+			(at 2.5 5.25 0)
 			(layer "F.Fab")
 			(uuid "e060a739-b0d9-470d-afa7-4ca62ba9551f")
 			(effects
@@ -10321,7 +10321,7 @@
 			(uuid "bf4c5103-fa98-44d0-927d-bc59bea06136")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 2.5 -0.5 360)
+			(at 2.5 -0.5 0)
 			(layer "F.Fab")
 			(uuid "8c330fa6-32bd-403b-b8b8-df5648eae329")
 			(effects
@@ -11221,7 +11221,7 @@
 		(descr "Diode, Universal, MELF, RM10, Handsoldering, SMD, Thruhole,")
 		(tags "Diode Universal MELF RM10 Handsoldering SMD Thruhole ")
 		(property "Reference" "D15"
-			(at 0 -2.5 360)
+			(at 0 -2.5 0)
 			(layer "F.SilkS")
 			(uuid "00a38339-5418-4b4d-bb61-d12d06005be9")
 			(effects
@@ -11232,7 +11232,7 @@
 			)
 		)
 		(property "Value" "D"
-			(at 0 2.5 360)
+			(at 0 2.5 0)
 			(layer "F.Fab")
 			(uuid "23451b91-326f-41ec-884e-38b83b0febd4")
 			(effects
@@ -11483,7 +11483,7 @@
 			(uuid "132425e9-1e52-4445-b9e7-988dfe7f8da1")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -2.5 360)
+			(at 0 -2.5 0)
 			(layer "F.Fab")
 			(uuid "b8a34be3-6f18-4562-9202-63b3830a0aca")
 			(effects
@@ -13724,7 +13724,7 @@
 		(descr "Diode, Universal, MELF, RM10, Handsoldering, SMD, Thruhole,")
 		(tags "Diode Universal MELF RM10 Handsoldering SMD Thruhole ")
 		(property "Reference" "D17"
-			(at 0 -2.5 360)
+			(at 0 -2.5 0)
 			(layer "F.SilkS")
 			(uuid "07c831e4-6177-4566-8f08-0c69ea8d5818")
 			(effects
@@ -13735,7 +13735,7 @@
 			)
 		)
 		(property "Value" "D"
-			(at 0 2.5 360)
+			(at 0 2.5 0)
 			(layer "F.Fab")
 			(uuid "2ec88607-f959-48ca-8c43-e73cd03bb5bf")
 			(effects
@@ -13986,7 +13986,7 @@
 			(uuid "5722d9db-afeb-4353-81be-2e2b11b48ade")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -2.5 360)
+			(at 0 -2.5 0)
 			(layer "F.Fab")
 			(uuid "546eda94-44ad-47fa-963b-7caab0624610")
 			(effects
@@ -14374,7 +14374,7 @@
 		(descr "Diode, Universal, MELF, RM10, Handsoldering, SMD, Thruhole,")
 		(tags "Diode Universal MELF RM10 Handsoldering SMD Thruhole ")
 		(property "Reference" "D18"
-			(at 0 -2.5 360)
+			(at 0 -2.5 0)
 			(layer "F.SilkS")
 			(uuid "5651aeda-449e-4cfd-9162-b3328b44e3f4")
 			(effects
@@ -14385,7 +14385,7 @@
 			)
 		)
 		(property "Value" "D"
-			(at 0 2.5 360)
+			(at 0 2.5 0)
 			(layer "F.Fab")
 			(uuid "8befada5-da39-4b29-b7f1-0c0dd8068d73")
 			(effects
@@ -14636,7 +14636,7 @@
 			(uuid "7833d6a3-f0db-4fad-9eec-1b3a52029d24")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -2.5 360)
+			(at 0 -2.5 0)
 			(layer "F.Fab")
 			(uuid "9d339582-6456-441d-ba9a-d686faad91d7")
 			(effects
