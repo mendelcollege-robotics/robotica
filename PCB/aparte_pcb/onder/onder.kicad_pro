@@ -466,10 +466,10 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "C:/Users/Natha/Downloads/",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "onder.step",
       "svg": "",
       "vrml": ""
     },
@@ -607,7 +607,7 @@
   "sheets": [
     [
       "ad4887b8-c911-42f3-ba06-5ec84621d2a6",
-      "Hoofdblad"
+      "Root"
     ]
   ],
   "text_variables": {}
