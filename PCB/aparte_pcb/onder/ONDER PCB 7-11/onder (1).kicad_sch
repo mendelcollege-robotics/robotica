@@ -3318,16 +3318,6 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 81.28) (xy 96.52 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "447b6b26-08cc-41a7-8d89-ba18ae280504")
-	)
-	(wire
-		(pts
 			(xy 182.88 121.92) (xy 182.88 109.22)
 		)
 		(stroke
@@ -4245,6 +4235,16 @@
 			(type default)
 		)
 		(uuid "b0e7ef69-3800-4a55-88b8-d05c16ec1ecb")
+	)
+	(wire
+		(pts
+			(xy 96.52 78.74) (xy 96.52 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b1678476-c2c6-4668-81d7-f057d2de23cc")
 	)
 	(wire
 		(pts
@@ -8016,6 +8016,74 @@
 	)
 	(symbol
 		(lib_id "Library:R_US")
+		(at 101.6 74.93 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8899ba11-fe90-41a8-a6df-5c0f751e5544")
+		(property "Reference" "220Ω_14"
+			(at 99.314 74.93 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R_US"
+			(at 96.774 74.93 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+			(at 102.616 75.184 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 101.6 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 101.6 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0d9ae337-0b88-48c7-9d42-9e735ab5fc5b")
+		)
+		(pin "1"
+			(uuid "d4d85073-81c1-44f4-a9f5-74bda7dad6ed")
+		)
+		(instances
+			(project "onder (1)"
+				(path "/ad4887b8-c911-42f3-ba06-5ec84621d2a6"
+					(reference "220Ω_14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Library:R_US")
 		(at 139.7 74.93 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8903,6 +8971,74 @@
 			(project "onder"
 				(path "/ad4887b8-c911-42f3-ba06-5ec84621d2a6"
 					(reference "220Ω_23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Library:R_US")
+		(at 96.52 74.93 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c068771f-9a2c-4ac6-9461-ca087758e227")
+		(property "Reference" "220Ω_13"
+			(at 94.234 74.93 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R_US"
+			(at 91.694 74.93 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+			(at 97.536 75.184 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 96.52 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 96.52 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "648776b3-b124-4eb3-a557-8bd208b046d3")
+		)
+		(pin "1"
+			(uuid "1f6512b0-321d-4dc7-82b6-11d9ca5854de")
+		)
+		(instances
+			(project "onder (1)"
+				(path "/ad4887b8-c911-42f3-ba06-5ec84621d2a6"
+					(reference "220Ω_13")
 					(unit 1)
 				)
 			)
@@ -10192,6 +10328,74 @@
 			(project "onder"
 				(path "/ad4887b8-c911-42f3-ba06-5ec84621d2a6"
 					(reference "220Ω_27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Library:R_US")
+		(at 106.68 74.93 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f238549f-5463-48b1-980d-438252988083")
+		(property "Reference" "220Ω_15"
+			(at 104.394 74.93 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R_US"
+			(at 101.854 74.93 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+			(at 107.696 75.184 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 106.68 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 106.68 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6ea73204-08aa-466f-91f2-5de46e09cd5d")
+		)
+		(pin "1"
+			(uuid "021b5442-a82b-40c5-843d-3dd9df1a1084")
+		)
+		(instances
+			(project "onder (1)"
+				(path "/ad4887b8-c911-42f3-ba06-5ec84621d2a6"
+					(reference "220Ω_15")
 					(unit 1)
 				)
 			)
