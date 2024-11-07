@@ -11,7 +11,7 @@ GFT 70mm Omni Wheel - 4mm Bore
 # Sponsors:
 
   -Opencircuit
-  
+  -Pololu
   -Tinytronics
   
 # info:
