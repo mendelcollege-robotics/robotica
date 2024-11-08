@@ -88,7 +88,7 @@
             45946.7 -152125  44914.9 -150581  43917.1 -149015  42953.7 -147428
             42025.3 -145820  41132.2 -144192  40274.9 -142545  39453.8 -140879
             38669.2 -139196  37921.6 -137496  37211.3 -135781  36538.6 -134050
-            35903.9 -132305  35603.3 -131426  35692.5 -131322  35844.2 -131093
+            35903.9 -132305  35603.3 -131426  35692.5 -131322  35844.3 -131093
             35963.3 -130845  36047.3 -130584  36094.8 -130313  36104.8 -130039
             36077.1 -129766  36012.3 -129499  35911.6 -129243  35776.8 -129004
             35610.6 -128785  35416 -128591  35196.7 -128426  34956.9 -128292
@@ -101,7 +101,7 @@
             32438.4 -89083.4  32782.9 -87279.4  33166.3 -85483.3  33588.4 -83695.9
             34049.1 -81918  34548 -80150.5  35085 -78394.2  35659.8 -76649.8
             36272.2 -74918.4  36921.9 -73200.5  37608.5 -71497.1  38331.7 -69808.9
-            39091.3 -68136.7  39886.8 -66481.4  40717.8 -64843.6  41584.1 -63224.1
+            39091.3 -68136.7  39886.8 -66481.4  40717.9 -64843.6  41584.1 -63224.1
             42485.2 -61623.8  43420.6 -60043.2  44390 -58483.3  45392.8 -56944.7
             46428.6 -55428  47497 -53934.2  48597.4 -52463.7  49729.3 -51017.4
             50892.2 -49595.9  52085.5 -48199.8  53308.7 -46829.8  54561.2 -45486.6
@@ -163,14 +163,14 @@
   )
   (placement
     (component "LED_SMD:LED_RGB_5050-6"
-      (place D11 38825.934000 -83394.476000 front 75.000000 (PN LED_RGB))
+      (place D11 38825.900000 -83394.500000 front 75.000000 (PN LED_RGB))
     )
     (component Library:FOTORESist
-      (place PR8 67399.086000 -40631.733000 front 37.500000 (PN A1050))
+      (place PR8 67399.100000 -40631.700000 front 38.000000 (PN A1050))
     )
     (component Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal
-      (place 220_36 59400.000000 -54100.000000 front -125.000000 (PN R_US))
-      (place 220_35 55850.000000 -51250.000000 front -125.000000 (PN R_US))
+      (place 220_36 62900.000000 -54950.000000 front -125.000000 (PN R_US))
+      (place 220_35 55777.537000 -51277.415000 front -125.000000 (PN R_US))
       (place 220_34 53300.000000 -49500.000000 front -125.000000 (PN R_US))
     )
     (component Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal::1
@@ -185,9 +185,11 @@
     (component Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal::3
       (place 220_8 166165.361000 -45191.506000 front 130.000000 (PN R_US))
       (place 220_7 168900.000000 -43300.000000 front 130.000000 (PN R_US))
+      (place 10K_3 169033.012000 -63680.722000 front 140.000000 (PN R_US))
     )
     (component "LED_SMD:LED_RGB_5050-6::1"
       (place D7 136805.524000 -181374.066000 front 15.000000 (PN LED_RGB))
+      (place D1 95394.476000 -26825.934000 front 15.000000 (PN LED_RGB))
     )
     (component Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal::4
       (place 220_23 89643.308000 -178944.032000 front 157.500000 (PN R_US))
@@ -215,17 +217,18 @@
     )
     (component Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal::5
       (place R2 184943.639000 -80611.356000 front -160.000000 (PN R_US))
-      (place R1 184347.277000 -77575.075000 front -160.000000 (PN R_US))
+      (place R1 182597.277000 -73925.075000 front -160.000000 (PN R_US))
     )
     (component Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal::6
-      (place 220_4 143700.000000 -33700.000000 front -22.500000 (PN R_US))
+      (place 220_10 191582.133000 -90797.177000 front -100.000000 (PN R_US))
+      (place 220_12 197582.133000 -91847.177000 front -100.000000 (PN R_US))
+      (place 220_11 194582.133000 -91297.177000 front -100.000000 (PN R_US))
     )
     (component Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal::7
-      (place 220_31 41743.096000 -68985.199000 front -15.000000 (PN R_US))
+      (place 220_4 143700.000000 -33700.000000 front -22.500000 (PN R_US))
     )
     (component Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal::8
-      (place 220_12 197582.133000 -91847.177000 front -100.000000 (PN R_US))
-      (place 220_10 191582.133000 -90797.177000 front -100.000000 (PN R_US))
+      (place 220_31 41743.096000 -68985.199000 front -15.000000 (PN R_US))
     )
     (component "LED_SMD:LED_RGB_5050-6::4"
       (place D5 193374.066000 -124805.524000 front -105.000000 (PN LED_RGB))
@@ -256,14 +259,12 @@
     (component Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal::12
       (place 220_22 90786.616000 -176138.064000 front 157.500000 (PN R_US))
     )
-    (component "LED_SMD:LED_RGB_5050-6::5"
-      (place D1 95394.476000 -26825.934000 front 15.000000 (PN LED_RGB))
-    )
     (component Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal::13
       (place 220_15 193662.537000 -133173.638000 front -110.000000 (PN R_US))
+      (place 220_13 187950.000000 -131100.000000 front -110.000000 (PN R_US))
       (place 220_14 190800.000000 -132150.000000 front -110.000000 (PN R_US))
     )
-    (component "LED_SMD:LED_RGB_5050-6::6"
+    (component "LED_SMD:LED_RGB_5050-6::5"
       (place D10 38825.934000 -124805.524000 front 105.000000 (PN LED_RGB))
     )
     (component Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal::14
@@ -273,54 +274,45 @@
     (component Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal::15
       (place R3 176849.513000 -104359.584000 front 102.500000 (PN R_US))
     )
-    (component "LED_SMD:LED_RGB_5050-6::7"
+    (component "LED_SMD:LED_RGB_5050-6::6"
       (place D3 172668.542000 -47531.458000 front 135.000000 (PN LED_RGB))
     )
     (component Library:NPN
       (place Q1 163640.000000 -78499.410000 front 120.000000 (PN NPN))
     )
-    (component Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal::16
-      (place 220_13 187950.000000 -131100.000000 front -110.000000 (PN R_US))
-    )
-    (component "LED_SMD:LED_RGB_5050-6::8"
+    (component "LED_SMD:LED_RGB_5050-6::7"
       (place D8 95394.476000 -181374.066000 front 165.000000 (PN LED_RGB))
     )
     (component Library:FOTORESist::4
       (place PR2 179568.267000 -55399.086000 front -52.500000 (PN A1050))
     )
-    (component Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal::17
+    (component Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal::16
       (place 220_28 42085.200000 -116357.723000 front 105.000000 (PN R_US))
     )
-    (component Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal::18
+    (component Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal::17
       (place 220_16 178398.602000 -156914.579000 front 45.000000 (PN R_US))
     )
-    (component "LED_SMD:LED_RGB_5050-6::9"
+    (component "LED_SMD:LED_RGB_5050-6::8"
       (place D12 59531.458000 -47531.458000 front -135.000000 (PN LED_RGB))
     )
-    (component Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal::19
+    (component Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal::18
       (place 10K_1 65915.361000 -142758.494000 front -130.000000 (PN R_US))
     )
-    (component Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal::20
+    (component Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal::19
       (place 220_6 145850.000000 -27250.000000 front -22.500000 (PN R_US))
       (place 220_5 144779.924000 -30682.095000 front -22.500000 (PN R_US))
     )
     (component Library:NPN::1
       (place Q3 169640.001000 -88499.408000 front 120.000000 (PN NPN))
     )
-    (component Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal::21
-      (place 10K_3 169033.012000 -63680.722000 front 140.000000 (PN R_US))
-    )
-    (component "LED_SMD:LED_RGB_5050-6::10"
+    (component "LED_SMD:LED_RGB_5050-6::9"
       (place D4 193374.066000 -83394.476000 front -75.000000 (PN LED_RGB))
     )
-    (component Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal::22
+    (component Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal::20
       (place 220_30 36214.803000 -117906.903000 front 105.000000 (PN R_US))
     )
     (component Library:FOTORESist::5
       (place PR1 125042.095000 -24784.411000 front -7.500000 (PN A1050))
-    )
-    (component Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal::23
-      (place 220_11 194582.133000 -91297.177000 front -100.000000 (PN R_US))
     )
     (component "Diode_SMD:D_MELF-RM10_Universal_Handsoldering::1"
       (place D14 58500.000000 -135900.000000 front 30.000000 (PN D))
@@ -328,13 +320,13 @@
     (component Library:FOTORESist::6
       (place PR7 36784.411000 -93657.905000 front 82.500000 (PN A1050))
     )
-    (component Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal::24
-      (place 10K_2 171033.012000 -61180.722000 front 140.000000 (PN R_US))
+    (component Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal::21
+      (place 10K_2 166141.506000 -66315.361000 front 140.000000 (PN R_US))
     )
-    (component "LED_SMD:LED_RGB_5050-6::11"
+    (component "LED_SMD:LED_RGB_5050-6::10"
       (place D6 172668.542000 -160668.542000 front 45.000000 (PN LED_RGB))
     )
-    (component Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal::25
+    (component Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal::22
       (place 220_9 163665.362000 -47191.506000 front 130.000000 (PN R_US))
     )
     (component Library:NPN::2
@@ -346,7 +338,7 @@
     (component Library:FOTORESist::7
       (place PR3 195415.589000 -114542.095000 front -97.500000 (PN A1050))
     )
-    (component Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal::26
+    (component Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal::23
       (place 220_29 39150.001000 -117149.999000 front 105.000000 (PN R_US))
     )
   )
@@ -384,79 +376,79 @@
       (pin Rect[T]Pad_1100x2000_um (rotate 90) 6 2400 1700)
     )
     (image Library:FOTORESist
-      (outline (path signal 120  2619.27 -2009.84  2386.61 -2281.25  2125.98 -2525.91  1840.41 -2740.96
-            1533.28 -2923.88  1208.16 -3072.52  868.88 -3185.13  519.414 -3260.4
-            163.859 -3297.45  -193.619 -3295.83  -548.826 -3255.58  -897.599 -3177.16
-            -1235.85 -3061.48  -1559.61 -2909.92  -1865.08 -2724.24  -2148.69 -2506.62
-            -2407.11 -2259.61  -2637.3 -1986.11  -2836.58 -1689.32  -3002.6 -1372.73
-            -3133.42 -1040.05  -3227.5 -695.166  -3283.74 -342.138  -3301.48 14.902
-            -3280.52 371.768  -3221.09 724.275  -3123.9 1068.29  -2990.09 1399.78
-            -2821.22 1714.86  -2619.27 2009.84  -2386.61 2281.25  -2125.98 2525.91
-            -1840.41 2740.96  -1533.28 2923.88  -1208.16 3072.52  -868.88 3185.13
-            -519.414 3260.4  -163.859 3297.45  193.619 3295.83  548.826 3255.58
-            897.599 3177.16  1235.85 3061.48  1559.61 2909.92  1865.08 2724.24
-            2148.69 2506.62  2407.11 2259.61  2637.3 1986.11  2836.58 1689.32
-            3002.6 1372.73  3133.42 1040.05  3227.5 695.166  3283.74 342.138
-            3301.48 -14.902  3280.52 -371.768  3221.09 -724.275  3123.9 -1068.29
-            2990.09 -1399.78  2821.22 -1714.86  2619.27 -2009.84))
-      (outline (path signal 50  2776.74 -2130.66  2538.81 -2409.24  2273.07 -2661.42  1982.42 -2884.44
-            1670.06 -3075.86  1339.39 -3233.58  994.054 -3355.87  637.825 -3441.39
-            274.607 -3489.21  -91.619 -3498.8  -456.842 -3470.06  -817.059 -3403.29
-            -1168.33 -3299.24  -1506.79 -3159.05  -1828.74 -2984.24  -2130.66 -2776.74
-            -2409.24 -2538.81  -2661.42 -2273.07  -2884.44 -1982.42  -3075.86 -1670.06
-            -3233.58 -1339.39  -3355.87 -994.054  -3441.39 -637.825  -3489.21 -274.607
-            -3498.8 91.619  -3470.06 456.842  -3403.29 817.059  -3299.24 1168.33
-            -3159.05 1506.79  -2984.24 1828.74  -2776.74 2130.66  -2538.81 2409.24
-            -2273.07 2661.42  -1982.42 2884.44  -1670.06 3075.86  -1339.39 3233.58
-            -994.054 3355.87  -637.825 3441.39  -274.607 3489.21  91.619 3498.8
-            456.842 3470.06  817.059 3403.29  1168.33 3299.24  1506.79 3159.05
-            1828.74 2984.24  2130.66 2776.74  2409.24 2538.81  2661.42 2273.07
-            2884.44 1982.42  3075.86 1670.06  3233.58 1339.39  3355.87 994.054
-            3441.39 637.825  3489.21 274.607  3498.8 -91.619  3470.06 -456.842
-            3403.29 -817.059  3299.24 -1168.33  3159.05 -1506.79  2984.24 -1828.74
-            2776.74 -2130.66))
-      (outline (path signal 100  -900 1800  900 1800))
+      (outline (path signal 120  2601.63 -2032.62  2366.61 -2301.99  2103.85 -2544.37  1816.42 -2756.92
+            1507.7 -2937.15  1181.3 -3082.94  841.052 -3192.59  490.943 -3264.81
+            135.077 -3298.75  -222.373 -3294.02  -577.215 -3250.66  -925.29 -3169.2
+            -1262.52 -3050.58  -1584.94 -2896.2  -1888.79 -2707.86  -2170.48 -2487.77
+            -2426.74 -2238.52  -2654.54 -1963.02  -2851.22 -1664.51  -3014.47 -1346.48
+            -3142.38 -1012.66  -3233.44 -666.975  -3286.6 -313.469  -3301.23 43.712
+            -3277.15 400.381  -3214.65 752.356  -3114.46 1095.51  -2977.76 1425.82
+            -2806.14 1739.41  -2601.63 2032.62  -2366.61 2301.99  -2103.85 2544.37
+            -1816.42 2756.92  -1507.7 2937.15  -1181.3 3082.94  -841.052 3192.59
+            -490.943 3264.81  -135.077 3298.75  222.373 3294.02  577.215 3250.66
+            925.29 3169.2  1262.52 3050.58  1584.94 2896.2  1888.79 2707.86
+            2170.48 2487.77  2426.74 2238.52  2654.54 1963.02  2851.22 1664.51
+            3014.47 1346.48  3142.38 1012.66  3233.44 666.975  3286.6 313.469
+            3301.23 -43.712  3277.15 -400.381  3214.65 -752.356  3114.46 -1095.51
+            2977.76 -1425.82  2806.14 -1739.41  2601.63 -2032.62))
+      (outline (path signal 50  2758.04 -2154.82  2517.69 -2431.3  2249.76 -2681.16  1957.18 -2901.63
+            1643.15 -3090.32  1311.12 -3245.14  964.731 -3364.41  607.769 -3446.83
+            244.147 -3491.47  -122.148 -3497.87  -487.106 -3465.94  -846.727 -3396.03
+            -1197.07 -3288.92  -1534.3 -3145.78  -1854.72 -2968.17  -2154.82 -2758.04
+            -2431.3 -2517.69  -2681.16 -2249.76  -2901.63 -1957.18  -3090.32 -1643.15
+            -3245.14 -1311.12  -3364.41 -964.731  -3446.83 -607.769  -3491.47 -244.147
+            -3497.87 122.148  -3465.94 487.106  -3396.03 846.727  -3288.92 1197.07
+            -3145.78 1534.3  -2968.17 1854.72  -2758.04 2154.82  -2517.69 2431.3
+            -2249.76 2681.16  -1957.18 2901.63  -1643.15 3090.32  -1311.12 3245.14
+            -964.731 3364.41  -607.769 3446.83  -244.147 3491.47  122.148 3497.87
+            487.106 3465.94  846.727 3396.03  1197.07 3288.92  1534.3 3145.78
+            1854.72 2968.17  2154.82 2758.04  2431.3 2517.69  2681.16 2249.76
+            2901.63 1957.18  3090.32 1643.15  3245.14 1311.12  3364.41 964.731
+            3446.83 607.769  3491.47 244.147  3497.87 -122.148  3465.94 -487.106
+            3396.03 -846.727  3288.92 -1197.07  3145.78 -1534.3  2968.17 -1854.72
+            2758.04 -2154.82))
+      (outline (path signal 100  -900.001 1800  900 1800))
       (outline (path signal 100  -899.999 1200  -900 600))
       (outline (path signal 100  -700 0  700 0))
       (outline (path signal 100  900 1800  900 1200))
-      (outline (path signal 100  -700 -600  -700 0))
+      (outline (path signal 100  -699.999 -600  -700 0))
       (outline (path signal 100  900 1200  -899.999 1200))
       (outline (path signal 100  -900 -1200  -900 -1800))
-      (outline (path signal 100  700 600  -900 600))
-      (outline (path signal 100  -900 -1800  900 -1800))
-      (outline (path signal 100  700 0  700 600))
-      (outline (path signal 100  900 -600  -700 -600))
+      (outline (path signal 100  699.999 600  -900 600))
+      (outline (path signal 100  -900 -1800  900.001 -1800))
+      (outline (path signal 100  700 0  699.999 600))
+      (outline (path signal 100  900 -600  -699.999 -600))
       (outline (path signal 100  900 -600  899.999 -1200))
       (outline (path signal 100  899.999 -1200  -900 -1200))
-      (outline (path signal 100  2221.39 -1704.53  2008.49 -1950.89  1768.42 -2170.88  1504.44 -2361.5
-            1220.11 -2520.18  919.288 -2644.79  606.031 -2733.63  284.578 -2785.5
-            -40.723 -2799.7  -365.473 -2776.05  -685.281 -2714.85  -995.823 -2616.93
-            -1292.9 -2483.63  -1572.49 -2316.74  -1830.81 -2118.52  -2064.38 -1891.65
-            -2270.03 -1639.2  -2444.98 -1364.59  -2586.86 -1071.51  -2693.77 -763.952
-            -2764.24 -446.06  -2797.34 -122.134  -2792.6 203.442  -2750.1 526.268
-            -2670.41 841.976  -2554.61 1146.3  -2404.25 1435.12  -2221.39 1704.53
-            -2008.49 1950.89  -1768.42 2170.88  -1504.44 2361.5  -1220.11 2520.18
-            -919.288 2644.79  -606.031 2733.63  -284.578 2785.5  40.723 2799.7
-            365.473 2776.05  685.281 2714.85  995.823 2616.93  1292.9 2483.63
-            1572.49 2316.74  1830.81 2118.52  2064.38 1891.65  2270.03 1639.2
-            2444.98 1364.59  2586.86 1071.51  2693.77 763.952  2764.24 446.06
-            2797.34 122.134  2792.6 -203.442  2750.1 -526.268  2670.41 -841.976
-            2554.61 -1146.3  2404.25 -1435.12  2221.39 -1704.53))
-      (outline (path signal 100  2538.73 -1948.04  2309.02 -2215.49  2051.29 -2456.06  1768.65 -2666.81
-            1464.54 -2845.19  1142.66 -2989.04  806.907 -3096.6  461.359 -3166.57
-            110.21 -3198.1  -242.277 -3190.82  -591.822 -3144.8  -934.184 -3060.61
-            -1265.21 -2939.26  -1580.87 -2782.24  -1877.34 -2591.44  -2151.03 -2369.19
-            -2398.61 -2118.18  -2617.07 -1841.46  -2803.76 -1542.38  -2956.41 -1224.59
-            -3073.19 -891.925  -3152.65 -548.435  -3193.85 -198.289  -3196.28 154.264
-            -3159.91 504.945  -3085.18 849.497  -2973.01 1183.74  -2824.74 1503.61
-            -2642.19 1805.23  -2427.56 2084.93  -2183.47 2339.33  -1912.87 2565.33
-            -1619.06 2760.19  -1305.59 2921.55  -976.266 3047.44  -635.097 3136.34
-            -286.219 3187.18  66.134 3199.32  417.684 3172.62  764.164 3107.42
-            1101.37 3004.5  1425.2 2865.1  1731.74 2690.93  2017.25 2484.09
-            2278.28 2247.1  2511.65 1982.83  2714.53 1694.49  2884.47 1385.59
-            3019.39 1059.87  3117.65 721.275  3178.08 373.93  3199.93 22.046
-            3182.93 -330.106  3127.3 -678.251  3033.7 -1018.16  2903.28 -1345.71
-            2737.62 -1656.93  2538.73 -1948.04))
+      (outline (path signal 100  2206.43 -1723.85  1991.38 -1968.35  1749.41 -2186.22  1483.77 -2374.54
+            1198.08 -2530.74  896.174 -2652.71  582.153 -2738.81  260.259 -2787.88
+            -65.153 -2799.24  -389.684 -2772.75  -708.947 -2708.76  -1018.62 -2608.14
+            -1314.52 -2472.25  -1592.64 -2302.93  -1849.23 -2102.47  -2080.81 -1873.57
+            -2284.24 -1619.33  -2456.79 -1343.2  -2596.11 -1048.9  -2700.33 -740.416
+            -2768.03 -421.92  -2798.3 -97.719  -2790.72 227.804  -2745.4 550.247
+            -2662.96 865.248  -2544.51 1168.55  -2391.64 1456.05  -2206.43 1723.85
+            -1991.38 1968.35  -1749.41 2186.22  -1483.77 2374.54  -1198.08 2530.74
+            -896.174 2652.71  -582.153 2738.81  -260.259 2787.88  65.153 2799.24
+            389.684 2772.75  708.947 2708.76  1018.62 2608.14  1314.52 2472.25
+            1592.64 2302.93  1849.23 2102.47  2080.81 1873.57  2284.24 1619.33
+            2456.79 1343.2  2596.12 1048.9  2700.33 740.416  2768.03 421.92
+            2798.3 97.719  2790.72 -227.804  2745.4 -550.247  2662.96 -865.248
+            2544.51 -1168.55  2391.64 -1456.05  2206.43 -1723.85))
+      (outline (path signal 100  2521.64 -1970.12  2289.6 -2235.56  2029.78 -2473.87  1745.31 -2682.14
+            1439.66 -2857.86  1116.53 -2998.89  779.853 -3103.52  433.708 -3170.47
+            82.297 -3198.94  -270.112 -3188.58  -619.243 -3139.51  -960.857 -3052.34
+            -1290.81 -2928.11  -1605.09 -2768.34  -1899.89 -2574.96  -2171.62 -2350.33
+            -2417 -2097.17  -2633.04 -1818.55  -2817.11 -1517.86  -2966.99 -1198.74
+            -3080.85 -865.073  -3157.32 -520.903  -3195.46 -170.41  -3194.81 182.151
+            -3155.38 532.501  -3077.65 876.387  -2962.57 1209.64  -2811.51 1528.2
+            -2626.34 1828.21  -2409.28 2106.04  -2162.97 2358.3  -1890.41 2581.93
+            -1594.91 2774.22  -1280.04 2932.83  -949.635 3055.85  -607.703 3141.77
+            -258.395 3189.55  94.051 3198.62  445.354 3168.86  791.252 3100.63
+            1127.54 2994.77  1450.15 2852.55  1755.15 2675.71  2038.85 2466.39
+            2297.8 2227.13  2528.86 1960.84  2729.22 1670.74  2896.45 1360.37
+            3028.52 1033.48  3123.83 694.042  3181.22 346.182  3199.99 -5.879
+            3179.93 -357.869  3121.26 -705.515  3024.7 -1044.6  2891.43 -1371
+            2723.06 -1680.76  2521.64 -1970.12))
       (pin Round[A]Pad_1600_um 1 -1500 0.001)
       (pin Round[A]Pad_1600_um 2 1500 -0.001)
     )
@@ -541,18 +533,18 @@
       (pin Oval[A]Pad_1600x1600_um 2 10160 0)
     )
     (image "LED_SMD:LED_RGB_5050-6::1"
-      (outline (path signal 120  2500 -2700  -2500 -2700))
-      (outline (path signal 120  -3600 1600  -3600 2700))
       (outline (path signal 120  -3600 2700  2500 2700))
-      (outline (path signal 50  3650 -2750  3650 2750))
-      (outline (path signal 50  3650 2750  -3650 2750))
-      (outline (path signal 50  -3650 -2750  3650 -2750))
+      (outline (path signal 120  -3600 1600  -3600 2700))
+      (outline (path signal 120  2500 -2700  -2500 -2700))
       (outline (path signal 50  -3650 2750  -3650 -2750))
-      (outline (path signal 100  2500 -2500  2500 2500))
-      (outline (path signal 100  2500 2500  -2500 2500))
-      (outline (path signal 100  -2500 -2500  2500 -2500))
-      (outline (path signal 100  -2500 1900  -1900 2500))
+      (outline (path signal 50  -3650 -2750  3650 -2750))
+      (outline (path signal 50  3650 2750  -3650 2750))
+      (outline (path signal 50  3650 -2750  3650 2750))
       (outline (path signal 100  -2500 2500  -2500 -2500))
+      (outline (path signal 100  -2500 1900  -1900 2500))
+      (outline (path signal 100  -2500 -2500  2500 -2500))
+      (outline (path signal 100  2500 2500  -2500 2500))
+      (outline (path signal 100  2500 -2500  2500 2500))
       (outline (path signal 100  1835.26 -491.756  1746.6 -747.935  1622.38 -988.889  1465.13 -1209.71
             1278.06 -1405.91  1064.96 -1573.48  830.194 -1709.03  578.525 -1809.78
             315.077 -1873.69  45.216 -1899.46  -225.566 -1886.56  -491.756 -1835.26
@@ -573,38 +565,38 @@
       (pin Rect[T]Pad_1100x2000_um (rotate 90) 6 2400 1700)
     )
     (image Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal::4
-      (outline (path signal 120  1040 0  1810 0))
-      (outline (path signal 120  1810 -1370  8350 -1370))
-      (outline (path signal 120  1810 1370  1810 -1370))
-      (outline (path signal 120  8350 -1370  8350 1370))
-      (outline (path signal 120  8350 1370  1810 1370))
       (outline (path signal 120  9120 0  8350 0))
-      (outline (path signal 50  -1050 -1500  11210 -1500))
-      (outline (path signal 50  -1050 1500  -1050 -1500))
-      (outline (path signal 50  11210 -1500  11210 1500))
+      (outline (path signal 120  8350 1370  1810 1370))
+      (outline (path signal 120  8350 -1370  8350 1370))
+      (outline (path signal 120  1810 1370  1810 -1370))
+      (outline (path signal 120  1810 -1370  8350 -1370))
+      (outline (path signal 120  1040 0  1810 0))
       (outline (path signal 50  11210 1500  -1050 1500))
-      (outline (path signal 100  0 0  1930 0))
-      (outline (path signal 100  1930 -1250  8230 -1250))
-      (outline (path signal 100  1930 1250  1930 -1250))
-      (outline (path signal 100  8230 -1250  8230 1250))
-      (outline (path signal 100  8230 1250  1930 1250))
+      (outline (path signal 50  11210 -1500  11210 1500))
+      (outline (path signal 50  -1050 1500  -1050 -1500))
+      (outline (path signal 50  -1050 -1500  11210 -1500))
       (outline (path signal 100  10160 0  8230 0))
+      (outline (path signal 100  8230 1250  1930 1250))
+      (outline (path signal 100  8230 -1250  8230 1250))
+      (outline (path signal 100  1930 1250  1930 -1250))
+      (outline (path signal 100  1930 -1250  8230 -1250))
+      (outline (path signal 100  0 0  1930 0))
       (pin Round[A]Pad_1600_um 1 0 0)
       (pin Oval[A]Pad_1600x1600_um 2 10160 0)
     )
     (image "LED_SMD:LED_RGB_5050-6::2"
-      (outline (path signal 120  2500 -2700  -2500 -2700))
-      (outline (path signal 120  -3600 2700  2500 2700))
       (outline (path signal 120  -3600 1600  -3600 2700))
-      (outline (path signal 50  3650 2750  -3650 2750))
-      (outline (path signal 50  3650 -2750  3650 2750))
-      (outline (path signal 50  -3650 2750  -3650 -2750))
+      (outline (path signal 120  -3600 2700  2500 2700))
+      (outline (path signal 120  2500 -2700  -2500 -2700))
       (outline (path signal 50  -3650 -2750  3650 -2750))
-      (outline (path signal 100  2500 2500  -2500 2500))
-      (outline (path signal 100  2500 -2500  2500 2500))
-      (outline (path signal 100  -2500 2500  -2500 -2500))
-      (outline (path signal 100  -2500 1900  -1900 2500))
+      (outline (path signal 50  -3650 2750  -3650 -2750))
+      (outline (path signal 50  3650 -2750  3650 2750))
+      (outline (path signal 50  3650 2750  -3650 2750))
       (outline (path signal 100  -2500 -2500  2500 -2500))
+      (outline (path signal 100  -2500 1900  -1900 2500))
+      (outline (path signal 100  -2500 2500  -2500 -2500))
+      (outline (path signal 100  2500 -2500  2500 2500))
+      (outline (path signal 100  2500 2500  -2500 2500))
       (outline (path signal 100  1343.5 1343.5  1521.03 1138.63  1667.59 910.573  1780.2 663.982
             1856.58 403.874  1895.16 135.545  1895.16 -135.545  1856.58 -403.874
             1780.2 -663.982  1667.59 -910.573  1521.03 -1138.63  1343.5 -1343.5
@@ -625,23 +617,23 @@
       (pin Rect[T]Pad_1100x2000_um (rotate 90) 6 2400 1700)
     )
     (image "Diode_SMD:D_MELF-RM10_Universal_Handsoldering"
+      (outline (path signal 120  3900 1610  -6410 1610))
       (outline (path signal 120  -6410 -1610  3900 -1610))
       (outline (path signal 120  -6410 1610  -6410 -1610))
-      (outline (path signal 120  3900 1610  -6410 1610))
-      (outline (path signal 50  -6400 -1600  -6400 1600))
-      (outline (path signal 50  -6400 1600  6400 1600))
       (outline (path signal 50  6400 -1600  -6400 -1600))
       (outline (path signal 50  6400 1600  6400 -1600))
-      (outline (path signal 100  -2600 -1300  2600 -1300))
+      (outline (path signal 50  -6400 -1600  -6400 1600))
+      (outline (path signal 50  -6400 1600  6400 1600))
+      (outline (path signal 100  2600 -1300  2600 1300))
+      (outline (path signal 100  2600 1300  -2600 1300))
       (outline (path signal 100  501.18 -750.32  501.181 799.079))
-      (outline (path signal 100  -649.44 -1.019  -1551.14 -1.02))
+      (outline (path signal 100  501.181 -1.02  1499.4 -1.019))
       (outline (path signal 100  -649.44 -1.019  501.18 -750.32))
       (outline (path signal 100  -649.44 -1.019  501.181 799.079))
-      (outline (path signal 100  -2600 1300  -2600 -1300))
-      (outline (path signal 100  2600 -1300  2600 1300))
-      (outline (path signal 100  501.181 -1.02  1499.4 -1.019))
+      (outline (path signal 100  -649.44 -1.019  -1551.14 -1.02))
       (outline (path signal 100  -649.439 799.08  -649.44 -801.12))
-      (outline (path signal 100  2600 1300  -2600 1300))
+      (outline (path signal 100  -2600 -1300  2600 -1300))
+      (outline (path signal 100  -2600 1300  -2600 -1300))
       (pin RoundRect[A][1100,0]Pad_4500x2700_250.951_um_0.000000_0 1 -5000 0)
       (pin RoundRect[A][1100,0]Pad_4500x2700_250.951_um_0.000000_0 (rotate 180) 2 5000 0)
     )
@@ -902,46 +894,66 @@
       (pin Rect[T]Pad_1100x2000_um (rotate 90) 6 2400 1700)
     )
     (image Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal::5
-      (outline (path signal 100  0 0  1930 0))
-      (outline (path signal 100  1930 1250  1930 -1250))
-      (outline (path signal 100  1930 -1250  8230 -1250))
-      (outline (path signal 100  8230 1250  1930 1250))
-      (outline (path signal 100  8230 -1250  8230 1250))
-      (outline (path signal 100  10160 0  8230 0))
-      (outline (path signal 50  -1050 1500  -1050 -1500))
-      (outline (path signal 50  -1050 -1500  11210 -1500))
-      (outline (path signal 50  11210 1500  -1050 1500))
-      (outline (path signal 50  11210 -1500  11210 1500))
-      (outline (path signal 120  1040 0  1810 -0.001))
-      (outline (path signal 120  1810 1370  1810 -1370))
-      (outline (path signal 120  1810 -1370  8350 -1370))
-      (outline (path signal 120  8350 1370  1810 1370))
-      (outline (path signal 120  8350 -1370  8350 1370))
       (outline (path signal 120  9120 0  8350 0))
-      (pin Oval[A]Pad_1600x1600_um 2 10160 0)
+      (outline (path signal 120  8350 -1370  8350 1370))
+      (outline (path signal 120  8350 1370  1810 1370))
+      (outline (path signal 120  1810 -1370  8350 -1370))
+      (outline (path signal 120  1810 1370  1810 -1370))
+      (outline (path signal 120  1040 0  1810 -0.001))
+      (outline (path signal 50  11210 -1500  11210 1500))
+      (outline (path signal 50  11210 1500  -1050 1500))
+      (outline (path signal 50  -1050 -1500  11210 -1500))
+      (outline (path signal 50  -1050 1500  -1050 -1500))
+      (outline (path signal 100  10160 0  8230 0))
+      (outline (path signal 100  8230 -1250  8230 1250))
+      (outline (path signal 100  8230 1250  1930 1250))
+      (outline (path signal 100  1930 -1250  8230 -1250))
+      (outline (path signal 100  1930 1250  1930 -1250))
+      (outline (path signal 100  0 0  1930 0))
       (pin Round[A]Pad_1600_um 1 0 0)
+      (pin Oval[A]Pad_1600x1600_um 2 10160 0)
     )
     (image Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal::6
-      (outline (path signal 120  9120 0  8350 0.001))
-      (outline (path signal 120  8350 1370  1810 1370))
       (outline (path signal 120  8350 -1370  8350 1370))
-      (outline (path signal 120  1810 1370  1810 -1370))
       (outline (path signal 120  1810 -1370  8350 -1370))
+      (outline (path signal 120  9120 0  8350 0))
       (outline (path signal 120  1040 0  1810 0))
-      (outline (path signal 50  11210 1500  -1050 1500))
+      (outline (path signal 120  8350 1370  1810 1370))
+      (outline (path signal 120  1810 1370  1810 -1370))
       (outline (path signal 50  11210 -1500  11210 1500))
-      (outline (path signal 50  -1050 1500  -1050 -1500))
       (outline (path signal 50  -1050 -1500  11210 -1500))
-      (outline (path signal 100  10160 0.001  8230 0))
-      (outline (path signal 100  8230 1250  1930 1250))
+      (outline (path signal 50  11210 1500  -1050 1500))
+      (outline (path signal 50  -1050 1500  -1050 -1500))
       (outline (path signal 100  8230 -1250  8230 1250))
-      (outline (path signal 100  1930 1250  1930 -1250))
+      (outline (path signal 100  10160 0.001  8230 0))
       (outline (path signal 100  1930 -1250  8230 -1250))
+      (outline (path signal 100  8230 1250  1930 1250))
       (outline (path signal 100  0 0  1930 0))
+      (outline (path signal 100  1930 1250  1930 -1250))
       (pin Round[A]Pad_1600_um 1 0 0)
       (pin Oval[A]Pad_1600x1600_um 2 10160 0.001)
     )
     (image Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal::7
+      (outline (path signal 120  1040 0  1810 0))
+      (outline (path signal 120  1810 -1370  8350 -1370))
+      (outline (path signal 120  1810 1370  1810 -1370))
+      (outline (path signal 120  8350 -1370  8350 1370))
+      (outline (path signal 120  8350 1370  1810 1370))
+      (outline (path signal 120  9120 0  8350 0.001))
+      (outline (path signal 50  -1050 -1500  11210 -1500))
+      (outline (path signal 50  -1050 1500  -1050 -1500))
+      (outline (path signal 50  11210 -1500  11210 1500))
+      (outline (path signal 50  11210 1500  -1050 1500))
+      (outline (path signal 100  0 0  1930 0))
+      (outline (path signal 100  1930 -1250  8230 -1250))
+      (outline (path signal 100  1930 1250  1930 -1250))
+      (outline (path signal 100  8230 -1250  8230 1250))
+      (outline (path signal 100  8230 1250  1930 1250))
+      (outline (path signal 100  10160 0.001  8230 0))
+      (pin Round[A]Pad_1600_um 1 0 0)
+      (pin Oval[A]Pad_1600x1600_um 2 10160 0.001)
+    )
+    (image Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal::8
       (outline (path signal 120  1040 0  1810 0.001))
       (outline (path signal 120  1810 -1370  8350 -1370))
       (outline (path signal 120  1810 1370  1810 -1370))
@@ -960,26 +972,6 @@
       (outline (path signal 100  10160 -0.001  8230 0))
       (pin Round[A]Pad_1600_um 1 0 0)
       (pin Oval[A]Pad_1600x1600_um 2 10160 -0.001)
-    )
-    (image Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal::8
-      (outline (path signal 120  8350 -1370  8350 1370))
-      (outline (path signal 120  1810 -1370  8350 -1370))
-      (outline (path signal 120  9120 0  8350 0))
-      (outline (path signal 120  1040 0  1810 0))
-      (outline (path signal 120  8350 1370  1810 1370))
-      (outline (path signal 120  1810 1370  1810 -1370))
-      (outline (path signal 50  11210 -1500  11210 1500))
-      (outline (path signal 50  -1050 -1500  11210 -1500))
-      (outline (path signal 50  11210 1500  -1050 1500))
-      (outline (path signal 50  -1050 1500  -1050 -1500))
-      (outline (path signal 100  8230 -1250  8230 1250))
-      (outline (path signal 100  10160 0.001  8230 0))
-      (outline (path signal 100  1930 -1250  8230 -1250))
-      (outline (path signal 100  8230 1250  1930 1250))
-      (outline (path signal 100  0 0  1930 0))
-      (outline (path signal 100  1930 1250  1930 -1250))
-      (pin Round[A]Pad_1600_um 1 0 0)
-      (pin Oval[A]Pad_1600x1600_um 2 10160 0.001)
     )
     (image "LED_SMD:LED_RGB_5050-6::4"
       (outline (path signal 120  2500 -2700  -2500 -2700))
@@ -1091,22 +1083,22 @@
       (pin Round[A]Pad_1600_um 2 1500 0.001)
     )
     (image Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal::9
-      (outline (path signal 120  9120 0.001  8350 0.001))
-      (outline (path signal 120  8350 1370  1810 1370))
-      (outline (path signal 120  8350 -1370  8350 1370))
+      (outline (path signal 120  1040 0  1810 -0.001))
       (outline (path signal 120  1810 1370  1810 -1370))
       (outline (path signal 120  1810 -1370  8350 -1370))
-      (outline (path signal 120  1040 0  1810 0))
-      (outline (path signal 50  11210 1500  -1050 1500))
-      (outline (path signal 50  11210 -1500  11210 1500))
+      (outline (path signal 120  8350 1370  1810 1370))
+      (outline (path signal 120  8350 -1370  8350 1370))
+      (outline (path signal 120  9120 0.001  8350 0.001))
       (outline (path signal 50  -1050 1500  -1050 -1500))
       (outline (path signal 50  -1050 -1500  11210 -1500))
-      (outline (path signal 100  10160 0  8230 0))
-      (outline (path signal 100  8230 1250  1930 1250))
-      (outline (path signal 100  8230 -1250  8230 1250))
+      (outline (path signal 50  11210 1500  -1050 1500))
+      (outline (path signal 50  11210 -1500  11210 1500))
+      (outline (path signal 100  0 0  1930 0))
       (outline (path signal 100  1930 1250  1930 -1250))
       (outline (path signal 100  1930 -1250  8230 -1250))
-      (outline (path signal 100  0 0  1930 0))
+      (outline (path signal 100  8230 1250  1930 1250))
+      (outline (path signal 100  8230 -1250  8230 1250))
+      (outline (path signal 100  10160 0  8230 0))
       (pin Round[A]Pad_1600_um 1 0 0)
       (pin Oval[A]Pad_1600x1600_um 2 10160 0)
     )
@@ -1131,24 +1123,24 @@
       (pin Oval[A]Pad_1600x1600_um 2 10160 0)
     )
     (image Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal::11
-      (outline (path signal 100  0 0  1930 0))
-      (outline (path signal 100  1930 -1250  8230 -1250))
-      (outline (path signal 100  1930 1250  1930 -1250))
-      (outline (path signal 100  8230 -1250  8230 1250))
-      (outline (path signal 100  8230 1250  1930 1250))
-      (outline (path signal 100  10160 0  8230 0))
-      (outline (path signal 50  -1050 -1500  11210 -1500))
-      (outline (path signal 50  -1050 1500  -1050 -1500))
-      (outline (path signal 50  11210 -1500  11210 1500))
-      (outline (path signal 50  11210 1500  -1050 1500))
-      (outline (path signal 120  1810 -1370  8350 -1370))
-      (outline (path signal 120  1040 0  1810 0))
-      (outline (path signal 120  1810 1370  1810 -1370))
-      (outline (path signal 120  8350 -1370  8350 1370))
-      (outline (path signal 120  9120 0  8350 0))
       (outline (path signal 120  8350 1370  1810 1370))
-      (pin Oval[A]Pad_1600x1600_um 2 10160 0)
+      (outline (path signal 120  9120 0  8350 0))
+      (outline (path signal 120  8350 -1370  8350 1370))
+      (outline (path signal 120  1810 1370  1810 -1370))
+      (outline (path signal 120  1040 0  1810 0))
+      (outline (path signal 120  1810 -1370  8350 -1370))
+      (outline (path signal 50  11210 1500  -1050 1500))
+      (outline (path signal 50  11210 -1500  11210 1500))
+      (outline (path signal 50  -1050 1500  -1050 -1500))
+      (outline (path signal 50  -1050 -1500  11210 -1500))
+      (outline (path signal 100  10160 0  8230 0))
+      (outline (path signal 100  8230 1250  1930 1250))
+      (outline (path signal 100  8230 -1250  8230 1250))
+      (outline (path signal 100  1930 1250  1930 -1250))
+      (outline (path signal 100  1930 -1250  8230 -1250))
+      (outline (path signal 100  0 0  1930 0))
       (pin Round[A]Pad_1600_um 1 0 0)
+      (pin Oval[A]Pad_1600x1600_um 2 10160 0)
     )
     (image Library:FOTORESist::3
       (outline (path signal 120  -3273.27 -430.934  -3300.67 -74.505  -3289.38 282.797
@@ -1228,78 +1220,46 @@
       (pin Round[A]Pad_1600_um 2 1500 0)
     )
     (image Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal::12
-      (outline (path signal 120  1040 0  1810 0.001))
-      (outline (path signal 120  1810 -1370  8350 -1370))
-      (outline (path signal 120  1810 1370  1810 -1370))
-      (outline (path signal 120  8350 -1370  8350 1370))
-      (outline (path signal 120  8350 1370  1810 1370))
       (outline (path signal 120  9120 0  8350 0))
-      (outline (path signal 50  -1050 -1500  11210 -1500))
+      (outline (path signal 120  8350 1370  1810 1370))
+      (outline (path signal 120  8350 -1370  8350 1370))
+      (outline (path signal 120  1810 1370  1810 -1370))
+      (outline (path signal 120  1810 -1370  8350 -1370))
+      (outline (path signal 120  1040 0  1810 0.001))
+      (outline (path signal 50  11210 1500  -1050 1500))
+      (outline (path signal 50  11210 -1500  11210 1500))
       (outline (path signal 50  -1050 1500  -1050 -1500))
+      (outline (path signal 50  -1050 -1500  11210 -1500))
+      (outline (path signal 100  10160 0  8230 0))
+      (outline (path signal 100  8230 1250  1930 1250))
+      (outline (path signal 100  8230 -1250  8230 1250))
+      (outline (path signal 100  1930 1250  1930 -1250))
+      (outline (path signal 100  1930 -1250  8230 -1250))
+      (outline (path signal 100  0 0  1930 0))
+      (pin Round[A]Pad_1600_um 1 0 0)
+      (pin Oval[A]Pad_1600x1600_um 2 10160 0)
+    )
+    (image Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal::13
+      (outline (path signal 120  8350 -1370  8350 1370))
+      (outline (path signal 120  9120 0  8350 0))
+      (outline (path signal 120  1810 -1370  8350 -1370))
+      (outline (path signal 120  8350 1370  1810 1370))
+      (outline (path signal 120  1040 0  1810 0.001))
+      (outline (path signal 120  1810 1370  1810 -1370))
       (outline (path signal 50  11210 -1500  11210 1500))
       (outline (path signal 50  11210 1500  -1050 1500))
-      (outline (path signal 100  0 0  1930 0))
-      (outline (path signal 100  1930 -1250  8230 -1250))
-      (outline (path signal 100  1930 1250  1930 -1250))
+      (outline (path signal 50  -1050 -1500  11210 -1500))
+      (outline (path signal 50  -1050 1500  -1050 -1500))
       (outline (path signal 100  8230 -1250  8230 1250))
-      (outline (path signal 100  8230 1250  1930 1250))
       (outline (path signal 100  10160 0  8230 0))
+      (outline (path signal 100  1930 -1250  8230 -1250))
+      (outline (path signal 100  8230 1250  1930 1250))
+      (outline (path signal 100  0 0  1930 0))
+      (outline (path signal 100  1930 1250  1930 -1250))
       (pin Round[A]Pad_1600_um 1 0 0)
       (pin Oval[A]Pad_1600x1600_um 2 10160 0)
     )
     (image "LED_SMD:LED_RGB_5050-6::5"
-      (outline (path signal 120  -3600 2700  2500 2700))
-      (outline (path signal 120  -3600 1600  -3600 2700))
-      (outline (path signal 120  2500 -2700  -2500 -2700))
-      (outline (path signal 50  -3650 2750  -3650 -2750))
-      (outline (path signal 50  -3650 -2750  3650 -2750))
-      (outline (path signal 50  3650 2750  -3650 2750))
-      (outline (path signal 50  3650 -2750  3650 2750))
-      (outline (path signal 100  -2500 2500  -2500 -2500))
-      (outline (path signal 100  -2500 1900  -1900 2500))
-      (outline (path signal 100  -2500 -2500  2500 -2500))
-      (outline (path signal 100  2500 2500  -2500 2500))
-      (outline (path signal 100  2500 -2500  2500 2500))
-      (outline (path signal 100  1835.26 -491.756  1746.6 -747.935  1622.38 -988.889  1465.13 -1209.71
-            1278.06 -1405.91  1064.96 -1573.48  830.194 -1709.03  578.525 -1809.78
-            315.077 -1873.69  45.216 -1899.46  -225.566 -1886.56  -491.756 -1835.26
-            -747.935 -1746.6  -988.889 -1622.38  -1209.71 -1465.13  -1405.91 -1278.06
-            -1573.48 -1064.96  -1709.03 -830.194  -1809.78 -578.525  -1873.69 -315.077
-            -1899.46 -45.216  -1886.56 225.566  -1835.26 491.756  -1746.6 747.935
-            -1622.38 988.889  -1465.13 1209.71  -1278.06 1405.91  -1064.96 1573.48
-            -830.194 1709.03  -578.525 1809.78  -315.077 1873.69  -45.216 1899.46
-            225.566 1886.56  491.756 1835.26  747.935 1746.6  988.889 1622.38
-            1209.71 1465.13  1405.91 1278.06  1573.48 1064.96  1709.03 830.194
-            1809.78 578.525  1873.69 315.077  1899.46 45.216  1886.56 -225.566
-            1835.26 -491.756))
-      (pin Rect[T]Pad_1100x2000_um (rotate 90) 1 -2400 1700)
-      (pin Rect[T]Pad_1100x2000_um (rotate 90) 2 -2400 0)
-      (pin Rect[T]Pad_1100x2000_um (rotate 90) 3 -2400 -1700)
-      (pin Rect[T]Pad_1100x2000_um (rotate 90) 4 2400 -1700)
-      (pin Rect[T]Pad_1100x2000_um (rotate 90) 5 2400 0)
-      (pin Rect[T]Pad_1100x2000_um (rotate 90) 6 2400 1700)
-    )
-    (image Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal::13
-      (outline (path signal 120  1810 1370  1810 -1370))
-      (outline (path signal 120  1040 0  1810 0.001))
-      (outline (path signal 120  8350 1370  1810 1370))
-      (outline (path signal 120  1810 -1370  8350 -1370))
-      (outline (path signal 120  9120 0  8350 0))
-      (outline (path signal 120  8350 -1370  8350 1370))
-      (outline (path signal 50  -1050 1500  -1050 -1500))
-      (outline (path signal 50  -1050 -1500  11210 -1500))
-      (outline (path signal 50  11210 1500  -1050 1500))
-      (outline (path signal 50  11210 -1500  11210 1500))
-      (outline (path signal 100  1930 1250  1930 -1250))
-      (outline (path signal 100  0 0  1930 0))
-      (outline (path signal 100  8230 1250  1930 1250))
-      (outline (path signal 100  1930 -1250  8230 -1250))
-      (outline (path signal 100  10160 0  8230 0))
-      (outline (path signal 100  8230 -1250  8230 1250))
-      (pin Round[A]Pad_1600_um 1 0 0)
-      (pin Oval[A]Pad_1600x1600_um 2 10160 0)
-    )
-    (image "LED_SMD:LED_RGB_5050-6::6"
       (outline (path signal 120  -3600 2700  2500 2700))
       (outline (path signal 120  -3600 1600  -3600 2700))
       (outline (path signal 120  2500 -2700  -2500 -2700))
@@ -1352,38 +1312,38 @@
       (pin Oval[A]Pad_1600x1600_um 2 10160 0)
     )
     (image Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal::15
-      (outline (path signal 120  9120 0  8350 0))
-      (outline (path signal 120  8350 -1370  8350 1370))
       (outline (path signal 120  8350 1370  1810 1370))
-      (outline (path signal 120  1810 -1370  8350 -1370))
+      (outline (path signal 120  9120 0  8350 0))
       (outline (path signal 120  1810 1370  1810 -1370))
+      (outline (path signal 120  8350 -1370  8350 1370))
       (outline (path signal 120  1040 0  1810 0))
-      (outline (path signal 50  11210 -1500  11210 1500))
+      (outline (path signal 120  1810 -1370  8350 -1370))
       (outline (path signal 50  11210 1500  -1050 1500))
-      (outline (path signal 50  -1050 -1500  11210 -1500))
       (outline (path signal 50  -1050 1500  -1050 -1500))
-      (outline (path signal 100  10160 0  8230 0))
-      (outline (path signal 100  8230 -1250  8230 1250))
+      (outline (path signal 50  11210 -1500  11210 1500))
+      (outline (path signal 50  -1050 -1500  11210 -1500))
       (outline (path signal 100  8230 1250  1930 1250))
-      (outline (path signal 100  1930 -1250  8230 -1250))
+      (outline (path signal 100  10160 0  8230 0))
       (outline (path signal 100  1930 1250  1930 -1250))
+      (outline (path signal 100  8230 -1250  8230 1250))
       (outline (path signal 100  0 0  1930 0))
+      (outline (path signal 100  1930 -1250  8230 -1250))
       (pin Round[A]Pad_1600_um 1 0 0)
       (pin Oval[A]Pad_1600x1600_um 2 10160 0)
     )
-    (image "LED_SMD:LED_RGB_5050-6::7"
-      (outline (path signal 120  -3600 1600  -3600 2700))
-      (outline (path signal 120  -3600 2700  2500 2700))
+    (image "LED_SMD:LED_RGB_5050-6::6"
       (outline (path signal 120  2500 -2700  -2500 -2700))
-      (outline (path signal 50  -3650 -2750  3650 -2750))
-      (outline (path signal 50  -3650 2750  -3650 -2750))
-      (outline (path signal 50  3650 -2750  3650 2750))
+      (outline (path signal 120  -3600 2700  2500 2700))
+      (outline (path signal 120  -3600 1600  -3600 2700))
       (outline (path signal 50  3650 2750  -3650 2750))
-      (outline (path signal 100  -2500 -2500  2500 -2500))
-      (outline (path signal 100  -2500 1900  -1900 2500))
-      (outline (path signal 100  -2500 2500  -2500 -2500))
-      (outline (path signal 100  2500 -2500  2500 2500))
+      (outline (path signal 50  3650 -2750  3650 2750))
+      (outline (path signal 50  -3650 2750  -3650 -2750))
+      (outline (path signal 50  -3650 -2750  3650 -2750))
       (outline (path signal 100  2500 2500  -2500 2500))
+      (outline (path signal 100  2500 -2500  2500 2500))
+      (outline (path signal 100  -2500 2500  -2500 -2500))
+      (outline (path signal 100  -2500 1900  -1900 2500))
+      (outline (path signal 100  -2500 -2500  2500 -2500))
       (outline (path signal 100  -1343.5 -1343.5  -1521.03 -1138.63  -1667.59 -910.575
             -1780.21 -663.983  -1856.58 -403.874  -1895.16 -135.545  -1895.16 135.545
             -1856.58 403.874  -1780.21 663.983  -1667.59 910.575  -1521.03 1138.63
@@ -1420,27 +1380,7 @@
       (pin Round[A]Pad_2070_um 2 2540 0.001)
       (pin Round[A]Pad_2070_um 3 5080 0)
     )
-    (image Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal::16
-      (outline (path signal 100  8230 -1250  8230 1250))
-      (outline (path signal 100  10160 0  8230 0))
-      (outline (path signal 100  1930 -1250  8230 -1250))
-      (outline (path signal 100  8230 1250  1930 1250))
-      (outline (path signal 100  0 0  1930 0))
-      (outline (path signal 100  1930 1250  1930 -1250))
-      (outline (path signal 50  11210 -1500  11210 1500))
-      (outline (path signal 50  11210 1500  -1050 1500))
-      (outline (path signal 50  -1050 -1500  11210 -1500))
-      (outline (path signal 50  -1050 1500  -1050 -1500))
-      (outline (path signal 120  8350 -1370  8350 1370))
-      (outline (path signal 120  9120 0  8350 0))
-      (outline (path signal 120  1810 -1370  8350 -1370))
-      (outline (path signal 120  8350 1370  1810 1370))
-      (outline (path signal 120  1040 0  1810 0.001))
-      (outline (path signal 120  1810 1370  1810 -1370))
-      (pin Oval[A]Pad_1600x1600_um 2 10160 0)
-      (pin Round[A]Pad_1600_um 1 0 0)
-    )
-    (image "LED_SMD:LED_RGB_5050-6::8"
+    (image "LED_SMD:LED_RGB_5050-6::7"
       (outline (path signal 120  2500 -2700  -2500 -2700))
       (outline (path signal 120  -3600 2700  2500 2700))
       (outline (path signal 120  -3600 1600  -3600 2700))
@@ -1549,59 +1489,59 @@
       (pin Round[A]Pad_1600_um 1 -1500 0.001)
       (pin Round[A]Pad_1600_um 2 1500 -0.001)
     )
-    (image Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal::17
-      (outline (path signal 120  1810 -1370  8350 -1370))
-      (outline (path signal 120  1040 0.001  1810 -0.001))
-      (outline (path signal 120  8350 -1370  8350 1370))
-      (outline (path signal 120  1810 1370  1810 -1370))
-      (outline (path signal 120  9120 -0.001  8350 0))
+    (image Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal::16
       (outline (path signal 120  8350 1370  1810 1370))
-      (outline (path signal 50  -1050 -1500  11210 -1500))
-      (outline (path signal 50  -1050 1500  -1050 -1500))
-      (outline (path signal 50  11210 -1500  11210 1500))
+      (outline (path signal 120  9120 -0.001  8350 0))
+      (outline (path signal 120  1810 1370  1810 -1370))
+      (outline (path signal 120  8350 -1370  8350 1370))
+      (outline (path signal 120  1040 0.001  1810 -0.001))
+      (outline (path signal 120  1810 -1370  8350 -1370))
       (outline (path signal 50  11210 1500  -1050 1500))
-      (outline (path signal 100  1930 -1250  8230 -1250))
-      (outline (path signal 100  0 0  1930 0))
-      (outline (path signal 100  8230 -1250  8230 1250))
-      (outline (path signal 100  1930 1250  1930 -1250))
-      (outline (path signal 100  10160 0  8230 0.001))
+      (outline (path signal 50  11210 -1500  11210 1500))
+      (outline (path signal 50  -1050 1500  -1050 -1500))
+      (outline (path signal 50  -1050 -1500  11210 -1500))
       (outline (path signal 100  8230 1250  1930 1250))
+      (outline (path signal 100  10160 0  8230 0.001))
+      (outline (path signal 100  1930 1250  1930 -1250))
+      (outline (path signal 100  8230 -1250  8230 1250))
+      (outline (path signal 100  0 0  1930 0))
+      (outline (path signal 100  1930 -1250  8230 -1250))
       (pin Round[A]Pad_1600_um 1 0 0)
       (pin Oval[A]Pad_1600x1600_um 2 10160 0)
     )
-    (image Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal::18
-      (outline (path signal 100  10160 0.001  8230 0))
-      (outline (path signal 100  8230 -1250  8230 1250))
-      (outline (path signal 100  8230 1250  1930 1250))
-      (outline (path signal 100  1930 -1250  8230 -1250))
-      (outline (path signal 100  1930 1250  1930 -1250))
-      (outline (path signal 100  0 0  1930 0.001))
-      (outline (path signal 50  11210 -1500  11210 1500))
-      (outline (path signal 50  11210 1500  -1050 1500))
-      (outline (path signal 50  -1050 -1500  11210 -1500))
-      (outline (path signal 50  -1050 1500  -1050 -1500))
-      (outline (path signal 120  8350 -1370  8350 1370))
-      (outline (path signal 120  9120 -0.001  8350 0.001))
-      (outline (path signal 120  8350 1370  1810 1370))
-      (outline (path signal 120  1810 -1370  8350 -1370))
-      (outline (path signal 120  1040 -0.001  1810 0))
+    (image Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal::17
       (outline (path signal 120  1810 1370  1810 -1370))
-      (pin Oval[A]Pad_1600x1600_um 2 10160 0.001)
+      (outline (path signal 120  1040 -0.001  1810 0))
+      (outline (path signal 120  1810 -1370  8350 -1370))
+      (outline (path signal 120  8350 1370  1810 1370))
+      (outline (path signal 120  9120 -0.001  8350 0.001))
+      (outline (path signal 120  8350 -1370  8350 1370))
+      (outline (path signal 50  -1050 1500  -1050 -1500))
+      (outline (path signal 50  -1050 -1500  11210 -1500))
+      (outline (path signal 50  11210 1500  -1050 1500))
+      (outline (path signal 50  11210 -1500  11210 1500))
+      (outline (path signal 100  0 0  1930 0.001))
+      (outline (path signal 100  1930 1250  1930 -1250))
+      (outline (path signal 100  1930 -1250  8230 -1250))
+      (outline (path signal 100  8230 1250  1930 1250))
+      (outline (path signal 100  8230 -1250  8230 1250))
+      (outline (path signal 100  10160 0.001  8230 0))
       (pin Round[A]Pad_1600_um 1 0 0)
+      (pin Oval[A]Pad_1600x1600_um 2 10160 0.001)
     )
-    (image "LED_SMD:LED_RGB_5050-6::9"
-      (outline (path signal 120  -3600 2700  2500 2700))
-      (outline (path signal 120  -3600 1600  -3600 2700))
+    (image "LED_SMD:LED_RGB_5050-6::8"
       (outline (path signal 120  2500 -2700  -2500 -2700))
-      (outline (path signal 50  -3650 2750  -3650 -2750))
-      (outline (path signal 50  -3650 -2750  3650 -2750))
-      (outline (path signal 50  3650 2750  -3650 2750))
+      (outline (path signal 120  -3600 1600  -3600 2700))
+      (outline (path signal 120  -3600 2700  2500 2700))
       (outline (path signal 50  3650 -2750  3650 2750))
-      (outline (path signal 100  -2500 2500  -2500 -2500))
-      (outline (path signal 100  -2500 1900  -1900 2500))
-      (outline (path signal 100  2500 2500  -2500 2500))
-      (outline (path signal 100  -2500 -2500  2500 -2500))
+      (outline (path signal 50  3650 2750  -3650 2750))
+      (outline (path signal 50  -3650 -2750  3650 -2750))
+      (outline (path signal 50  -3650 2750  -3650 -2750))
       (outline (path signal 100  2500 -2500  2500 2500))
+      (outline (path signal 100  -2500 -2500  2500 -2500))
+      (outline (path signal 100  2500 2500  -2500 2500))
+      (outline (path signal 100  -2500 1900  -1900 2500))
+      (outline (path signal 100  -2500 2500  -2500 -2500))
       (outline (path signal 100  -1343.5 1343.5  -1138.63 1521.03  -910.573 1667.59  -663.982 1780.2
             -403.874 1856.58  -135.545 1895.16  135.545 1895.16  403.874 1856.58
             663.982 1780.2  910.573 1667.59  1138.63 1521.03  1343.5 1343.5
@@ -1621,43 +1561,43 @@
       (pin Rect[T]Pad_1100x2000_um (rotate 90) 5 2400 -0.001)
       (pin Rect[T]Pad_1100x2000_um (rotate 90) 6 2400 1700)
     )
-    (image Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal::19
-      (outline (path signal 120  8350 1370  1810 1370))
-      (outline (path signal 120  9120 0  8350 0))
+    (image Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal::18
       (outline (path signal 120  8350 -1370  8350 1370))
-      (outline (path signal 120  1810 1370  1810 -1370))
-      (outline (path signal 120  1040 0  1810 -0.001))
+      (outline (path signal 120  9120 0  8350 0))
+      (outline (path signal 120  8350 1370  1810 1370))
       (outline (path signal 120  1810 -1370  8350 -1370))
-      (outline (path signal 50  11210 1500  -1050 1500))
+      (outline (path signal 120  1040 0  1810 -0.001))
+      (outline (path signal 120  1810 1370  1810 -1370))
       (outline (path signal 50  11210 -1500  11210 1500))
-      (outline (path signal 50  -1050 1500  -1050 -1500))
+      (outline (path signal 50  11210 1500  -1050 1500))
       (outline (path signal 50  -1050 -1500  11210 -1500))
+      (outline (path signal 50  -1050 1500  -1050 -1500))
       (outline (path signal 100  10160 0  8230 0))
-      (outline (path signal 100  8230 1250  1930 1250))
       (outline (path signal 100  8230 -1250  8230 1250))
-      (outline (path signal 100  1930 1250  1930 -1250))
+      (outline (path signal 100  8230 1250  1930 1250))
       (outline (path signal 100  1930 -1250  8230 -1250))
+      (outline (path signal 100  1930 1250  1930 -1250))
       (outline (path signal 100  0 0  1930 0))
       (pin Round[A]Pad_1600_um 1 0 0)
       (pin Oval[A]Pad_1600x1600_um 2 10160 0)
     )
-    (image Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal::20
-      (outline (path signal 120  9120 0  8350 0))
-      (outline (path signal 120  8350 1370  1810 1370))
-      (outline (path signal 120  8350 -1370  8350 1370))
-      (outline (path signal 120  1810 1370  1810 -1370))
-      (outline (path signal 120  1810 -1370  8350 -1370))
+    (image Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal::19
       (outline (path signal 120  1040 0  1810 0))
-      (outline (path signal 50  11210 1500  -1050 1500))
-      (outline (path signal 50  11210 -1500  11210 1500))
-      (outline (path signal 50  -1050 1500  -1050 -1500))
+      (outline (path signal 120  1810 -1370  8350 -1370))
+      (outline (path signal 120  1810 1370  1810 -1370))
+      (outline (path signal 120  8350 -1370  8350 1370))
+      (outline (path signal 120  8350 1370  1810 1370))
+      (outline (path signal 120  9120 0  8350 0))
       (outline (path signal 50  -1050 -1500  11210 -1500))
-      (outline (path signal 100  10160 0  8230 0))
-      (outline (path signal 100  8230 1250  1930 1250))
-      (outline (path signal 100  8230 -1250  8230 1250))
-      (outline (path signal 100  1930 1250  1930 -1250))
-      (outline (path signal 100  1930 -1250  8230 -1250))
+      (outline (path signal 50  -1050 1500  -1050 -1500))
+      (outline (path signal 50  11210 -1500  11210 1500))
+      (outline (path signal 50  11210 1500  -1050 1500))
       (outline (path signal 100  0 0  1930 0))
+      (outline (path signal 100  1930 -1250  8230 -1250))
+      (outline (path signal 100  1930 1250  1930 -1250))
+      (outline (path signal 100  8230 -1250  8230 1250))
+      (outline (path signal 100  8230 1250  1930 1250))
+      (outline (path signal 100  10160 0  8230 0))
       (pin Round[A]Pad_1600_um 1 0 0)
       (pin Oval[A]Pad_1600x1600_um 2 10160 0)
     )
@@ -1678,27 +1618,7 @@
       (pin Round[A]Pad_2070_um 2 2540 -0.001)
       (pin Round[A]Pad_2070_um 3 5080 0.001)
     )
-    (image Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal::21
-      (outline (path signal 100  0 0  1930 0))
-      (outline (path signal 100  1930 -1250  8230 -1250))
-      (outline (path signal 100  1930 1250  1930 -1250))
-      (outline (path signal 100  8230 -1250  8230 1250))
-      (outline (path signal 100  8230 1250  1930 1250))
-      (outline (path signal 100  10160 0  8230 0))
-      (outline (path signal 50  -1050 -1500  11210 -1500))
-      (outline (path signal 50  -1050 1500  -1050 -1500))
-      (outline (path signal 50  11210 -1500  11210 1500))
-      (outline (path signal 50  11210 1500  -1050 1500))
-      (outline (path signal 120  1810 -1370  8350 -1370))
-      (outline (path signal 120  1040 0  1810 0.001))
-      (outline (path signal 120  1810 1370  1810 -1370))
-      (outline (path signal 120  8350 -1370  8350 1370))
-      (outline (path signal 120  9120 0  8350 0))
-      (outline (path signal 120  8350 1370  1810 1370))
-      (pin Oval[A]Pad_1600x1600_um 2 10160 0)
-      (pin Round[A]Pad_1600_um 1 0 0)
-    )
-    (image "LED_SMD:LED_RGB_5050-6::10"
+    (image "LED_SMD:LED_RGB_5050-6::9"
       (outline (path signal 120  2500 -2700  -2500 -2700))
       (outline (path signal 120  -3600 1600  -3600 2700))
       (outline (path signal 120  -3600 2700  2500 2700))
@@ -1730,23 +1650,23 @@
       (pin Rect[T]Pad_1100x2000_um (rotate 90) 5 2400 0)
       (pin Rect[T]Pad_1100x2000_um (rotate 90) 6 2400 1700)
     )
-    (image Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal::22
-      (outline (path signal 120  1810 -1370  8350 -1370))
-      (outline (path signal 120  1040 0.001  1810 0.001))
-      (outline (path signal 120  8350 -1370  8350 1370))
-      (outline (path signal 120  1810 1370  1810 -1370))
-      (outline (path signal 120  9120 0.001  8350 -0.001))
+    (image Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal::20
       (outline (path signal 120  8350 1370  1810 1370))
-      (outline (path signal 50  -1050 -1500  11210 -1500))
-      (outline (path signal 50  -1050 1500  -1050 -1500))
-      (outline (path signal 50  11210 -1500  11210 1500))
+      (outline (path signal 120  9120 0.001  8350 -0.001))
+      (outline (path signal 120  1810 1370  1810 -1370))
+      (outline (path signal 120  8350 -1370  8350 1370))
+      (outline (path signal 120  1040 0.001  1810 0.001))
+      (outline (path signal 120  1810 -1370  8350 -1370))
       (outline (path signal 50  11210 1500  -1050 1500))
-      (outline (path signal 100  1930 -1250  8230 -1250))
-      (outline (path signal 100  0 0  1930 0))
-      (outline (path signal 100  8230 -1250  8230 1250))
-      (outline (path signal 100  1930 1250  1930 -1250))
-      (outline (path signal 100  10160 0.001  8230 0.002))
+      (outline (path signal 50  11210 -1500  11210 1500))
+      (outline (path signal 50  -1050 1500  -1050 -1500))
+      (outline (path signal 50  -1050 -1500  11210 -1500))
       (outline (path signal 100  8230 1250  1930 1250))
+      (outline (path signal 100  10160 0.001  8230 0.002))
+      (outline (path signal 100  1930 1250  1930 -1250))
+      (outline (path signal 100  8230 -1250  8230 1250))
+      (outline (path signal 100  0 0  1930 0))
+      (outline (path signal 100  1930 -1250  8230 -1250))
       (pin Round[A]Pad_1600_um 1 0 0)
       (pin Oval[A]Pad_1600x1600_um 2 10160 0.001)
     )
@@ -1795,20 +1715,20 @@
       (outline (path signal 100  900 -599.998  900 -1200))
       (outline (path signal 100  900 1200  -900 1200))
       (outline (path signal 100  900 1800  900 1200))
-      (outline (path signal 100  2776.05 365.473  2799.7 40.723  2785.5 -284.578  2733.63 -606.031
-            2644.79 -919.288  2520.18 -1220.11  2361.5 -1504.44  2170.87 -1768.42
+      (outline (path signal 100  2776.04 365.473  2799.7 40.723  2785.5 -284.578  2733.63 -606.03
+            2644.79 -919.287  2520.18 -1220.11  2361.49 -1504.44  2170.87 -1768.42
             1950.89 -2008.48  1704.53 -2221.39  1435.12 -2404.25  1146.3 -2554.6
-            841.976 -2670.41  526.267 -2750.1  203.443 -2792.6  -122.134 -2797.33
-            -446.059 -2764.24  -763.952 -2693.76  -1071.51 -2586.86  -1364.58 -2444.97
-            -1639.2 -2270.02  -1891.65 -2064.38  -2118.52 -1830.81  -2316.74 -1572.48
-            -2483.63 -1292.9  -2616.93 -995.822  -2714.84 -685.281  -2776.05 -365.473
-            -2799.7 -40.723  -2785.5 284.578  -2733.63 606.031  -2644.79 919.288
-            -2520.18 1220.11  -2361.5 1504.44  -2170.87 1768.42  -1950.89 2008.48
-            -1704.53 2221.39  -1435.12 2404.25  -1146.3 2554.6  -841.976 2670.41
-            -526.267 2750.1  -203.443 2792.6  122.134 2797.33  446.059 2764.24
-            763.952 2693.76  1071.51 2586.86  1364.58 2444.97  1639.2 2270.02
-            1891.65 2064.38  2118.52 1830.81  2316.74 1572.48  2483.63 1292.9
-            2616.93 995.822  2714.84 685.281  2776.05 365.473))
+            841.975 -2670.41  526.267 -2750.1  203.442 -2792.6  -122.134 -2797.33
+            -446.059 -2764.24  -763.951 -2693.76  -1071.51 -2586.86  -1364.58 -2444.97
+            -1639.2 -2270.02  -1891.65 -2064.37  -2118.52 -1830.81  -2316.74 -1572.48
+            -2483.63 -1292.89  -2616.93 -995.821  -2714.84 -685.281  -2776.04 -365.473
+            -2799.7 -40.723  -2785.5 284.578  -2733.63 606.03  -2644.79 919.287
+            -2520.18 1220.11  -2361.49 1504.44  -2170.87 1768.42  -1950.89 2008.48
+            -1704.53 2221.39  -1435.12 2404.25  -1146.3 2554.6  -841.975 2670.41
+            -526.267 2750.1  -203.442 2792.6  122.134 2797.33  446.059 2764.24
+            763.951 2693.76  1071.51 2586.86  1364.58 2444.97  1639.2 2270.02
+            1891.65 2064.37  2118.52 1830.81  2316.74 1572.48  2483.63 1292.89
+            2616.93 995.821  2714.84 685.281  2776.04 365.473))
       (outline (path signal 100  3172.62 417.684  3199.32 66.134  3187.17 -286.218  3136.34 -635.096
             3047.44 -976.266  2921.55 -1305.58  2760.19 -1619.06  2565.33 -1912.87
             2339.33 -2183.47  2084.93 -2427.56  1805.23 -2642.19  1503.61 -2824.74
@@ -1827,44 +1747,24 @@
       (pin Round[A]Pad_1600_um 1 -1500 0)
       (pin Round[A]Pad_1600_um 2 1500 0)
     )
-    (image Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal::23
-      (outline (path signal 100  1930 1250  1930 -1250))
-      (outline (path signal 100  0 0  1930 0))
-      (outline (path signal 100  8230 1250  1930 1250))
-      (outline (path signal 100  1930 -1250  8230 -1250))
-      (outline (path signal 100  10160 0.001  8230 0))
-      (outline (path signal 100  8230 -1250  8230 1250))
-      (outline (path signal 50  -1050 1500  -1050 -1500))
-      (outline (path signal 50  11210 1500  -1050 1500))
-      (outline (path signal 50  -1050 -1500  11210 -1500))
-      (outline (path signal 50  11210 -1500  11210 1500))
-      (outline (path signal 120  1810 1370  1810 -1370))
-      (outline (path signal 120  8350 1370  1810 1370))
-      (outline (path signal 120  1040 0  1810 0))
-      (outline (path signal 120  9120 0  8350 0))
-      (outline (path signal 120  1810 -1370  8350 -1370))
-      (outline (path signal 120  8350 -1370  8350 1370))
-      (pin Oval[A]Pad_1600x1600_um 2 10160 0.001)
-      (pin Round[A]Pad_1600_um 1 0 0)
-    )
     (image "Diode_SMD:D_MELF-RM10_Universal_Handsoldering::1"
-      (outline (path signal 120  3900 1610  -6410 1610))
       (outline (path signal 120  -6410 1610  -6410 -1610))
       (outline (path signal 120  -6410 -1610  3900 -1610))
-      (outline (path signal 50  6400 1600  6400 -1600))
-      (outline (path signal 50  6400 -1600  -6400 -1600))
+      (outline (path signal 120  3900 1610  -6410 1610))
       (outline (path signal 50  -6400 1600  6400 1600))
       (outline (path signal 50  -6400 -1600  -6400 1600))
-      (outline (path signal 100  2600 1300  -2600 1300))
-      (outline (path signal 100  -649.439 799.08  -649.44 -801.12))
-      (outline (path signal 100  501.181 -1.02  1499.4 -1.019))
-      (outline (path signal 100  2600 -1300  2600 1300))
+      (outline (path signal 50  6400 1600  6400 -1600))
+      (outline (path signal 50  6400 -1600  -6400 -1600))
       (outline (path signal 100  -2600 1300  -2600 -1300))
+      (outline (path signal 100  -2600 -1300  2600 -1300))
+      (outline (path signal 100  -649.439 799.08  -649.44 -801.12))
+      (outline (path signal 100  -649.441 -1.018  -1551.14 -1.02))
       (outline (path signal 100  -649.441 -1.018  501.18 799.079))
       (outline (path signal 100  -649.441 -1.018  501.18 -750.32))
-      (outline (path signal 100  -649.441 -1.018  -1551.14 -1.02))
+      (outline (path signal 100  501.181 -1.02  1499.4 -1.019))
       (outline (path signal 100  501.18 -750.32  501.18 799.079))
-      (outline (path signal 100  -2600 -1300  2600 -1300))
+      (outline (path signal 100  2600 1300  -2600 1300))
+      (outline (path signal 100  2600 -1300  2600 1300))
       (pin RoundRect[A][1100,0]Pad_4500x2700_250.951_um_0.000000_0 1 -5000 0.001)
       (pin RoundRect[A][1100,0]Pad_4500x2700_250.951_um_0.000000_0 (rotate 180) 2 5000 -0.001)
     )
@@ -1945,39 +1845,39 @@
       (pin Round[A]Pad_1600_um 1 -1500 0)
       (pin Round[A]Pad_1600_um 2 1500 0)
     )
-    (image Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal::24
-      (outline (path signal 100  0 0  1930 0))
-      (outline (path signal 100  1930 -1250  8230 -1250))
-      (outline (path signal 100  1930 1250  1930 -1250))
-      (outline (path signal 100  8230 -1250  8230 1250))
-      (outline (path signal 100  8230 1250  1930 1250))
-      (outline (path signal 100  10160 0  8230 0))
-      (outline (path signal 50  -1050 -1500  11210 -1500))
-      (outline (path signal 50  -1050 1500  -1050 -1500))
-      (outline (path signal 50  11210 -1500  11210 1500))
-      (outline (path signal 50  11210 1500  -1050 1500))
-      (outline (path signal 120  1810 -1370  8350 -1370))
-      (outline (path signal 120  1040 0  1810 -0.001))
-      (outline (path signal 120  1810 1370  1810 -1370))
-      (outline (path signal 120  8350 -1370  8350 1370))
-      (outline (path signal 120  9120 0  8350 0))
+    (image Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal::21
       (outline (path signal 120  8350 1370  1810 1370))
-      (pin Oval[A]Pad_1600x1600_um 2 10160 0)
+      (outline (path signal 120  9120 0  8350 0))
+      (outline (path signal 120  8350 -1370  8350 1370))
+      (outline (path signal 120  1810 1370  1810 -1370))
+      (outline (path signal 120  1040 0  1810 -0.001))
+      (outline (path signal 120  1810 -1370  8350 -1370))
+      (outline (path signal 50  11210 1500  -1050 1500))
+      (outline (path signal 50  11210 -1500  11210 1500))
+      (outline (path signal 50  -1050 1500  -1050 -1500))
+      (outline (path signal 50  -1050 -1500  11210 -1500))
+      (outline (path signal 100  10160 0  8230 0))
+      (outline (path signal 100  8230 1250  1930 1250))
+      (outline (path signal 100  8230 -1250  8230 1250))
+      (outline (path signal 100  1930 1250  1930 -1250))
+      (outline (path signal 100  1930 -1250  8230 -1250))
+      (outline (path signal 100  0 0  1930 0))
       (pin Round[A]Pad_1600_um 1 0 0)
+      (pin Oval[A]Pad_1600x1600_um 2 10160 0)
     )
-    (image "LED_SMD:LED_RGB_5050-6::11"
-      (outline (path signal 120  2500 -2700  -2500 -2700))
-      (outline (path signal 120  -3600 1600  -3600 2700))
+    (image "LED_SMD:LED_RGB_5050-6::10"
       (outline (path signal 120  -3600 2700  2500 2700))
-      (outline (path signal 50  3650 -2750  3650 2750))
-      (outline (path signal 50  3650 2750  -3650 2750))
-      (outline (path signal 50  -3650 -2750  3650 -2750))
+      (outline (path signal 120  -3600 1600  -3600 2700))
+      (outline (path signal 120  2500 -2700  -2500 -2700))
       (outline (path signal 50  -3650 2750  -3650 -2750))
-      (outline (path signal 100  2500 -2500  2500 2500))
-      (outline (path signal 100  -2500 -2500  2500 -2500))
-      (outline (path signal 100  2500 2500  -2500 2500))
-      (outline (path signal 100  -2500 1900  -1900 2500))
+      (outline (path signal 50  -3650 -2750  3650 -2750))
+      (outline (path signal 50  3650 2750  -3650 2750))
+      (outline (path signal 50  3650 -2750  3650 2750))
       (outline (path signal 100  -2500 2500  -2500 -2500))
+      (outline (path signal 100  -2500 1900  -1900 2500))
+      (outline (path signal 100  2500 2500  -2500 2500))
+      (outline (path signal 100  -2500 -2500  2500 -2500))
+      (outline (path signal 100  2500 -2500  2500 2500))
       (outline (path signal 100  1343.5 -1343.5  1138.63 -1521.03  910.573 -1667.59  663.982 -1780.2
             403.874 -1856.58  135.545 -1895.16  -135.545 -1895.16  -403.874 -1856.58
             -663.982 -1780.2  -910.573 -1667.59  -1138.63 -1521.03  -1343.5 -1343.5
@@ -1997,7 +1897,7 @@
       (pin Rect[T]Pad_1100x2000_um (rotate 90) 5 2400 0)
       (pin Rect[T]Pad_1100x2000_um (rotate 90) 6 2400 1700)
     )
-    (image Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal::25
+    (image Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal::22
       (outline (path signal 120  8350 1370  1810 1370))
       (outline (path signal 120  9120 0  8350 -0.001))
       (outline (path signal 120  8350 -1370  8350 1370))
@@ -2158,40 +2058,40 @@
             -2884.47 1385.59  -2714.53 1694.49  -2511.65 1982.83  -2278.28 2247.1
             -2017.25 2484.09  -1731.74 2690.93  -1425.2 2865.1  -1101.37 3004.49
             -764.163 3107.42  -417.684 3172.62))
-      (outline (path signal 100  -365.473 2776.05  -40.723 2799.7  284.578 2785.5  606.031 2733.63
-            919.288 2644.79  1220.11 2520.18  1504.44 2361.5  1768.42 2170.87
+      (outline (path signal 100  -365.473 2776.04  -40.723 2799.7  284.578 2785.5  606.03 2733.63
+            919.287 2644.79  1220.11 2520.18  1504.44 2361.49  1768.42 2170.87
             2008.48 1950.89  2221.39 1704.53  2404.25 1435.12  2554.6 1146.3
-            2670.41 841.976  2750.1 526.267  2792.6 203.443  2797.33 -122.134
-            2764.24 -446.059  2693.76 -763.952  2586.86 -1071.51  2444.97 -1364.58
-            2270.02 -1639.2  2064.38 -1891.65  1830.81 -2118.52  1572.48 -2316.74
-            1292.9 -2483.63  995.822 -2616.93  685.281 -2714.84  365.473 -2776.05
-            40.723 -2799.7  -284.578 -2785.5  -606.031 -2733.63  -919.288 -2644.79
-            -1220.11 -2520.18  -1504.44 -2361.5  -1768.42 -2170.87  -2008.48 -1950.89
-            -2221.39 -1704.53  -2404.25 -1435.12  -2554.6 -1146.3  -2670.41 -841.976
-            -2750.1 -526.267  -2792.6 -203.443  -2797.33 122.134  -2764.24 446.059
-            -2693.76 763.952  -2586.86 1071.51  -2444.97 1364.58  -2270.02 1639.2
-            -2064.38 1891.65  -1830.81 2118.52  -1572.48 2316.74  -1292.9 2483.63
-            -995.822 2616.93  -685.281 2714.84  -365.473 2776.05))
+            2670.41 841.975  2750.1 526.267  2792.6 203.442  2797.33 -122.134
+            2764.24 -446.059  2693.76 -763.951  2586.86 -1071.51  2444.97 -1364.58
+            2270.02 -1639.2  2064.37 -1891.65  1830.81 -2118.52  1572.48 -2316.74
+            1292.89 -2483.63  995.821 -2616.93  685.281 -2714.84  365.473 -2776.04
+            40.723 -2799.7  -284.578 -2785.5  -606.03 -2733.63  -919.287 -2644.79
+            -1220.11 -2520.18  -1504.44 -2361.49  -1768.42 -2170.87  -2008.48 -1950.89
+            -2221.39 -1704.53  -2404.25 -1435.12  -2554.6 -1146.3  -2670.41 -841.975
+            -2750.1 -526.267  -2792.6 -203.442  -2797.33 122.134  -2764.24 446.059
+            -2693.76 763.951  -2586.86 1071.51  -2444.97 1364.58  -2270.02 1639.2
+            -2064.37 1891.65  -1830.81 2118.52  -1572.48 2316.74  -1292.89 2483.63
+            -995.821 2616.93  -685.281 2714.84  -365.473 2776.04))
       (pin Round[A]Pad_1600_um 1 -1500 0)
       (pin Round[A]Pad_1600_um 2 1500 0)
     )
-    (image Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal::26
-      (outline (path signal 120  1810 -1370  8350 -1370))
-      (outline (path signal 120  1040 -0.001  1810 0))
-      (outline (path signal 120  8350 -1370  8350 1370))
-      (outline (path signal 120  1810 1370  1810 -1370))
-      (outline (path signal 120  9120 -0.001  8350 -0.001))
+    (image Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal::23
       (outline (path signal 120  8350 1370  1810 1370))
-      (outline (path signal 50  -1050 -1500  11210 -1500))
-      (outline (path signal 50  -1050 1500  -1050 -1500))
-      (outline (path signal 50  11210 -1500  11210 1500))
+      (outline (path signal 120  9120 -0.001  8350 -0.001))
+      (outline (path signal 120  1810 1370  1810 -1370))
+      (outline (path signal 120  8350 -1370  8350 1370))
+      (outline (path signal 120  1040 -0.001  1810 0))
+      (outline (path signal 120  1810 -1370  8350 -1370))
       (outline (path signal 50  11210 1500  -1050 1500))
-      (outline (path signal 100  1930 -1250  8230 -1250))
-      (outline (path signal 100  0 0  1930 0.001))
-      (outline (path signal 100  8230 -1250  8230 1250))
-      (outline (path signal 100  1930 1250  1930 -1250))
-      (outline (path signal 100  10160 0.002  8230 0.001))
+      (outline (path signal 50  11210 -1500  11210 1500))
+      (outline (path signal 50  -1050 1500  -1050 -1500))
+      (outline (path signal 50  -1050 -1500  11210 -1500))
       (outline (path signal 100  8230 1250  1930 1250))
+      (outline (path signal 100  10160 0.002  8230 0.001))
+      (outline (path signal 100  1930 1250  1930 -1250))
+      (outline (path signal 100  8230 -1250  8230 1250))
+      (outline (path signal 100  0 0  1930 0.001))
+      (outline (path signal 100  1930 -1250  8230 -1250))
       (pin Round[A]Pad_1600_um 1 0 0)
       (pin Oval[A]Pad_1600x1600_um 2 10160 0.002)
     )
@@ -2328,7 +2228,7 @@
       (pins D3-6 220_9-1)
     )
     (net "Net-(D4-BA)"
-      (pins D4-4 220_10-1)
+      (pins 220_10-1 D4-4)
     )
     (net "Net-(D4-GA)"
       (pins D4-5 220_11-1)
@@ -2439,8 +2339,8 @@
       (pins J1-4)
     )
     (net "Net-(Q3-E)"
-      (pins 220_4-2 220_31-2 220_22-2 220_19-2 220_25-2 220_34-2 220_13-2
-        220_28-2 220_16-2 220_7-2 Q3-3 220_1-2 220_10-2)
+      (pins 220_10-2 220_4-2 220_31-2 220_22-2 220_19-2 220_25-2 220_34-2
+        220_13-2 220_28-2 220_16-2 220_7-2 Q3-3 220_1-2)
     )
     (net "Net-(Q2-E)"
       (pins 220_26-2 220_8-2 220_23-2 220_35-2 220_2-2 220_20-2 220_17-2
@@ -2466,87 +2366,5 @@
     )
   )
   (wiring
-    (wire (path F.Cu 200  38245 -127124  37805 -127564)(net "Net-(D1-BK)")(type route))
-    (wire (path F.Cu 200  39447.1 -127124  38245 -127124)(net "Net-(D1-BK)")(type route))
-    (wire (path F.Cu 200  39887.1 -126684  39447.1 -127124)(net "Net-(D1-BK)")(type route))
-    (wire (path F.Cu 200  48805.4 -134400  52169.9 -134400)(net "Net-(D1-BK)")(type route))
-    (wire (path F.Cu 200  41089.2 -126684  48805.4 -134400)(net "Net-(D1-BK)")(type route))
-    (wire (path F.Cu 200  68800 -127430  70600 -127430)(net 5V)(type route))
-    (wire (path F.Cu 200  62830.1 -133400  68800 -127430)(net 5V)(type route))
-    (wire (path F.Cu 200  65300 -129400  60830.1 -129400)(net GND)(type route))
-    (wire (path F.Cu 200  69350 -125350  65300 -129400)(net GND)(type route))
-    (wire (path F.Cu 200  69350 -125265  69350 -125350)(net GND)(type route))
-    (wire (path F.Cu 200  195637 -85272.7  197582 -87217.5  197582 -91847.2)(net "Net-(D4-RA)")(type route))
-    (wire (path F.Cu 200  193995 -90710.3  194582 -91297.2)(net "Net-(D4-GA)")(type route))
-    (wire (path F.Cu 200  193995 -85712.7  193995 -90710.3)(net "Net-(D4-GA)")(type route))
-    (wire (path F.Cu 200  191582 -86923.7  192353 -86152.7)(net "Net-(D4-BA)")(type route))
-    (wire (path F.Cu 200  191582 -90797.2  191582 -86923.7)(net "Net-(D4-BA)")(type route))
-    (wire (path F.Cu 200  102587 -27846.8  103740 -29000)(net "Net-(D1-BA)")(type route))
-    (wire (path F.Cu 200  98152.7 -27846.8  102587 -27846.8)(net "Net-(D1-BA)")(type route))
-    (wire (path F.Cu 200  97712.7 -26204.8  103695 -26204.8  103900 -26000)(net "Net-(D1-GA)")(type route))
-    (wire (path F.Cu 200  98835.4 -23000  103900 -23000)(net "Net-(D1-RA)")(type route))
-    (wire (path F.Cu 200  97272.7 -24562.7  98835.4 -23000)(net "Net-(D1-RA)")(type route))
-    (wire (path F.Cu 200  169614 -47191.5  169769 -47036.5)(net "Net-(D3-RA)")(type route))
-    (wire (path F.Cu 200  163665 -47191.5  169614 -47191.5)(net "Net-(D3-RA)")(type route))
-    (wire (path F.Cu 200  170329 -45191.5  170971 -45834.4)(net "Net-(D3-GA)")(type route))
-    (wire (path F.Cu 200  166165 -45191.5  170329 -45191.5)(net "Net-(D3-GA)")(type route))
-    (wire (path F.Cu 200  170841 -43300  172174 -44632.3)(net "Net-(D3-BA)")(type route))
-    (wire (path F.Cu 200  168900 -43300  170841 -43300)(net "Net-(D3-BA)")(type route))
-    (wire (path F.Cu 200  143295 -33700  143700 -33700)(net "Net-(D2-BA)")(type route))
-    (wire (path F.Cu 200  138684 -29089.2  143295 -33700)(net "Net-(D2-BA)")(type route))
-    (wire (path F.Cu 200  141948 -27850  144780 -30682.1)(net "Net-(D2-GA)")(type route))
-    (wire (path F.Cu 200  141850 -27850  141948 -27850)(net "Net-(D2-GA)")(type route))
-    (wire (path F.Cu 200  141447 -27447.1  141850 -27850)(net "Net-(D2-GA)")(type route))
-    (wire (path F.Cu 200  139124 -27447.1  141447 -27447.1)(net "Net-(D2-GA)")(type route))
-    (wire (path F.Cu 200  144550 -27250  145850 -27250)(net "Net-(D2-RA)")(type route))
-    (wire (path F.Cu 200  143100 -25800  144550 -27250)(net "Net-(D2-RA)")(type route))
-    (wire (path F.Cu 200  143095 -25805  143100 -25800)(net "Net-(D2-RA)")(type route))
-    (wire (path F.Cu 200  139564 -25805  143095 -25805)(net "Net-(D2-RA)")(type route))
-    (wire (path F.Cu 200  59400 -50794.1  59036.5 -50430.6)(net "Net-(D12-RA)")(type route))
-    (wire (path F.Cu 200  59400 -54100  59400 -50794.1)(net "Net-(D12-RA)")(type route))
-    (wire (path F.Cu 200  57834.4 -49265.6  57834.4 -49228.5)(net "Net-(D12-GA)")(type route))
-    (wire (path F.Cu 200  55850 -51250  57834.4 -49265.6)(net "Net-(D12-GA)")(type route))
-    (wire (path F.Cu 200  55158.8 -49500  56632.3 -48026.4)(net "Net-(D12-BA)")(type route))
-    (wire (path F.Cu 200  53300 -49500  55158.8 -49500)(net "Net-(D12-BA)")(type route))
-    (wire (path F.Cu 200  42085.2 -117265  42085.2 -116358)(net "Net-(D10-BA)")(type route))
-    (wire (path F.Cu 200  42050 -117300  42085.2 -117265)(net "Net-(D10-BA)")(type route))
-    (wire (path F.Cu 200  42050 -119844  42050 -117300)(net "Net-(D10-BA)")(type route))
-    (wire (path F.Cu 200  39846.8 -122047  42050 -119844)(net "Net-(D10-BA)")(type route))
-    (wire (path F.Cu 200  38204.8 -118095  39150 -117150)(net "Net-(D10-GA)")(type route))
-    (wire (path F.Cu 200  38204.8 -122487  38204.8 -118095)(net "Net-(D10-GA)")(type route))
-    (wire (path F.Cu 200  36562.7 -118255  36214.8 -117907)(net "Net-(D10-RA)")(type route))
-    (wire (path F.Cu 200  36562.7 -122927  36562.7 -118255)(net "Net-(D10-RA)")(type route))
-    (wire (path F.Cu 200  173200 -153650  173200 -153650)(net "Net-(D6-RA)")(type route))
-    (wire (path F.Cu 200  173164 -153686  173200 -153650)(net "Net-(D6-RA)")(type route))
-    (wire (path F.Cu 200  173200 -153650  174708 -152142)(net "Net-(D6-RA)")(type route))
-    (wire (path F.Cu 200  173164 -157769  173164 -153686)(net "Net-(D6-RA)")(type route))
-    (wire (path F.Cu 200  176538 -156799  176538 -154500)(net "Net-(D6-GA)")(type route))
-    (wire (path F.Cu 200  174366 -158971  176538 -156799)(net "Net-(D6-GA)")(type route))
-    (wire (path F.Cu 200  178399 -157343  178399 -156915)(net "Net-(D6-BA)")(type route))
-    (wire (path F.Cu 200  175568 -160174  178399 -157343)(net "Net-(D6-BA)")(type route))
-    (wire (path F.Cu 200  90786.6 -176138  93516.2 -178868  93516.2 -179111)(net "Net-(D8-BA)")(type route))
-    (wire (path F.Cu 200  91985.3 -181744  92636.3 -182395)(net "Net-(D8-RA)")(type route))
-    (wire (path F.Cu 200  88493.3 -181744  91985.3 -181744)(net "Net-(D8-RA)")(type route))
-    (wire (path F.Cu 200  89643.3 -178944  91267.4 -178944  93076.3 -180753)(net "Net-(D8-GA)")(type route))
-    (wire (path F.Cu 200  142745 -175050  143250 -175050)(net "Net-(D7-RA)")(type route))
-    (wire (path F.Cu 200  138684 -179111  142745 -175050)(net "Net-(D7-RA)")(type route))
-    (wire (path F.Cu 200  139124 -180753  141297 -180753  144050 -178000)(net "Net-(D7-GA)")(type route))
-    (wire (path F.Cu 200  144050 -181757  144857 -180950)(net "Net-(D7-BA)")(type route))
-    (wire (path F.Cu 200  144050 -182200  144050 -181757)(net "Net-(D7-BA)")(type route))
-    (wire (path F.Cu 200  143855 -182395  144050 -182200)(net "Net-(D7-BA)")(type route))
-    (wire (path F.Cu 200  139564 -182395  143855 -182395)(net "Net-(D7-BA)")(type route))
-    (wire (path F.Cu 200  63712.9 -164850  66800 -164850)(net "Net-(D9-GA)")(type route))
-    (wire (path F.Cu 200  61228.5 -162366  63712.9 -164850)(net "Net-(D9-GA)")(type route))
-    (wire (path F.Cu 200  67397.7 -161164  68942.1 -162708)(net "Net-(D9-RA)")(type route))
-    (wire (path F.Cu 200  62430.6 -161164  67397.7 -161164)(net "Net-(D9-RA)")(type route))
-    (wire (path F.Cu 200  63458.8 -167000  64650 -167000)(net "Net-(D9-BA)")(type route))
-    (wire (path F.Cu 200  60026.4 -163568  63458.8 -167000)(net "Net-(D9-BA)")(type route))
-    (wire (path F.Cu 200  192753 -130197  190800 -132150)(net "Net-(D5-GA)")(type route))
-    (wire (path F.Cu 200  192753 -127124  192753 -130197)(net "Net-(D5-GA)")(type route))
-    (wire (path F.Cu 200  187950 -129845  191111 -126684)(net "Net-(D5-BA)")(type route))
-    (wire (path F.Cu 200  187950 -131100  187950 -129845)(net "Net-(D5-BA)")(type route))
-    (wire (path F.Cu 200  194395 -132441  193663 -133174)(net "Net-(D5-RA)")(type route))
-    (wire (path F.Cu 200  194395 -127564  194395 -132441)(net "Net-(D5-RA)")(type route))
-    (wire (path F.Cu 200  41089.2 -126684  39887.1 -126684)(net "Net-(D1-BK)")(type route))
   )
 )

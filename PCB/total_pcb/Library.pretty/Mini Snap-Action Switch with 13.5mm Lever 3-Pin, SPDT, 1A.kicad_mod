@@ -1,0 +1,217 @@
+(footprint "Mini Snap-Action Switch with 13.5mm Lever 3-Pin, SPDT, 1A"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "R1966ABLKBLKEF-2")
+	(property "Reference" "SW1"
+		(at -1.4 -8.89 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "2f378eae-0fd5-4c97-b0b2-8c7479156f64")
+		(effects
+			(font
+				(size 1.1684 1.1684)
+				(thickness 0.1016)
+			)
+		)
+	)
+	(property "Value" "SW_DPST_x2"
+		(at -3.81 -10.16 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "adcad9c7-7464-493d-aa4a-4508ddf5973a")
+		(effects
+			(font
+				(size 1.1684 1.1684)
+				(thickness 0.1016)
+			)
+		)
+	)
+	(property "Footprint" "Library:R1966ABLKBLKEF"
+		(at -2.41 -10.16 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8fe3770f-1461-4cec-a05f-fa9e603c4de4")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "78c23de1-9866-4c21-baf8-73bc68507004")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Single Pole Single Throw (SPST) switch, separate symbol"
+		(at -2.41 -10.16 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "518d0d0d-4f62-47ba-9412-ff7de623de8a")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_line
+		(start -6.4 -2.9)
+		(end 6.4 -2.9)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "7c07091c-9232-4711-b8d7-f94d8101118f")
+	)
+	(fp_line
+		(start -6.4 2.9)
+		(end -6.4 -2.9)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9156f528-df1a-4a2a-869b-794f7f4eb567")
+	)
+	(fp_line
+		(start 6.4 -2.9)
+		(end 6.4 2.9)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "542f76d7-27f4-4201-9697-2c36a746e747")
+	)
+	(fp_line
+		(start 6.4 2.9)
+		(end -6.4 2.9)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "f601f81b-bffb-4dfb-be72-3207bcae7814")
+	)
+	(fp_line
+		(start -7.4 -3.9)
+		(end 7.4 -3.9)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "0984f20b-27bc-4d56-ae25-cb8e54194edf")
+	)
+	(fp_line
+		(start -7.4 3.9)
+		(end -7.4 -3.9)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "75820fda-ae72-4d7c-8686-78e3caeeb4c3")
+	)
+	(fp_line
+		(start -6.4 -2.9)
+		(end 6.4 -2.9)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "bd250e5c-33f0-4fc2-a5ea-30086d952b68")
+	)
+	(fp_line
+		(start -6.4 2.9)
+		(end -6.4 -2.9)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "e960aa7e-92c6-45dc-830c-12c6662cba9e")
+	)
+	(fp_line
+		(start 6.4 -2.9)
+		(end 6.4 2.9)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "b44bca20-eaf9-47fe-8202-1ef653cf284a")
+	)
+	(fp_line
+		(start 6.4 2.9)
+		(end -6.4 2.9)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "a0c2a176-5c08-43ba-98ae-ef8d32ca0866")
+	)
+	(fp_line
+		(start 7.4 -3.9)
+		(end 7.4 3.9)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "4c77d3a0-d782-4807-bfd9-d56cf9999729")
+	)
+	(fp_line
+		(start 7.4 3.9)
+		(end -7.4 3.9)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "bbf7a7b0-1b8b-4b46-893b-0f95eb802709")
+	)
+	(pad "1" thru_hole circle
+		(at 0 0)
+		(size 1 1)
+		(drill 0.6)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.1016)
+		(thermal_bridge_angle 0)
+		(uuid "6c575abb-d6a8-4aa3-8709-cae6e1bf4dd2")
+	)
+	(pad "2" thru_hole circle
+		(at 5.08 0)
+		(size 1 1)
+		(drill 0.6)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.1016)
+		(thermal_bridge_angle 0)
+		(uuid "dd39a076-9fc3-4e9b-b8a3-48866046de30")
+	)
+	(pad "3" thru_hole circle
+		(at -5.08 0)
+		(size 1 1)
+		(drill 0.6)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.1016)
+		(thermal_bridge_angle 0)
+		(uuid "f09b6af9-ef9d-45a7-8cd3-5a0f3543fd20")
+	)
+)
