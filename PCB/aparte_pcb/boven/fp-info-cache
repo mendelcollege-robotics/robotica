@@ -1,4 +1,4 @@
-23771159371772706
+23772890449863615
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -64714,6 +64714,13 @@ Resistor LDRD=6.4mm
 0
 2
 2
+Library
+Rocker Switch 3-Pin, SPDT, 10A
+R1966ABLKBLKEF-2
+
+0
+3
+3
 Library
 TB9051FTG
 

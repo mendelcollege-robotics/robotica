@@ -12396,7 +12396,7 @@
 		)
 		(fp_arc
 			(start 2.499999 3.9)
-			(mid -0.001153 5.603)
+			(mid -0.001154 5.603001)
 			(end -2.500844 3.897856)
 			(stroke
 				(width 0.2)
@@ -23448,28 +23448,12 @@
 		(uuid "0927980c-2643-43ab-a07e-970311d733b0")
 	)
 	(segment
-		(start 160.8 57.1)
-		(end 158.35 54.65)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 4)
-		(uuid "09bba1bf-59d0-45a8-8bf1-fce017f799b5")
-	)
-	(segment
 		(start 135.5 52.5)
 		(end 149.55 52.5)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 4)
 		(uuid "0fcad28e-42f2-4887-8716-b663d27c1f94")
-	)
-	(segment
-		(start 166.55 57.1)
-		(end 160.8 57.1)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 4)
-		(uuid "1b57e879-83b4-4dc5-a3ed-50c685353a35")
 	)
 	(segment
 		(start 124.45 86.05)
@@ -23496,12 +23480,12 @@
 		(uuid "28424788-74dd-4266-af79-f2435d66e9a1")
 	)
 	(segment
-		(start 153.85 54.65)
-		(end 151 57.5)
+		(start 154.9 53.6)
+		(end 159.5 53.6)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 4)
-		(uuid "2cf3ab93-b1bf-4fb1-9d9b-06989654ff48")
+		(uuid "2c1c547c-5bc3-4cd3-990e-760c0319f7f7")
 	)
 	(segment
 		(start 122.5 88)
@@ -23592,12 +23576,12 @@
 		(uuid "8cbfe048-4d5a-49a9-b92d-caf908800db0")
 	)
 	(segment
-		(start 158.35 54.65)
-		(end 153.85 54.65)
+		(start 151 57.5)
+		(end 154.9 53.6)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 4)
-		(uuid "9ec3d921-f2f5-4be3-953f-484a66521ed0")
+		(uuid "90c6fbad-d567-4907-97be-4f5c8a50bb7c")
 	)
 	(segment
 		(start 130.5 99)
@@ -23614,6 +23598,14 @@
 		(layer "F.Cu")
 		(net 4)
 		(uuid "b074d966-281d-4ddc-844e-d71801dea92d")
+	)
+	(segment
+		(start 164.95 59.05)
+		(end 170.3 59.05)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 4)
+		(uuid "b6042220-9e32-49b9-add7-ec84b6a96505")
 	)
 	(segment
 		(start 125.5 132.5)
@@ -23696,14 +23688,6 @@
 		(uuid "ea8cd101-d3f7-4f09-a8fe-82039ec94cc5")
 	)
 	(segment
-		(start 170.3 59.05)
-		(end 168.5 59.05)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 4)
-		(uuid "f55e896c-dd4f-4a1b-bef1-3792087f816d")
-	)
-	(segment
 		(start 127.48 54.98)
 		(end 129.5 57)
 		(width 0.2)
@@ -23712,12 +23696,12 @@
 		(uuid "fc297a5c-fb29-4f5b-82ac-0c8457fb9f6a")
 	)
 	(segment
-		(start 168.5 59.05)
-		(end 166.55 57.1)
+		(start 159.5 53.6)
+		(end 164.95 59.05)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 4)
-		(uuid "ff0deb55-9617-4904-8e72-9eac67c11557")
+		(uuid "fc6d2a1e-c4e3-4ccb-9d00-882988c634a6")
 	)
 	(via blind
 		(at 144 98.9)
