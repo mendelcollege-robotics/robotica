@@ -1,0 +1,93 @@
+#include <Wire.h>               // https://www.arduino.cc/reference/en/language/functions/communication/wire/
+#include "Adafruit_TCS34725.h"  // https://github.com/adafruit/Adafruit_TCS34725
+#include <Adafruit_MCP23X17.h>  // https://github.com/adafruit/Adafruit-MCP23017-Arduino-Library/tree/master
+#include <LIS3MDL.h>            // https://github.com/pololu/lis3mdl-arduino
+#include <LSM6.h>               // https://github.com/pololu/lsm6-arduino
+#include <TimerThree.h>         // https://www.arduino.cc/reference/en/libraries/timerthree/
+#include <Servo.h>
+
+// --- Configuratie van pinnen ---
+#define LEFT_MOTOR_PIN 3   // Pin voor de linker motor
+#define RIGHT_MOTOR_PIN 5  // Pin voor de rechter motor
+#define KICKER_PIN 9       // Pin voor de kicker servo
+#define SENSOR_PIN A0      // Analoge pin voor bal detectie
+
+Servo kickerServo; // Servo object voor de kicker
+
+// --- Globale variabelen ---
+bool ballDetected = false; // Variabele om baldetectie bij te houden
+
+// Constanten voor leesbaarheid
+const int KICK_POSITION = 0; // Trappositie voor de kicker
+const int RESET_POSITION = 90; // Resetpositie voor de kicker
+const int BALL_DETECTION_THRESHOLD = 500; // Drempelwaarde voor baldetectie
+const unsigned long MOVE_DURATION = 1000; // Tijd om te bewegen in milliseconden
+const unsigned long SEARCH_DURATION = 500; // Tijd om te zoeken in milliseconden
+const unsigned long KICK_DELAY = 500; // Tijd voor de kicker beweging
+
+// --- Initialisatie ---
+void setup() {
+    pinMode(LEFT_MOTOR_PIN, OUTPUT);
+    pinMode(RIGHT_MOTOR_PIN, OUTPUT);
+    pinMode(SENSOR_PIN, INPUT);
+
+    kickerServo.attach(KICKER_PIN);
+    kickerServo.write(RESET_POSITION); // Startpositie van de kicker
+
+    Serial.begin(9600); // Seriële communicatie voor debugging
+}
+
+// --- Hoofdprogramma ---
+void loop() {
+    ballDetected = detectBall();
+
+    if (ballDetected) {
+        Serial.println("Bal gedetecteerd!");
+        moveTowardsBall();
+        kickBall();
+    } else {
+        Serial.println("Zoeken naar bal...");
+        searchForBall();
+    }
+}
+
+// --- Functies ---
+
+// Detecteert of er een bal in de buurt is
+bool detectBall() {
+    int sensorValue = analogRead(SENSOR_PIN);
+    Serial.print("Sensorwaarde: ");
+    Serial.println(sensorValue);
+    return sensorValue > BALL_DETECTION_THRESHOLD; // Controleer drempelwaarde
+}
+
+// Beweeg de robot naar de bal
+void moveTowardsBall() {
+    digitalWrite(LEFT_MOTOR_PIN, HIGH);
+    digitalWrite(RIGHT_MOTOR_PIN, HIGH);
+    delay(MOVE_DURATION); // Beweeg voor een vaste duur
+    stopMotors();
+}
+
+// Laat de robot zoeken naar de bal
+void searchForBall() {
+    digitalWrite(LEFT_MOTOR_PIN, HIGH);
+    digitalWrite(RIGHT_MOTOR_PIN, LOW);
+    delay(SEARCH_DURATION); // Draai gedurende een vaste duur
+    stopMotors();
+}
+
+// Stop beide motoren
+void stopMotors() {
+    digitalWrite(LEFT_MOTOR_PIN, LOW);
+    digitalWrite(RIGHT_MOTOR_PIN, LOW);
+}
+
+// Trap de bal
+void kickBall() {
+    Serial.println("Bal wordt getrapt!");
+    kickerServo.write(KICK_POSITION);  // Beweeg de kicker naar de trappositie
+    delay(KICK_DELAY);                 // Wacht een vaste duur
+    kickerServo.write(RESET_POSITION); // Reset naar de oorspronkelijke positie
+    delay(KICK_DELAY);                 // Wacht om stabiliteit te verzekeren
+}
