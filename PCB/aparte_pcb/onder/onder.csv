@@ -1,0 +1,9 @@
+"Id";"Aanduiding";"Footprint";"Hoeveelheid";"Orientatie";"Leverancier en ref";
+1;"D11,D7,D9,D2,D5,D1,D10,D3,D8,D12,D4,D6";"LED_RGB_5050-6";12;"LED_RGB";;;
+2;"PR8,PR4,PR6,PR5,PR2,PR1,PR7,PR3";"FOTORESist";8;"A1050";;;
+3;"220Ω_36,220Ω_26,220Ω_33,220Ω_8,220Ω_23,220Ω_35,R2,220Ω_24,220Ω_27,220Ω_10,220Ω_4,220Ω_31,220Ω_12,220Ω_21,220Ω_2,10KΩ_4,220Ω_22,220Ω_20,220Ω_19,220Ω_15,220Ω_25,220Ω_17,R3,220Ω_34,10KΩ_6,220Ω_13,220Ω_28,220Ω_16,10KΩ_7,220Ω_7,10KΩ_5,10KΩ_1,220Ω_18,220Ω_6,220Ω_3,220Ω_5,10KΩ_3,220Ω_30,220Ω_11,10KΩ_8,R1,220Ω_14,10KΩ_2,220Ω_1,220Ω_9,220Ω_32,220Ω_29";"R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal";47;"R_US";;;
+4;"D13,D14";"D_MELF-RM10_Universal_Handsoldering";2;"D";;;
+5;"J4,J3,J5";"MountingHole_4.3mm_M4_ISO7380_Pad";3;"Screw_Terminal_01x01";;;
+6;"J2";"JST_EH_S10B-EH_1x10_P2.50mm_Horizontal";1;"Conn_01x10_Socket";;;
+7;"Q1,Q3,Q2";"NPN";3;"NPN";;;
+8;"J1";"JST_EH_S4B-EH_1x04_P2.50mm_Horizontal";1;"Conn_01x04_Socket";;;
