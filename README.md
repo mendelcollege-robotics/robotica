@@ -6,7 +6,7 @@ The radius of the robot is 10 cm
 GFT 70mm Omni Wheel - 4mm Bore 
 
 
-![poster](https://github.com/ableTI/robotica/blob/main/poster.svg)
+
 
 # Sponsors:
 
