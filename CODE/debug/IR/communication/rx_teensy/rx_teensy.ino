@@ -1,5 +1,9 @@
 String tlocd = "";
-String locd = "";
+String locd "";
+String irs1 = "";
+String irs2 = "";
+String am1 = "";
+String am2 "";
 bool readloc = false;
 unsigned long datatime = 0;
 
@@ -15,7 +19,8 @@ void loop() {
     byte byteRead = Serial2.read();
 
     if(byteRead == 's'){
-      tlocd = ""; 
+      tlocd = ""; 0
+      
       readloc = true;
     }
     else if(byteRead == 'e'){
@@ -36,6 +41,6 @@ void loop() {
     // say what you got:
     Serial.print(char(byte byteRead));
   }
-  
+
   delay(111);
 }
