@@ -97,5 +97,8 @@ void loop() {
   Serial.print(", with ");
   Serial.print(pir1);
   Serial.println(" pulses.");
+  Serial.print("That is ");
+  Serial.print(degwhere);
+  Serial.println(" degrees.");
   delay(10);
 }
