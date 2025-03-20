@@ -1,37 +1,58 @@
-/*
-  Blink
+int pr1 = 13;
+int pr2 = 41;
+int pr3 = 40;
+int pr4 = 39;
+int pr5 = 38;
+int pr6 = 37;
+int pr7 = 36;
+int pr8 = 35;
 
-  Turns an LED on for one second, then off for one second, repeatedly.
+int dpr1 = "LOW";
+int dpr2 = "LOW";
+int dpr3 = "LOW";
+int dpr4 = "LOW";
+int dpr5 = "LOW";
+int dpr6 = "LOW";
+int dpr7 = "LOW";
+int dpr8 = "LOW";
 
-  Most Arduinos have an on-board LED you can control. On the UNO, MEGA and ZERO
-  it is attached to digital pin 13, on MKR1000 on pin 6. LED_BUILTIN is set to
-  the correct LED pin independent of which board is used.
-  If you want to know what pin the on-board LED is connected to on your Arduino
-  model, check the Technical Specs of your board at:
-  https://www.arduino.cc/en/Main/Products
 
-  modified 8 May 2014
-  by Scott Fitzgerald
-  modified 2 Sep 2016
-  by Arturo Guadalupi
-  modified 8 Sep 2016
-  by Colby Newman
-
-  This example code is in the public domain.
-
-  https://www.arduino.cc/en/Tutorial/BuiltInExamples/Blink
-*/
-
-// the setup function runs once when you press reset or power the board
 void setup() {
-  // initialize digital pin LED_BUILTIN as an output.
-  pinMode(LED_BUILTIN, OUTPUT);
+  pinMode(pr1, INPUT);
+  pinMode(pr2, INPUT);
+  pinMode(pr3, INPUT);
+  pinMode(pr4, INPUT);
+  pinMode(pr5, INPUT);
+  pinMode(pr6, INPUT);
+  pinMode(pr7, INPUT);
+  pinMode(pr8, INPUT);
 }
 
-// the loop function runs over and over again forever
 void loop() {
-  digitalWrite(LED_BUILTIN, HIGH);  // turn the LED on (HIGH is the voltage level)
-  delay(1000);                      // wait for a second
-  digitalWrite(LED_BUILTIN, LOW);   // turn the LED off by making the voltage LOW
-  delay(1000);                      // wait for a second
+  dpr1 = digitalRead(pr1);
+  dpr2 = digitalRead(pr2); 
+  dpr3 = digitalRead(pr3); 
+  dpr4 = digitalRead(pr4); 
+  dpr5 = digitalRead(pr5); 
+  dpr6 = digitalRead(pr6); 
+  dpr7 = digitalRead(pr7); 
+  dpr8 = digitalRead(pr8); 
+
+  if(dpr1 == HIGH){
+    //go back to ?deg
+  }else if (dpr2 == HIGH){
+    //go back to ?deg
+  }else if (dpr3 == HIGH){
+    //go back to ?deg
+  }else if (dpr4 == HIGH){
+    //go back to ?deg
+  }else if (dpr5 == HIGH){
+    //go back to ?deg
+  }else if (dpr6 == HIGH){
+    //go back to ?deg
+  }else if (dpr7 == HIGH){
+    //go back to ?deg
+  }else if (dpr8 == HIGH){
+    //go back to ?deg
+  }
 }
