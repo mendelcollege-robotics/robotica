@@ -1,4 +1,5 @@
-long randNumber;
+long randNumber1;
+long randNumber2;
 
 void setup() {
   Serial.begin(9600);
@@ -9,11 +10,19 @@ void setup() {
 }
 
 void loop() {
-  randNumber = random(300);
-  Serial.println("transmission test");
-  Serial1.println("transmission test");
-  Serial.println(randNumber);
-  Serial1.println(randNumber);
+  randNumber1 = random(999);
+  randNumber2 = random(1, 8);
+  Serial1.print("s");
+  Serial1.print(randNumber2);
+  Serial1.print(", ");
+  Serial1.print(randNumber1);
+  Serial1.print("e");
+
+  Serial.print("s");
+  Serial.print(randNumber2);
+  Serial.print(", ");
+  Serial.print(randNumber1);
+  Serial.println("e");
   delay(1000);
   
 

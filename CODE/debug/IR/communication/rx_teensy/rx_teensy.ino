@@ -1,46 +1,35 @@
-String tlocd = "";
-String locd "";
-String irs1 = "";
-String irs2 = "";
-String am1 = "";
-String am2 "";
-bool readloc = false;
-unsigned long datatime = 0;
-
+int incomingbyte = 0; 
+bool iswriting = false;
+String tlocdat = "";  //temporary location data
+String locdat = "";   //location data
+int nir = "-99"; // which ir sensor it is
+int pir = "-99"; // amount of pulses it had
 void setup() {
-  Serial.begin(9600); // opens serial port, sets data rate to 9600 bps
-  Serial2.begin(9600);
+  Serial.begin(9600);
+  Serial1.begin(9600); //19200
 }
 
 void loop() {
-  // send data only when you receive data:
-  if (Serial2.available() > 0) {
-    datatime = millis(); 
-    byte byteRead = Serial2.read();
-
-    if(byteRead == 's'){
-      tlocd = ""; 0
-      
-      readloc = true;
+  if (Serial1.available() > 0) {
+    incomingbyte = Serial1.read();
+    //Serial.print(char(incomingbyte));
+    if (incomingbyte == 's'){
+      iswriting = true;
+      tlocdat = "";
+    }else if(incomingbyte == 'e'){
+      iswriting = false;
+      locdat = tlocdat;        
+    }else if(iswriting == true){
+      //Serial.print(char(incomingbyte));
+      tlocdat += (char)incomingbyte;  
     }
-    else if(byteRead == 'e'){
-      readloc = false;
-      locd = tlocd;
-    }
-    else if(readloc == true){
-      tlocd += (char)byteRead;
-    }
-    else{
-    if(millis() - datatime > 5000){
-      Serial.println("Err no data recieved for 5 sec");  
-      locd = "999";
-    }
-    Serial.println(locd);
   }
-
-    // say what you got:
-    Serial.print(char(byte byteRead));
-  }
-
-  delay(111);
+  //Serial.println(locdat);
+  sscanf(locdat.c_str(), "%d, %d", &nir, &pir);
+  Serial.print("IR sensor N: ");
+  Serial.print(nir);
+  Serial.print(", with ");
+  Serial.print(pir);
+  Serial.println(" pulses.");
+  delay(10);
 }
