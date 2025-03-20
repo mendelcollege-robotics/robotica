@@ -130,6 +130,11 @@ void drive(int speed, int direction){
 
 // the loop routine runs over and over again forever:
 void loop() {
-  drive(255, 320);
-  delay(250);
+  drive(255, 0);
+  Serial.println("ffor");
+  delay(1500);
+  drive(255, 180);
+  Serial.println("back");
+  delay(1500);
+
 }
