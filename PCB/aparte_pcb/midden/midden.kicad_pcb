@@ -3094,7 +3094,7 @@
 			)
 		)
 		(property "Footprint" "Library:Mini Snap-Action Switch with 13.5mm Lever 3-Pin, SPDT, 1A"
-			(at -2.41 -10.16 360)
+			(at -2.41 -10.16 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "a7bac8aa-7492-4af9-9134-dc6c99b788f2")
@@ -3106,7 +3106,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "f41c2829-9cc3-4ba2-82a8-847df21a7141")
@@ -3118,7 +3118,7 @@
 			)
 		)
 		(property "Description" "SPDT reed switch"
-			(at -2.41 -10.16 360)
+			(at -2.41 -10.16 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "9222d12c-054c-40fe-9b2e-6337098ac6d3")

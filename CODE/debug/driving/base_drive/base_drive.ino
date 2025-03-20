@@ -54,63 +54,74 @@ void drive(int speed, int direction){
  // 300 deg..............|....-....|....0....|....+....
  //
 
-  if(speed<0){
-  speed = -speed;  
-  }
   digitalWrite(m1enA, HIGH);
   digitalWrite(m2enA, HIGH);
-  digitalWrite(m2enA, HIGH);
+  digitalWrite(m3enA, HIGH);
   digitalWrite(m1enB, LOW);
   digitalWrite(m2enB, LOW);
   digitalWrite(m3enB, LOW);
-  if(direction>330 && direction<=30){
+  Serial.println("debug2");
+  Serial.println(direction);
+  if(direction>330 || direction<=30){
     //0 deg
     digitalWrite(m1pwm1, LOW);
-    digitalWrite(m1pwm2, LOW);
-    digitalWrite(m2pwm1, LOW);
-    digitalWrite(m2pwm2, HIGH);
-    digitalWrite(m3pwm1, HIGH);
-    digitalWrite(m3pwm2, LOW);
-    
-  }else if (direction>30 && direction <= 90){
-    //60 deg
-    digitalWrite(m1pwm1, HIGH);
-    digitalWrite(m1pwm2, LOW);
-    digitalWrite(m2pwm1, LOW);
-    digitalWrite(m2pwm2, HIGH);
-    digitalWrite(m3pwm1, LOW);
-    digitalWrite(m3pwm2, LOW);
-  }else if (direction>90 && direction <= 150){
-    //120 deg
-    digitalWrite(m1pwm1, HIGH);
-    digitalWrite(m1pwm2, LOW);
+    digitalWrite(m1pwm2, HIGH);
+
     digitalWrite(m2pwm1, LOW);
     digitalWrite(m2pwm2, LOW);
+
     digitalWrite(m3pwm1, LOW);
     digitalWrite(m3pwm2, HIGH);
-  }else if (direction > 150 && direction <= 210) {
-    //180 degrees
+    Serial.println("0 deg"); 
+  }else if (direction>30 && direction <= 90){
+    //60 deg
+    Serial.println("60deg");
     digitalWrite(m1pwm1, LOW);
+    digitalWrite(m1pwm2, LOW);
+
+    digitalWrite(m2pwm1, HIGH);
+    digitalWrite(m2pwm2, LOW);
+    
+    digitalWrite(m3pwm1, LOW);
+    digitalWrite(m3pwm2, HIGH);
+  }else if (direction>90 && direction <= 150){
+    //120 deg
+    Serial.println("120 deg");
+    digitalWrite(m1pwm1, HIGH);
     digitalWrite(m1pwm2, LOW);
     digitalWrite(m2pwm1, HIGH);
     digitalWrite(m2pwm2, LOW);
     digitalWrite(m3pwm1, LOW);
-    digitalWrite(m3pwm2, HIGH);
+    digitalWrite(m3pwm2, LOW);
+  }else if (direction > 150 && direction <= 210) {
+    //180 degrees
+    Serial.println("on 180");
+    digitalWrite(m1pwm1, HIGH);
+    digitalWrite(m1pwm2, LOW);
+
+    digitalWrite(m2pwm1, LOW);
+    digitalWrite(m2pwm2, LOW);
+    
+    digitalWrite(m3pwm1, HIGH);
+    digitalWrite(m3pwm2, LOW);
   }else if (direction > 210 && direction <= 270) {
     //240 degrees
     digitalWrite(m1pwm1, LOW);
-    digitalWrite(m1pwm2, HIGH);
-    digitalWrite(m2pwm1, HIGH);
-    digitalWrite(m2pwm2, LOW);
-    digitalWrite(m3pwm1, LOW);
+    digitalWrite(m1pwm2, LOW);
+
+    digitalWrite(m2pwm1, LOW);
+    digitalWrite(m2pwm2, HIGH);
+
+    digitalWrite(m3pwm1, HIGH);
     digitalWrite(m3pwm2, LOW);
   }else if (direction > 270 && direction <= 330) {
     //300 degrees
     digitalWrite(m1pwm1, LOW);
     digitalWrite(m1pwm2, HIGH);
     digitalWrite(m2pwm1, LOW);
-    digitalWrite(m2pwm2, LOW);
-    digitalWrite(m3pwm1, HIGH);
+    digitalWrite(m2pwm2, HIGH);
+    Serial.println("300deg");
+    digitalWrite(m3pwm1, LOW);
     digitalWrite(m3pwm2, LOW);
   }else{
     Serial.println("how?");  
@@ -119,7 +130,6 @@ void drive(int speed, int direction){
 
 // the loop routine runs over and over again forever:
 void loop() {
-  drive(255, 120);
-
-  
+  drive(255, 320);
+  delay(250);
 }
