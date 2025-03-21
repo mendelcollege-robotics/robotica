@@ -1,11 +1,11 @@
 #include <TimerThree.h>
 
-int enA = 1;  //PWM pin
-int enB = 2;  //GND
-int pwm1 = 3; //
-int pwm2 = 4;
-int encoA = 5;
-int encoB = 6;
+int enA = 6;  //PWM pin
+int enB = 5;  //GND
+int pwm1 = 4; //
+int pwm2 = 3;
+int encoA = 32;
+int encoB = 31;
 
 int speed = 1000; // speed 0-1
 
