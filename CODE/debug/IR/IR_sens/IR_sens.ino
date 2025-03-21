@@ -94,7 +94,7 @@ void loop() {
   Serial.print(", ir 7 changes: ");
   Serial.print(IRcount7);
   Serial.print(", ir 8 changes: ");
-  Serial.print(IRcount8);
+  Serial.println(IRcount8);
 
   Serial1.print("ir 1 changes: ");
   Serial1.print(IRcount1);
@@ -113,7 +113,7 @@ void loop() {
   Serial1.print(", ir 8 changes: ");
   Serial1.print(IRcount8);
 
-    volatile long IRcounts[] = {IRcount1, IRcount2, IRcount3, IRcount4, IRcount5, IRcount6, IRcount7, IRcount8};
+  volatile long IRcounts[] = {IRcount1, IRcount2, IRcount3, IRcount4, IRcount5, IRcount6, IRcount7, IRcount8};
   long maxCount = IRcounts[0];
   int highessensor = 1;
   for (int i = 0; i < 7; ++i) {

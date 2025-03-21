@@ -6,12 +6,12 @@ int nir = "-99"; // which ir sensor it is
 int pir = "-99"; // amount of pulses it had
 void setup() {
   Serial.begin(9600);
-  Serial1.begin(9600); //19200
+  Serial3.begin(9600); //19200
 }
 
 void loop() {
-  if (Serial1.available() > 0) {
-    incomingbyte = Serial1.read();
+  if (Serial3.available() > 0) {
+    incomingbyte = Serial3.read();
     //Serial.print(char(incomingbyte));
     if (incomingbyte == 's'){
       iswriting = true;

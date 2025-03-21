@@ -16,13 +16,13 @@ float degwhere = -99.0; // where the ball is in degrees
 
 void setup() {
   Serial.begin(9600);
-  Serial1.begin(9600);
+  Serial3.begin(9600);
   Serial2.begin(9600);
 }
 
 void loop() {
-  if (Serial1.available() > 0) {
-    incomingbyte1 = Serial1.read();
+  if (Serial3.available() > 0) {
+    incomingbyte1 = Serial3.read();
     //Serial.print(char(incomingbyte1));
     if (incomingbyte1 == 's'){
       iswriting1 = true;

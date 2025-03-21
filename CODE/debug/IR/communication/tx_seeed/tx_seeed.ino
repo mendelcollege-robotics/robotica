@@ -10,7 +10,7 @@ void setup() {
 }
 
 void loop() {
-  randNumber1 = random(999);
+  randNumber1 = random(1000);
   randNumber2 = random(1, 8);
   Serial1.print("s");
   Serial1.print(randNumber2);

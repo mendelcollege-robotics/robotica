@@ -94,7 +94,7 @@ void setup() {
   pinMode(pr8, INPUT);
 
   Serial.begin(9600);
-  Serial1.begin(9600);
+  Serial3.begin(9600);
   Serial2.begin(9600);
 
   Timer3.initialize(800); // 800 microseconds / 1.25kHz
@@ -152,24 +152,24 @@ void mcpsoftpwm1(int value1) {
   if (value1 < 0) value1 = 0;
   if (value1 > 100) value1 = 100;
 
-  Serial.print("softPWM pin: 3, value: ");
-  Serial.println(value1); 
+  //Serial.print("softPWM pin: 3, value: ");
+  //Serial.println(value1); 
   PWMval1 = value1; 
 }
 void mcpsoftpwm2(int value2) {
   if (value2 < 0) value2 = 0;
   if (value2 > 100) value2 = 100;
 
-  Serial.print("softPWM pin: 3, value: ");
-  Serial.println(value2); 
+  //Serial.print("softPWM pin: 3, value: ");
+  //Serial.println(value2); 
   PWMval2 = value2; 
 }
 void mcpsoftpwm3(int value3) {
   if (value3 < 0) value3 = 0;
   if (value3 > 100) value3 = 100;
 
-  Serial.print("softPWM pin: 3, value: ");
-  Serial.println(value3); 
+  //Serial.print("softPWM pin: 3, value: ");
+  //Serial.println(value3); 
   PWMval3 = value3; 
 }
 
@@ -190,8 +190,8 @@ void drive(int speed, int direction){
   digitalWrite(m1enB, LOW);
   digitalWrite(m2enB, LOW);
   digitalWrite(m3enB, LOW);
-  Serial.println("debug2");
-  Serial.println(direction);
+  //Serial.println("debug2");
+  //Serial.println(direction);
   if(direction>330 || direction<=30){
     //0 deg
     digitalWrite(m1pwm1, LOW);
@@ -202,10 +202,10 @@ void drive(int speed, int direction){
 
     digitalWrite(m3pwm1, LOW);
     digitalWrite(m3pwm2, HIGH);
-    Serial.println("0 deg"); 
+    //Serial.println("0 deg"); 
   }else if (direction>30 && direction <= 90){
     //60 deg
-    Serial.println("60deg");
+    //Serial.println("60deg");
     digitalWrite(m1pwm1, LOW);
     digitalWrite(m1pwm2, LOW);
 
@@ -216,7 +216,7 @@ void drive(int speed, int direction){
     digitalWrite(m3pwm2, HIGH);
   }else if (direction>90 && direction <= 150){
     //120 deg
-    Serial.println("120 deg");
+    //Serial.println("120 deg");
     digitalWrite(m1pwm1, HIGH);
     digitalWrite(m1pwm2, LOW);
     digitalWrite(m2pwm1, HIGH);
@@ -225,7 +225,7 @@ void drive(int speed, int direction){
     digitalWrite(m3pwm2, LOW);
   }else if (direction > 150 && direction <= 210) {
     //180 degrees
-    Serial.println("on 180");
+    //Serial.println("on 180");
     digitalWrite(m1pwm1, HIGH);
     digitalWrite(m1pwm2, LOW);
 
@@ -250,7 +250,7 @@ void drive(int speed, int direction){
     digitalWrite(m1pwm2, HIGH);
     digitalWrite(m2pwm1, LOW);
     digitalWrite(m2pwm2, HIGH);
-    Serial.println("300deg");
+    //Serial.println("drive 300deg");
     digitalWrite(m3pwm1, LOW);
     digitalWrite(m3pwm2, LOW);
   }else{
@@ -287,8 +287,8 @@ void loop() {
     }else if (dpr8 == HIGH){
       //go back to ?deg
     }else{
-      if (Serial1.available() > 0) {
-        incomingbyte1 = Serial1.read();
+      if (Serial3.available() > 0) {
+        incomingbyte1 = Serial3.read();
         //Serial.print(char(incomingbyte1));
         if (incomingbyte1 == 's'){
           iswriting1 = true;
@@ -318,6 +318,10 @@ void loop() {
       //Serial.println(locdat);
       sscanf(locdat1.c_str(), "%d, %d", &nir1, &pir1);
       sscanf(locdat2.c_str(), "%d, %d", &nir2, &pir2);
+
+      Serial.print("locdat: ");
+      Serial.print(String(locdat1));
+      Serial.println(String(locdat2));
       
       
       if(pir1 > pir2){
@@ -357,6 +361,8 @@ void loop() {
           degwhere = 337.5; 
          }
       }
+
+      Serial.print("Ball is at ");
       Serial.print(degwhere);
       Serial.println(" degrees.");
       drive(75, degwhere);
