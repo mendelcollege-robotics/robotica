@@ -1,18 +1,8 @@
+![alt text](https://mendelcollege.nl/_resources/app/client/img/logo.svg?m=1693224668)
+
 # About
-A soccer robot made by student at Mendelcollege for participation at [Robocup](https://www.robocup.org/leagues/18)
+This is the repository for all the files used to create our soccer robot created for participation at [Robocup](https://www.robocup.org/leagues/18). It is created by students of the mendelcollege.
 
-The radius of the robot is 10 cm
-
-GFT 70mm Omni Wheel - 4mm Bore 
-
-
-
-
-# Sponsors:
-
-  -Opencircuit
-  -Pololu
-  -Tinytronics
   
 # info:
 
