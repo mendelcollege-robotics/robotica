@@ -15,5 +15,6 @@ void loop() {
     incomingbyte = Serial3.read();
     Serial.print(char(incomingbyte));
   }
+  milis(1);
   
-}
+} 

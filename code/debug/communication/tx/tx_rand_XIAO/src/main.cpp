@@ -29,6 +29,26 @@ void loop() {
   rn7 = random(1500);
   rn8 = random(1500);
 
+  Serial.print("S");
+  //Serial.print("B");
+  Serial.print(rn1);
+  Serial.print(", ");
+  Serial.print(rn2);
+  Serial.print(", ");
+  Serial.print(rn3);
+  Serial.print(", ");
+  Serial.print(rn4);
+  Serial.print(", ");
+  Serial.print(rn5);
+  Serial.print(", ");
+  Serial.print(rn6);
+  Serial.print(", ");
+  Serial.print(rn7);
+  Serial.print(", ");
+  Serial.println(rn8);
+  Serial.println("R");
+  //Serial.print("E");
+
   Serial1.print("S");
   //Serial1.print("B");
   Serial1.print(rn1);
