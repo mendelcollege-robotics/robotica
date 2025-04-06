@@ -1,0 +1,73 @@
+goede tuturials:
+    https://learn.adafruit.com/
+    https://learn.sparkfun.com/tutorials
+    https://deepbluembedded.com/arduino-getting-started-beginners-guide/
+
+Voor vragen
+    https://stackoverflow.com/questions
+
+
+nuttige dingen om te weten
+specifieke dingen:
+    git:        #versie controle systeem
+        https://en.wikipedia.org/wiki/Git
+        https://stackoverflow.com/questions/13321556/difference-between-git-and-github
+        https://git-scm.com/about/branching-and-merging
+        https://github.com/apps/desktop
+        https://code.visualstudio.com/docs/sourcecontrol/intro-to-git
+
+    platformio:     #Teensy progameer methode
+        https://docs.platformio.org/en/latest/
+
+    PWM signals:        #puls signlaalen voor de motor's
+        (basics)https://docs.arduino.cc/learn/microcontrollers/analog-output/
+        (analysing)https://learn.sparkfun.com/tutorials/how-to-use-an-oscilloscope/all.pdf
+
+    kicad:      #PCB ontwerp
+        https://docs.kicad.org/6.0/en/getting_started_in_kicad/getting_started_in_kicad.html
+
+    robocup official repository:
+        https://github.com/orgs/robocup-junior/repositories?type=all
+
+    electronica:
+        https://www.electronics-tutorials.ws/
+
+    UART:       #communicatie tussen de microcontrollers
+        https://deepbluembedded.com/arduino-uart-example-tutorial/#arduino-uart-serial-communication
+
+    Non-blocking code:      #nodig voor goede UART signaal
+        https://forum.arduino.cc/t/non-blocking-receiving-of-commands-over-serial-interface-using-the-safestring-library-code-example/1004077
+        https://www.pleasedontcode.com/blog/difference-between-blocking-and-non-blocking-code
+
+    openMV:         #openMV progameer methode
+        https://docs.openmv.io/openmvcam/tutorial/index.html
+
+    kompas:
+        https://github.com/pololu/lis3mdl-arduino
+        https://learn.adafruit.com/how-to-fuse-motion-sensor-data-into-ahrs-orientation-euler-quaternions/overview
+
+    motor:
+        https://www.pololu.com/product/4861 # andere motor denk ik maar zelfde idee hoe encoder werkt encoder
+        motor drivers:
+            https://robocraze.com/blogs/post/what-is-motor-driver
+            https://www.pololu.com/product/2997
+
+        PID:
+            https://pidexplained.com/pid-controller-explained/
+            https://docs.arduino.cc/libraries/pid/
+
+        ohmi wheel:
+            https://robotics.stackexchange.com/questions/7829/how-to-program-a-three-wheel-omni
+            https://github.com/manav20/3-wheel-omni
+
+    teensy:
+        https://www.pjrc.com/teensy/first_use.html
+        !!!https://www.pjrc.com/teensy/external_power.html!!! # er is een kabel voor de 2e optie
+        https://www.pjrc.com/teensy/interrupts.html
+        https://www.pjrc.com/teensy/adc.html
+        https://www.pjrc.com/teensy/pins.html
+        https://www.pjrc.com/teensy/prescaler.html
+        https://www.pjrc.com/teensy/troubleshoot.html
+
+
+
