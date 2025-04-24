@@ -43,6 +43,6 @@ void loop() {
   Serial.print(ir4);
   Serial.print(ir5);
   Serial.print(ir6);
-  
-  delay(10);
+
+  delayMicroseconds(1);
 }

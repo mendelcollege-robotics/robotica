@@ -56,6 +56,7 @@ specifieke dingen:
         PID:
             https://pidexplained.com/pid-controller-explained/
             https://docs.arduino.cc/libraries/pid/
+            https://pknessness.github.io/pid_sim/pid.html
 
         ohmi wheel:
             https://robotics.stackexchange.com/questions/7829/how-to-program-a-three-wheel-omni
@@ -69,6 +70,7 @@ specifieke dingen:
         https://www.pjrc.com/teensy/pins.html
         https://www.pjrc.com/teensy/prescaler.html
         https://www.pjrc.com/teensy/troubleshoot.html
-
+	omni wheels:
+		http://files.andymark.com/2008CON-Omni-Baker-McKenzie.pdf
 
 
