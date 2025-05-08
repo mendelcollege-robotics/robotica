@@ -1,6 +1,5 @@
 //base code for six direction driving
 
-#include <Arduino.h>
 
 int led = 13;
 
@@ -46,13 +45,14 @@ void setup() {
 }
 
 
+
 void drive(int speed, int direction){
  //
  // Direction............|.Motor 1.|.Motor 2.|.Motor 3.
  // 0deg(forward)........|....0....|....-....|....+....
- // 60deg................|....+....|....-....|....0....    
+ // 60deg................|....+....|....-....|....0....
  // 120deg...............|....+....|....0....|....-....
- // 180 deg (backward)...|....0....|....+....|....-.... 
+ // 180 deg (backward)...|....0....|....+....|....-....
  // 240 deg..............|....-....|....+....|....0....
  // 300 deg..............|....-....|....0....|....+....
  //
@@ -67,24 +67,24 @@ void drive(int speed, int direction){
   Serial.println(direction);
   if(direction>330 || direction<=30){
     //0 deg
-    digitalWrite(m1pwm1, LOW);
-    digitalWrite(m1pwm2, HIGH);
+    digitalWrite(m1pwm1, HIGH);
+    digitalWrite(m1pwm2, LOW);
 
     digitalWrite(m2pwm1, LOW);
     digitalWrite(m2pwm2, LOW);
 
-    digitalWrite(m3pwm1, LOW);
-    digitalWrite(m3pwm2, HIGH);
-    Serial.println("0 deg"); 
+    digitalWrite(m3pwm1, HIGH);
+    digitalWrite(m3pwm2, LOW);
+    Serial.println("0 deg");
   }else if (direction>30 && direction <= 90){
     //60 deg
     Serial.println("60deg");
     digitalWrite(m1pwm1, LOW);
     digitalWrite(m1pwm2, LOW);
 
-    digitalWrite(m2pwm1, HIGH);
-    digitalWrite(m2pwm2, LOW);
-    
+    digitalWrite(m2pwm1, LOW);
+    digitalWrite(m2pwm2, HIGH);
+
     digitalWrite(m3pwm1, LOW);
     digitalWrite(m3pwm2, HIGH);
   }else if (direction>90 && direction <= 150){
@@ -99,35 +99,37 @@ void drive(int speed, int direction){
   }else if (direction > 150 && direction <= 210) {
     //180 degrees
     Serial.println("on 180");
-    digitalWrite(m1pwm1, HIGH);
-    digitalWrite(m1pwm2, LOW);
+    digitalWrite(m1pwm1, LOW);
+    digitalWrite(m1pwm2, HIGH);
 
     digitalWrite(m2pwm1, LOW);
     digitalWrite(m2pwm2, LOW);
-    
-    digitalWrite(m3pwm1, HIGH);
-    digitalWrite(m3pwm2, LOW);
+
+    digitalWrite(m3pwm1, LOW);
+    digitalWrite(m3pwm2, HIGH);
   }else if (direction > 210 && direction <= 270) {
     //240 degrees
     digitalWrite(m1pwm1, LOW);
     digitalWrite(m1pwm2, LOW);
 
-    digitalWrite(m2pwm1, LOW);
-    digitalWrite(m2pwm2, HIGH);
+    digitalWrite(m2pwm1, HIGH);
+    digitalWrite(m2pwm2, LOW);
 
-    digitalWrite(m3pwm1, HIGH);
-    digitalWrite(m3pwm2, LOW);
+    digitalWrite(m3pwm1, LOW);
+    digitalWrite(m3pwm2, HIGH);
   }else if (direction > 270 && direction <= 330) {
     //300 degrees
-    digitalWrite(m1pwm1, LOW);
-    digitalWrite(m1pwm2, HIGH);
-    digitalWrite(m2pwm1, LOW);
-    digitalWrite(m2pwm2, HIGH);
+    digitalWrite(m1pwm1, HIGH);
+    digitalWrite(m1pwm2, LOW);
+
+    digitalWrite(m2pwm1, HIGH);
+    digitalWrite(m2pwm2, LOW);
+
     Serial.println("300deg");
     digitalWrite(m3pwm1, LOW);
     digitalWrite(m3pwm2, LOW);
   }else{
-    Serial.println("how?");  
+    Serial.println("how?");
   }
 }
 

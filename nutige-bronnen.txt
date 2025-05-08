@@ -11,7 +11,7 @@ nuttige dingen om te weten
 specifieke dingen:
     git:        #versie controle systeem
         https://en.wikipedia.org/wiki/Git
-	https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account  # setup git
+        https://docs.github.com/en/authentication/  # setup git
         https://stackoverflow.com/questions/13321556/difference-between-git-and-github
         https://git-scm.com/about/branching-and-merging
         https://github.com/apps/desktop
