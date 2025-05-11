@@ -1,7 +1,12 @@
-#include <TimerThree.h>
+//motor: https://www.pololu.com/product/4861
+//motor driver: https://www.pololu.com/product/2997
 
-//base code for six direction driving
+//Create the timers
+IntervalTimer pwm_timer;
+IntervalTimer enc_timer;
 
+//define the pins
+//If the motors are spinning incorectly, change pins not the drive function.
 int led = 13;
 
 int m1enA = 6;
@@ -25,10 +30,22 @@ int m3pwm2 = 25;
 int m3encoA = 28;
 int m3encoB = 23;
 
-int pwmacc = 1000; //how accurate the PWM is, means you can enter value from 0 to the value of pwmacc
-int PWMval1 = 0; //value of the PWM, means you can enter value from 0 to the value of pwmacc
-int PWMval2 = 0;
-int PWMval3 = 0;
+//PWM variables
+int pwmacc = 100; //how accurate the PWM is, means you can enter value from 0 to the value of pwmacc
+int PWMval1 = 0;  //value of the PWM1, means you can enter value from 0 to the value of pwmacc 
+int PWMval2 = 0;  //same but for the second one
+int PWMval3 = 0;  //same but for the thirth one
+
+//encoder variables
+const int refreshrate = 50; //refresh rate of the encoder
+volatile long oneENCcount = 0; //the amount of pulses from motor one encoder 
+volatile long twoENCcount = 0; //idem, but motor two
+volatile long threeENCcount = 0; //kɛlɔ
+
+double ONErpm = 0.00; //the amount of revolutions motor one makes per minute
+double TWOrpm = 0.00; //mismo
+double THREErpm = 0.00; //адилхан
+
 
 
 void setup() {
@@ -47,8 +64,15 @@ void setup() {
   pinMode(m3pwm1, OUTPUT);
   pinMode(m3pwm2, OUTPUT);
 
-  Timer3.initialize(25);  // 800 microseconds or 1.25Hz
-  Timer3.attachInterrupt(updatePWM);
+  pwm_timer.begin(updatePWM, refreshrate); //speed at wich PWM is updated PWM 
+  enc_timer.begin(enc_refr, 50);  //refresh rate of the encoder
+
+  attachInterrupt(digitalPinToInterrupt(m1encoA), AoneIRS, CHANGE); //calls void AoneIRS if there is a change of the stare of m1encoA
+  attachInterrupt(digitalPinToInterrupt(m1encoB), BoneIRS, CHANGE); //ditto
+  attachInterrupt(digitalPinToInterrupt(m2encoA), AtwoIRS, CHANGE); //hali
+  attachInterrupt(digitalPinToInterrupt(m2encoB), BtwoIRS, CHANGE); //একই
+  attachInterrupt(digitalPinToInterrupt(m3encoA), AthreeIRS, CHANGE); //ߊ߬ ߓߍ߮ ߓߋ߫ ߞߟߋ߫
+  attachInterrupt(digitalPinToInterrupt(m3encoB), AthreeIRS, CHANGE); //To samo
 
   Serial.begin(9600);
   Serial.print("start");
@@ -56,27 +80,28 @@ void setup() {
 }
 
 void updatePWM() {
-  //1
-  static int counter = 0;
-  if (PWMval1 < 0) {
+  //PWM one
+  //if the entered valvue is less the zero set it to zero, because lower that zero is not posible
+  if (PWMval1 < 0) {    
     PWMval1 = 0;
   }
+  //if the enterd value is higher than the maximum posible value, set it to max.
   if (PWMval1 > pwmacc) {
     PWMval1 = pwmacc;
   }
-
-  if (counter < PWMval1) {
+  //check if the counter has passed the PWM value, and turn of the motor based on that.
+  if (counter1 < PWMval1) {
     digitalWrite(m1enA, HIGH);
   } else {
     digitalWrite(m1enA, LOW);
   }
+  counter1++; 
 
-  counter++;
-  if (counter >= pwmacc) {
-    counter = 0;
+  if (counter1 >= pwmacc) {
+    counter1 = 0;
   }
 
-  //2
+  //PWM two
   static int counter2 = 0;
   if (PWMval2 < 0) {
     PWMval2 = 0;
@@ -96,7 +121,7 @@ void updatePWM() {
     counter2 = 0;
   }
 
-  //3
+  //PWM three
   int static counter3 = 0;
   if (PWMval3 < 0) {
     PWMval3 = 0;
@@ -117,7 +142,36 @@ void updatePWM() {
   }
 }
 
+void AoneIRS(){
+  oneENCcount++ //adds one to the count
+}
+void BoneIRS(){
+  oneENCcount++ //dieselbe
+}
+void AtwoIRS(){
+  twoENCcount++ //même
+}
+void BtwoIRS(){
+  twoENCcount++ //samme
+}
+void AthreeIRS(){
+  threeENCcount++ //aynı
+}
+void BthreeIRS(){
+  threeENCcount++ //такой же
+}
 
+void enc_refr(){
+  //calculate RPM. It gets updated 48 times per rotation.
+  ONErpm = (oneENCcount/48.00) * (60000000.00 / refreshrate)
+  TWOrpm = (twoENCcount/48.00) * (60000000.00 / refreshrate)
+  THREErpm = (threeENCcount/48.00) * (60000000.00 / refreshrate)
+  //reset the counting to zero for next cycle.
+  oneENCcount = 0;
+  twoENCcount = 0;
+  threeENCcount = 0;
+
+}
 void drive(int speed, int direction){
  //
  //!!!
@@ -220,11 +274,11 @@ void drive(int speed, int direction){
   }
 }
 
-// the loop routine runs over and over again forever:
+//the loop routine runs over and over again forever:
 void loop() {
-  
-  drive(600, 0);
-  Serial.println("ffor");
+  drive(50, 0); //speed value between 0-100
+  Serial.println("Motor one is at: "+ ONErpm + " RPM.");
+  Serial.println("Motor two is at: "+ TWOrpm + " RPM.");
+  Serial.println("Motor three is at: "+ THREErpm + " RPM.");
   delay(1500);
-
 }

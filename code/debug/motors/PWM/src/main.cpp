@@ -1,5 +1,7 @@
 #include <Arduino.h>
 
+IntervalTimer myTimer;
+
 int pwmPin = 3; //pin for PWM output
 int pwmacc = 1000; //how accurate the PWM is, means you can enter value from 0 to the value of pwmacc
 int PWMval = 0; //value of the PWM, means you can enter value from 0 to the value of pwmacc

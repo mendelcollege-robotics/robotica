@@ -4,7 +4,7 @@ int incomingbyte = 0;
 bool iswriting = false;
 String tlocdat = "";  //temporary location data 
 String locdat = "";   //location data
-int ir1 = -99;
+int ir1 = -99;  
 int ir2 = -99;
 int ir3 = -99;
 int ir4 = -99;
@@ -35,7 +35,7 @@ void loop() {
     }
   }
   //Serial.println(locdat);
-  sscanf(locdat.c_str(), "%d, %d, %d, %d, %d, %d, %d, %d", &ir1, &ir2, &ir3, &ir4, &ir5, &ir6, &ir7, &ir8);
+  sscanf(locdat.c_str(), "%d, %d, %d, %d, %d, %d, %d, %d", &ir1, &ir2, &ir3, &ir4, &ir5, &ir6, &ir7, &ir8); //split recieved data into seperate variables
   Serial.print("IR sensor N: ");
   Serial.print(ir1);
   Serial.print(ir2);

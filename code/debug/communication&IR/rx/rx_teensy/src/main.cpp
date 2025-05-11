@@ -1,4 +1,4 @@
-// this code is for Teensy 4.1 to read serial data
+// this code is for Teensy 4.1 to read serial data and relay it to serial 1(computer)
 
 #include <Arduino.h>
 
