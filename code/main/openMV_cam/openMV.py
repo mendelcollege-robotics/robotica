@@ -1,18 +1,25 @@
-# blinky.py
+import sensor, image, time
 
-# This work is licensed under the MIT license.
-# Copyright (c) 2013-2023 OpenMV LLC. All rights reserved.
-# https://github.com/openmv/openmv/blob/master/LICENSE
-#
-# Blinky example
+thresholds =  [(37, 69, -7, 20, -52, -35),# Thresholds for blue
+               (50, 68, -9, 7, 50, 63)]# Thresholds for yellow
+x_data=0
+y_data=0
 
-import time
-from machine import LED
+sensor.reset()
+sensor.set_pixformat(sensor.RGB565)
+sensor.set_framesize(sensor.QVGA)
+sensor.skip_frames(time = 2000)
 
-led = LED("LED_BLUE")
+clock = time.clock()
 
-while True:
-    led.on()
-    time.sleep_ms(500)
-    led.off()
-    time.sleep_ms(500)
+while(True):
+    clock.tick()
+    img = sensor.snapshot()
+    for blob in img.find_blobs(thresholds, pixels_threshold=200, area_threshold=200):
+        img.draw_rectangle(blob.rect())
+        img.draw_cross(blob.cx(), blob.cy())
+        x_data=blob.cx()
+        y_data=blob.cy()
+    print("fps=%d" % clock.fps()),
+    print(" x=%d" % x_data),
+    print(" y=%d" % y_data)
