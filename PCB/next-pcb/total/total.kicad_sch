@@ -9899,7 +9899,7 @@
 	)
 	(wire
 		(pts
-			(xy 749.3 34.29) (xy 748.03 34.29)
+			(xy 749.3 34.29) (xy 746.76 34.29)
 		)
 		(stroke
 			(width 0)
@@ -10819,7 +10819,7 @@
 	)
 	(wire
 		(pts
-			(xy 748.03 31.75) (xy 749.3 31.75)
+			(xy 746.76 31.75) (xy 749.3 31.75)
 		)
 		(stroke
 			(width 0)
@@ -10879,7 +10879,7 @@
 	)
 	(wire
 		(pts
-			(xy 712.47 31.75) (xy 709.93 31.75)
+			(xy 711.2 31.75) (xy 709.93 31.75)
 		)
 		(stroke
 			(width 0)
@@ -10896,6 +10896,16 @@
 			(type default)
 		)
 		(uuid "2e5fa3b5-7af7-455f-a5af-95dc35c4c652")
+	)
+	(wire
+		(pts
+			(xy 726.44 26.67) (xy 727.71 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e8521d6-b1bc-4890-9c2c-409506b3c2a2")
 	)
 	(wire
 		(pts
@@ -11086,6 +11096,16 @@
 			(type default)
 		)
 		(uuid "325b4ab6-c842-42c8-b6ad-160d98eeb082")
+	)
+	(wire
+		(pts
+			(xy 728.98 26.67) (xy 730.25 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3286bf6e-b1b7-4ec6-a0c9-d861aba08ce1")
 	)
 	(wire
 		(pts
@@ -11909,6 +11929,16 @@
 	)
 	(wire
 		(pts
+			(xy 728.98 82.55) (xy 730.25 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ccc46d2-aedc-435e-a895-f8a87140908f")
+	)
+	(wire
+		(pts
 			(xy 52.07 54.61) (xy 52.07 67.31)
 		)
 		(stroke
@@ -12016,6 +12046,16 @@
 			(type default)
 		)
 		(uuid "4f1e688b-36a8-408c-946c-dad84f8e592d")
+	)
+	(wire
+		(pts
+			(xy 711.2 34.29) (xy 712.47 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f1eaaa6-b7f8-4879-929c-2942b605bc8b")
 	)
 	(wire
 		(pts
@@ -12359,7 +12399,7 @@
 	)
 	(wire
 		(pts
-			(xy 748.03 72.39) (xy 755.65 72.39)
+			(xy 746.76 72.39) (xy 755.65 72.39)
 		)
 		(stroke
 			(width 0)
@@ -13216,6 +13256,16 @@
 			(type default)
 		)
 		(uuid "7c20d247-2b36-4ce1-8bb3-d5abf39b7bbe")
+	)
+	(wire
+		(pts
+			(xy 726.44 82.55) (xy 727.71 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c449ad8-11d1-4bf8-9907-4eb227a16bcd")
 	)
 	(wire
 		(pts
@@ -14209,7 +14259,7 @@
 	)
 	(wire
 		(pts
-			(xy 764.54 77.47) (xy 748.03 77.47)
+			(xy 764.54 77.47) (xy 746.76 77.47)
 		)
 		(stroke
 			(width 0)
@@ -16839,7 +16889,7 @@
 	)
 	(wire
 		(pts
-			(xy 748.03 74.93) (xy 763.27 74.93)
+			(xy 746.76 74.93) (xy 763.27 74.93)
 		)
 		(stroke
 			(width 0)
@@ -16869,7 +16919,7 @@
 	)
 	(wire
 		(pts
-			(xy 748.03 69.85) (xy 753.11 69.85)
+			(xy 746.76 69.85) (xy 753.11 69.85)
 		)
 		(stroke
 			(width 0)
@@ -52078,7 +52128,7 @@
 	)
 	(symbol
 		(lib_id "MCU_Parallax:P8X32A-D40")
-		(at 730.25 54.61 0)
+		(at 728.98 54.61 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -52087,7 +52137,7 @@
 		(fields_autoplaced yes)
 		(uuid "f93c58b2-1b37-4dfd-bfea-a81850e306eb")
 		(property "Reference" "U1"
-			(at 732.3933 25.4 0)
+			(at 731.1233 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -52096,7 +52146,7 @@
 			)
 		)
 		(property "Value" "P8X32A-D40"
-			(at 732.3933 27.94 0)
+			(at 731.1233 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -52105,7 +52155,7 @@
 			)
 		)
 		(property "Footprint" "Package_DIP:DIP-40_W15.24mm"
-			(at 730.25 24.13 0)
+			(at 728.98 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -52114,7 +52164,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.parallax.com/sites/default/files/downloads/P8X32A-Propeller-Datasheet-v1.4.0_0.pdf"
-			(at 730.25 54.61 0)
+			(at 728.98 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -52123,7 +52173,7 @@
 			)
 		)
 		(property "Description" "Parallax Propeller 8 core, 32 bit, 80 MHz microcontroller, 3.3VDC, 40-pin DIP"
-			(at 730.25 54.61 0)
+			(at 728.98 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
