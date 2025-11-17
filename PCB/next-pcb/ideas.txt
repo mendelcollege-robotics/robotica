@@ -1,7 +1,0 @@
--ws2812B LED's for easyer full controll via a single signal
---using atmega8 controllers that relay data to teensy for all GPIO using devices for easier progaming.
---relay short circuit protection
---intergrated power level messurement (max17263xxTE)
---Distance sensors to not bumb into other robot's/walls
---multicore master controller not single core teensy (P8X32A-D40)
---use PWM capable pins to output PWM
