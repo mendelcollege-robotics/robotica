@@ -2016,7 +2016,7 @@
 	(footprint "Connector_JST:JST_XH_B6B-XH-AM_1x06_P2.50mm_Vertical"
 		(layer "F.Cu")
 		(uuid "16debc19-652a-4792-86ee-20377c1f5966")
-		(at 170.75 114.025)
+		(at 170.5 114)
 		(descr "JST XH series connector, B6B-XH-AM, with boss (http://www.jst-mfg.com/product/pdf/eng/eXH.pdf), generated with kicad-footprint-generator")
 		(tags "connector JST XH vertical boss")
 		(property "Reference" "M1"
@@ -2510,7 +2510,7 @@
 	(footprint "SamacSys_Parts:TB9051FTG"
 		(layer "F.Cu")
 		(uuid "1dd2bc90-8981-4c1c-b9c6-521ee18293a4")
-		(at 204.505 74.15)
+		(at 204.6 74.65)
 		(descr "TB9051FTG-6")
 		(tags "Integrated Circuit")
 		(property "Reference" "IC1"
