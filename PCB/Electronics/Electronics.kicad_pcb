@@ -26893,7 +26893,7 @@
 	(footprint "esp32devk:MODULE_ESP32-S3-DEVKITM-1-N8"
 		(layer "F.Cu")
 		(uuid "e78ca721-0783-4375-86f0-9585eefbf03a")
-		(at 31.635 55.508)
+		(at 26.93 63.71)
 		(property "Reference" "U11"
 			(at -9.575 -37.015 0)
 			(layer "F.SilkS")
