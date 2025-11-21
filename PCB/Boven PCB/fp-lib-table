@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "Lib")(type "KiCad")(uri "C:/Users/Natha/OneDrive/Documenten/GitHub/robotica/PCB/libs/Lib.pretty")(options "")(descr ""))
+)
