@@ -7736,7 +7736,7 @@
 	(footprint "Package_SO:SSOP-28_5.3x10.2mm_P0.65mm"
 		(layer "F.Cu")
 		(uuid "5a0b310f-8c70-4629-8e25-c6429f31273e")
-		(at 103.96 82.135)
+		(at 103.96 85.175)
 		(descr "28-Lead Plastic Shrink Small Outline (SS)-5.30 mm Body [SSOP] (see Microchip Packaging Specification 00000049BS.pdf)")
 		(tags "SSOP 0.65")
 		(property "Reference" "U15"
@@ -23292,7 +23292,7 @@
 	(footprint "Connector_JST:JST_XH_B6B-XH-AM_1x06_P2.50mm_Vertical"
 		(layer "F.Cu")
 		(uuid "d7031f65-750e-4dc0-8b9a-0bf5a4fb0993")
-		(at 48.58 82.865)
+		(at 48.4 83.2)
 		(descr "JST XH series connector, B6B-XH-AM, with boss (http://www.jst-mfg.com/product/pdf/eng/eXH.pdf), generated with kicad-footprint-generator")
 		(tags "connector JST XH vertical boss")
 		(property "Reference" "M2"
