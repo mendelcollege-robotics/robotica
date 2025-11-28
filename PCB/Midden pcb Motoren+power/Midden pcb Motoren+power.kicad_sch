@@ -17802,12 +17802,12 @@
 		(uuid "3bb5fccc-2bd5-4de5-8211-6826023e49ac")
 	)
 	(label "pwm1-m3"
-		(at 447.04 199.39 0)
+		(at 447.04 199.39 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "3c99011b-a14e-4a22-b0b3-42d48c4b04d1")
 	)
