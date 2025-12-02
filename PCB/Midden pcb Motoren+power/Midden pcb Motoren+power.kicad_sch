@@ -24283,7 +24283,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Lib:TB9051FTG"
+		(property "Footprint" "SamacSys_Parts:TB9051FTG"
 			(at 514.35 171.12 0)
 			(effects
 				(font
@@ -45267,7 +45267,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Lib:TB9051FTG"
+		(property "Footprint" "SamacSys_Parts:TB9051FTG"
 			(at 755.65 164.77 0)
 			(effects
 				(font
@@ -45565,7 +45565,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Lib:TB9051FTG"
+		(property "Footprint" "SamacSys_Parts:TB9051FTG"
 			(at 289.56 525.45 0)
 			(effects
 				(font
@@ -50358,7 +50358,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Lib:TB9051FTG"
+		(property "Footprint" "SamacSys_Parts:TB9051FTG"
 			(at 193.04 247.32 0)
 			(effects
 				(font
