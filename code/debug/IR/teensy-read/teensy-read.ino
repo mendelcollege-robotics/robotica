@@ -7,6 +7,7 @@ void setup() {
 
 }
 
+//
 //  _________________________________________
 // / fucking mixes the signal and prints but \
 // | dont know recieve format yet so keeping |
