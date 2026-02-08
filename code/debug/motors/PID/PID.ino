@@ -73,7 +73,7 @@ void updateSpeed() {
   //6 interupts per rotation and interuptDuration but in seconds
   m1encSP = (m1enc / 6.0) / (interuptDuration/1000.0);
   m1enc = 0;
-  if (m1encSP < 1 || isnan(m1encSP)) {
+  if (m1encSP < 0 || isnan(m1encSP)) {
     m1encSP = 0;
     tone(buzzer, 1000);
     Serial.println(" ___________________________");
